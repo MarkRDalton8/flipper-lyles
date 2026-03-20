@@ -1,0 +1,307 @@
+{
+  "slug": "pulp-fiction",
+  "title": "Pulp Fiction",
+  "manufacturer": "Chicago Gaming Company / Play Mechanix",
+  "manufacturer_short": "CGC",
+  "designer": "Mark Ritchie",
+  "code_by": "George Petro / Josh Sharpe",
+  "year": 2023,
+  "description": "A retro-inspired machine designed at Quentin Tarantino's request to feel like an '80s/'90s pinball game — but with modern depth underneath. Approachable rules that reward fundamentals. Five objectives standing between you and the wizard mode.",
+
+  "badge": {
+    "gradient_from": "#2a1a0a",
+    "gradient_to": "#1a0f05",
+    "border_color": "#5a3a1a",
+    "text_color": "#d4a040",
+    "abbreviation": "PULP"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 3,
+    "fun_factor": 4,
+    "league_frequency": 3
+  },
+
+  "summary": {
+    "text": "Pulp Fiction has <strong>five main objectives</strong> listed above the flippers — complete all five to reach <strong>Divine Intervention</strong>, the wizard mode that doubles your entire score. But don't think about the wizard mode. Think about this: the game has two 3-ball multiballs (<strong>Briefcase Boogie</strong> behind the left inline drops, and <strong>Pawn Shop Panic</strong> behind the center drop bank), timed single-ball modes called <strong>Roll Scenes</strong> based on movie moments, and a playfield multiplier called <strong>Big Kahuna Bonus</strong> that can reach 6x and lasts the entire ball. The scoring is old-school low — millions, not hundreds of millions. The Big Kahuna multiplier is where the real points hide.",
+    "modes": [
+      { "name": "Briefcase Boogie", "type": "mb" },
+      { "name": "Pawn Shop Panic", "type": "mb" },
+      { "name": "Cast Chaos", "type": "mb" },
+      { "name": "The Shot", "type": "mb" },
+      { "name": "Twist Contest", "type": "md" },
+      { "name": "BMF Wallet", "type": "md" },
+      { "name": "Gold Watch", "type": "md" },
+      { "name": "Clean the Car", "type": "md" },
+      { "name": "Pulp Fiction Frenzy", "type": "ev" },
+      { "name": "Royale w/ Cheese", "type": "ev" },
+      { "name": "Big Kahuna Bonus", "type": "ev" },
+      { "name": "Drive Fast / MPH", "type": "ev" },
+      { "name": "Divine Intervention", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Right Drop Target (and the Saucer Behind It)",
+    "description": "This drop target + saucer combo on the right side of the playfield is the Swiss Army knife of the game. Hitting the drop target lights your outlane ball save (first hit = left outlane, second hit on the same ball = right outlane). It also qualifies the saucer behind it for Roll Scene starts and character collects. So every hit makes the game safer AND more profitable. It's a backhand from the right flipper on most copies. Make this your 'whenever I have a chance' shot — it's low risk and high reward every single time."
+  },
+
+  "hard_box": {
+    "text": "This game looks simple — it has the aesthetic of a late-'80s Williams machine with retro alphanumeric displays. Don't let that fool you. There are 7 red arrow target banks spread across the playfield that all need completing to spell PULP FICTION, two separate ball lock mechanisms (briefcase and pawn shop), and that right saucer is one of the busiest single shots in pinball — it starts Roll Scenes, collects characters, AND is gated by the drop target that lights your ball saves. The scoring is old-school low, which means every missed shot hurts more than on a modern Stern where bumpers alone rack up millions. And the outlane ball saves aren't automatic — you earn them by hitting that right drop target every ball."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Lock Balls, Get Protected",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Skill Shot Into Top Saucer",
+          "difficulty": "easy",
+          "description": "Plunge into the top saucer when arrows are lit for up to 100k (3k per lit arrow, 100k bonus if all 5 are lit). This also qualifies a character for later collection. Alternative: hold the left flipper during plunge for a Super Skill Shot — hit a lit Payoff shot for 100k. Either way, free points before you even start playing."
+        },
+        {
+          "rank": 1,
+          "title": "Hit the Right Drop Target — Twice If You Can",
+          "difficulty": "easy",
+          "description": "Backhand this from the right flipper. First hit lights your left outlane ball save. Second hit lights the right. You just made the ball dramatically safer in two shots. Plus the saucer behind the drop target is now qualified for a Roll Scene. This should be your reflex shot every time you trap on the right flipper."
+        },
+        {
+          "rank": 2,
+          "title": "Work the Center Drop Targets for Pawn Shop Locks",
+          "difficulty": "medium",
+          "description": "Knock down the center drop target bank to open the Pawn Shop sinkhole behind the left two drops. Shoot the sinkhole to lock a ball. Each lock resets the drops, so you keep shooting them. Lock 3 for Pawn Shop Panic multiball. This is the more accessible of the two multiballs — the drops are in a natural ball path and you'll hit them partially by accident just playing normally."
+        },
+        {
+          "rank": 3,
+          "title": "Start Completing Red Arrow Target Banks",
+          "difficulty": "medium",
+          "description": "Left standups, right standups, and center drops are all red arrow target banks. Each bank completion adds a letter to P-U-L-P-F-I-C-T-I-O-N (11 completions needed). Once spelled, shoot the pawn shop for Pulp Fiction Frenzy. Don't stress about finishing this on Ball 1 — just notice that you're making progress as you play naturally. The Pinside community recommends focusing on the Pawn Shop area since it counts toward both the target bank AND the ball locks."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Multiball and Multipliers",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Start Pawn Shop Panic or Briefcase Boogie",
+          "difficulty": "medium",
+          "description": "If you have locks from Ball 1, finish locking 3 balls in either the Pawn Shop (center drops) or the Briefcase (left inline drops → left kicker behind them). During multiball, shoot flashing shots for payoffs, then hit the lock again for the next phase. The green super payoff is what lights each objective as complete — try to reach it. Multiballs can't stack with each other, so pick one and commit. Heads up: some copies eject Briefcase Boogie balls straight down the middle — be ready with both flippers."
+        },
+        {
+          "rank": 2,
+          "title": "Build Big Kahuna Bonus (Playfield Multiplier)",
+          "difficulty": "medium",
+          "description": "This is the hidden scoring monster. Shoot the two flashing targets near the bumpers to qualify, then hit the target above the bullseye magnet. Each advance adds +1x to ALL playfield scoring for the rest of the ball — 2x, 3x, up to 6x max. Everything pays more: modes, multiballs, collects, hurry-ups. The Pinside strategy thread confirms this is what tournament players prioritize. Build it before you cash anything else in."
+        },
+        {
+          "rank": 3,
+          "title": "Start and Cash Out a Roll Scene",
+          "difficulty": "medium",
+          "description": "Hit the right drop target, then shoot the saucer behind it to start a scene. They're 40-second timed modes. In the last 10 seconds, shoot the saucer again to cash out your built-up value PLUS the base value from all previous scene collects in the game. Scenes pause during multiball, so no conflicts there. Gold Watch (hit the target above the bullseye) is the highest-scoring scene. BMF Wallet (shoot red arrow targets) is the most natural since you're already working those targets."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Cash Everything Out",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Big Kahuna First, Then Multiball",
+          "difficulty": "medium",
+          "description": "If you can build Big Kahuna to 3x or higher before starting a multiball, your payoffs are tripled. This is the most efficient scoring path in the game for our skill level. Build multiplier → start multiball → collect payoffs at 3x. If you already have Big Kahuna built from Ball 2, even better — start your second multiball immediately."
+        },
+        {
+          "rank": 2,
+          "title": "Complete 1-2-3-4 Lanes for Bonus X and Royale",
+          "difficulty": "easy",
+          "description": "Cycle the lanes with flippers, complete 1-2-3-4. Each completion advances bonus multiplier (up to 10x), lights the Royale with Cheese hurry-up at the yellow target on the far left, and eventually lights Gun Bonus collect and Super Spinners. The bonus multiplier stacks with the Big Kahuna multiplier for Gun Bonus collects — this math can get huge. Five completions on the same ball lights extra ball."
+        },
+        {
+          "rank": 2,
+          "title": "Cash Out Gun Bonus Mid-Ball",
+          "difficulty": "medium",
+          "description": "After collecting the Royale with Cheese hurry-up, the target above the bullseye magnet lights for Gun Bonus collect. This scores your accumulated bonus WITH the bonus multiplier AND the playfield multiplier — then resets both. On a ball where you've built up Big Kahuna to 4x+ and have a decent bonus multiplier, this single shot can be worth more than an entire multiball."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "Outlane Ball Saves (Earned, Not Free)",
+        "description": "Hitting the right drop target lights your left outlane ball save. Hit it again on the same ball for the right. These do NOT carry over between balls — you have to re-earn them every ball. Slingshot hits alternate which side is active if only one is lit. Make the right drop target your reflex shot."
+      },
+      {
+        "title": "The Right Drop Target Is Your Best Friend",
+        "description": "Ball saves, Roll Scene qualification, character collects — this one shot does everything. Backhand it from the right flipper whenever you get the chance. Getting in the habit of hitting this shot every time you trap on the right is probably the single biggest improvement you can make on this game."
+      },
+      {
+        "title": "Bullseye Magnet Awareness",
+        "description": "There's a magnet in the center of the playfield (the bullseye area). It can grab balls and cause unexpected changes in trajectory. It's a feature, not a malfunction. Just know it's there so you don't panic when the ball does something weird in the middle of the playfield."
+      },
+      {
+        "title": "Briefcase Boogie Eject Warning",
+        "description": "Some copies of the game eject all 3 balls from the briefcase lock straight down the middle when Briefcase Boogie starts. This is a known issue discussed on Pinside. Be ready with both flippers when multiball launches. If your local copy does this consistently, consider adjusting or just being prepared every time."
+      },
+      {
+        "title": "Roll Scene Drop Target as Shield",
+        "description": "Pinside player FredBoynton's tip: when you trap on the right flipper, backhand the right drop target. Beyond lighting ball saves, the raised drop target physically protects one lane from draining. When it's up, it acts as a partial shield."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Chasing Cast Chaos early",
+        "description": "Requires qualifying characters at the top saucer (unlit orbit shots or skill shots) then collecting each at the right saucer — which is already overworked with Roll Scenes and character collects. A lot of steps. Let characters accumulate naturally through skill shots and orbits; don't make it your primary objective."
+      },
+      {
+        "title": "Drive Fast / MPH Bonus",
+        "description": "Fun orbit-looping mode lit from the return lanes. Can lead to an extra ball at 146 MPH. But it requires consecutive orbit shots at speed, which is hard to sustain consistently. Cool when it happens organically, not worth building a strategy around. If you find yourself in it, enjoy the ride."
+      },
+      {
+        "title": "Clean the Car (Roll Scene)",
+        "description": "The lowest-scoring of the four Roll Scenes — it uses spinners, which score only 100+ per spin in the base version. Twist Contest (bumpers) and BMF Wallet (red arrow targets) are more natural to play, and Gold Watch (bullseye target) has the highest ceiling. If Clean the Car comes up, play it, but don't seek it out."
+      },
+      {
+        "title": "Divine Intervention wizard mode",
+        "description": "Requires completing all 5 objectives including super payoffs in both Briefcase Boogie and Pawn Shop Panic, plus playing The Shot, Cast Chaos, and Pulp Fiction Frenzy. If you get there, your score gets doubled and honestly you might not need this site anymore. Congratulations. Buy yourself a beer."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Good Scores to Aim For",
+      "text": "Pulp Fiction uses old-school scoring — millions, not hundreds of millions. A solid league game is 3-5 million. If you break 8 million you're having a monster night. The top Pinside scores are in the 12-15 million range, which involves Frenzy, Cast Chaos, multiple scene collects, and high Big Kahuna multipliers. Don't compare your scores to modern Sterns — 4 million here is like 400 million on Jaws."
+    },
+    {
+      "label": "The Big Kahuna Math",
+      "text": "The Big Kahuna Bonus / playfield multiplier is what separates okay games from great games on this machine. At 4x, every payoff, every scene collect, every Gun Bonus is quadrupled. Build it early in the ball (before cashing anything in) and everything downstream is worth dramatically more. It resets when the ball drains (on default settings), so treat it as a per-ball investment."
+    },
+    {
+      "label": "The Retro Vibe Is Real",
+      "text": "This game was literally designed at Quentin Tarantino's request to feel like a vintage pinball machine. Mark Ritchie hadn't designed a game in 26 years. It uses alphanumeric LED displays instead of an LCD screen. The rules were written by Josh Sharpe — yes, the IFPA president — to be 'approachable and deep.' If you've played Attack From Mars or Medieval Madness, you'll feel at home here. It's simpler than most modern games but the depth sneaks up on you."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "right-drop-saucer",
+      "name": "Right Drop Target + Saucer",
+      "description": "Right side of the playfield. The drop target in front gates the saucer behind it. Hitting the drop target lights outlane ball saves (1st hit = left, 2nd = right) and qualifies the saucer for Roll Scenes and character collects. Backhand from the right flipper. Your most important reflex shot.",
+      "image": "/playfields/pulp-fiction/right-drop-saucer.webp",
+      "crop": { "x_percent": 70, "y_percent": 55, "zoom": 2.5 }
+    },
+    {
+      "id": "pawn-shop",
+      "name": "Pawn Shop (Center Drops)",
+      "description": "Center of the playfield. Three drop targets that open the Pawn Shop sinkhole behind the left two drops. Lock 3 balls here for Pawn Shop Panic multiball. Each lock resets the drops. Also counts as a red arrow target bank completion toward PULP FICTION.",
+      "image": "/playfields/pulp-fiction/pawn-shop.webp",
+      "crop": { "x_percent": 48, "y_percent": 45, "zoom": 2.2 }
+    },
+    {
+      "id": "briefcase",
+      "name": "Briefcase Lock (Left Inline Drops)",
+      "description": "Left side. Three inline drop targets in front of the left kicker. Knock them all down to qualify ball locks at the kicker behind them. Lock 3 for Briefcase Boogie multiball. Warning: some copies eject balls SDTM when multiball starts.",
+      "image": "/playfields/pulp-fiction/briefcase.webp",
+      "crop": { "x_percent": 25, "y_percent": 50, "zoom": 2.5 }
+    },
+    {
+      "id": "bullseye",
+      "name": "Bullseye Target / Big Kahuna",
+      "description": "Center of the playfield above a magnet. This target advances Big Kahuna Bonus (playfield multiplier, up to 6x) and collects Gun Bonus after Royale with Cheese. Also the primary shot for the Gold Watch Roll Scene. A magnet below it can grab the ball unpredictably.",
+      "image": "/playfields/pulp-fiction/bullseye.webp",
+      "crop": { "x_percent": 50, "y_percent": 40, "zoom": 2.5 }
+    },
+    {
+      "id": "top-saucer",
+      "name": "Top Saucer (Start Character)",
+      "description": "Above the bumpers. The skill shot target — plunge here for points and to qualify a character. Balls also reach it via unlit orbit shots. Each visit qualifies one character for collection at the right saucer. Collect all 5 for Cast Chaos.",
+      "image": "/playfields/pulp-fiction/top-saucer.webp",
+      "crop": { "x_percent": 45, "y_percent": 20, "zoom": 2.5 }
+    },
+    {
+      "id": "royale-target",
+      "name": "Royale with Cheese Target",
+      "description": "Yellow standup target on the far left of the playfield. After completing 1-2-3-4 lanes, shoot this for the Royale with Cheese hurry-up. Collecting it lights Gun Bonus collect and Super Spinners.",
+      "image": "/playfields/pulp-fiction/royale-target.webp",
+      "crop": { "x_percent": 15, "y_percent": 55, "zoom": 2.5 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Tilt Forums — Pulp Fiction Rulesheet by CaptainBZarre",
+      "type": "forum",
+      "description": "Primary source. Community wiki rulesheet with Josh Sharpe corrections. Complete scoring values, all Roll Scene details, competition settings, Divine Intervention phases.",
+      "url": "https://tiltforums.com/t/pulp-fiction-rulesheet/8471"
+    },
+    {
+      "title": "Kineticist — Pulp Fiction Deep Dive",
+      "type": "guide",
+      "description": "Feature overview, rules summary, image gallery, hardware details.",
+      "url": "https://www.kineticist.com/post/pulp-fiction-pinball-deep-dive"
+    },
+    {
+      "title": "Pinside — Pulp Fiction Strategy Thread (FredBoynton)",
+      "type": "forum",
+      "description": "Community-developed strategies including Pawn Shop focus, right drop target as shield, backhand tactics, and tournament play approach.",
+      "url": "https://pinside.com/pinball/forum/topic/pulp-fiction-strategy"
+    },
+    {
+      "title": "San Diego Pinball Club — Pulp Fiction Cheatsheet",
+      "type": "guide",
+      "description": "Quick visual reference card with skill shot details, scene summaries, and scoring overview.",
+      "url": "https://pinball.miraheze.org/wiki/Pulp_Fiction"
+    },
+    {
+      "title": "Pinball Magazine (FR) — Pulp Fiction Review",
+      "type": "news",
+      "description": "Design history, Tarantino involvement, Mark Ritchie's return after 26 years, Play Mechanix/CGC collaboration context.",
+      "url": "https://pinballmag.fr/en/pulp-fiction-chicago-gaming-and-play-mechanix/"
+    },
+    {
+      "title": "Pinside — Bad Mother Flipper Club Thread",
+      "type": "forum",
+      "description": "Owner community. Briefcase eject SDTM issue documentation, scoring benchmarks, physical adjustment tips.",
+      "url": "https://pinside.com/pinball/forum/topic/pulf-fiction-bad-motherfucker-club"
+    },
+    {
+      "title": "Chicago Gaming Company — Official Product Page",
+      "type": "official",
+      "description": "Feature list, designer credits, warranty information, model options.",
+      "url": "https://www.chicago-gaming.com/coinop/pulp-fiction"
+    }
+  ],
+
+  "level_up": {
+    "intro": "Ready to push further? These strategies involve optimizing the Big Kahuna multiplier timing and scene collect stacking. Come back here once you're consistently breaking 3 million.",
+    "tips": [
+      {
+        "title": "Big Kahuna → Scene Collect Combo",
+        "description": "Build Big Kahuna to 3x+ on a ball, then start and complete a Roll Scene with the playfield multiplier active. The scene cash-out at the saucer is multiplied by the Big Kahuna value AND includes the base values from all previous scene collects. On your third or fourth scene with a 4x multiplier, this single shot can be worth over a million."
+      },
+      {
+        "title": "Gun Bonus Collect Timing",
+        "description": "After collecting Royale with Cheese, the bullseye target lights for mid-ball Gun Bonus collect. This applies both the bonus multiplier AND the playfield multiplier, then resets both. The optimal play is to build Big Kahuna high, complete 1-2-3-4 lanes several times for a fat bonus multiplier, then collect. This single shot can be the highest-scoring action in the entire game."
+      },
+      {
+        "title": "Pawn Shop Panic Payoff Stacking",
+        "description": "Pawn Shop Panic's payoff level carries between attempts — if you reached phase 2 last time, you start at phase 2 next time. Combined with Big Kahuna multipliers, later Pawn Shop Panic attempts can score dramatically more than your first one. Prioritize getting a super payoff (to check off the objective) but know that the second and third times through are where the real points are."
+      },
+      {
+        "title": "The Shot (5th Roll Scene)",
+        "description": "After playing all four Roll Scenes, 'The Shot' becomes available — a 4-ball multiball where the right drop target scores payoffs worth 10% of your accumulated Roll Scene collect values. The more scenes you've successfully cashed out, the more The Shot is worth. This is why cashing out scenes (not just playing them) matters so much."
+      }
+    ]
+  }
+}

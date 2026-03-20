@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipper Lyle's — Pinball Strategy for the Rest of Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c10;--card:#12151c;--card2:#181c26;--gold:#f0c040;--orange:#e07020;--red:#cc3333;--teal:#2ec4b6;--blue:#3a86ff;--purple:#b060d0;--txt:#e8e4df;--txt2:#9a9590;--mute:#5a5550;--border:#2a2520;--danger:#3a1515;--safe:#152a1a;--caution:#2a2510}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:'Source Serif 4',Georgia,serif;line-height:1.7;overflow-x:hidden}
+
+.header{padding:2rem 2rem 1rem;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0f1218,var(--bg))}
+.brand{display:flex;align-items:baseline;gap:.75rem;margin-bottom:.25rem;flex-wrap:wrap}
+.brand h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:2.2rem;text-transform:uppercase;letter-spacing:.06em;line-height:1}
+.brand h1 .flip{color:var(--gold)}.brand h1 .lyles{color:var(--txt)}
+.brand .tag{font-family:'Source Serif 4',serif;font-style:italic;font-size:.95rem;color:var(--txt2)}
+.sub{font-family:'JetBrains Mono',monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;color:var(--mute);margin-top:.25rem}
+
+.nav{display:flex;gap:0;padding:0 2rem;border-bottom:1px solid var(--border);background:var(--card);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tab{padding:.85rem 1.25rem;font-family:'Oswald',sans-serif;font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--txt2);cursor:pointer;border:none;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;background:none}
+.tab:hover{color:var(--txt)}.tab.on{color:var(--gold);border-bottom-color:var(--gold)}
+
+.area{max-width:880px;margin:0 auto;padding:2rem}
+.area h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gold);margin-bottom:1.25rem;line-height:1.2}
+.area>p{margin-bottom:1.2rem;color:var(--txt2);font-size:1.02rem}
+.callout{border-left:3px solid var(--gold);padding:1.2rem 1.5rem;margin:2rem 0;background:var(--card);border-radius:0 6px 6px 0;font-style:italic;color:var(--txt);font-size:1.08rem;line-height:1.8}
+.sec{font-family:'Oswald',sans-serif;font-weight:700;font-size:1.25rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:2.5rem 0 1rem;display:flex;align-items:center;gap:.75rem}
+.sec::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* Game header */
+.gh{display:flex;align-items:flex-start;gap:2rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+.badge{flex-shrink:0;width:90px;height:90px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;line-height:1.1}
+.badge .mfg{font-size:.5rem;letter-spacing:.2em;color:var(--mute);margin-bottom:.1rem}
+.badge .t{font-size:1.2rem}
+.gm h2{margin-bottom:.3rem}.gm .des{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--mute);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.6rem}
+.gm .tldr{font-size:.98rem;color:var(--txt2);font-style:italic}
+.stats{display:flex;gap:1.5rem;margin:1.2rem 0 0;flex-wrap:wrap}
+.si{display:flex;flex-direction:column;gap:.3rem}
+.sl{font-family:'JetBrains Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.14em;color:var(--mute)}
+.pips{display:flex;gap:2px}
+.pip{width:16px;height:5px;border-radius:2px;background:var(--border)}
+.pip.f{background:var(--gold)}.pip.fr{background:var(--red)}.pip.ft{background:var(--teal)}
+
+/* Cards */
+.bp{background:var(--card);border-radius:10px;border:1px solid var(--border);overflow:hidden;margin-bottom:1.25rem}
+.bph{padding:.9rem 1.3rem;background:linear-gradient(90deg,var(--card2),var(--card));border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.bph h3{font-family:'Oswald',sans-serif;font-weight:600;font-size:.95rem;text-transform:uppercase;letter-spacing:.08em;color:var(--txt)}
+.bn{font-family:'JetBrains Mono',monospace;font-size:.68rem;padding:.2rem .5rem;border-radius:4px;background:var(--gold);color:var(--bg);font-weight:500}
+.bpb{padding:1.3rem}
+.pi{display:flex;gap:.9rem;padding:.9rem 0;border-bottom:1px solid #1a1d24;align-items:flex-start}
+.pi:last-child{border-bottom:none}
+.pr{flex-shrink:0;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:.85rem}
+.pr.p1{background:var(--gold);color:var(--bg)}.pr.p2{background:var(--orange);color:var(--bg)}.pr.p3{background:var(--teal);color:var(--bg)}.pr.p4{background:var(--mute);color:var(--bg)}
+.pc h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--txt);margin-bottom:.2rem}
+.pc p{font-size:.88rem;color:var(--txt2);line-height:1.6}
+.dt{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;padding:.12rem .45rem;border-radius:3px;margin-left:.4rem;vertical-align:middle}
+.dt.e{background:var(--safe);color:var(--teal);border:1px solid #2a5a35}
+.dt.m{background:var(--caution);color:var(--gold);border:1px solid #5a5a20}
+.dt.h{background:var(--danger);color:var(--red);border:1px solid #5a2a2a}
+
+/* Special boxes */
+.bu{background:var(--card);border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:1.1rem 1.3rem;margin:1.3rem 0}
+.bu .lb{font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--orange);margin-bottom:.4rem}
+.bu p{font-size:.9rem;color:var(--txt2);line-height:1.65}
+.st{background:linear-gradient(135deg,#101520,#0d1118);border:1px solid #1a2540;border-radius:8px;padding:1.1rem 1.3rem;margin:1.3rem 0;position:relative}
+.st::before{content:'🎯';position:absolute;top:-10px;left:14px;font-size:1rem;background:var(--bg);padding:0 .25rem}
+.st .lb{font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:.4rem}
+.st p{font-size:.88rem;color:var(--txt2);line-height:1.65}
+.hero{background:var(--danger);border:1px solid #3a2020;border-radius:8px;padding:1.1rem 1.3rem;margin:1.3rem 0}
+.hero h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin-bottom:.6rem}
+.hero ul{list-style:none;font-size:.88rem;color:var(--txt2)}.hero li{padding:.2rem 0 .2rem 1.1rem;position:relative;line-height:1.55}.hero li::before{content:'⚠';position:absolute;left:0;font-size:.7rem}
+.alive{background:var(--safe);border:1px solid #2a5a35;border-radius:8px;padding:1.1rem 1.3rem;margin:1.3rem 0}
+.alive h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:.6rem}
+.alive ul{list-style:none;font-size:.88rem;color:var(--txt2)}.alive li{padding:.3rem 0 .3rem 1.1rem;position:relative;line-height:1.55}.alive li::before{content:'→';position:absolute;left:0;color:var(--teal)}
+
+/* Two col */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0}
+.card{padding:1.2rem;border-radius:8px;border:1px solid var(--border)}
+.card.yes{background:var(--safe);border-color:#2a5a35}.card.no{background:var(--danger);border-color:#5a2a2a}
+.card h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem}
+.card.yes h4{color:var(--teal)}.card.no h4{color:var(--red)}
+.card ul{list-style:none;font-size:.88rem;color:var(--txt2)}
+.card li{padding:.25rem 0 .25rem 1.1rem;position:relative}
+.card.yes li::before{content:'✓';position:absolute;left:0;color:var(--teal)}
+.card.no li::before{content:'✗';position:absolute;left:0;color:var(--red)}
+
+.footer{padding:2rem;border-top:1px solid var(--border);text-align:center;color:var(--mute);font-size:.78rem;font-family:'JetBrains Mono',monospace;letter-spacing:.04em}
+
+/* Modes list in summary */
+.modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:.75rem 0}
+.mode{font-family:'JetBrains Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;padding:.2rem .5rem;border-radius:4px;border:1px solid var(--border);color:var(--txt2)}
+.mode.mb{border-color:#2a4a7a;color:var(--blue);background:#0a1525}
+.mode.md{border-color:#5a5a20;color:var(--gold);background:#1a1a0a}
+.mode.ev{border-color:#3a2060;color:var(--purple);background:#150a20}
+.mode.wiz{border-color:#5a2a2a;color:var(--red);background:#1a0a0a}
+
+@media(max-width:700px){.two{grid-template-columns:1fr}.gh{flex-direction:column;gap:1rem}.tab{padding:.7rem .9rem;font-size:.72rem}.brand{flex-direction:column;gap:.2rem}.brand h1{font-size:1.6rem}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <h1><span class="flip">Flipper</span> <span class="lyles">Lyle's</span></h1>
+    <span class="tag">Pinball strategy for the rest of us</span>
+  </div>
+  <div class="sub">Your buddy at league who figured this out last Tuesday &bull; flipperlyles.com</div>
+</header>
+
+<nav class="nav">
+  <button class="tab on" onclick="go('home')">The Bar</button>
+  <button class="tab" onclick="go('jaws')">Jaws</button>
+  <button class="tab" onclick="go('sw')">Star Wars: FotE</button>
+  <button class="tab" onclick="go('pf')">Pulp Fiction</button>
+  <button class="tab" onclick="go('wmh')">Winchester</button>
+  <button class="tab" onclick="go('src')">The Research Pile</button>
+</nav>
+
+<!-- ======== HOME ======== -->
+<section id="s-home" class="area">
+  <h2>Pull Up a Stool. Let's Talk Pinball.</h2>
+  <p>Welcome to Flipper Lyle's — named after a certain legendary Minneapolis dive bar that was reborn as a pinball joint. If you know, you know.</p>
+  <p>This site exists because every other strategy guide out there is written for people who can backhand a spinner, stack three multiballs in their sleep, and casually drop billion-point games between sips of beer. That's not us. We're the ones who play a couple nights a week, show up to Tuesday league, maybe hit a monthly tournament, and just want to understand the game in front of us without reading a doctoral thesis.</p>
+
+  <div class="callout">"I just trapped the ball and I have no idea what's lit. What do I do?" — That's the question we answer. Every game. Every ball.</div>
+
+  <p>Every guide here follows the same format: <strong>Your Game Plan</strong> — priority-ranked lists for each ball. Priority 1 is always the safest, highest-value play. You work down only as the game allows. We tell you what modes and multiballs are called (so the names aren't a mystery when they pop up), we flag the <strong>One Shot That Matters</strong>, and we're honest about what to skip. If you can reliably hit the shot we're telling you to skip, honestly, why are you reading this?</p>
+
+  <h2>Who's This For?</h2>
+  <div class="two">
+    <div class="card yes">
+      <h4>Grab a seat if...</h4>
+      <ul>
+        <li>You play 2-3 times a week</li>
+        <li>You're in a local league or thinking about it</li>
+        <li>You know what a dead bounce is (mostly)</li>
+        <li>You've stared at a rulesheet and felt your soul leave your body</li>
+        <li>You want to win a few more games at league, not the state title</li>
+      </ul>
+    </div>
+    <div class="card no">
+      <h4>Maybe not your spot if...</h4>
+      <ul>
+        <li>You're in the IFPA top 500</li>
+        <li>You want frame-by-frame combo breakdowns</li>
+        <li>You already know your ball plan for every game cold</li>
+        <li>You can reliably post-pass on any machine</li>
+        <li>You're already winning your state championship</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======== STAR WARS: FALL OF THE EMPIRE ======== -->
+<section id="s-sw" class="area" style="display:none">
+  <div class="gh">
+    <div class="badge" style="background:linear-gradient(135deg,#1a1a2a,#0a0a15);border:2px solid #3a3a5a;color:#7a7aff">
+      <span class="mfg">Stern</span><span class="t">SW:FE</span>
+    </div>
+    <div class="gm">
+      <h2>Star Wars: Fall of the Empire</h2>
+      <div class="des">Design: John Borg &bull; Code: Raymond Davidson &bull; Stern, 2025</div>
+      <div class="tldr">The third Stern Star Wars based on the original trilogy, designed by the guy who made the first one back in 1992. A classic "fan" layout with tight shots that reward controlled play. Going to be everywhere for the next few years — learn it now.</div>
+      <div class="stats">
+        <div class="si"><span class="sl">Drain Danger</span><div class="pips"><div class="pip fr"></div><div class="pip fr"></div><div class="pip fr"></div><div class="pip"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Rule Complexity</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Fun Factor</span><div class="pips"><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">You'll See This At League</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">The 30-Second Summary</div>
+  <div class="bp"><div class="bpb">
+    <p style="font-size:1.02rem;color:var(--txt);line-height:1.8">
+      Star Wars: FotE has <strong>four separate systems</strong> all running at once, which is why it feels overwhelming at first. But here's the secret: you don't need to chase all four. Pick one or two per ball and you'll outscore most of your league. The FORCE targets are the engine of the game — spell F-O-R-C-E to light the character shots for <strong>Rebel Missions</strong>, which are your primary scoring. There are two main multiballs (<strong>Battle of Hoth</strong> and <strong>Death Star Multiball</strong>), and the pop bumpers quietly build <strong>shot multipliers</strong> that can double or triple any shot you make. The center ramp is the easiest shot on the game — when in doubt, shoot that.
+    </p>
+    <div style="margin-top:.75rem">
+      <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute)">Modes & Multiballs You'll Hear About:</span>
+      <div class="modes">
+        <span class="mode md">Rebel Missions (×24)</span>
+        <span class="mode md">Falcon Features</span>
+        <span class="mode md">Jabba Events</span>
+        <span class="mode md">Vader Modes</span>
+        <span class="mode mb">Battle of Hoth MB</span>
+        <span class="mode mb">Death Star MB</span>
+        <span class="mode mb">Lightspeed MB</span>
+        <span class="mode mb">Sarlacc Escape MB</span>
+        <span class="mode ev">Hyperspace Loops</span>
+        <span class="mode ev">Shot Multipliers</span>
+        <span class="mode wiz">Not a Jedi Yet</span>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="bu">
+    <div class="lb">Between Us — What Makes This Game Hard</div>
+    <p>Four simultaneous progression systems (FORCE targets, Falcon, Jabba, Vader) plus two multiball paths plus shot multipliers. It's a lot. The Darth Vader scoop on the left ejects fast and feeds awkwardly to the right flipper — drop catching helps if you've got the skill, but most of us are just going to flip and pray. The ion cannon bumpers near the slingshots make recovery harder when the ball is out of control, but they're also how you earn shot multipliers, so they're a necessary evil. The good news: the center ramp is very forgiving and feeds nicely from either flipper.</p>
+  </div>
+
+  <div class="st">
+    <div class="lb">The One Shot That Matters — Center Ramp</div>
+    <p>The center (jump) ramp is the most important shot on this game for our skill level. It feeds back to the left flipper, advances the Falcon when the hyperdrive is lit, scores Han's character missions, starts Lightspeed Escape/Multiball, and can be hit reliably from either flipper at almost any speed. When you don't know what to do, shoot the center ramp. When you're in a multiball and losing control, shoot the center ramp. When your brain shorts out from all the callouts and lights, shoot the center ramp. It's your bailout, your bread-and-butter, and your best friend.</p>
+  </div>
+
+  <div class="sec">Your Game Plan</div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 1 — Spell FORCE, Start a Mission</h3><span class="bn">BALL 1</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Skill Shot → Light Lock Target <span class="dt e">you got this</span></h4>
+        <p>Every shot is lit for a skill shot on plunge. Use the ball save time to aim for the "Light Lock" target (the droids target) — this starts your path toward Battle of Hoth multiball. Super skill shot (6M) if you hit a shot within just a couple switch hits. Don't overthink it.</p>
+      </div></div>
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Spell F-O-R-C-E <span class="dt e">you got this</span></h4>
+        <p>Five standup targets scattered around the playfield spell FORCE. Completing it lights all 8 character shots for Rebel Missions. The first time is easy — you'll probably spell it partially just from the ball bouncing around. But get in the habit of looking for unlit FORCE letters and targeting those standups, because each subsequent completion gets harder. This is the engine of the whole game.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Start a Rebel Mission — Pick Han or Chewie <span class="dt m">earnable</span></h4>
+        <p>Once FORCE is complete, the character inserts light up. <strong>Han (center ramp)</strong> is your best first mission — his modes use hurry-up timers that start high, and the center ramp is the easiest shot. <strong>Chewie (Sarlacc pit)</strong> is your backup if you're comfortable with the drop target. The insert color tells you the difficulty: yellow = easy, green = medium, blue = hard. During the mission, shoot blue shots to progress and white shots to build value.</p>
+      </div></div>
+      <div class="pi"><div class="pr p3">3</div><div class="pc">
+        <h4>Feed the Center Ramp to Advance the Falcon <span class="dt e">you got this</span></h4>
+        <p>When the blue hyperdrive light under the Falcon model is lit, center ramp shots advance toward Falcon Features. The first feature (Lightspeed Escape) leads directly into a multiball. This happens naturally if you're already shooting the center ramp for Han missions.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 2 — Get Into a Multiball</h3><span class="bn">BALL 2</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Start Battle of Hoth or Lightspeed Multiball <span class="dt m">earnable</span></h4>
+        <p><strong>Battle of Hoth:</strong> You need 3 locks at the Luke VUK (AT-AT shot). If you hit the Light Lock target on Ball 1, you may already have a lock or two. Shoot Luke to lock more. <strong>Lightspeed:</strong> If you advanced the Falcon on Ball 1, shoot the center ramp when it's lit to start Lightspeed Escape — shoot yellow shots to build the jackpot, then blue shots during the multiball for jackpots. Pro tip from Kineticist: you can actually stack these two multiballs together if you start Lightspeed Escape before collecting the 3rd Hoth lock.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Use Your Shot Multipliers <span class="dt e">you got this</span></h4>
+        <p>The ion cannon bumpers have been quietly building a shot multiplier for you. When a multiplier is ready, the next shot you make gets 2x or 3x. If you're about to start a multiball or cash in a jackpot, this is huge. Watch for the lit multiplier indicator and try to time it before a big shot.</p>
+      </div></div>
+      <div class="pi"><div class="pr p3">3</div><div class="pc">
+        <h4>Complete Another FORCE and Start a Second Mission <span class="dt m">earnable</span></h4>
+        <p>If you completed one mission on Ball 1, that character's next mission is now worth 2x. Or try a different character — Leia (right ramp) and Obi-Wan (right orbit) are solid picks. Remember: completing missions at 4 unique characters lights "Not a Jedi Yet" at the left scoop, which can be worth 800M+ if you've been doing well in modes. That's a stretch goal, but it's there.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 3 — Cash In Everything</h3><span class="bn">BALL 3</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Start Death Star Multiball If Hoth Is Done <span class="dt m">earnable</span></h4>
+        <p>Shoot the Death Star ramp to lower the target, then lock 3 balls behind it. During the multiball: shoot red shots for jackpots (can't repeat the same shot), and after 15 jackpots the Death Star opens for a super jackpot. This is your second big scoring opportunity if Hoth already happened.</p>
+      </div></div>
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Collect Stormtrooper Hurry-Ups <span class="dt e">you got this</span></h4>
+        <p>That hidden standup target on the right has been counting Stormtroopers all game. If the hurry-up is lit, cash it in — each one adds to your bonus multiplier AND increases the value of the next one. Free points if you notice it.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Rip the Spinners for JEDI Ball Save <span class="dt e">you got this</span></h4>
+        <p>Spinner shots at either orbit light letters in J-E-D-I. Complete it and you've earned a ball save activated by the action button — basically a get-out-of-jail-free card. On Ball 3, this is survival insurance. Use the Force. Literally.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="alive">
+    <h4>Stay Alive Out There</h4>
+    <ul>
+      <li><strong>JEDI Ball Save:</strong> Spell J-E-D-I via spinners, then press the action button when the ball is draining. This is your lifeline — work toward it every ball.</li>
+      <li><strong>Center Ramp Bailout:</strong> When things go sideways, the center ramp feeds safely to the left flipper from either side. Use it to reset and think.</li>
+      <li><strong>Vader Scoop Feeds:</strong> The left scoop ejects fast toward the right flipper. Be ready. If you can drop catch, great. If not, just flip toward the right ramp or right orbit — both are reasonable bailout shots from that feed.</li>
+      <li><strong>Bottom Lanes:</strong> Cycle with the flippers. Completing 1-2-3-4 advances bonus multiplier and eventually lights Vader modes and mystery. Don't ignore these — they complete themselves if you just remember to cycle.</li>
+      <li><strong>Outlane Ball Saves:</strong> Not built-in on this game — you earn the JEDI save. Nudging matters here more than most modern Sterns.</li>
+    </ul>
+  </div>
+
+  <div class="hero">
+    <h4>Don't Be a Hero</h4>
+    <ul>
+      <li><strong>Vader Modes early:</strong> They require completing bottom lanes, then shooting the left scoop, then hitting enough shots during a timed mode. A lot of steps for inconsistent payoff at our level. Let them happen naturally if they do.</li>
+      <li><strong>Jabba Events on Ball 1:</strong> The Sarlacc Pit drop target is in a dangerous spot near the flippers. Jabba events are great, but the risk of draining on that drop target shot isn't worth it until you have a ball save or it's later in the game.</li>
+      <li><strong>Chasing Hyperspace Loops:</strong> They require enough TIE fighters from the right ramp, then looping the center ramp repeatedly. Cool when it happens, but don't build your strategy around it.</li>
+      <li><strong>"Not a Jedi Yet" wizard mode:</strong> Requires starting missions at 4 unique characters. If it lights, great — shoot it. But don't twist yourself into knots trying to start missions at difficult characters just to qualify it.</li>
+    </ul>
+  </div>
+
+  <div class="bu">
+    <div class="lb">Between Us — Good Scores to Aim For</div>
+    <p>300M+ wins a lot of tournament games on this. If you break 500M you're having a great night. Billion-point games are possible but you'll need mode stacking and shot multiplier timing that's beyond what we're covering here. Consistency at 300M beats one 600M game followed by two house balls — and that's the whole philosophy of this site.</p>
+  </div>
+
+  <div class="bu">
+    <div class="lb">Between Us — Pro vs. Premium vs. LE</div>
+    <p>The big difference for strategy: on the Pro, the center ramp is a simple fixed jump ramp. On Premium/LE, it physically raises and lowers — when lowered, it becomes a target. Right ramp shots or center ramp hits raise it back up. This means on Premium/LE you occasionally can't shoot the center ramp when you expect to, which adds a wrinkle. The core strategy (spell FORCE, start missions, get into multiball, use multipliers) is the same across all models.</p>
+  </div>
+</section>
+
+<!-- ======== JAWS (condensed) ======== -->
+<section id="s-jaws" class="area" style="display:none">
+  <div class="gh">
+    <div class="badge" style="background:linear-gradient(135deg,#1a2a4a,#0a1525);border:2px solid #2a4a7a;color:#4a9aff">
+      <span class="mfg">Stern</span><span class="t">JAWS</span>
+    </div>
+    <div class="gm">
+      <h2>Jaws</h2>
+      <div class="des">Design: Keith Elwin &bull; Code: Naegele / Gieske &bull; Stern, 2024</div>
+      <div class="tldr">An aggressive Elwin design where the biggest points come in chunks from shark encounters and bounty hunts. Punishes sloppy play, rewards patience. That captive ball is your best friend.</div>
+      <div class="stats">
+        <div class="si"><span class="sl">Drain Danger</span><div class="pips"><div class="pip fr"></div><div class="pip fr"></div><div class="pip fr"></div><div class="pip fr"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Rule Complexity</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Fun Factor</span><div class="pips"><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div></div></div>
+        <div class="si"><span class="sl">You'll See This At League</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">The 30-Second Summary</div>
+  <div class="bp"><div class="bpb">
+    <p style="font-size:1.02rem;color:var(--txt);line-height:1.8">
+      Jaws scores in chunks. Hit the <strong>chum bucket captive ball</strong> to advance toward <strong>Jaws Multiball</strong> and light <strong>Shark Encounter</strong> modes. Complete encounters and bounty hunts for the big points. The fishing reel spinner is the hardest shot on the game — if it's not going in today, work around it. The center ramp is your bailout shot (feeds left flipper). When in doubt: trap, captive ball, start an encounter.
+    </p>
+    <div style="margin-top:.75rem">
+      <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute)">Modes & Multiballs You'll Hear About:</span>
+      <div class="modes">
+        <span class="mode md">Night Swim</span>
+        <span class="mode md">Beach Panic</span>
+        <span class="mode md">Scars</span>
+        <span class="mode md">Pond Attack</span>
+        <span class="mode md">Raft Attack</span>
+        <span class="mode mb">Jaws Multiball 1-3</span>
+        <span class="mode mb">Bounty Hunt MB</span>
+        <span class="mode mb">Rescue MB</span>
+        <span class="mode ev">Feeding Frenzy</span>
+        <span class="mode ev">Fish Finder</span>
+        <span class="mode ev">Quickshots</span>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="st">
+    <div class="lb">The One Shot That Matters — Chum Bucket Captive Ball</div>
+    <p>Center-left, between the two ramps. This one shot advances your chum line toward multiball AND lights encounter modes. It's a two-for-one every time you hit it. Make it your first shot after every trap on the left flipper. As Travis from The Pinball Company says: if you're not comfortable with the captive ball angle, the center ramp is a safe bailout that feeds right back to your left flipper.</p>
+  </div>
+
+  <p style="color:var(--txt2);font-style:italic;text-align:center;margin:2rem 0">Full ball plans, survival kit, and "Don't Be a Hero" section coming soon. See the previous version for the complete Jaws guide.</p>
+</section>
+
+<!-- ======== PULP FICTION ======== -->
+<section id="s-pf" class="area" style="display:none">
+  <div class="gh">
+    <div class="badge" style="background:linear-gradient(135deg,#2a1a0a,#1a0f05);border:2px solid #5a3a1a;color:#d4a040">
+      <span class="mfg">CGC</span><span class="t">PULP</span>
+    </div>
+    <div class="gm">
+      <h2>Pulp Fiction</h2>
+      <div class="des">Design: Mark Ritchie &bull; Rules: Josh Sharpe &bull; Chicago Gaming, 2023</div>
+      <div class="tldr">A retro-inspired machine designed at Quentin Tarantino's request to feel like an '80s/'90s pinball game — but with modern depth underneath. Approachable rules that reward fundamentals. Five objectives to complete for the wizard mode. Drop targets everywhere.</div>
+      <div class="stats">
+        <div class="si"><span class="sl">Drain Danger</span><div class="pips"><div class="pip fr"></div><div class="pip fr"></div><div class="pip fr"></div><div class="pip"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Rule Complexity</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">Fun Factor</span><div class="pips"><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip ft"></div><div class="pip"></div></div></div>
+        <div class="si"><span class="sl">You'll See This At League</span><div class="pips"><div class="pip f"></div><div class="pip f"></div><div class="pip f"></div><div class="pip"></div><div class="pip"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">The 30-Second Summary</div>
+  <div class="bp"><div class="bpb">
+    <p style="font-size:1.02rem;color:var(--txt);line-height:1.8">
+      Pulp Fiction has <strong>five main objectives</strong> listed above the flippers — complete all five to reach the <strong>Divine Intervention</strong> wizard mode (which doubles your score). But don't think about the wizard mode. Think about this: the game has two 3-ball multiball locks (<strong>Briefcase Boogie</strong> and <strong>Pawn Shop Panic</strong>), timed single-ball modes called <strong>Roll Scenes</strong>, and a playfield multiplier called <strong>Big Kahuna Bonus</strong> that can reach 6x and lasts for the entire ball. The scoring in this game is lower than modern Sterns — millions, not hundreds of millions. The Big Kahuna multiplier is where the real points hide.
+    </p>
+    <div style="margin-top:.75rem">
+      <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute)">Modes & Multiballs You'll Hear About:</span>
+      <div class="modes">
+        <span class="mode mb">Briefcase Boogie</span>
+        <span class="mode mb">Pawn Shop Panic</span>
+        <span class="mode mb">Cast Chaos</span>
+        <span class="mode mb">The Shot</span>
+        <span class="mode md">Twist Contest</span>
+        <span class="mode md">BMF Wallet</span>
+        <span class="mode md">Gold Watch</span>
+        <span class="mode md">Clean the Car</span>
+        <span class="mode ev">Pulp Fiction Frenzy</span>
+        <span class="mode ev">Royale w/ Cheese</span>
+        <span class="mode ev">Big Kahuna Bonus</span>
+        <span class="mode wiz">Divine Intervention</span>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="bu">
+    <div class="lb">Between Us — What Makes This Game Hard</div>
+    <p>This game looks simple — it has the aesthetic of a late-'80s Williams machine with alphanumeric displays. Don't let that fool you. There are 7 red arrow target banks that need completing to spell PULP FICTION, multiple lock mechanisms, and the right saucer (behind the right drop target) is one of the busiest shots in pinball — it starts Roll Scenes, collects characters, and is your outlane ball save qualifier all in one. The scoring is old-school low, which means every missed shot hurts more than on a modern Stern where you can rack up millions from bumpers.</p>
+  </div>
+
+  <div class="st">
+    <div class="lb">The One Shot That Matters — Right Drop Target</div>
+    <p>The single drop target on the right side of the playfield does three critical things: it <strong>lights your outlane ball save</strong> (one hit = left outlane, second hit = right outlane), it <strong>qualifies Roll Scenes</strong> at the saucer behind it, and it's how you <strong>collect characters</strong> for Cast Chaos. It's a backhand shot from the right flipper on most copies. Make this your "whenever I have a chance" shot — every hit makes the game a little safer and a little more profitable.</p>
+  </div>
+
+  <div class="sec">Your Game Plan</div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 1 — Lock Balls, Get Protected</h3><span class="bn">BALL 1</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Skill Shot Into Top Saucer <span class="dt e">you got this</span></h4>
+        <p>Plunge into the top saucer when arrows are lit for up to 100k (3k per lit arrow, 100k bonus for all 5). This also qualifies a character for collection. Hold the left flipper during plunge for a Super Skill Shot option instead — hit a lit Payoff shot for 100k. Either way, free points.</p>
+      </div></div>
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Hit the Right Drop Target <span class="dt e">you got this</span></h4>
+        <p>Backhand this from the right flipper. First hit lights your left outlane ball save. Second hit lights the right. Now you have protection AND the saucer behind it is qualified for a Roll Scene. You just made the ball safer and more valuable in two shots.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Work the Center Drop Targets for Pawn Shop Locks <span class="dt m">earnable</span></h4>
+        <p>Knock down the center drop target bank to open the Pawn Shop sinkhole. Lock balls there. Each lock resets the drops, so you keep shooting them. Lock 3 for Pawn Shop Panic multiball. This is the more accessible of the two multiballs — the drops are in a natural ball path and you'll hit them partially by accident.</p>
+      </div></div>
+      <div class="pi"><div class="pr p3">3</div><div class="pc">
+        <h4>Complete Red Arrow Target Banks <span class="dt m">earnable</span></h4>
+        <p>Left standups, right standups, and center drops are all red arrow target banks. Each completion adds a letter to P-U-L-P-F-I-C-T-I-O-N. Spelling it out lets you start Pulp Fiction Frenzy at the Pawn Shop. Don't stress about completing this on Ball 1 — just notice that you're making progress toward it as you play naturally.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 2 — Multiball and Multipliers</h3><span class="bn">BALL 2</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Start Pawn Shop Panic or Briefcase Boogie <span class="dt m">earnable</span></h4>
+        <p>If you have locks from Ball 1, finish locking 3 balls in either the Pawn Shop or the Briefcase (left kicker, behind the left inline drops). Shoot for payoffs during multiball, then try for the green super payoff — that's what lights each objective as complete. Multiballs can't stack with each other, so pick one and commit.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Build Big Kahuna Bonus (Playfield Multiplier) <span class="dt m">earnable</span></h4>
+        <p>Shoot the two flashing targets near the bumpers to qualify, then hit the target above the bullseye magnet. Each advance adds +1x to ALL playfield scoring for the rest of the ball (2x, 3x, up to 6x). <strong>This is the hidden scoring monster in this game.</strong> If you can get to 3x or 4x, everything — modes, multiballs, collects — pays way more. Pinside strategy discussion confirms: tournament players build multiplier first, then cash in.</p>
+      </div></div>
+      <div class="pi"><div class="pr p3">3</div><div class="pc">
+        <h4>Start and Cash Out a Roll Scene <span class="dt m">earnable</span></h4>
+        <p>Hit the right drop target, then shoot the saucer behind it to start a scene. They're 40-second timed modes — in the last 10 seconds, shoot the saucer again to cash out your built-up value PLUS the base value from all previous scene collects. Scenes pause during multiball, so don't worry about conflicts. Gold Watch (hit the target above the bullseye) is the highest-scoring scene.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="bp">
+    <div class="bph"><h3>Ball 3 — Cash Everything Out</h3><span class="bn">BALL 3</span></div>
+    <div class="bpb">
+      <div class="pi"><div class="pr p1">1</div><div class="pc">
+        <h4>Big Kahuna First, Then Multiball <span class="dt m">earnable</span></h4>
+        <p>If you can build Big Kahuna to 3x+ before starting a multiball, your payoffs are tripled. This is the most efficient scoring path in the game for our skill level. Build multiplier → start multiball → collect payoffs at 3x.</p>
+      </div></div>
+      <div class="pi"><div class="pr p2">2</div><div class="pc">
+        <h4>Complete 1-2-3-4 Lanes for Bonus X and Royale <span class="dt e">you got this</span></h4>
+        <p>Cycle with flippers, complete the lanes. This advances bonus multiplier (up to 10x), lights the Royale with Cheese hurry-up (collect at the yellow target on the left), and lights Gun Bonus collect and Super Spinners. The bonus multiplier is applied to the Big Kahuna multiplier for Gun Bonus collects — this can get huge.</p>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="alive">
+    <h4>Stay Alive Out There</h4>
+    <ul>
+      <li><strong>Outlane Ball Saves:</strong> Earned by hitting the right drop target (first hit = left save, second = right). Not lit by default. Slingshot hits alternate which side is active if only one is lit. Re-qualify every ball — saves don't carry over.</li>
+      <li><strong>The Right Drop Target:</strong> It's your Swiss Army knife — ball saves, scene starts, character collects. Backhand it from the right flipper whenever you get a chance.</li>
+      <li><strong>Bullseye Magnet:</strong> There's a magnet in the center playfield (the bullseye). It can grab balls and cause unexpected behavior. Just know it's there so you don't panic.</li>
+      <li><strong>Briefcase Boogie Eject:</strong> Some copies eject balls from the briefcase lock straight down the middle when multiball starts. Be ready with both flippers. Known issue discussed on Pinside.</li>
+    </ul>
+  </div>
+
+  <div class="hero">
+    <h4>Don't Be a Hero</h4>
+    <ul>
+      <li><strong>Chasing Cast Chaos early:</strong> Requires qualifying characters at the top saucer (unlit orbit shots) then collecting each at the right saucer. A lot of steps, and the right saucer is already overworked. Let characters accumulate naturally.</li>
+      <li><strong>Drive Fast/MPH Bonus:</strong> Fun orbit-looping mode lit from the return lanes. Can lead to an extra ball at 146 MPH. But it requires consecutive orbit shots, which is hard to sustain. Cool when it happens, not worth building a strategy around.</li>
+      <li><strong>Divine Intervention wizard mode:</strong> Requires completing all 5 objectives including super payoffs in both multiballs. If you get there, congratulations — you don't need this site anymore.</li>
+    </ul>
+  </div>
+
+  <div class="bu">
+    <div class="lb">Between Us — Good Scores to Aim For</div>
+    <p>Pulp Fiction uses old-school scoring — millions, not hundreds of millions. A solid league game is 3-5 million. If you break 8 million you're having a monster night. The top Pinside scores are 12-15 million, which involves Frenzy, Cast Chaos, multiple scene collects, and high multipliers. Don't compare your scores to modern Sterns — 4 million here is like 400 million on Jaws.</p>
+  </div>
+</section>
+
+<!-- ======== WINCHESTER (stub) ======== -->
+<section id="s-wmh" class="area" style="display:none">
+  <div class="gh">
+    <div class="badge" style="background:linear-gradient(135deg,#2a1a2a,#150a18);border:2px solid #5a2a5a;color:#b060d0">
+      <span class="mfg">BoF</span><span class="t">WMH</span>
+    </div>
+    <div class="gm">
+      <h2>Winchester Mystery House</h2>
+      <div class="des">Design: Karl DeAngelo &bull; Code: Eric Priepke &bull; Barrels of Fun, 2025</div>
+      <div class="tldr">525 units worldwide. Room-exploration rules designed by one of the world's best competitive players. Revolving turntable, Pepper's Ghost display, and a Ouija board apron. If you find one, play it.</div>
+    </div>
+  </div>
+  <div class="sec">The 30-Second Summary</div>
+  <div class="bp"><div class="bpb">
+    <p style="font-size:1.02rem;color:var(--txt);line-height:1.8">
+      A room-exploration game with 13 rooms (+ foyer) on a playfield blueprint. Earn <strong>keys</strong> from the K-E-Y drop targets to unlock rooms in any order. Each room has a trapped spirit you free by completing the mode. The <strong>Revolving Hallway Turntable</strong> (3 entrances, 8 positions) creates different ball paths every time. Two multiballs: <strong>Séance Multiball</strong> (3-ball lock at Crystal Ball) and <strong>Wheelbarrow Ghost Multiball</strong> (Clyde in the basement). The spinner builds the spirit meter for a playfield multiplier — but your score freezes during it and you have 15 seconds to collect or lose everything.
+    </p>
+    <div style="margin-top:.75rem">
+      <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute)">Modes & Multiballs You'll Hear About:</span>
+      <div class="modes">
+        <span class="mode md">Venetian Dining Room</span>
+        <span class="mode md">Servant's Kitchen</span>
+        <span class="mode md">Séance Room</span>
+        <span class="mode md">Twin Dining Rooms</span>
+        <span class="mode md">Basement</span>
+        <span class="mode md">Daisy Bedroom</span>
+        <span class="mode md">+7 more coming</span>
+        <span class="mode mb">Séance Multiball</span>
+        <span class="mode mb">Wheelbarrow Ghost MB</span>
+        <span class="mode mb">Skeleton Key MB</span>
+        <span class="mode ev">Spirit Meter / PF X</span>
+      </div>
+    </div>
+  </div></div>
+  <div class="st">
+    <div class="lb">The One Shot That Matters — Center Hall</div>
+    <p>Karl DeAngelo confirmed: the center hall is one of the easiest shots on the game. It's where you start most room modes. The inline K-E-Y drop targets are also easy shots that earn you the keys you need to explore. Start there, explore outward as comfort grows.</p>
+  </div>
+  <p style="color:var(--txt2);font-style:italic;text-align:center;margin:2rem 0">Full ball plans, room mode cards, and survival kit available in the previous build. This guide will expand as more code updates and play data emerge.</p>
+</section>
+
+<!-- ======== SOURCES ======== -->
+<section id="s-src" class="area" style="display:none">
+  <h2>The Research Pile</h2>
+  <p style="color:var(--txt2);margin-bottom:1.5rem">Every claim on this site is sourced. We read the rulesheets so you don't have to. Here's where we got our homework.</p>
+
+  <div class="sec">Star Wars: Fall of the Empire</div>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Kineticist</strong> — "May the Force Be With You" tutorial by Noah Crable. Primary source for character perks, mode details, multiball mechanics, Jabba events, and Noah's tournament strategies. <em>kineticist.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Tilt Forums</strong> — SW:FotE Rulesheet (community wiki). Detailed scoring data, code version tracking. <em>tiltforums.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Stern Pinball</strong> — Official rulesheet v5 PDF + product page. <em>sternpinball.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Pinside</strong> — Star Wars Strategy thread. Community scoring benchmarks, 5 tournament strats discussed. <em>pinside.com</em></p>
+
+  <div class="sec">Pulp Fiction</div>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Tilt Forums</strong> — Pulp Fiction Rulesheet by CaptainBZarre (with Josh Sharpe corrections). Primary source for all rule details, scoring values, competition settings. <em>tiltforums.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Kineticist</strong> — Pulp Fiction Deep Dive. Feature overview, rules summary, image gallery. <em>kineticist.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Pinside</strong> — Pulp Fiction Strategy thread by FredBoynton. Community-developed strategies including Pawn Shop focus and backhand tactics. <em>pinside.com</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>San Diego Pinball Club</strong> — Pulp Fiction cheatsheet. Quick reference card format. <em>pinball.miraheze.org</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Pinball Magazine (FR)</strong> — Pulp Fiction review. Design history, Tarantino involvement, Mark Ritchie context. <em>pinballmag.fr</em></p>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Pinside</strong> — Bad Mother Flipper Club thread. Briefcase eject SDTM issue, scoring benchmarks, community tips. <em>pinside.com</em></p>
+
+  <div class="sec">Jaws</div>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Kineticist</strong> — "Sharkbit" tutorial by Noah Crable. <em>kineticist.com</em> &bull; <strong>Nerdventure</strong> — Beginner's Guide. <em>nerdventure.com</em> &bull; <strong>Travis / The Pinball Company</strong> — Ball 1 strategy video (transcript). <em>YouTube</em> &bull; <strong>Tilt Forums</strong> — Jaws Rulesheet. <em>tiltforums.com</em> &bull; <strong>Pinside</strong> — Owners Club + Skill Shot threads. <em>pinside.com</em></p>
+
+  <div class="sec">Winchester Mystery House</div>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>LoserKid Pinball Podcast Ep. 180</strong> — Karl DeAngelo full interview (transcript). Primary source for room modes, key system, turntable mechanics, spirit meter, tutorial feature. <em>zencastr.com</em> &bull; <strong>Flip N Out Podcast</strong> — WMH Special with David Van Es & Karl DeAngelo. <em>flipnoutpinballpodcast.com</em> &bull; <strong>Pinball News</strong> — Reveal coverage. <em>pinballnews.com</em> &bull; <strong>Pinside</strong> — Hype Thread. <em>pinside.com</em></p>
+
+  <div class="sec">General Strategy</div>
+  <p style="color:var(--txt2);font-size:.9rem;margin-bottom:.5rem"><strong>Pavlov Pinball</strong> — "Play Better!" tips from world-class competitors. &bull; <strong>Pinside</strong> — "How Do I Get Better" + "Practicing for Tournaments" threads. &bull; <strong>Colorado Pinball</strong> — Quick visual strategy guides. &bull; <strong>Utah Pinball</strong> — Streams & channels guide.</p>
+</section>
+
+<footer class="footer">
+  Flipper Lyle's &bull; flipperlyles.com &bull; Named for a legend. Built for league night.<br>
+  Not affiliated with Stern, CGC, Barrels of Fun, or any manufacturer &bull; &copy; 2026
+</footer>
+
+<script>
+function go(id){
+  ['home','jaws','sw','pf','wmh','src'].forEach(s=>{
+    document.getElementById('s-'+s).style.display='none';
+  });
+  document.getElementById('s-'+id).style.display='block';
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  event.target.classList.add('on');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>

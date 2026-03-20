@@ -1,0 +1,278 @@
+{
+  "slug": "star-wars-fote",
+  "title": "Star Wars: Fall of the Empire",
+  "manufacturer": "Stern Pinball",
+  "manufacturer_short": "Stern",
+  "designer": "John Borg",
+  "code_by": "Raymond Davidson / Andrew Wilkening / Mike Vinikour",
+  "year": 2025,
+  "description": "The third Stern Star Wars based on the original trilogy. A classic 'fan' layout with tight shots that reward controlled play. Going to be everywhere for the next few years — learn it now.",
+
+  "badge": {
+    "gradient_from": "#1a1a2a",
+    "gradient_to": "#0a0a15",
+    "border_color": "#3a3a5a",
+    "text_color": "#7a7aff",
+    "abbreviation": "SW:FE"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 4,
+    "fun_factor": 4,
+    "league_frequency": 5
+  },
+
+  "summary": {
+    "text": "Star Wars: FotE has <strong>four separate systems</strong> all running at once, which is why it feels overwhelming at first. But here's the secret: you don't need to chase all four. Pick one or two per ball and you'll outscore most of your league. The FORCE targets are the engine — spell F-O-R-C-E to light character shots for <strong>Rebel Missions</strong>, your primary scoring. Two main multiballs (<strong>Battle of Hoth</strong> and <strong>Death Star Multiball</strong>), and the pop bumpers quietly build <strong>shot multipliers</strong> that can double or triple any shot. The center ramp is the easiest shot on the game — when in doubt, shoot that.",
+    "modes": [
+      { "name": "Rebel Missions (×24)", "type": "md" },
+      { "name": "Falcon Features", "type": "md" },
+      { "name": "Jabba Events", "type": "md" },
+      { "name": "Vader Modes", "type": "md" },
+      { "name": "Battle of Hoth MB", "type": "mb" },
+      { "name": "Death Star MB", "type": "mb" },
+      { "name": "Lightspeed MB", "type": "mb" },
+      { "name": "Sarlacc Escape MB", "type": "mb" },
+      { "name": "Hyperspace Loops", "type": "ev" },
+      { "name": "Shot Multipliers", "type": "ev" },
+      { "name": "Not a Jedi Yet", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Center Ramp",
+    "description": "The center (jump) ramp is the most important shot on this game for our skill level. It feeds back to the left flipper, advances the Falcon when the hyperdrive is lit, scores Han's character missions, starts Lightspeed Escape/Multiball, and can be hit reliably from either flipper at almost any speed. When you don't know what to do, shoot the center ramp. When you're in a multiball and losing control, shoot the center ramp. When your brain shorts out from all the callouts and lights, shoot the center ramp. It's your bailout, your bread-and-butter, and your best friend."
+  },
+
+  "hard_box": {
+    "text": "Four simultaneous progression systems (FORCE targets, Falcon, Jabba, Vader) plus two multiball paths plus shot multipliers. It's a lot. The Darth Vader scoop on the left ejects fast and feeds awkwardly to the right flipper — drop catching helps if you've got the skill, but most of us are just going to flip and pray. The ion cannon bumpers near the slingshots make recovery harder when the ball is out of control, but they're also how you earn shot multipliers, so they're a necessary evil. The good news: the center ramp is very forgiving and feeds nicely from either flipper."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Spell FORCE, Start a Mission",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Skill Shot → Light Lock Target",
+          "difficulty": "easy",
+          "description": "Every shot is lit for a skill shot on plunge. Use the ball save time to aim for the 'Light Lock' target (the droids target) — this starts your path toward Battle of Hoth multiball. Super skill shot (6M) if you hit a shot within just a couple switch hits. Don't overthink it."
+        },
+        {
+          "rank": 1,
+          "title": "Spell F-O-R-C-E",
+          "difficulty": "easy",
+          "description": "Five standup targets scattered around the playfield spell FORCE. Completing it lights all 8 character shots for Rebel Missions. The first time is easy — you'll probably spell it partially just from the ball bouncing around. But get in the habit of looking for unlit FORCE letters and targeting those standups, because each subsequent completion gets harder. This is the engine of the whole game."
+        },
+        {
+          "rank": 2,
+          "title": "Start a Rebel Mission — Pick Han or Chewie",
+          "difficulty": "medium",
+          "description": "Once FORCE is complete, character inserts light up. Han (center ramp) is your best first mission — his modes use hurry-up timers that start high, and the center ramp is the easiest shot. Chewie (Sarlacc pit) is your backup if you're comfortable with the drop target. The insert color tells you difficulty: yellow = easy, green = medium, blue = hard. During the mission, shoot blue shots to progress and white shots to build value."
+        },
+        {
+          "rank": 3,
+          "title": "Feed the Center Ramp to Advance the Falcon",
+          "difficulty": "easy",
+          "description": "When the blue hyperdrive light under the Falcon model is lit, center ramp shots advance toward Falcon Features. The first feature (Lightspeed Escape) leads directly into a multiball. This happens naturally if you're already shooting the center ramp for Han missions."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Get Into a Multiball",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Start Battle of Hoth or Lightspeed Multiball",
+          "difficulty": "medium",
+          "description": "Battle of Hoth: You need 3 locks at the Luke VUK (AT-AT shot). If you hit the Light Lock target on Ball 1, you may already have a lock or two. Shoot Luke to lock more. Lightspeed: If you advanced the Falcon on Ball 1, shoot the center ramp when it's lit to start Lightspeed Escape — shoot yellow shots to build the jackpot, then blue shots during the multiball for jackpots. Pro tip: you can stack these two multiballs together if you start Lightspeed Escape before collecting the 3rd Hoth lock."
+        },
+        {
+          "rank": 2,
+          "title": "Use Your Shot Multipliers",
+          "difficulty": "easy",
+          "description": "The ion cannon bumpers have been quietly building a shot multiplier for you. When a multiplier is ready, the next shot you make gets 2x or 3x. If you're about to start a multiball or cash in a jackpot, this is huge. Watch for the lit multiplier indicator and try to time it before a big shot."
+        },
+        {
+          "rank": 3,
+          "title": "Complete Another FORCE and Start a Second Mission",
+          "difficulty": "medium",
+          "description": "If you completed one mission on Ball 1, that character's next mission is now worth 2x. Or try a different character — Leia (right ramp) and Obi-Wan (right orbit) are solid picks. Remember: completing missions at 4 unique characters lights 'Not a Jedi Yet' at the left scoop, which can be worth 800M+ if you've been doing well in modes. That's a stretch goal, but it's there."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Cash In Everything",
+      "priorities": [
+        {
+          "rank": 1,
+          "title": "Start Death Star Multiball If Hoth Is Done",
+          "difficulty": "medium",
+          "description": "Shoot the Death Star ramp to lower the target, then lock 3 balls behind it. During the multiball: shoot red shots for jackpots (can't repeat the same shot), and after 15 jackpots the Death Star opens for a super jackpot. This is your second big scoring opportunity if Hoth already happened."
+        },
+        {
+          "rank": 1,
+          "title": "Collect Stormtrooper Hurry-Ups",
+          "difficulty": "easy",
+          "description": "That hidden standup target on the right has been counting Stormtroopers all game. If the hurry-up is lit, cash it in — each one adds to your bonus multiplier AND increases the value of the next one. Free points if you notice it."
+        },
+        {
+          "rank": 2,
+          "title": "Rip the Spinners for JEDI Ball Save",
+          "difficulty": "easy",
+          "description": "Spinner shots at either orbit light letters in J-E-D-I. Complete it and you've earned a ball save activated by the action button — basically a get-out-of-jail-free card. On Ball 3, this is survival insurance. Use the Force. Literally."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "JEDI Ball Save",
+        "description": "Spell J-E-D-I via spinners, then press the action button when the ball is draining. This is your lifeline — work toward it every ball."
+      },
+      {
+        "title": "Center Ramp Bailout",
+        "description": "When things go sideways, the center ramp feeds safely to the left flipper from either side. Use it to reset and think."
+      },
+      {
+        "title": "Vader Scoop Feeds",
+        "description": "The left scoop ejects fast toward the right flipper. Be ready. If you can drop catch, great. If not, just flip toward the right ramp or right orbit — both are reasonable bailout shots from that feed."
+      },
+      {
+        "title": "Bottom Lanes (1-2-3-4)",
+        "description": "Cycle with flippers. Completing them advances bonus multiplier and eventually lights Vader modes and mystery. They complete themselves if you just remember to cycle."
+      },
+      {
+        "title": "Nudging Matters Here",
+        "description": "No built-in outlane ball saves on this game — you earn the JEDI save. Nudging is more important than on most modern Sterns."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Vader Modes early",
+        "description": "They require completing bottom lanes, then shooting the left scoop, then hitting enough shots during a timed mode. A lot of steps for inconsistent payoff at our level. Let them happen naturally."
+      },
+      {
+        "title": "Jabba Events on Ball 1",
+        "description": "The Sarlacc Pit drop target is in a dangerous spot near the flippers. Jabba events are great, but the drain risk isn't worth it until you have a ball save or it's later in the game."
+      },
+      {
+        "title": "Chasing Hyperspace Loops",
+        "description": "They require enough TIE fighters from the right ramp, then looping the center ramp repeatedly. Cool when it happens, but don't build your strategy around it."
+      },
+      {
+        "title": "'Not a Jedi Yet' wizard mode",
+        "description": "Requires starting missions at 4 unique characters. If it lights, shoot it. But don't twist yourself into knots trying to start missions at difficult characters just to qualify it."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Good Scores to Aim For",
+      "text": "300M+ wins a lot of tournament games on this. If you break 500M you're having a great night. Billion-point games are possible but require mode stacking and shot multiplier timing beyond what we're covering here. Consistency at 300M beats one 600M game followed by two house balls — and that's the whole philosophy of this site."
+    },
+    {
+      "label": "Pro vs. Premium vs. LE",
+      "text": "The big difference for strategy: on the Pro, the center ramp is a simple fixed jump ramp. On Premium/LE, it physically raises and lowers — when lowered, it becomes a target. Right ramp shots or center ramp hits raise it back up. This means on Premium/LE you occasionally can't shoot the center ramp when you expect to. The core strategy (spell FORCE, start missions, get into multiball, use multipliers) is the same across all models."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp",
+      "description": "The easiest and most important shot on the game. Feeds left flipper, advances Falcon, starts Lightspeed, scores Han missions. Your bailout from either flipper.",
+      "image": "/playfields/star-wars-fote/center-ramp.webp",
+      "crop": { "x_percent": 50, "y_percent": 35, "zoom": 2.2 }
+    },
+    {
+      "id": "force-targets",
+      "name": "FORCE Standup Targets",
+      "description": "Five targets scattered across the playfield. Spelling F-O-R-C-E lights all character shots for Rebel Missions. The engine of the game.",
+      "image": "/playfields/star-wars-fote/force-targets.webp",
+      "crop": { "x_percent": 50, "y_percent": 50, "zoom": 1.5 }
+    },
+    {
+      "id": "luke-vuk",
+      "name": "Luke VUK / AT-AT Shot",
+      "description": "Left side VUK that spirals around the AT-AT model. Locks balls for Battle of Hoth multiball. Can be hit from either flipper with precision.",
+      "image": "/playfields/star-wars-fote/luke-vuk.webp",
+      "crop": { "x_percent": 30, "y_percent": 40, "zoom": 2.5 }
+    },
+    {
+      "id": "death-star-ramp",
+      "name": "Death Star Ramp",
+      "description": "Left side ramp with a target at the apex. Lower the target to reveal the ball lock behind it. Lock 3 balls for Death Star Multiball. Also Lando's shot during missions.",
+      "image": "/playfields/star-wars-fote/death-star.webp",
+      "crop": { "x_percent": 25, "y_percent": 30, "zoom": 2.5 }
+    },
+    {
+      "id": "sarlacc-pit",
+      "name": "Sarlacc Pit",
+      "description": "Chewie's shot. Whirlpool ramp where each spin changes the mode selection. Guarded by Salacious Crumb (drop target). Best hit as a backhand from the right flipper. During multiball, 10 spins here lights action button add-a-ball.",
+      "image": "/playfields/star-wars-fote/sarlacc.webp",
+      "crop": { "x_percent": 65, "y_percent": 50, "zoom": 2.5 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Kineticist — 'May the Force Be With You' Tutorial",
+      "type": "guide",
+      "description": "Primary source. Noah Crable's comprehensive written tutorial covering character perks, mode details, multiball mechanics, Jabba events, and tournament strategies.",
+      "url": "https://www.kineticist.com/news/star-wars-fote-tutorial"
+    },
+    {
+      "title": "Tilt Forums — Star Wars: FotE Rulesheet",
+      "type": "forum",
+      "description": "Community wiki rulesheet with detailed scoring data and code version tracking.",
+      "url": "https://tiltforums.com/t/star-wars-fall-of-the-empire-rulesheet/9872"
+    },
+    {
+      "title": "Stern Pinball — Official Rulesheet v5",
+      "type": "official",
+      "description": "Manufacturer rulesheet covering FORCE target difficulty levels, skill shot mechanics, and multiball rules.",
+      "url": "https://sternpinball.com/wp-content/uploads/2025/11/Star-Wars-Fall-of-the-Empire-Rulesheet-v5.pdf"
+    },
+    {
+      "title": "Stern Pinball — Official Product Page",
+      "type": "official",
+      "description": "Feature list, model differences, Insider Connected details.",
+      "url": "https://sternpinball.com/game/star-wars-fall-of-the-empire/"
+    },
+    {
+      "title": "Pinside — Star Wars Strategy Thread",
+      "type": "forum",
+      "description": "Community strategy discussion including 5 valid tournament strategies and multiplier optimization tips.",
+      "url": "https://pinside.com/pinball/forum/topic/star-wars-strategy"
+    }
+  ],
+
+  "level_up": {
+    "intro": "Ready to push further? These strategies involve stacking modes and multiballs — the stuff we deliberately left out of the main ball plans because it requires more ball control and game knowledge. Come back here once the basic ball plans feel automatic.",
+    "tips": [
+      {
+        "title": "Stack Lightspeed + Hoth",
+        "description": "Start Lightspeed Escape before collecting your 3rd Hoth lock. This lets both multiballs run simultaneously — the only legal stack in the game. Build Lightspeed jackpots first, then lock the 3rd ball during Lightspeed for maximum chaos."
+      },
+      {
+        "title": "Jabba's Palace + Multiball (conceptual)",
+        "description": "Jabba's Palace has unlimited scoring potential as long as you keep hitting the drop target to reset the timer. In theory, stacking this with a multiball would be enormous — but multiballs can't stack with Jabba events. Instead, build Jabba's Palace value during single-ball play and use the Rancor combo mode for its no-timer advantage."
+      },
+      {
+        "title": "Shot Multiplier Timing",
+        "description": "The ion cannon bumpers build your shot multiplier. When it's ready, the NEXT shot you make gets 2x-3x. If you can trap the ball and wait for the right moment — like right before a super jackpot collect or a mode completion shot — you'll dramatically increase your score. This is the single biggest scoring lever for intermediate players moving to advanced."
+      }
+    ]
+  }
+}
