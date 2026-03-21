@@ -36,10 +36,10 @@
       { "name": "Control Room: Restore Power", "type": "md" },
       { "name": "T-Rex Multiball", "type": "mb" },
       { "name": "Chaos Multiball", "type": "mb" },
-      { "name": "Hunted (mini-wizard)", "type": "wz" },
-      { "name": "Island Alive (mini-wizard)", "type": "wz" },
-      { "name": "Visitor Center (mini-wizard)", "type": "wz" },
-      { "name": "Life Finds a Way (wizard)", "type": "wz" }
+      { "name": "Hunted (mini-wizard)", "type": "wiz" },
+      { "name": "Island Alive (mini-wizard)", "type": "wiz" },
+      { "name": "Visitor Center (mini-wizard)", "type": "wiz" },
+      { "name": "Life Finds a Way (wizard)", "type": "wiz" }
     ]
   },
 

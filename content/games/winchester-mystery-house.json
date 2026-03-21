@@ -38,7 +38,7 @@
       { "name": "Skeleton Key Multiball", "type": "mb" },
       { "name": "Spirit Meter / Playfield Multiplier", "type": "ev" },
       { "name": "Earthquake / Tower", "type": "ev" },
-      { "name": "Grand Ballroom Wizard", "type": "wz" }
+      { "name": "Grand Ballroom Wizard", "type": "wiz" }
     ]
   },
 
