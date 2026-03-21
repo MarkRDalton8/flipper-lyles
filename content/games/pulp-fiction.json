@@ -78,7 +78,7 @@
           "rank": 3,
           "title": "Start Completing Red Arrow Target Banks",
           "difficulty": "medium",
-          "description": "Left standups, right standups, and center drops are all red arrow target banks. Each bank completion adds a letter to P-U-L-P-F-I-C-T-I-O-N (11 completions needed). Once spelled, shoot the pawn shop for Pulp Fiction Frenzy. Don't stress about finishing this on Ball 1 — just notice that you're making progress as you play naturally. The Pinside community recommends focusing on the Pawn Shop area since it counts toward both the target bank AND the ball locks."
+          "description": "Left standups, right standups, and center drops are all red arrow target banks. Each bank completion adds a letter to P-U-L-P-F-I-C-T-I-O-N (11 completions needed). Once spelled, shoot the pawn shop for Pulp Fiction Frenzy. Don't stress about finishing this on Ball 1 — just notice that you're making progress as you play naturally. Focusing on the Pawn Shop area is smart since those center drops count toward both the target bank AND your ball locks."
         }
       ]
     },
@@ -96,7 +96,7 @@
           "rank": 2,
           "title": "Build Big Kahuna Bonus (Playfield Multiplier)",
           "difficulty": "medium",
-          "description": "This is the hidden scoring monster. Shoot the two flashing targets near the bumpers to qualify, then hit the target above the bullseye magnet. Each advance adds +1x to ALL playfield scoring for the rest of the ball — 2x, 3x, up to 6x max. Everything pays more: modes, multiballs, collects, hurry-ups. The Pinside strategy thread confirms this is what tournament players prioritize. Build it before you cash anything else in."
+          "description": "This is the hidden scoring monster. Shoot the two flashing standup targets near the bumpers to qualify, then hit the target above the bullseye magnet to advance it. Each advance adds +1x to ALL playfield scoring for the rest of the ball — 2x, 3x, up to 6x max. Everything pays more: modes, multiballs, collects, hurry-ups. Tournament players prioritize this above almost everything else. Build it before you cash anything in."
         },
         {
           "rank": 3,
@@ -148,11 +148,11 @@
       },
       {
         "title": "Briefcase Boogie Eject Warning",
-        "description": "Some copies of the game eject all 3 balls from the briefcase lock straight down the middle when Briefcase Boogie starts. This is a known issue discussed on Pinside. Be ready with both flippers when multiball launches. If your local copy does this consistently, consider adjusting or just being prepared every time."
+        "description": "Some copies eject all 3 balls from the briefcase lock straight down the middle when Briefcase Boogie starts. This is a known hardware quirk. Be ready with both flippers when multiball launches. If your local copy does this consistently, you can adjust the ball ramp angle slightly — or just be prepared every time."
       },
       {
         "title": "Roll Scene Drop Target as Shield",
-        "description": "Pinside player FredBoynton's tip: when you trap on the right flipper, backhand the right drop target. Beyond lighting ball saves, the raised drop target physically protects one lane from draining. When it's up, it acts as a partial shield."
+        "description": "Here's a trick: when you trap on the right flipper, backhand the right drop target. Beyond lighting ball saves, the raised drop target physically protects one drain path. When it's up, it acts as a partial shield."
       }
     ]
   },
@@ -181,7 +181,7 @@
   "between_us": [
     {
       "label": "Good Scores to Aim For",
-      "text": "Pulp Fiction uses old-school scoring — millions, not hundreds of millions. A solid league game is 3-5 million. If you break 8 million you're having a monster night. The top Pinside scores are in the 12-15 million range, which involves Frenzy, Cast Chaos, multiple scene collects, and high Big Kahuna multipliers. Don't compare your scores to modern Sterns — 4 million here is like 400 million on Jaws."
+      "text": "Pulp Fiction uses old-school scoring — millions, not hundreds of millions. A solid league game is 3-5 million. If you break 8 million you're having a monster night. The top scores posted online are in the 12-15 million range, which involves Frenzy, Cast Chaos, multiple scene collects, and high Big Kahuna multipliers. Don't compare your scores to modern Sterns — 4 million here is like 400 million on Jaws."
     },
     {
       "label": "The Big Kahuna Math",
@@ -281,6 +281,13 @@
       "description": "Feature list, designer credits, warranty information, model options.",
       "url": "https://www.chicago-gaming.com/coinop/pulp-fiction"
     }
+  ],
+
+  "chat_starters": [
+    "What's the Big Kahuna Bonus and why does it matter?",
+    "Which multiball is easier to start?",
+    "How do Roll Scenes work?",
+    "Why are my scores so low compared to other games?"
   ],
 
   "level_up": {

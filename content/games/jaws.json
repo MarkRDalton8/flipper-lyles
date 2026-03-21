@@ -46,7 +46,7 @@
 
   "one_shot": {
     "name": "Chum Bucket Captive Ball",
-    "description": "Center-left of the playfield, between the two ramps. This one shot advances your chum line toward Jaws Multiball AND lights encounter modes after enough hits. It's a two-for-one every time. Make it your first shot after every trap on the left flipper. As Travis from The Pinball Company points out: if you're not comfortable with the captive ball angle, the center ramp is a safe bailout that feeds right back to your left flipper. But the captive ball is where the game progression lives. Get comfortable with it and everything else opens up."
+    "description": "Center-left of the playfield, between the two ramps. This one shot advances your chum line toward Jaws Multiball AND lights encounter modes after enough hits. It's a two-for-one every time. Make it your first shot after every trap on the left flipper. If you're not comfortable with the captive ball angle, the center ramp is a safe bailout that feeds right back to your left flipper. But the captive ball is where the game progression lives. Get comfortable with it and everything else opens up."
   },
 
   "hard_box": {
@@ -170,7 +170,7 @@
       },
       {
         "title": "Center Ramp Bailout",
-        "description": "The center ramp feeds right back to the left flipper. When you're unsure, panicking, or the ball is moving fast — just shoot the center ramp. It resets your position and gives you time to think. Travis from The Pinball Company calls this 'an awesome bailout shot' and he's right."
+        "description": "The center ramp feeds right back to the left flipper. When you're unsure, panicking, or the ball is moving fast — just shoot the center ramp. It resets your position and gives you time to think."
       }
     ]
   },
@@ -317,6 +317,13 @@
       "description": "Manufacturer feature list, Insider Connected details, 50th Anniversary Premium edition info, model comparison.",
       "url": "https://sternpinball.com/game/jaws"
     }
+  ],
+
+  "chat_starters": [
+    "What's the safest first shot on Ball 1?",
+    "How do I start Jaws Multiball?",
+    "What should I do with the machete?",
+    "Which shark encounter should I pick first?"
   ],
 
   "level_up": {
