@@ -94,3 +94,17 @@ a:hover {
   letter-spacing: 0.2em;
   color: var(--mute);
 }
+
+/* Callout links */
+.callout-link {
+  color: var(--gold);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.callout-link:hover {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}

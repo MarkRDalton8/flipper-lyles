@@ -1,6 +1,7 @@
 import { getGameBySlug, getAllGames } from "@/lib/games";
 import GameHeader from "@/components/GameHeader";
 import Summary from "@/components/Summary";
+import KnowThePlayfield from "@/components/KnowThePlayfield";
 import OneShot from "@/components/OneShot";
 import BetweenUs from "@/components/BetweenUs";
 import BallPlan from "@/components/BallPlan";
@@ -39,31 +40,39 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
+  const callouts = game.playfield_callouts || [];
+
   return (
     <div className="max-w-5xl mx-auto px-8 py-12">
       <GameHeader game={game} />
 
-      <Summary text={game.summary.text} modes={game.summary.modes} />
+      <Summary text={game.summary.text} modes={game.summary.modes} callouts={callouts} />
 
-      <OneShot name={game.one_shot.name} description={game.one_shot.description} />
+      <KnowThePlayfield keyAreas={(game as any).key_areas || []} />
 
-      <BetweenUs label="What Makes This Game Hard" text={game.hard_box.text} />
+      <OneShot
+        name={game.one_shot.name}
+        description={game.one_shot.description}
+        callouts={callouts}
+      />
+
+      <BetweenUs label="What Makes This Game Hard" text={game.hard_box.text} callouts={callouts} />
 
       {/* Ball Plans */}
       <div className="mb-8">
         <h3 className="font-oswald text-3xl text-gold mb-6">Your Game Plan</h3>
         {game.ball_plans.map((plan) => (
-          <BallPlan key={plan.ball_number} plan={plan} />
+          <BallPlan key={plan.ball_number} plan={plan} callouts={callouts} />
         ))}
       </div>
 
-      <StayAlive items={game.survival.items} />
+      <StayAlive items={game.survival.items} callouts={callouts} />
 
-      <DontBeAHero items={game.skip.items} />
+      <DontBeAHero items={game.skip.items} callouts={callouts} />
 
       {/* Between Us Boxes */}
       {game.between_us.map((box, idx) => (
-        <BetweenUs key={idx} label={box.label} text={box.text} />
+        <BetweenUs key={idx} label={box.label} text={box.text} callouts={callouts} />
       ))}
 
       {/* Sources */}

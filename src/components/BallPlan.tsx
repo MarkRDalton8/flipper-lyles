@@ -1,11 +1,12 @@
-import { BallPlan as BallPlanType } from "@/lib/types";
+import { BallPlan as BallPlanType, PlayfieldCallout } from "@/lib/types";
 import PriorityItem from "./PriorityItem";
 
 interface BallPlanProps {
   plan: BallPlanType;
+  callouts?: PlayfieldCallout[];
 }
 
-export default function BallPlan({ plan }: BallPlanProps) {
+export default function BallPlan({ plan, callouts = [] }: BallPlanProps) {
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden mb-6">
       {/* Header Bar */}
@@ -19,7 +20,7 @@ export default function BallPlan({ plan }: BallPlanProps) {
       {/* Priority Items */}
       <div className="px-6 py-6">
         {plan.priorities.map((priority, idx) => (
-          <PriorityItem key={idx} priority={priority} />
+          <PriorityItem key={idx} priority={priority} callouts={callouts} />
         ))}
       </div>
     </div>
