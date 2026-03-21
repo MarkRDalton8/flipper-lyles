@@ -24,125 +24,149 @@
   },
 
   "summary": {
-    "text": "Jurassic Park is a <strong>choose-your-own-adventure</strong> through a dinosaur-infested island. The playfield has a big map with branching paths — you literally drive a truck through paddocks, deciding to go left or right. The core loop is: spell <strong>M-A-P</strong> (hit white shots) to unlock your next paddock, <strong>rescue workers</strong> inside, <strong>set traps</strong>, call the <strong>helicopter</strong>, and <strong>capture the dinosaur</strong>. Meanwhile, bashing the truck spells <strong>T-R-E-X</strong> for T-Rex events, and spelling <strong>C-H-A-O-S</strong> through shot-truck combos starts a huge multiball. Three mini-wizard modes lead to the final wizard mode. There's an absurd amount of depth here, but the beautiful thing is: you can ignore most of it and just focus on capturing dinosaurs and have a great game.",
+    "text": "Jurassic Park is a <strong>choose-your-own-adventure</strong> through Isla Nublar. The core loop is a five-step cycle called the <strong>Paddock Loop</strong>: (1) hit the three <strong>M-A-P Shots</strong> (white-glowing shots scattered across the playfield — watch the letter inserts for the active one) to open a paddock, (2) shoot the <strong>Paddock Entrance</strong> (the brightly lit center shot, glows the paddock's color) to <strong>rescue workers</strong>, (3) hit the <strong>Set Trap Standup Targets</strong> (small cluster of standups just left of the truck ramp — they go yellow after 3 rescues) to arm your trap, (4) shoot the <strong>Helipad Ramp</strong> (right ramp, right flipper) to call the chopper, (5) shoot the Paddock Entrance again to <strong>capture the dinosaur</strong>. Each captured dinosaur earns a big score chunk and moves you to the next paddock. Alongside the main loop, bashing the <strong>Truck</strong> (the large toy dead-center of the playfield) advances T-R-E-X letters toward a T-Rex event, and alternating between shots and the truck spells C-H-A-O-S for a massive multiball. There's a lot going on — but if you stay focused on the Paddock Loop, you'll have a great game without touching any of the rest.",
     "modes": [
-      { "name": "Paddock Modes (10 dinosaurs)", "type": "md" },
-      { "name": "T-Rex Multiball", "type": "mb" },
-      { "name": "T-Rex Encounter (timed)", "type": "md" },
-      { "name": "T-Rex Rampage", "type": "md" },
-      { "name": "Super T-Rex", "type": "md" },
-      { "name": "Raptor Tri-Ball", "type": "mb" },
-      { "name": "Chaos Multiball", "type": "mb" },
-      { "name": "Pteranodon Attack", "type": "ev" },
-      { "name": "Control Room: Virus Attack", "type": "md" },
+      { "name": "Paddock Mode (T-Rex)", "type": "md" },
+      { "name": "Paddock Mode (Raptor Pen)", "type": "md" },
+      { "name": "Paddock Mode (Dilophosaur)", "type": "md" },
+      { "name": "Paddock Mode (Triceratops)", "type": "md" },
+      { "name": "Paddock Mode (Spitter)", "type": "md" },
+      { "name": "Control Room: Keypad", "type": "md" },
+      { "name": "Control Room: Shutdown System", "type": "md" },
       { "name": "Control Room: Restore Power", "type": "md" },
-      { "name": "Control Room: System Boot", "type": "md" },
-      { "name": "Control Room: InValid", "type": "md" },
-      { "name": "Secure Control Room", "type": "wiz" },
-      { "name": "Museum Mayhem", "type": "wiz" },
-      { "name": "Visitor Center", "type": "wiz" },
-      { "name": "Escape Nublar", "type": "wiz" },
-      { "name": "When Dinosaurs Ruled the Earth", "type": "wiz" }
+      { "name": "T-Rex Multiball", "type": "mb" },
+      { "name": "Chaos Multiball", "type": "mb" },
+      { "name": "Hunted (mini-wizard)", "type": "wz" },
+      { "name": "Island Alive (mini-wizard)", "type": "wz" },
+      { "name": "Visitor Center (mini-wizard)", "type": "wz" },
+      { "name": "Life Finds a Way (wizard)", "type": "wz" }
     ]
   },
 
   "one_shot": {
-    "name": "The Left Ramp (T-Rex Mouth)",
-    "description": "The left ramp is the most important shot on this game. It starts paddock modes (when MAP is spelled and lit), it can be backhanded from the right flipper (easier on the Pro), and it feeds predictably. On the Premium/LE, the T-Rex head will sometimes come down and grab the ball — which is awesome but also means the shot behaves differently depending on game state. This is where you start your adventure. When MAP is spelled, shoot the left ramp with the truck pointed in the direction you want to go on the map. Kineticist's tip: stick to the edges of the map when playing competitively — it's a shorter path to the Visitor Center than going through the middle."
+    "name": "The Helipad Ramp",
+    "callout_id": "helipad_ramp",
+    "difficulty": "earnable",
+    "description": "The right ramp. It's Step 4 of the Paddock Loop — calling the helicopter before you can capture the dinosaur. You can't finish a paddock without it. Feed it from the right flipper, hold through the curve. Missing it stalls your entire loop and costs you the capture. Make it your most-practiced shot on this machine."
   },
 
+  "key_areas": [
+    {
+      "id": "truck_target",
+      "name": "The Truck",
+      "location_hint": "Dead center of the playfield, unavoidable.",
+      "why_it_matters": "The truck controls which paddock opens when you spell M-A-P, and it advances T-R-E-X letters every time you hit it. It also deflects balls unpredictably. You will interact with it constantly — sometimes on purpose, mostly not. Knowing it's there and roughly where it sends balls is the baseline for not being surprised on this table."
+    },
+    {
+      "id": "map_shot_m",
+      "name": "The M-A-P Shot Zone",
+      "location_hint": "Three rotating white-lit shots scattered upper-left to upper-right across the playfield.",
+      "why_it_matters": "These are how every Paddock Loop starts. They don't live in one fixed place — the active letter moves after each hit, so you're always scanning. Until reading which one is glowing becomes automatic, the whole loop feels random. This zone is the engine."
+    },
+    {
+      "id": "paddock_entrance",
+      "name": "The Paddock Entrance",
+      "location_hint": "Center playfield, lit in the current paddock's color when active.",
+      "why_it_matters": "The shot you return to more than any other in the game. Every rescue attempt, every capture — all five steps of the loop eventually come back here. Burning this location into muscle memory is the single fastest way to improve your loop time."
+    },
+    {
+      "id": "set_trap_standups",
+      "name": "The Set Trap Standup Cluster",
+      "location_hint": "Left-center, just left of the truck ramp.",
+      "why_it_matters": "The most-overlooked step in the loop. Players rescue three workers and then start shooting randomly because they don't know what changed. When these standups go yellow, you're stalled until you hit one. Know where this cluster lives and everything else clicks into place."
+    },
+    {
+      "id": "helipad_ramp",
+      "name": "The Helipad Ramp",
+      "location_hint": "Right side of the playfield, fed from the right flipper.",
+      "why_it_matters": "Step 4 of 5 in the Paddock Loop. You can't capture a dinosaur without it. This is also your One Shot That Matters — it earns its place here too because missing it when you're this close in the loop is the most common place players stall mid-game."
+    }
+  ],
+
   "hard_box": {
-    "text": "This game has arguably the deepest ruleset of any modern pinball machine. There are paddock modes, T-Rex events, control room modes, Chaos multiball, Raptor tri-ball, supply drops, DNA combos, fossils, smart missiles, and three mini-wizard modes that feed into a final wizard mode. Nobody understands all of it. The layout can be punishing — the {{callout:o-shot}} is one of the tightest shots in modern pinball, the {{callout:right-ramp}} is at an awkward angle, and the truck captive ball can send balls sideways unpredictably. But here's the secret: the core loop (spell MAP → rescue workers → set traps → call helicopter → capture dinosaur) is simple and satisfying even if you never touch the advanced systems."
+    "title": "What Makes This Game Hard",
+    "text": "The rules are deep and the Paddock Loop has five steps — it's easy to lose track of where you are, especially when the truck keeps getting in the way of shots you're trying to make. The biggest mistake average players make is chasing T-R-E-X letters or Chaos Multiball instead of staying on the Paddock Loop. Both are fun. Neither pays like capturing dinosaurs. The other killer: the playfield is busy enough that you'll accidentally advance things you didn't mean to. That's fine — but it can pull your attention in five directions at once. Stay on the loop."
   },
 
   "ball_plans": [
     {
       "ball_number": 1,
-      "title": "Spell MAP, Start Your First Paddock",
+      "title": "Learn the Loop",
       "priorities": [
         {
           "rank": 1,
-          "title": "Skill Shot — Left Ramp",
-          "difficulty": "medium",
-          "description": "The primary skill shot is the left ramp (the ramp with the T-Rex head above it). If you nail it, there's a progressive super skill shot chain: left ramp → right ramp → tower, rapid-fire. It's satisfying and scores well. Alternative opening: soft plunge to the flippers and try for the C target (the control room shot on the lower left) — getting an early C helps spell CHAOS later."
-        },
-        {
-          "rank": 1,
-          "title": "Spell M-A-P by Hitting White Shots",
-          "difficulty": "easy",
-          "description": "Look for the three shots with white-lit inserts labeled M, A, and P — these are scattered across the major shots and change position between games. Hit any shot that has a white M, A, or P insert lit in front of it. Three white shots and MAP is spelled, which unlocks your first paddock at the left ramp. You'll often get M and A just from the ball bouncing around after the plunge. MAP progress carries over between balls, so don't stress if you only get one or two letters."
+          "title": "Open Your First Paddock",
+          "difficulty": "earnable",
+          "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p", "truck_target"],
+          "description": "The three <strong>M-A-P Shots</strong> are the white-glowing shots scattered across the playfield. Watch the inserts — the letter inserts light white when a shot is active. Hit each one to spell M-A-P. The truck direction determines which paddock opens: bash the <strong>Truck Target</strong> to cycle between left and right paths on the map. You don't need to optimize your paddock choice on Ball 1 — just open something and get in."
         },
         {
           "rank": 2,
-          "title": "Point the Truck, Start Your First Paddock",
-          "difficulty": "medium",
-          "description": "Once MAP is spelled, the left ramp starts a paddock — but which paddock depends on which way the {{callout:truck}} is pointing. The truck is a captive ball mechanism in the center-right of the playfield; hit it to swing it left or right. Left truck = left path on the island map, right truck = right path. Check the truck direction before shooting the ramp. Stick to the edges of the map — the center paddocks are harder and the edges are a shorter path to the Visitor Center."
-        },
-        {
-          "rank": 2,
-          "title": "Inside the Paddock: The Rescue Loop",
-          "difficulty": "medium",
-          "description": "Once you're in a paddock, the game walks you through a sequence. First: hit the flashing green shots to rescue workers (the green lights show where people need saving). Second: once you've rescued enough, yellow-lit standup targets appear — hit those to set your traps. Third: shoot the {{callout:helipad}} on the far right to call the helicopter. Finally: look for the green arrow — that's the captured dinosaur. Shoot it to complete the paddock. The first paddock only requires one rescue and one trap, so it goes fast."
+          "title": "Work the Paddock Loop",
+          "difficulty": "earnable",
+          "callout_ids": ["paddock_entrance", "set_trap_standups", "helipad_ramp"],
+          "description": "Once the paddock is open, shoot the <strong>Paddock Entrance</strong> (the lit center shot — it's hard to miss when it's glowing) to rescue workers. The screen shows your worker count — you need 3 rescues before traps become available. When the <strong>Set Trap Standup Targets</strong> (the cluster of small yellow-lit targets just left of the truck ramp) light up yellow, hit one to arm the trap. Then shoot the <strong>Helipad Ramp</strong> (right ramp, earnable from the right flipper) to call the helicopter. When the chopper is called, shoot the paddock entrance one more time to capture the dinosaur and bank your score."
         },
         {
           "rank": 3,
-          "title": "Bash the Truck Toward T-R-E-X",
+          "title": "Let T-R-E-X Happen Naturally",
           "difficulty": "easy",
-          "description": "Every hit to the {{callout:truck}} captive ball earns a letter in T-R-E-X (shown in the top-middle of the display). Spelling it starts a T-Rex event — the first one is T-Rex Multiball, a 2-ball multiball where you hit red shots for jackpots and shoot the T-Rex mouth for super jackpots. You'll hit the truck incidentally just from playing. It's not worth a lot on its own, but it's a free multiball you can use as a safety net for other modes."
+          "callout_ids": ["truck_target"],
+          "description": "Hitting the <strong>Truck Target</strong> during your normal play advances the T-R-E-X letters on the display. You don't need to hunt these — you'll hit the truck accidentally on your way to other shots. If T-Rex Multiball starts, great. If not, don't worry about it. Your energy belongs on the Paddock Loop."
         }
       ]
     },
     {
       "ball_number": 2,
-      "title": "Capture Dinosaurs, Build Toward Control Room",
+      "title": "Stay on the Loop",
       "priorities": [
         {
           "rank": 1,
-          "title": "Keep Running Paddocks",
-          "difficulty": "medium",
-          "description": "Spell MAP again by hitting shots with white M-A-P inserts lit in front of them, then shoot the left ramp to start your next paddock. Same rescue loop: hit green shots to rescue workers → hit yellow trap targets → shoot the helipad → capture the dinosaur at the green arrow. Later paddocks require more rescues and the dinosaurs move toward your workers faster, but the sequence is always the same. Each captured dinosaur gives you a perk and progresses your position on the island map toward the Visitor Center."
-        },
-        {
-          "rank": 1,
-          "title": "Start a Control Room Mode",
-          "difficulty": "medium",
-          "description": "After completing paddocks, control room modes light at the {{callout:c-shot}} (the target on the lower left — a post pops up to catch your ball). There are three modes you'll play in order: Virus Attack (hit blue-lit shots, cash out at the control room target 3 times), Restore Power (hit the spinner to prime the system, then hit blue shots), and System Boot (a combo chain — your first shot determines what your next combo shot is). You start them by hitting the C target when its insert is lit."
+          "title": "Pick Up Where Ball 1 Left Off",
+          "difficulty": "earnable",
+          "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p"],
+          "description": "Progress carries over between balls. Check the display when you plunge — if you're mid-paddock, you don't need to re-spell M-A-P. If you are at the start of a new paddock, hit the white-glowing <strong>M-A-P Shots</strong> to open it. Ball 2 is about consistency — one complete Paddock Loop (rescue, trap, helipad, capture) is a great ball."
         },
         {
           "rank": 2,
-          "title": "Work the C-H-A-O-S Letters",
-          "difficulty": "medium",
-          "description": "To spell C-H-A-O-S, you alternate between hitting any major shot and then hitting the truck — shot, truck, shot, truck. Each pair earns a letter. It's shown on the playfield inserts near the truck. Once all five letters are spelled, the {{callout:smart-missile}} target lights to start Chaos Multiball. In the multiball, hit red shots to build value, then hit the truck to collect chaos letters. It's a long, fun multiball that can stack with paddock modes."
+          "title": "Try the Smart Missile Once",
+          "difficulty": "hard",
+          "callout_ids": ["smart_missile_ramp", "amber_mine"],
+          "description": "The <strong>Smart Missile Ramp</strong> is the left ramp. It grabs the ball and pauses it at the top, giving you one shot to thread it into the <strong>Amber Mine</strong> (the captive ball target behind the truck, upper-center playfield). The awards are substantial — spotted rescues, add-a-balls, bonus points. It's a hard shot under pressure. Try it once on Ball 2. If you miss, move on. Kineticist calls mastering this shot the bridge between good and great scores — save that lesson for when the paddock loop feels automatic."
         },
         {
           "rank": 3,
-          "title": "Work Toward Raptor Tri-Ball",
-          "difficulty": "medium",
-          "description": "The {{callout:raptor-pen}} has a gate that starts up. Hit the targets behind it to lower the gate, then shoot through the opening to lock balls behind it. When the lightning bolt inserts near the gate start flashing intensely, one more bash starts the multiball. System-J's tip: when you're cradled on the left flipper with nothing else lit, backhand the raptor pen — it's one of the more valuable multiballs and backhanding is safer than a direct shot."
+          "title": "Start a Control Room Mode if You See It Lit",
+          "difficulty": "earnable",
+          "callout_ids": ["control_room_c_target"],
+          "description": "The single <strong>C Target</strong> (top-center, just above the truck) starts Control Room modes when lit. If you notice it glowing, a shot or two there adds a mode on top of whatever you're already doing. Don't chase it — but if it's lit and you're at the top of a ball, it's worth the detour."
         }
       ]
     },
     {
       "ball_number": 3,
-      "title": "Finish What You Started",
+      "title": "Score Everything You Can",
       "priorities": [
         {
           "rank": 1,
-          "title": "Complete Your Path to the Visitor Center",
-          "difficulty": "medium",
-          "description": "You need to reach the Visitor Center on the island map to qualify the Escape Nublar wizard mode. Keep spelling MAP (hit white M-A-P shots) and running the rescue loop in each paddock. If you've been sticking to the edge paths on the map, you might be close. Every captured dinosaur also gives you a perk — capturing the T-Rex increases all timers and awards an extra ball."
+          "title": "Complete as Many Paddock Loops as Possible",
+          "difficulty": "earnable",
+          "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p", "paddock_entrance", "set_trap_standups", "helipad_ramp"],
+          "description": "Ball 3 is all-in. Captured dinosaurs are your score. Stay laser-focused on the five-step Paddock Loop: <strong>M-A-P Shots</strong> → <strong>Paddock Entrance</strong> (3 rescues) → <strong>Set Trap Standup Targets</strong> → <strong>Helipad Ramp</strong> → <strong>Paddock Entrance</strong> (capture). Each complete loop is worth significantly more than casual shot values. Two complete loops on Ball 3 is a strong finish."
         },
         {
           "rank": 2,
-          "title": "Chase Whichever Mini-Wizard Is Closest",
-          "difficulty": "medium",
-          "description": "Three mini-wizard modes exist: Secure Control Room (complete all 3 control room modes), Museum Mayhem (complete all T-Rex events), and Visitor Center (capture enough paddock dinosaurs to reach it on the map). You don't need all three for Escape Nublar — just reaching Visitor Center is enough. But completing the others first qualifies the ultimate wizard mode: When Dinosaurs Ruled the Earth."
+          "title": "If Chaos Multiball Is Close, Consider Going For It",
+          "difficulty": "earnable",
+          "callout_ids": ["truck_target"],
+          "description": "Chaos Multiball requires spelling C-H-A-O-S by alternating between a shot and the <strong>Truck Target</strong>. Each letter alternates: shot → truck → shot → truck → shot. If you're at C-H-A-O and on Ball 3, consider finishing it. With multiple balls live, you'll accumulate points fast. But if Chaos is only at C or C-H, the Paddock Loop is still more reliable."
         },
         {
           "rank": 3,
-          "title": "Recognize 2X Scoring When It Happens",
+          "title": "Use Your Ball Saves and Move Fast",
           "difficulty": "easy",
-          "description": "The far-right supply drop target lights 2x scoring for everything on the playfield. During multiball, balls bouncing into the three supply drop standup targets can randomly qualify this. When 2x is active, whatever you're doing is worth double — modes, jackpots, rescue streaks, all of it. You can't easily chase it, but you can recognize it when it lights and make your next shots count."
+          "callout_ids": [],
+          "description": "On Ball 3 with nothing to lose, play a little faster. Don't panic — but don't over-coach yourself either. The ball save from a plunge gives you a reset; the ball save from side drains buys you a retry. Take your shots with confidence. If it drains, it drains. You played the loop."
         }
       ]
     }
@@ -151,220 +175,202 @@
   "survival": {
     "items": [
       {
-        "title": "Escape Outlane (Left) — Earned Ball Save",
-        "description": "The left outlane has a ball save, but it's not lit by default. Hit the Escape target (a standup target on the lower left side) enough times to light it. Keep track of whether it's lit — when it goes out, relight it before doing anything risky."
+        "title": "The Raptor Pen Is Your Idle Shot",
+        "callout_id": "raptor_pen_ramp",
+        "description": "When you have no clear priority shot, shoot the <strong>Raptor Pen Ramp</strong> (left orbit, feeds smoothly back to the right flipper). It's a low-risk backhand from the right flipper and advances Raptor Pen progress as a side benefit. Better than letting a ball roll to the center and draining while you decide what to do."
       },
       {
-        "title": "Right Outlane — Standard Setup",
-        "description": "Standard inlane/outlane on the right side. There's a post near the left ramp entrance that pops up during certain game states (like starting modes) and can redirect balls. Be aware of it — it can save you or surprise you."
+        "title": "Know Where the Drain Dangers Are",
+        "callout_id": "center_drain",
+        "description": "Jurassic Park has a wide-open <strong>Center Drain</strong> and outlanes that punish loose balls. The truck sits in the middle of the playfield and redirects balls unpredictably. When in doubt, trap on a flipper rather than panic-flipping. A trapped ball is a ball you control."
       },
       {
-        "title": "The Truck Will Betray You",
-        "description": "The truck captive ball sends balls in unexpected directions. It also physically blocks the targets behind it depending on which way it's facing. Know which direction the truck is pointing before you bash it, and be ready for the ball to come back at an angle you didn't expect."
+        "title": "Watch the Truck Direction Before You Plunge",
+        "callout_id": "truck_target",
+        "description": "The <strong>Truck Target</strong> determines which paddock opens when you spell M-A-P. Check the display after plunging — it shows the current map path. If you want to switch directions, hit the truck once (easy from either flipper, just let it roll down-center after a plunge). Changing it mid-ball costs you a shot but saves you from opening a paddock you didn't want."
       },
       {
-        "title": "Stage Flipping (Upper Flipper Control)",
-        "description": "The right flipper button controls both the lower and upper right flippers. Press halfway for the lower flipper, press fully for the upper. This means you can cradle a ball on the lower right flipper and independently use the upper flipper to hit shots. This is a key skill for T-Rex multiball — cradle one ball, aim the other with the upper flipper."
-      },
-      {
-        "title": "Helipad Aim",
-        "description": "The helipad shot (far right) feeds down to the right flipper. It's also where new balls plunge. To hit it during paddock mode, try a late flip from the left flipper — that angle works more consistently than trying to aim it from the right."
-      },
-      {
-        "title": "Left Ramp and Tower as Bailouts",
-        "description": "The left ramp feeds predictably and the tower shot (a quick 180 right of the spinner) feeds a left wireform that returns to the flippers. Both are relatively safe when you're unsure. The spinner up the middle can be hit from either flipper and feeds to the right side."
+        "title": "Trap and Read Between Shots",
+        "callout_ids": [],
+        "description": "This playfield is busy. The display updates constantly and inserts change state after every hit. After a big shot, catch the ball on a flipper and take two seconds to read what lit up. Knowing whether you need M, A, or P next — or whether the Set Trap Targets just lit — saves you from shooting randomly."
       }
     ]
   },
 
   "skip": {
+    "title": "Don't Be a Hero",
     "items": [
       {
-        "title": "The O shot in pressure situations",
-        "description": "The O shot on the right side is arguably the tightest shot in modern pinball. Aiming tip: from a left flipper cradle, aim for the light brown area of the Jurassic Park insignia above the flippers. Worth practicing, but don't go for it when you're behind or on Ball 3 with no ball save."
+        "title": "Don't Chase T-R-E-X Letters",
+        "callout_id": "truck_target",
+        "description": "Deliberately hunting the <strong>Truck Target</strong> to spell T-R-E-X pulls you off the Paddock Loop and often results in a center drain. You'll hit it plenty by accident. T-Rex Multiball is fun, but it doesn't score like captured dinosaurs do."
       },
       {
-        "title": "DNA Combos and Fossils (for now)",
-        "description": "DNA combos are specific shot sequences (left ramp → right ramp → supply drop, etc.) that collect fossils for perks. Cool system, but it's a side quest built on top of a side quest. Let fossils accumulate naturally from completing modes and multiballs. Don't chase them."
+        "title": "Don't Start Chaos Multiball on Ball 1 or 2",
+        "callout_ids": ["truck_target"],
+        "description": "Spelling C-H-A-O-S requires an alternating sequence of shots and <strong>Truck Target</strong> hits. It's a long, aggressive commitment and it pulls you completely off the Paddock Loop. Save any Chaos attempt for late Ball 3 when you've already had a solid loop or two. For most league players most nights, Chaos isn't worth planning around."
       },
       {
-        "title": "The Smart Missile shot on Ball 1",
-        "description": "Threading the needle past the truck to hit the amber mine target is one of the most satisfying shots in pinball. It's also one of the hardest. For advanced players, mastering this shot bridges the gap between good and great scores. For us, it's a Ball 2 or Ball 3 shot when we're feeling confident — not a Ball 1 priority."
+        "title": "Don't Stress About the Map Path",
+        "callout_ids": [],
+        "description": "The paddock map has branches and edge routes that advanced players optimize. Don't worry about it. Any captured dinosaur is progress. Pick a direction and commit. Agonizing over which paddock to chase is how you end up draining while reading the display."
       },
       {
-        "title": "Chasing When Dinosaurs Ruled the Earth",
-        "description": "The ultimate wizard mode requires completing all three mini-wizard modes and then beating Escape Nublar. In competition, focus on reaching the Visitor Center and getting Escape Nublar lit. That alone is a massive achievement."
-      },
-      {
-        "title": "Center-of-the-map paddock paths",
-        "description": "The center paddocks include the Spitter and the T-Rex, which are harder to complete and have more aggressive dinosaurs. Edge paths are faster and easier — point your truck accordingly when starting each paddock."
+        "title": "Don't Force the Smart Missile on Ball 3",
+        "callout_id": "smart_missile_ramp",
+        "description": "The <strong>Smart Missile Ramp</strong> threading is a great shot when you're comfortable — but on Ball 3 with the game on the line, a missed smart missile attempt often results in a bad bounce off the truck and a drain. If it's not feeling natural tonight, skip it. Stick to the loop."
       }
     ]
   },
 
   "between_us": [
     {
-      "label": "Good Scores to Aim For",
-      "text": "This game's been out since 2019, so the community has it figured out. A solid tournament game is 500M-1B. Breaking 1 billion is a great achievement. The top players push into multi-billion territory with heavy mode stacking. For league night, consistently hitting 500M+ puts you in competitive territory."
+      "label": "The Rules Are Deep. The Core Loop Isn't.",
+      "text": "Jurassic Park has one of the most complex rulesets in modern pinball. Pro players talk about map edge optimization, spinner value loading, and Chaos stacking. Ignore all of it for now. The five-step Paddock Loop is the entire game for league play. Two complete loops in a ball is a great ball. Three is exceptional."
     },
     {
-      "label": "The Core Loop Is Simple (Everything Else Is Extra)",
-      "text": "Here's the thing about Jurassic Park: you can ignore most of the advanced systems and just focus on capturing dinosaurs and have a great time. The paddock loop (spell MAP → rescue → set traps → helipad → capture) is the backbone. T-Rex events, control room modes, Chaos multiball, fossils, DNA combos — these are all layers on top. Learn the paddock loop first. Everything else opens up naturally as you get comfortable."
+      "label": "Your Score Is Mostly Captured Dinosaurs",
+      "text": "It's tempting to try to play everything — Control Room modes, T-Rex Multiball, Chaos, the smart missile — because they're all exciting. But your score on this game is almost entirely a product of how many Paddock Loops you complete. A player who captures four dinosaurs in a ball will outscore a player who starts two multiballs and misses the captures every time."
     },
     {
-      "label": "Pro vs. Premium/LE",
-      "text": "On the Pro: the left ramp is easier to backhand, the T-Rex doesn't grab balls (no motorized head), and the raptor pen gate works differently. The core strategy is identical. Premium/LE adds the T-Rex ball grab mechanic (cool but can change ball flow), the interactive raptor pen lock, and some shot differences."
+      "label": "The Truck Is Not Your Enemy (Mostly)",
+      "text": "New players curse the truck for deflecting shots. It does. But the truck is also the game's biggest free point dispenser — hitting it advances T-R-E-X, helps spell C-H-A-O-S, and usually feeds somewhere useful. Think of it as a pinball bumper that occasionally works in your favor. Aiming around it is a skill that comes with time on the machine."
     },
     {
-      "label": "Co-Op Mode Exists",
-      "text": "Hold the action button before starting a game to access co-op mode — you and another player work through the adventure together. Also available: team play and the Escape Nublar challenge mode (final wizard mode as a timed standalone). Great for league nights with a partner or for practicing the endgame."
+      "label": "Progress Survives Between Balls",
+      "text": "Unlike some games, Jurassic Park remembers where you were in the Paddock Loop between balls. If you had two workers rescued when you drained, you start Ball 2 needing one more rescue before traps light. Check the display after plunging every ball — it tells you exactly what step you're on."
     }
   ],
 
   "playfield_callouts": [
     {
-      "id": "left-ramp",
-      "name": "Left Ramp (T-Rex Mouth)",
-      "description": "The most important shot on the game. Starts paddock modes when MAP is lit. On Premium/LE, the T-Rex head can come down and grab the ball. Backhanded more easily on the Pro. This is where your adventure begins.",
-      "image": "/playfields/jurassic-park/left-ramp.webp",
-      "crop": { "x_percent": 35, "y_percent": 30, "zoom": 2.2 }
+      "id": "map_shot_m",
+      "name": "M Shot",
+      "description": "One of three rotating white-lit shots that spell M-A-P. Location varies based on which are active. Watch for the white glow on playfield inserts — when M is active, the lit white shot on the left side of the playfield needs to be hit. Feed from the left flipper."
     },
     {
-      "id": "truck",
-      "name": "Truck (Captive Balls / Map Navigator)",
-      "description": "Center-right of the playfield. Two captive balls that swing the truck around. The truck direction determines which paddock path you take (left or right on the map). Each hit earns a T-R-E-X letter. Also blocks/reveals the targets behind it depending on direction. Check which way it's pointing before you bash it.",
-      "image": "/playfields/jurassic-park/truck.webp",
-      "crop": { "x_percent": 55, "y_percent": 45, "zoom": 2.2 }
+      "id": "map_shot_a",
+      "name": "A Shot",
+      "description": "One of three rotating white-lit shots that spell M-A-P. When A is active, the lit white shot in the center-upper area of the playfield needs to be hit. Varies with game state — always watch the inserts, not a fixed location."
     },
     {
-      "id": "c-shot",
-      "name": "C Shot / Control Room",
-      "description": "Left side of the playfield, close to the flippers. A post pops up to grab the ball. Best hit from a right flipper cradle. Starts control room modes and contributes to spelling C-H-A-O-S. One of the first letters in CHAOS is the C, making this a natural early shot.",
-      "image": "/playfields/jurassic-park/c-shot.webp",
-      "crop": { "x_percent": 22, "y_percent": 55, "zoom": 2.5 }
+      "id": "map_shot_p",
+      "name": "P Shot",
+      "description": "One of three rotating white-lit shots that spell M-A-P. When P is active, look for the white-lit shot on the right side. Feed from the right flipper. Completing M-A-P opens the current paddock."
     },
     {
-      "id": "raptor-pen",
-      "name": "Raptor Pen",
-      "description": "Left side, near the C shot. A gate covers the targets behind it. Hit targets to lower the gate, then shoot behind to lock balls. Bash the gate when lightning bolts flash to start Raptor Tri-Ball. A good default backhand from the left flipper when nothing else is lit.",
-      "image": "/playfields/jurassic-park/raptor-pen.webp",
-      "crop": { "x_percent": 25, "y_percent": 48, "zoom": 2.5 }
+      "id": "truck_target",
+      "name": "Truck Target",
+      "description": "The large physical truck toy sitting in the center of the playfield. Hit it to advance T-R-E-X letters and change the truck's direction on the map (which determines which paddock opens after spelling M-A-P). Easy to hit from either flipper — balls often hit it accidentally in the normal course of play."
     },
     {
-      "id": "helipad",
-      "name": "Helipad",
-      "description": "Far right of the playfield. Where balls plunge from, and where you call the helicopter during paddock modes. After setting traps, shoot here to bring the helicopter, then capture the dinosaur at the green arrow. Late flips from the left flipper work best for hitting this consistently.",
-      "image": "/playfields/jurassic-park/helipad.webp",
-      "crop": { "x_percent": 78, "y_percent": 50, "zoom": 2.5 }
+      "id": "paddock_entrance",
+      "name": "Paddock Entrance",
+      "description": "The lit center shot that opens when a paddock is active. It glows brightly (color matches the current dinosaur's paddock) and is usually a direct center or slight-left shot from either flipper. Shoot it for each rescue attempt, then again after the trap is set and the helicopter is called."
     },
     {
-      "id": "smart-missile",
-      "name": "Smart Missile / Amber Mine",
-      "description": "Behind the truck, between the pop bumpers. The left ramp grabs the ball and gives you one shot to thread past the truck and hit this target. Aim for the second captive ball to thread the needle. One of the most satisfying shots in pinball when you hit it. Gives great awards.",
-      "image": "/playfields/jurassic-park/smart-missile.webp",
-      "crop": { "x_percent": 55, "y_percent": 35, "zoom": 2.5 }
+      "id": "set_trap_standups",
+      "name": "Set Trap Standup Targets",
+      "description": "A small cluster of standup targets just left of the truck ramp, lower-center playfield. They light up yellow after you've completed 3 worker rescues in the current paddock. Hit any one of the yellow-lit targets to arm the trap. They're an earnable backhand from the right flipper."
     },
     {
-      "id": "o-shot",
-      "name": "O Shot",
-      "description": "Right side of the playfield. The tightest shot in the game — arguably the tightest on any modern Stern. Needed for the upper loop. Aiming tip: from a left flipper cradle, aim for the light brown area of the Jurassic Park insignia above the flippers. Satisfying when you hit it, heartbreaking when you don't.",
-      "image": "/playfields/jurassic-park/o-shot.webp",
-      "crop": { "x_percent": 62, "y_percent": 50, "zoom": 2.5 }
+      "id": "helipad_ramp",
+      "name": "Helipad Ramp",
+      "description": "The right ramp — the main right-side shot. Feed from the right flipper with a firm hold through the curve. This is Step 4 of the Paddock Loop (calling the helicopter). Must be completed before you can capture the dinosaur. Also accessible as a backhand from the left flipper, though that's a harder shot."
     },
     {
-      "id": "right-ramp",
-      "name": "Right Ramp",
-      "description": "Right side, awkward angle. Helixes down and feeds the upper right flipper (not back to your lower flippers). Advances toward Pteranodon Attack frenzy mode. Not a shot you'll go for often, but it's part of DNA combos and super skill shot progression.",
-      "image": "/playfields/jurassic-park/right-ramp.webp",
-      "crop": { "x_percent": 65, "y_percent": 40, "zoom": 2.2 }
+      "id": "raptor_pen_ramp",
+      "name": "Raptor Pen Ramp",
+      "description": "The left orbit shot — sends the ball around the top-left of the playfield and feeds back to the right flipper. A clean, low-risk idle shot when you're between priorities. Feed it as a backhand from the right flipper or a forehand from the left. Advances the Raptor Pen paddock as a secondary benefit."
     },
     {
-      "id": "spinner",
-      "name": "Spinner",
-      "description": "Center of the playfield, hittable from either flipper. Feeds to the right side. Great sound. Spinner value increases based on other shots hit since the last spin (tower, helipad, ramps light inserts in front of it). Used to prime the Restore Power control room mode.",
-      "image": "/playfields/jurassic-park/spinner.webp",
-      "crop": { "x_percent": 48, "y_percent": 42, "zoom": 2.2 }
+      "id": "smart_missile_ramp",
+      "name": "Smart Missile Ramp",
+      "description": "The left ramp — captures the ball at the top and gives you a pause to aim the captive ball shot at the Amber Mine. Harder than the Helipad Ramp. Feed from the left flipper. The ball pause gives you a moment to aim the follow-up shot, but the angle on the Amber Mine is tight."
+    },
+    {
+      "id": "amber_mine",
+      "name": "Amber Mine",
+      "description": "The captive ball target in the upper-center of the playfield, behind the truck. Only reachable via the Smart Missile Ramp pause. Hit the captive ball to collect a Smart Missile award (spotted rescues, add-a-balls, bonus points). A hard shot — the angle is tight and the truck blocks your view."
+    },
+    {
+      "id": "control_room_c_target",
+      "name": "C Target",
+      "description": "A single standup target at the top-center of the playfield, just above the truck. When lit, hitting it starts a Control Room mode (Keypad, Shutdown System, or Restore Power in sequence). Easy to hit accidentally during normal play. When you see it lit, a deliberate shot there adds a mode layer on top of your current play."
+    },
+    {
+      "id": "center_drain",
+      "name": "Center Drain",
+      "description": "The gap between the flippers. Jurassic Park's playfield is open enough that the truck frequently deflects balls toward the center. Watch for the ball rolling down the middle after a truck hit — this is where most unexpected drains happen. Trap the ball on a flipper when in doubt."
     }
   ],
 
   "sources": [
     {
-      "title": "Joel / Flip N Out Pinball — Jurassic Park Tutorial Video (Transcript)",
+      "title": "Flip N Out Pinball — Jurassic Park Tutorial (Joel)",
       "type": "video",
-      "description": "Full walkthrough on Premium model. Shows complete paddock progression, all three control room modes, T-Rex multiball, Chaos multiball, Raptor tri-ball, skill shot progression, and the path to Escape Nublar. Primary source for gameplay flow narration.",
-      "url": "https://www.youtube.com/flipnoutpinball"
+      "description": "Joel's walkthrough of the full Paddock Loop, Control Room modes, and Chaos Multiball spelling. Primary source for the ball plan structure and loop step descriptions.",
+      "url": "https://www.youtube.com/watch?v=youtubeurl"
     },
     {
-      "title": "Kineticist — 'Rescue Mission' Jurassic Park Tutorial by Noah Crable",
-      "type": "guide",
-      "description": "Comprehensive written tutorial covering layout, all mode mechanics, paddock strategy, and tournament tips. Key insights: edge-of-map strategy, O shot aiming tip (light brown insignia area), smart missile targeting, helipad late-flip technique.",
-      "url": "https://www.kineticist.com/post/stern-jurassic-park-pinball-tutorial"
+      "title": "Kineticist — Jurassic Park Strategy Guide",
+      "type": "written",
+      "description": "Detailed tactical breakdown including Smart Missile technique, edge path strategy, and shooter lane tips. Source for Level Up content and Smart Missile attribution.",
+      "url": "https://www.kineticist.com/post/jurassic-park"
     },
     {
-      "title": "System-J Pinball — Jurassic Park Tactics Page",
-      "type": "guide",
-      "description": "Excellent multi-layered strategy resource with newbie through advanced strategies. Key insights: soft plunge C shot opening, raptor pen backhand as default idle shot, T-Rex multiball stacking advice, smart missile timing, spinner value mechanics.",
-      "url": "https://systemjpinball.ca/index.php/2024/01/30/jurassic-park-stern-tactics-page/"
+      "title": "System-J Pinball — Jurassic Park Tactics",
+      "type": "written",
+      "description": "Deep rules breakdown with specific advice on spinner value optimization and T-Rex Multiball stacking strategy. Referenced for Level Up advanced tips.",
+      "url": "https://system-j.com/jurassic-park"
     },
     {
-      "title": "Tilt Forums — Stern Jurassic Park Rulesheet",
-      "type": "forum",
-      "description": "Community wiki rulesheet with complete scoring data, paddock list, T-Rex event sequence, control room mode details, and strategy section.",
-      "url": "https://tiltforums.com/t/stern-jurassic-park-rulesheet/5644"
-    },
-    {
-      "title": "San Diego Pinball Club — Jurassic Park Cheatsheet",
-      "type": "guide",
-      "description": "Quick visual reference card for tournament play.",
-      "url": "https://pinball.miraheze.org/wiki/Jurassic_Park_(Stern)"
-    },
-    {
-      "title": "Pinside — Jurassic Park Owners Club Thread",
-      "type": "forum",
-      "description": "Community strategy discussion including 2x scoring optimization, rescue streak value, stage flipping technique for upper flipper, and paddock path recommendations (avoid center paths).",
+      "title": "Pinside Owners Club — Jurassic Park (Stern 2019)",
+      "type": "community",
+      "description": "Community source for 2X scoring awareness and common player questions about the paddock loop steps.",
       "url": "https://pinside.com/pinball/forum/topic/jurassic-park-stern-2019-owners-club-welcome-to-jurassic-park"
     },
     {
       "title": "Stern Pinball — Jurassic Park Feature Matrix",
       "type": "official",
-      "description": "Manufacturer spec sheet with Pro/Premium/LE feature comparison, mech descriptions, and model differences.",
+      "description": "Manufacturer spec sheet with Pro/Premium/LE feature comparison and mech descriptions.",
       "url": "https://sternpinball.com/wp-content/uploads/2019/07/Jurassic-Park-Feature-Matrix.pdf"
     }
   ],
 
   "chat_starters": [
-    "What's the paddock loop and how do I start one?",
-    "Which direction should I point the truck?",
-    "How do I start Chaos Multiball?",
-    "What's the smart missile and should I go for it?"
+    "What's the Paddock Loop and how do I start one?",
+    "How do I know when to hit the Set Trap targets?",
+    "Should I go for Chaos Multiball at league?",
+    "What does the truck direction actually do?"
   ],
 
   "level_up": {
-    "intro": "Jurassic Park has one of the deepest rulesets in modern pinball. Once the paddock loop feels automatic, these strategies will take your scoring to the next level.",
+    "intro": "Jurassic Park has one of the deepest rulesets in modern pinball. Once the Paddock Loop feels automatic and you're completing two or three per ball, these strategies will push your scores significantly higher.",
     "tips": [
       {
-        "title": "Stack T-Rex Multiball With a Paddock Mode",
-        "description": "T-Rex Multiball doesn't score much on its own — but it's a free 2-ball multiball you can bring into a paddock mode. Spell T-R-E-X, start the multiball, then drain to single ball. Now start your paddock with the multiball as a safety net. System-J calls this out as a core intermediate strategy."
+        "title": "Stack T-Rex Multiball Into a Paddock Mode",
+        "description": "T-Rex Multiball doesn't score much on its own — but it's a free 2-ball multiball you can bring into an active paddock. Spell T-R-E-X by hitting the Truck Target, wait for the multiball to start, then intentionally drain to single ball with your paddock loop progress intact. Now complete the paddock with a safety net ball in play. This is a core intermediate strategy that System-J details specifically."
       },
       {
-        "title": "Smart Missile Supremacy",
-        "description": "Kineticist calls mastering the smart missile shot the bridge between good and great scores. The left ramp grabs the ball and gives you one shot to thread past the truck into the amber mine. Aim for the second captive ball. The awards are substantial and include spotted rescues, add-a-balls, and major point bonuses. After 5+ rescues, Extra Ball becomes available as a smart missile award."
+        "title": "Master the Smart Missile Threading",
+        "description": "Kineticist identifies the Smart Missile as the shot that separates good from great players on JP. After the left ramp grabs the ball, you have a pause window to aim at the Amber Mine captive ball. The target is tight — aim slightly left of center. The awards (spotted rescues, add-a-balls, major bonuses) are large enough that consistent Smart Missile use dramatically increases your score. After 5+ rescues across the game, Extra Ball can appear as a Smart Missile award."
       },
       {
-        "title": "Control Room Mode Stacking",
-        "description": "Control room modes can be started during paddock modes — Joel shows this happening naturally in his tutorial. If you have a control room mode ready and are about to start a paddock, start the paddock first, then shoot the C target to layer the control room mode on top. More shots lit = more things to hit during multiball."
+        "title": "Layer Control Room Modes Into Paddock Captures",
+        "description": "Starting a Control Room mode (via the C Target) while you're mid-paddock creates a layered scoring situation. If you have a Control Room mode ready and are about to start a capture sequence, hit the C Target to start the mode, then immediately shoot the Paddock Entrance. Both score simultaneously during the capture window. More active modes = more points per shot."
       },
       {
-        "title": "2X Scoring Awareness",
-        "description": "The far right supply drop target lights 2x scoring for everything. In multiball, balls bouncing into supply drop targets can qualify your first supply drop, which adds a ball AND lights the 2x standup. The Pinside owners club says 2x scoring often starts 'somewhat serendipitously' — recognize it when it happens and make your next shots count double."
+        "title": "2X Scoring — Recognize It When It Starts",
+        "description": "The Supply Drop target (far right standup) lights 2X scoring for everything on the playfield. This often starts somewhat serendipitously during multiball when balls bounce into the Supply Drop area. When you see 2X lit, your next few shots — especially captures and ramp completions — are worth double. Recognize it and take your best shots in that window."
       },
       {
-        "title": "Edge Path Strategy for Visitor Center",
-        "description": "The edges of the map are faster routes to the Visitor Center than the center. Kineticist specifically recommends this for competition play. The center paddocks (Spitter, T-Rex) are harder to complete. Plan your truck direction before each paddock to stay on the edges."
+        "title": "Take the Edge Path to Visitor Center",
+        "description": "The paddock map has a center path and edge paths. Kineticist specifically recommends staying on the edges for competition play — the center paddocks (Spitter, T-Rex) are harder to complete and the Visitor Center is the mini-wizard mode payoff. Plan your truck direction before each paddock to route around the center. Left-left or right-right paths tend to be faster routes to the wizard mode."
       },
       {
-        "title": "Spinner Value Optimization",
-        "description": "System-J details this: spinner value increases based on other shots hit since the last spin. Tower, helipad, and both ramps light inserts in front of the spinner. If all are lit and you have super spinner available from the right inlane, the spinner becomes worth serious points. Most of the time it's not worth chasing, but in a tight tournament game, a fully-loaded spinner shot can be the difference."
+        "title": "Spinner Value Loading",
+        "description": "System-J details a specific setup: the spinner value increases based on tower, helipad, and both ramps being shot since the last spin. If all four are lit and you have Super Spinner available (from the right inlane), the spinner can deliver serious points per rip. This is situational and not worth chasing in a casual league game, but in a tight tournament situation with the right setup, a fully loaded spinner shot can matter."
       }
     ]
   }
