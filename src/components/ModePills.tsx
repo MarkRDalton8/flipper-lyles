@@ -15,7 +15,7 @@ export default function ModePills({ modes }: ModePillsProps) {
   return (
     <div className="flex flex-wrap gap-2">
       {modes.map((mode, idx) => {
-        const config = pillConfig[mode.type];
+        const config = pillConfig[mode.type] || pillConfig.md; // Fallback to mode default
         return (
           <span
             key={idx}
