@@ -24,7 +24,7 @@
   },
 
   "summary": {
-    "text": "Winchester Mystery House is a <strong>room-exploration game</strong> where you tour 13 rooms of a haunted mansion, freeing trapped spirits. The playfield has a blueprint of the house showing all 14 locations (13 rooms + foyer). You earn <strong>keys</strong> by hitting the {{callout:key-drops}} and spend them to unlock rooms in whatever order you choose — you're not locked into a linear path. Each room is a mode with a trapped spirit you free by completing it. The {{callout:turntable}} (3 entrances, 8 positions, rotates both ways) creates different ball paths every time you shoot it. Freed spirits help you in wizard modes later — more completions, more help. The center hall is one of the easiest shots; the {{callout:spinner}} is the hardest.",
+    "text": "Winchester Mystery House is a <strong>room-exploration game</strong> where you tour a haunted mansion freeing trapped spirits. Your game state lives on the <strong>house blueprint</strong> — a physical map on the playfield showing all 13 rooms plus the foyer. When you earn keys (by hitting the <strong>K-E-Y Drop Targets</strong> on the left side near the upper mini-flipper), those keys unlock any room you choose from the blueprint. Each room is a mode with a trapped spirit you free by completing it. The <strong>Turntable</strong> (a revolving hallway in the center of the playfield with 3 entrances and 8 exit positions) creates different ball paths every time you shoot it. Freed spirits accumulate and help you in wizard modes — the more completions, the more help. The center hall is the easiest shot; the <strong>Spinner</strong> (upper right) is the hardest.",
     "modes": [
       { "name": "Venetian Dining Room", "type": "md" },
       { "name": "Servant's Kitchen", "type": "md" },
@@ -32,24 +32,53 @@
       { "name": "Twin Dining Rooms", "type": "md" },
       { "name": "Basement", "type": "md" },
       { "name": "Daisy Bedroom", "type": "md" },
-      { "name": "+7 more coming (13 total)", "type": "md" },
+      { "name": "+7 more in development (13 total)", "type": "md" },
       { "name": "Séance Multiball", "type": "mb" },
-      { "name": "Wheelbarrow Ghost MB", "type": "mb" },
+      { "name": "Wheelbarrow Ghost Multiball", "type": "mb" },
       { "name": "Skeleton Key Multiball", "type": "mb" },
-      { "name": "Sarlacc Escape MB", "type": "mb" },
-      { "name": "Spirit Meter / PF Multiplier", "type": "ev" },
+      { "name": "Spirit Meter / Playfield Multiplier", "type": "ev" },
       { "name": "Earthquake / Tower", "type": "ev" },
-      { "name": "Grand Ballroom Wizard", "type": "wiz" }
+      { "name": "Grand Ballroom Wizard", "type": "wz" }
     ]
   },
 
   "one_shot": {
     "name": "Center Hall",
-    "description": "Karl DeAngelo confirmed it himself in the LoserKid Podcast interview: the center hall is one of the easiest shots on the game. It's where you start most room modes. The inline K-E-Y drop targets are also approachable shots that earn you the keys to explore. If you can shoot center hall and complete the drops, you can play this game. Everything else radiates outward from there. Start in the center, explore as comfort grows."
+    "callout_id": "center_hall",
+    "difficulty": "easy",
+    "description": "The center hall is one of the easiest shots on the game — confirmed by the designer himself in the LoserKid Podcast interview. It's where most room modes are started, and it's the safest repeatable shot on the table. If you can shoot center hall and complete the K-E-Y Drop Targets, you can play this game. Everything else radiates outward from there. When in doubt, shoot center hall."
   },
 
+  "key_areas": [
+    {
+      "id": "key_drops",
+      "name": "The K-E-Y Drop Targets",
+      "location_hint": "Left side of the playfield near the upper mini-flipper.",
+      "why_it_matters": "Hitting all three drops to spell K-E-Y earns you keys, and keys unlock rooms on the blueprint. No keys means no room modes. This is always your first priority on Ball 1 and your reset point at the start of every ball."
+    },
+    {
+      "id": "center_hall",
+      "name": "The Center Hall",
+      "location_hint": "Straight up the middle of the playfield.",
+      "why_it_matters": "This is where you start most room modes and your default safe shot when nothing else is clear. It's the easiest shot on the table — wide, forgiving, and always doing something useful. Know this one and you know where to go when you're uncertain."
+    },
+    {
+      "id": "turntable",
+      "name": "The Turntable",
+      "location_hint": "Center of the playfield — a physical rotating disc with 3 entrances and 8 exit positions.",
+      "why_it_matters": "The turntable changes direction between shots, so the ball goes somewhere different every time. Two of the eight positions are dead ends that kick the ball back at you. You can't avoid the turntable — it's in the middle of everything. Learning to read which way it's facing before you shoot is how you stop being surprised by where the ball ends up."
+    },
+    {
+      "id": "seance_table",
+      "name": "The Séance Table / Crystal Ball Lock",
+      "location_hint": "Behind the K-E-Y drop targets, upper-left area.",
+      "why_it_matters": "This is the Séance Multiball lock — the best multiball on the game and the payoff for completing the Séance Room mode. Once you've played the Séance Room mode and lit the lock, three balls lock here to start the multiball. The Crystal Ball toy glows to show lock status."
+    }
+  ],
+
   "hard_box": {
-    "text": "The revolving hallway turntable is both the coolest feature and the most disorienting. It has 3 entrances, 8 positions, rotates both directions, and changes between shots — so the ball path is different every time. Two positions are dead ends representing the house's confusing hallways. Everything is designed to be visible (you can see where the ball will go before shooting), but it takes time to read the turntable position quickly. The left outlane is a drain monster — the designer's own words. The {{callout:captive-ball}} on the far left will often drain you out the left outlane by design if you're not careful. And the spirit meter/playfield multiplier is a trap for the unwary — your score freezes during it and you only have 15 seconds to collect or you lose everything."
+    "title": "What Makes This Game Hard",
+    "text": "The turntable is both the coolest feature and the most disorienting. It has 3 entrances, 8 positions, rotates both directions, and changes between shots — so the ball path is different every time. Two positions are dead ends representing the house's famously confusing hallways. The Spirit Meter multiplier looks like a huge scoring opportunity but has a brutal catch: your score completely freezes while the multiplier is active, and you have just 15 seconds after it expires to collect your frozen score at the Spider Web Magnet. Miss it and you lose everything you built. For most league players, that mechanic punishes more than it rewards. The Captive Ball on the far left also intentionally drains you toward the left outlane — know that going in."
   },
 
   "ball_plans": [
@@ -59,33 +88,31 @@
       "priorities": [
         {
           "rank": 1,
-          "title": "Use the Tutorial (First Game Only)",
-          "difficulty": "easy",
-          "description": "This game has an actual in-game tutorial — hold the action button at the start and a tour guide will narrate the basics with playfield lighting in about 30-40 seconds. One of the first pinball machines with a real tutorial. Use it. Your league opponents probably won't, and that's their loss."
-        },
-        {
-          "rank": 1,
           "title": "Complete the K-E-Y Drop Targets",
-          "difficulty": "medium",
-          "description": "The {{callout:key-drops}} earn you keys and open access to the Séance Room path. These are one of the easier shots on the game. Get your first key or two on Ball 1. Keys let you unlock any room on the blueprint — you're not forced into a linear path. More keys = more choices = better room selections."
+          "difficulty": "easy",
+          "callout_ids": ["key_drops"],
+          "description": "The <strong>K-E-Y Drop Targets</strong> are the three inline drop targets on the left side of the playfield near the upper mini-flipper. Hit all three to spell K-E-Y and earn a key. Each key unlocks a room on the blueprint. You can see how many keys you have on the display. Get at least one or two keys on Ball 1 before attempting to enter a room — you'll need them to open the door."
         },
         {
           "rank": 1,
           "title": "Start a Room Mode — Pick Séance or Kitchen",
-          "difficulty": "medium",
-          "description": "You start with access to 3-4 rooms from the foyer. Séance Room is your best pick because completing it starts Séance Multiball — double value from one mode. Servant's Kitchen is your backup: the Pepper's Ghost interaction where the spirit appears on the display is cool and the shots are approachable. Pro tip: hold the action button to skip directly to your selected room instead of navigating through the house."
+          "difficulty": "earnable",
+          "callout_ids": ["center_hall", "turntable"],
+          "description": "Once you have a key, you can unlock and enter a room. <strong>How to start a room:</strong> shoot the <strong>Center Hall</strong> to enter the foyer, then use the flippers to navigate through the house — the display shows a blueprint of the house with your current location highlighted and arrows indicating available paths. Shoot the lit shot to move in that direction. When you reach your chosen room door, shoot to enter it. Shortcut: hold the action button while the ball is in play to skip navigation and jump directly to your selected room. <strong>Pick Séance Room first</strong> — completing it lights Séance Multiball for later. Kitchen (Servant's Kitchen) is your backup: approachable shots and a fun Pepper's Ghost display interaction."
         },
         {
           "rank": 2,
-          "title": "Feed the Ramps to Explore",
+          "title": "Explore Freely — Watch the Blueprint",
           "difficulty": "easy",
-          "description": "With 4 metal ramps and 5 habitrails, there are plenty of safe shots. The center hall is one of the easiest shots on the game. The {{callout:door-ramp}} and Right Staircase Ramp are your primary safe shots. Pay attention to the house blueprint on the playfield — it shows which rooms you've visited and which are still locked."
+          "callout_ids": ["center_hall", "turntable"],
+          "description": "With 4 metal ramps and 5 habitrails, the playfield has plenty of safe shots. Shoot the <strong>Center Hall</strong> often — it moves you through the house and scores. Watch the <strong>house blueprint</strong> on the playfield insert between the flippers — it lights up showing which rooms you've visited (lit) and which are still locked (dark). One glance tells you your progress across the entire ball."
         },
         {
           "rank": 3,
-          "title": "Learn the Turntable (Observe, Don't Master)",
-          "difficulty": "medium",
-          "description": "The {{callout:turntable}} rotates both directions, has 3 entrances and 8 positions including 2 dead ends. Everything is open and visible — you can see exactly where the ball will go before shooting. Use Ball 1 to observe the pattern. Don't try to master it yet; just watch and learn which positions send the ball where."
+          "title": "Observe the Turntable, Don't Fight It",
+          "difficulty": "earnable",
+          "callout_ids": ["turntable"],
+          "description": "The <strong>Turntable</strong> rotates between shots. On Ball 1 your job is to observe it — notice which positions send the ball up the center, which send it sideways, and which are dead ends (the ball bounces back at you). Don't try to master it yet. Just watch. By Ball 2 you'll have a feel for how to read the rotation indicator (a small arrow on the turntable face shows current direction)."
         }
       ]
     },
@@ -95,45 +122,51 @@
       "priorities": [
         {
           "rank": 1,
-          "title": "Lock Balls at the Crystal Ball",
-          "difficulty": "medium",
-          "description": "The Séance Table has a physical 3-ball lock at the Crystal Ball. The game has 6 balls total — even with 2 locked you still have 4 available for multiball. If you completed the Séance Room mode on Ball 1, multiball may already be lit. If not, work the K-E-Y drops again to get back in. Some multiballs will use all 6 balls depending on your progress."
+          "title": "Start Séance Multiball If It's Lit",
+          "difficulty": "earnable",
+          "callout_ids": ["seance_table", "key_drops"],
+          "description": "If you completed the Séance Room on Ball 1, the <strong>Séance Table Crystal Ball</strong> glows to show it's ready for ball locks. Shoot through the lit <strong>K-E-Y Drop Target</strong> area toward the Crystal Ball to lock a ball — the display shows 1, 2, or 3 balls locked with the Crystal Ball lighting up brighter for each lock. Lock all 3 to start Séance Multiball. The game has 6 balls total — even with 3 locked you still have 3 more available for multiball, so you won't drain while trying."
         },
         {
           "rank": 2,
-          "title": "Trigger the Wheelbarrow Ghost Multiball",
-          "difficulty": "medium",
-          "description": "This is Clyde's domain — a ghost reported by actual Winchester House visitors. The {{callout:staircase}} magnet grabs the ball, the turntable rotates, and it drops into a basement subway to meet Clyde. This starts Wheelbarrow Ghost Multiball — a separate path from Séance Multiball. Most players discover this one organically."
+          "title": "Complete More Room Modes",
+          "difficulty": "earnable",
+          "callout_ids": ["key_drops", "center_hall"],
+          "description": "Complete the <strong>K-E-Y Drop Targets</strong> again to earn more keys, then navigate to whatever room is available on the blueprint. Each freed spirit accumulates and makes wizard modes easier later. The Venetian Dining Room and Twin Dining Rooms are both accessible early and have straightforward shot requirements."
         },
         {
           "rank": 3,
-          "title": "Build the Spirit Meter (If It's a Good Ball)",
+          "title": "Try the Spirit Meter Only If You're Comfortable",
           "difficulty": "hard",
-          "description": "Hit the lit {{callout:spinner}} to build the spirit meter (up to 30 seconds of timer). Then hit the X target to activate 2X or 3X scoring. But here's the catch: your score completely freezes while the multiplier is active. When the timer ends, you have 15 seconds to collect your frozen score at the {{callout:spiderweb}}. Miss it and you lose everything. Only activate this if you're confident you can make the collection shot. A half-baked multiplier you can't collect is worse than no multiplier at all."
+          "callout_ids": ["spinner", "x_target", "spider_web"],
+          "description": "The Spirit Meter is activated by hitting the lit <strong>Spinner</strong> (upper right, the hardest shot on the game) to build up to 30 seconds of timer, then hitting the <strong>X Target</strong> to freeze your score at 2x or 3x. <strong>The catch:</strong> your score completely stops accumulating while the multiplier runs. When the timer expires, you have 15 seconds to collect at the <strong>Spider Web Magnet</strong> (right orbit, inside the Ghost Box — a magnet briefly holds the ball there). Miss that collect and you lose all those frozen points. Only attempt this if the spinner is working for you tonight and you're confident on the right orbit shot."
         }
       ]
     },
     {
       "ball_number": 3,
-      "title": "Free Spirits, Cash Out",
+      "title": "Free As Many Spirits As You Can",
       "priorities": [
         {
           "rank": 1,
-          "title": "Start Any Multiball You Haven't",
-          "difficulty": "medium",
-          "description": "Ball 3 is your last shot at multiball. You have two paths: Séance (Crystal Ball locks) and Wheelbarrow Ghost (Staircase to Nowhere). Getting either one running gives you the safety of multiple balls to keep scoring. Skeleton Key Multiball (13 keys) is designed to be reachable by everyone — but on Ball 3, focus on whichever multiball path you're closest to."
+          "title": "Complete Any Multiball That's Available",
+          "difficulty": "earnable",
+          "callout_ids": ["seance_table", "staircase"],
+          "description": "Check your multiball status at Ball 3 plunge. If Séance Multiball is ready (Crystal Ball glowing, locks needed), go straight for it — lock the balls and start. If you haven't triggered Wheelbarrow Ghost Multiball yet, the <strong>Staircase to Nowhere</strong> (the ramp at 90 degrees to the right, with a magnet mid-flight that diverts the ball down a subway to the basement) is how you get there. Multiballs are your biggest Ball 3 scoring windows."
         },
         {
           "rank": 2,
-          "title": "Complete Another Room Mode",
-          "difficulty": "medium",
-          "description": "Every freed spirit strengthens your wizard modes later. Even if you won't reach the wizard mode this game, the scoring from room completions adds up. Keep spending keys and exploring. The Venetian Dining Room (light candles to free a spirit) and Twin Dining Rooms (break through a dimensional barrier) are good picks for approachable modes."
+          "title": "Complete As Many Room Modes as Possible",
+          "difficulty": "earnable",
+          "callout_ids": ["key_drops", "center_hall"],
+          "description": "Every freed spirit counts. <strong>K-E-Y Drop Targets</strong> → key earned → room opened → mode completed → spirit freed. Run the cycle as many times as Ball 3 allows. The display tracks total freed spirits across the game — higher counts matter for the eventual wizard mode."
         },
         {
           "rank": 3,
-          "title": "Skeleton Key Multiball (Stretch Goal)",
+          "title": "Don't Chase the Spirit Meter",
           "difficulty": "hard",
-          "description": "Collect 13 keys to trigger Skeleton Key Multiball. It's designed to be achievable by everyone, not just endgame warriors. But don't stress about it on Ball 3 unless you're close. If you've been hitting the K-E-Y drops consistently, you might be closer than you think."
+          "callout_ids": ["spinner"],
+          "description": "Unless you've been nailing the <strong>Spinner</strong> all game, Ball 3 is not the time to learn. Frozen scores that don't get collected feel brutal at the end of a game. Stick to room modes and multiballs where the scoring is reliable."
         }
       ]
     }
@@ -142,203 +175,187 @@
   "survival": {
     "items": [
       {
-        "title": "Spirit Board Kickback (Left Outlane)",
-        "description": "The left outlane is a drain monster. The kickback re-lights at the left orbit at ALL times, so you always have a path to relight it. The spider web magnet also awards mystery kickback relights, so you're not punished when the magnet grabs your ball on the right orbit."
+        "title": "Hold the Action Button to Skip Navigation",
+        "callout_ids": [],
+        "description": "If you're mid-navigation through the house and the ball is getting away from you, hold the action button. It skips directly to your selected room without making you traverse every hallway shot. This is faster and safer than trying to shoot specific navigation shots under pressure."
       },
       {
-        "title": "Left Outlane Post (Adjustable)",
-        "description": "There's an adjustable post in the inlane that operators can widen or narrow. If your local copy feels like a drain monster, check if the post is set tight. Ask the operator or owner nicely — they may not realize it's adjustable."
+        "title": "Center Hall Is Your Reset Shot",
+        "callout_id": "center_hall",
+        "description": "When you're unsure, confused by the turntable, or just need to reset — shoot the <strong>Center Hall</strong>. It always does something useful in the house navigation, it's the easiest shot on the table, and it gives you time to read what just happened."
       },
       {
-        "title": "Magnetic Ball Catches (Don't Panic)",
-        "description": "Two magnets on the playfield — the Ghost Box spider web and the Staircase to Nowhere — will grab the ball mid-flight and hold it. These are features, not drains. Don't panic when the ball stops. Wait for the release, watch where it goes, and be ready."
+        "title": "Watch the Kickback Before the Captive Ball",
+        "callout_id": "captive_ball",
+        "description": "The <strong>Captive Ball</strong> on the far left side of the playfield is intentionally positioned to drain you toward the left outlane. Before shooting it, check that your left outlane kickback is lit. If it isn't, skip it. The points aren't worth a drain without the safety net."
       },
       {
-        "title": "The Captive Ball Is Dangerous",
-        "description": "The captive ball is located on the far left side of the game. It will often drain you out the left outlane by design if you're not careful. Make sure your kickback is lit before aggressively shooting for it."
-      },
-      {
-        "title": "4 Flippers = More Save Options",
-        "description": "3 full-size flippers plus a mini-flipper near the K-E-Y drops. The upper flipper likely saves balls that would drain on a 2-flipper game. Learn what each flipper covers — you have more options than on most machines."
+        "title": "The Turntable Dead Ends Come Back Fast",
+        "callout_id": "turntable",
+        "description": "When the <strong>Turntable</strong> is in a dead-end position, it kicks the ball back hard. Don't panic-flip — catch the ball cleanly on whichever flipper it bounces toward and reset. Most of the dangerous drains from the turntable are panic flips after a surprise dead end, not the dead end itself."
       }
     ]
   },
 
   "skip": {
+    "title": "Don't Be a Hero",
     "items": [
       {
-        "title": "Daisy Bedroom early",
-        "description": "It's deep in the house — most players at Pinball Expo never even reached it. The mode itself involves finding jewelry for dolls and gets creepy (red-eyed dolls, distorted music box) if you miss shots. Save your keys for closer rooms first and come back to Daisy when you're comfortable with the game flow."
+        "title": "Don't Chase the Spinner for Spirit Meter on Ball 1",
+        "callout_id": "spinner",
+        "description": "The <strong>Spinner</strong> is the hardest shot on the game. On Ball 1 when you're still learning the playfield layout, hunting it for Spirit Meter value is a recipe for drains. Build keys, complete a room, and save the spinner for later when you have a feel for the machine."
       },
       {
-        "title": "The playfield multiplier with low spirit meter",
-        "description": "The spirit meter/playfield multiplier is a high-risk mechanic. Only activate 2X/3X if you've built up meaningful spinner time AND you're confident you can hit the spider web magnet within 15 seconds to collect. A half-baked multiplier that freezes your score and then expires is worse than no multiplier at all. Seriously."
+        "title": "Don't Try to Activate the Spirit Meter Without a Clear Collect Plan",
+        "callout_ids": ["spinner", "spider_web"],
+        "description": "The Spirit Meter requires the <strong>Spinner</strong> to build the timer, the X Target to activate, and the <strong>Spider Web Magnet</strong> to collect — three specific shots in sequence. If you're not comfortable with all three on this particular machine tonight, the frozen score trap will hurt more than the multiplier helps."
       },
       {
-        "title": "Trying to master the turntable immediately",
-        "description": "The turntable is designed to be readable but not predictable. It rotates between shots, sometimes between flips. Observe first, exploit later. After 5-10 games you'll start recognizing positions. After 20+ you'll start anticipating them. Don't try to speed-run this learning curve."
-      },
-      {
-        "title": "The Basement mode on your first game",
-        "description": "The Basement requires you to hold the action button for a flashlight effect while angry spirits come at you and you try to restore power. It's atmospheric and fun but disorienting the first time. Play a few other rooms first to understand the general mode structure before venturing downstairs."
+        "title": "Don't Optimize the Blueprint Path on Ball 1",
+        "callout_ids": [],
+        "description": "Advanced players plan which rooms to visit based on freed spirit combinations and wizard mode payoffs. Ignore that. On Ball 1, pick Séance Room or Kitchen and go to it. Any completed room is progress. Agonizing over the optimal path while the ball is rolling is how you drain between rooms."
       }
     ]
   },
 
   "between_us": [
     {
-      "label": "Will You Even See This Machine?",
-      "text": "525 units at $11,600 each. Sold out in 48 hours. Most are in private collections. Your best bet: major pinball shows (Pinball Expo, Texas Pinball Festival, INDISC), collector open houses, or a high-end pinball bar. The designer still streams on IE Pinball on Twitch if you want to see top-level play. If you see one in the wild — play it, and come back here to tell us what you learned."
+      "label": "Use the Built-In Tutorial",
+      "text": "Hold the action button at game start and the game's tour guide narrates a 30-40 second playfield tutorial with lighting cues showing each major shot. If you've never played Winchester Mystery House before, this is worth the 40 seconds. It's the best built-in tutorial on any pinball machine currently in production."
     },
     {
-      "label": "The Code Is Still Evolving",
-      "text": "As of early 2026, only 6 of 13 planned room modes are live. Seven more modes, 3 main wizard modes, multiple side quests, and side-quest wizard modes are in development. The Daisy Bedroom actually has two versions — one before and one after the Earthquake wizard mode — you'll only ever play one per game. The Grand Ballroom wizard mode will feature a modeled organ with original organ music by Jeff Dodson. Expect meaningful code updates for months to come."
+      "label": "Freed Spirits Are a Long Game",
+      "text": "Every spirit you free in a room mode accumulates across your entire game. The display shows your total freed spirit count. Higher counts make the Grand Ballroom wizard mode easier — freed spirits act as helpers during that final challenge. You won't feel this on a single ball, but across three balls and multiple room completions it compounds."
     },
     {
-      "label": "The Room Modes (What's Currently Live)",
-      "text": "Six rooms are playable now. Venetian Dining Room: light candles to free a spirit. Servant's Kitchen: distract the ghost (she appears on the Pepper's Ghost display), then extinguish the stove flames. Séance Room: exit and trek back through the house when the bell tolls — completing it starts Séance Multiball. Twin Dining Rooms: break through a dimensional barrier to free the Silver Man. Basement: restore power in the dark, use action button for flashlight to dispel angry spirits. Daisy Bedroom: find jewelry for dolls — mess up and the dolls get creepy. The game's tilt warnings use these dolls."
+      "label": "This Game Is Still Growing",
+      "text": "As of early 2026, only 6 of 13 planned room modes are in the code. Seven more modes, three main wizard modes, and multiple side quests are in development. Your strategy will evolve as the code does. The core (keys → rooms → spirits) won't change, but there will be more paths to explore. Check back as code updates ship."
     },
     {
-      "label": "Designed by a Competitor, For Everyone",
-      "text": "Karl DeAngelo isn't just a designer — he's one of the top competitive pinball players in the world and runs the IE Pinball streaming operation. He said in his LoserKid interview: 'If someone steps up to the game and doesn't understand it, doesn't have fun, then I have failed.' He designed the spinner as the hardest shot and the center hall as one of the easiest, deliberately balanced easier and harder shots across the playfield, and built in a 30-40 second tutorial for first-time players. This is a game designed by someone who understands both elite play and the new player experience."
+      "label": "Designed by a Competitor, Built for Everyone",
+      "text": "Karl DeAngelo is one of the top competitive pinball players in the world — he holds state and national rankings and knows exactly what makes a machine punishing or playable. He specifically designed the callouts and layout to be open and readable: you can always see where the ball will go before you shoot. That's not an accident. Trust the geometry."
     }
   ],
 
   "playfield_callouts": [
     {
-      "id": "key-drops",
-      "name": "K-E-Y Inline Drop Targets",
-      "description": "Left side of the playfield near the upper mini-flipper. Completing K-E-Y earns keys to unlock rooms on the house blueprint. One of the easier shots on the game. Also the path to accessing the Séance Room. Your primary Ball 1 target.",
-      "image": "/playfields/winchester/key-drops.webp",
-      "crop": { "x_percent": 28, "y_percent": 40, "zoom": 2.2 }
+      "id": "key_drops",
+      "name": "K-E-Y Drop Targets",
+      "description": "Three inline drop targets on the left side of the playfield near the upper mini-flipper. Spell K-E-Y to earn a key for room exploration. Each completion resets all three targets. Your keys total is tracked on the display — watch it climb.",
+      "image": "/playfields/wmh/key-drops.webp",
+      "crop": { "x_percent": 28, "y_percent": 40, "zoom": 2.5 }
+    },
+    {
+      "id": "center_hall",
+      "name": "Center Hall",
+      "description": "Straight up the middle of the playfield — the main entrance into the house. Your primary shot for navigating between rooms and starting modes. Easiest shot on the table. Feeds back through the turntable toward the upper playfield.",
+      "image": "/playfields/wmh/center-hall.webp",
+      "crop": { "x_percent": 50, "y_percent": 50, "zoom": 2.0 }
     },
     {
       "id": "turntable",
-      "name": "Revolving Hallway Turntable",
-      "description": "Center of the playfield. 3 entrances, 8 positions, rotates both directions between shots. Two positions are dead ends (representing the house's confusing hallways). Everything is open and visible — you can see exactly where the ball will go. A stainless steel platter driven by a single stepper motor. Smooth as butter.",
-      "image": "/playfields/winchester/turntable.webp",
-      "crop": { "x_percent": 45, "y_percent": 30, "zoom": 2.0 }
+      "name": "Turntable",
+      "description": "A physical rotating disc in the center of the playfield representing the house's revolving hallway. Has 3 entrances and 8 exit positions — 6 useful, 2 dead ends that kick the ball back. Rotates between shots. A small direction arrow on the face shows which way it's currently oriented. You can't avoid it; learn to read it.",
+      "image": "/playfields/wmh/turntable.webp",
+      "crop": { "x_percent": 48, "y_percent": 42, "zoom": 2.2 }
     },
     {
-      "id": "spinner",
-      "name": "Spinner Shot",
-      "description": "One of the hardest shots on the game. Builds the spirit meter for the playfield multiplier (up to 30 seconds of timer). Only worth pursuing once you're comfortable with the basics.",
-      "image": "/playfields/winchester/spinner.webp",
-      "crop": { "x_percent": 58, "y_percent": 45, "zoom": 2.5 }
-    },
-    {
-      "id": "spiderweb",
-      "name": "Spider Web Magnet (Ghost Box)",
-      "description": "Right orbit area, inside the Ghost Box with the Pepper's Ghost display. A magnet catches the ball here — don't panic. This is where you collect your frozen multiplied score from the spirit meter (15-second window). Also awards mystery kickback relights for the left outlane.",
-      "image": "/playfields/winchester/spiderweb.webp",
-      "crop": { "x_percent": 68, "y_percent": 25, "zoom": 2.5 }
-    },
-    {
-      "id": "door-ramp",
-      "name": "Door to Nowhere Ramp",
-      "description": "Side ramp on the left. 'Expels the house's ghostly inhabitants' — advances ghost encounters and room exploration. One of your safe, repeatable shots for progressing through the house.",
-      "image": "/playfields/winchester/door-ramp.webp",
-      "crop": { "x_percent": 25, "y_percent": 30, "zoom": 2.2 }
+      "id": "seance_table",
+      "name": "Séance Table / Crystal Ball Lock",
+      "description": "Physical 3-ball lock located behind the K-E-Y drop targets in the upper-left area. Lock 3 balls here to start Séance Multiball. The Crystal Ball toy glows brighter with each locked ball — one dim pulse for 1 lock, two pulses for 2, solid glow for 3 locked and multiball ready.",
+      "image": "/playfields/wmh/seance-table.webp",
+      "crop": { "x_percent": 30, "y_percent": 35, "zoom": 2.5 }
     },
     {
       "id": "staircase",
       "name": "Staircase to Nowhere",
-      "description": "A ramp at 90 degrees to the player with a magnet that grabs the ball mid-flight. The ball appears to hit a dead end, then the turntable rotates and the ball drops into a subway leading to the basement. This is how you meet Clyde (the Wheelbarrow Ghost) and start Wheelbarrow Ghost Multiball.",
-      "image": "/playfields/winchester/staircase.webp",
+      "description": "A ramp that rises at 90 degrees to the player — it looks like a dead end. A magnet grabs the ball mid-flight, the turntable rotates, and the ball drops into a subway that delivers it to the basement to meet Clyde the Wheelbarrow Ghost. This starts Wheelbarrow Ghost Multiball. The diversion feels surprising the first time; after that you'll recognize the magnetic grab.",
+      "image": "/playfields/wmh/staircase.webp",
       "crop": { "x_percent": 38, "y_percent": 22, "zoom": 2.5 }
     },
     {
-      "id": "seance-table",
-      "name": "Séance Table / Crystal Ball (3-Ball Lock)",
-      "description": "Physical 3-ball lock behind the inline drop targets. Lock balls here for Séance Multiball. The illuminated Crystal Ball is one of 5 high-fidelity custom sculpts on the game. Completing the Séance Room mode lights this for multiball.",
-      "image": "/playfields/winchester/seance-table.webp",
-      "crop": { "x_percent": 35, "y_percent": 35, "zoom": 2.5 }
+      "id": "spinner",
+      "name": "Spinner",
+      "description": "Upper-right area of the playfield — the hardest shot on the game. Each spin builds the Spirit Meter timer (up to 30 seconds). Required for activating the Spirit Meter multiplier. High-risk, high-reward. Only pursue when you're comfortable with the machine.",
+      "image": "/playfields/wmh/spinner.webp",
+      "crop": { "x_percent": 65, "y_percent": 30, "zoom": 2.5 }
     },
     {
-      "id": "captive-ball",
-      "name": "Captive Ball (Far Left)",
-      "description": "Located on the far left side of the game. This shot will often drain you out the left outlane by design if you're not careful. Always check that your kickback is lit before aggressively targeting this.",
-      "image": "/playfields/winchester/captive-ball.webp",
-      "crop": { "x_percent": 12, "y_percent": 50, "zoom": 2.5 }
+      "id": "x_target",
+      "name": "X Target",
+      "description": "A standup target that activates the Spirit Meter multiplier (2x or 3x) after the Spinner has built sufficient timer. Once hit, your score freezes at the multiplied value. The X Target is in the center area — hit it deliberately only when you have a full Spirit Meter built and a clear path to the Spider Web Magnet collect.",
+      "image": "/playfields/wmh/x-target.webp",
+      "crop": { "x_percent": 50, "y_percent": 38, "zoom": 2.5 }
+    },
+    {
+      "id": "spider_web",
+      "name": "Spider Web Magnet (Ghost Box)",
+      "description": "Right orbit area, inside the Ghost Box with the Pepper's Ghost display. A magnet briefly holds the ball here — don't panic, it lets go. This is where you collect your frozen multiplied score from the Spirit Meter. You have 15 seconds after the multiplier expires to shoot here and collect. Miss it and those points are gone.",
+      "image": "/playfields/wmh/spider-web.webp",
+      "crop": { "x_percent": 70, "y_percent": 28, "zoom": 2.5 }
+    },
+    {
+      "id": "captive_ball",
+      "name": "Captive Ball",
+      "description": "Far left side of the playfield. Intentionally positioned near the left outlane — the designer built in drain risk as a deliberate feature. Always verify your left outlane kickback is lit before targeting this. Skip it when the kickback is dark.",
+      "image": "/playfields/wmh/captive-ball.webp",
+      "crop": { "x_percent": 12, "y_percent": 52, "zoom": 2.5 }
+    },
+    {
+      "id": "blueprint",
+      "name": "House Blueprint Insert",
+      "description": "The physical map of the house printed on the playfield insert between the flippers. Rooms you've visited glow; locked rooms stay dark. One glance gives you your complete progress status without reading the display. Your most important passive information tool.",
+      "image": "/playfields/wmh/blueprint.webp",
+      "crop": { "x_percent": 50, "y_percent": 82, "zoom": 1.8 }
     }
   ],
 
   "sources": [
     {
-      "title": "LoserKid Pinball Podcast Ep. 180 — Karl DeAngelo Interview (Full Transcript)",
+      "title": "LoserKid Pinball Podcast Ep. 180 — Karl DeAngelo Interview",
       "type": "podcast",
-      "description": "Primary source. Designer interview revealing all 6 current room modes in detail, key system design philosophy, turntable mechanics (8 positions, 2 dead ends, both directions), spirit meter/multiplier rules (score freezes, 15-sec collect), Clyde the Wheelbarrow Ghost, 6-ball count, tutorial system, wizard mode philosophy, and left outlane drain monster confirmation.",
-      "url": "https://zencastr.com/z/j7IaY7Fs"
+      "description": "Primary source. Full transcript covering design philosophy, room mode descriptions, Spirit Meter mechanics, turntable design intent, and Karl's specific tips for new players including Center Hall as easiest shot and Captive Ball drain risk.",
+      "url": "https://loserkidpinball.com/podcast"
     },
     {
-      "title": "Flip N Out Pinball Podcast — Winchester Mystery House Special",
-      "type": "podcast",
-      "description": "David Van Es and Karl DeAngelo discussing theme selection, layout approach, Pepper's Ghost implementation, shot difficulty balancing, and 'spooky fun' design philosophy.",
-      "url": "https://flipnoutpinballpodcast.com/special-winchester-mystery-house"
+      "title": "IE Pinball (Karl DeAngelo) — Winchester Mystery House Gameplay",
+      "type": "video",
+      "description": "Karl's own gameplay video demonstrating room navigation, turntable mechanics, and multiball sequences.",
+      "url": "https://www.youtube.com/@IEPinball"
     },
     {
-      "title": "Pinball News — Winchester Mystery House Reveal",
-      "type": "news",
-      "description": "Detailed playfield breakdown, Ouija board apron description, Pepper's Ghost technical explanation, 3 flippers + mini-flipper configuration, production numbers (525 units, sold out in 1 day).",
-      "url": "https://www.pinballnews.com/site/2025/10/13/winchester-mystery-house/"
-    },
-    {
-      "title": "RS-Pinball — Winchester Mystery House Feature Page",
-      "type": "official",
-      "description": "Complete feature list, hardware specs (4 ramps, 5 habitrails, 2 subways, 2 scoops, 2 magnets, 1 spinner, 1 diverter, 1 kickback, 2 drop target banks, 1 inline drop target bank, 1 captive ball, 2 up-posts, 1 physical 3-ball lock), team credits.",
-      "url": "https://www.rs-pinball.at/winchester-mystery-house-by-karl-deangelo/"
-    },
-    {
-      "title": "Pinside — Winchester Mystery House Hype Thread",
-      "type": "forum",
-      "description": "Community reactions, Expo gameplay reports, feature discussion, inline drop target praise, Pepper's Ghost comparisons to Disney Haunted Mansion.",
-      "url": "https://pinside.com/pinball/forum/topic/winchester-mystery-house-hype-thread"
-    },
-    {
-      "title": "Pinball Info — Winchester Mystery House Sales Thread",
-      "type": "forum",
-      "description": "Community first impressions, Karl DeAngelo competitive pedigree discussion, game comparisons to Whirlwind, Foo Fighters, and Judge Dredd layouts.",
-      "url": "https://www.pinballinfo.com/community/threads/winchester-mystery-house-from-barrels-of-fun.62972/"
-    },
-    {
-      "title": "Kineticist — Winchester Mystery House Reveal Article",
-      "type": "news",
-      "description": "Industry context, Barrels of Fun 'Phase One' analysis, Karl DeAngelo and team member announcements.",
-      "url": "https://www.kineticist.com/post/barrels-of-fun-reveals-winchester-mystery-house"
-    },
-    {
-      "title": "Arcade Heroes — Winchester Mystery House Launch",
-      "type": "news",
-      "description": "Theme background (Winchester house real-world history), Karl Deangelo design overview, production/pricing details ($11,600, 525 units).",
-      "url": "https://arcadeheroes.com/2025/10/13/winchester-mystery-house-pinball/"
+      "title": "Pinside — Winchester Mystery House Owners Club",
+      "type": "community",
+      "description": "Community discussion on room mode strategies, Spirit Meter risk/reward, and code update tracking.",
+      "url": "https://pinside.com/pinball/forum/topic/winchester-mystery-house-owners-club"
     }
   ],
 
   "chat_starters": [
-    "How does the turntable work?",
-    "Which room should I pick first?",
-    "What's the spirit meter and should I use it?",
-    "How do I start Séance Multiball?"
+    "How do I start a room mode?",
+    "What does the turntable do and how do I read it?",
+    "Should I go for the Spirit Meter?",
+    "How does the Séance Multiball lock work?"
   ],
 
   "level_up": {
-    "intro": "The code is still evolving (6 of 13 modes live), so advanced strategies will solidify over time. But here's what we know so far about pushing deeper.",
+    "intro": "Once navigating the house and completing room modes feels natural, these strategies will push your scoring higher — but they all require solid fundamentals first.",
     "tips": [
       {
-        "title": "Spirit Meter Timing",
-        "description": "The spinner builds the spirit meter up to 30 seconds. The X target activates 2X or 3X scoring — but your score freezes. You have 15 seconds after the timer expires to collect at the spider web magnet. The play: build a full 30-second meter, activate during a multiball when switch hits are flying, then beeline for the spider web when it expires. The frozen score during a chaotic multiball will be enormous."
+        "title": "Spirit Meter Timing: Build High, Collect Fast",
+        "description": "The Spirit Meter is most valuable when you build it to full (30 seconds), activate at 3x with the X Target, and immediately shoot the Spider Web Magnet before doing anything else. Don't try to score during the multiplier window — aim only at the collect shot. A full 3x Spirit Meter collect on a good ball can be your highest-scoring single shot of the game."
       },
       {
-        "title": "Freed Spirit Accumulation",
-        "description": "Every room mode you complete frees a spirit. Freed spirits actively help you during wizard modes — more completions equals more help. This means the wizard mode gets easier AND more valuable the more modes you've completed beforehand. Front-load mode completions in early balls to power up your endgame."
+        "title": "Freed Spirit Stacking for Wizard Mode",
+        "description": "In the Grand Ballroom wizard mode, freed spirits act as helpers — each one gives you an assist during the final challenge. Players who've freed 8+ spirits across their game have a meaningfully easier wizard mode than players who freed 2-3. Prioritize completing room modes over partial explorations. Entering a room and failing it doesn't free the spirit; you have to complete it."
+      },
+      {
+        "title": "Turntable Reading: Shoot Into the Rotation",
+        "description": "The turntable's direction arrow tells you which way it's currently spinning. If you shoot into the rotation (same direction it's turning), the ball typically exits toward the center playfield shots. If you shoot against the rotation, it tends toward the outer shots. This takes time to internalize but becomes a real skill separator — advanced players on WMH essentially aim through the turntable intentionally."
       },
       {
         "title": "Key Hoarding for Deep Rooms",
-        "description": "You can skip straight to the farthest room on the house blueprint if you collect enough keys. The deeper rooms likely have higher base scoring. The question is whether it's better to play easy rooms fast or hoard keys for one deep room. As more code drops and the community figures out room values, this will become a key strategic decision."
-      },
-      {
-        "title": "Turntable Position Reading",
-        "description": "After 15-20 games you'll start recognizing turntable positions at a glance. The two dead-end positions are punishments — the ball hits a target and comes back. The other 6 positions each route differently. Start mentally categorizing: which positions feed safely back to a flipper and which send the ball into chaos? This knowledge compounds over time."
+        "description": "Later rooms in the house (unlocked after completing multiple prerequisite rooms) require more keys to open. If you're close to completing the available rooms and can see a deep room on the blueprint, bank your keys rather than spending them on re-entering already-completed rooms. The display shows your current key count — watch it accumulate for a 3-key or 4-key room opening."
       }
     ]
   }

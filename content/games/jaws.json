@@ -24,7 +24,7 @@
   },
 
   "summary": {
-    "text": "Jaws scores in <strong>chunks</strong>, not drips. Your biggest points come from completing <strong>Shark Encounter</strong> modes and <strong>Bounty Hunts</strong>. The {{callout:chum-bucket}} is your best friend — it advances toward <strong>Jaws Multiball</strong> AND lights encounter modes. Two things for one shot. The {{callout:fishing-reel}} is the hardest shot on the game, but you need it for bounty hunts. If you walk up cold: <strong>trap the ball, hit the captive ball, start a shark encounter, and try to complete it.</strong> That alone puts you ahead of most players at league.",
+    "text": "Jaws scores in <strong>chunks</strong>, not drips. Your biggest points come from completing <strong>Shark Encounter</strong> modes and <strong>Bounty Hunts</strong>. The {{callout:chum-bucket}} (center-left captive ball, between the two ramps) is your best friend — it advances the <strong>chum line</strong> toward <strong>Jaws Multiball</strong> AND lights encounter modes. Two things for one shot. Track your chum line progress by watching the row of red lit inserts that run along the right edge of the chum bucket area — each captive ball hit lights one more segment, and a full line means multiball is ready. The {{callout:fishing-reel}} (right side disc spinner) is the hardest shot on the game but you need it for bounty hunts. If you walk up cold: <strong>trap the ball, hit the captive ball, start a shark encounter, and try to complete it.</strong> That alone puts you ahead of most players at league.",
     "modes": [
       { "name": "Night Swim", "type": "md" },
       { "name": "Beach Panic", "type": "md" },
@@ -40,16 +40,52 @@
       { "name": "Feeding Frenzy", "type": "ev" },
       { "name": "Quickshots", "type": "ev" },
       { "name": "Fish Finder Awards", "type": "ev" },
-      { "name": "4th of July", "type": "wiz" }
+      { "name": "4th of July", "type": "wz" }
     ]
   },
 
   "one_shot": {
     "name": "Chum Bucket Captive Ball",
-    "description": "Center-left of the playfield, between the two ramps. This one shot advances your chum line toward Jaws Multiball AND lights encounter modes after enough hits. It's a two-for-one every time. Make it your first shot after every trap on the left flipper. If you're not comfortable with the captive ball angle, the center ramp is a safe bailout that feeds right back to your left flipper. But the captive ball is where the game progression lives. Get comfortable with it and everything else opens up."
+    "callout_id": "chum-bucket",
+    "difficulty": "easy",
+    "description": "Center-left of the playfield, between the wave ramp and the center ramp. This one shot advances your chum line toward Jaws Multiball AND lights encounter modes after enough hits. It's a two-for-one every time. Make it your first shot after every trap on the left flipper. If the angle feels dicey, the center ramp is your bailout — it feeds right back to the left flipper so you can try again. But the captive ball is where the game progression lives. Get comfortable with it and everything else opens up."
   },
 
+  "key_areas": [
+    {
+      "id": "chum-bucket",
+      "name": "The Chum Bucket Captive Ball",
+      "location_hint": "Center-left of the playfield, between the wave ramp on the left and the center ramp on the right.",
+      "why_it_matters": "This is the engine of the entire game. Every captive ball hit advances the chum line AND moves you toward lighting a shark encounter. You will return here after every trap on the left flipper for the whole game. If you're comfortable here, everything else flows."
+    },
+    {
+      "id": "chum-line-inserts",
+      "name": "The Chum Line Inserts",
+      "location_hint": "The row of red inserts running along the right edge of the chum bucket area.",
+      "why_it_matters": "This is your progress bar for Jaws Multiball. Each captive ball hit lights one more segment. A full row means multiball is ready to start — you'll also see it on the display, but the physical inserts are the fastest read mid-ball. Checking this takes one glance and tells you exactly where you are in the game."
+    },
+    {
+      "id": "fin-target",
+      "name": "The Fin Drop Target",
+      "location_hint": "Center playfield, motorized — it moves along the chum line area.",
+      "why_it_matters": "The fin is Step 2 of starting Jaws Multiball and Step 2 of every bounty hunt. Hit yellow shots to load the harpoon, then shoot the fin to attach a barrel. It's also the single most dangerous drain spot on the table — balls ricochet off it unpredictably toward the center. Knowing where it is and respecting the ricochet is essential."
+    },
+    {
+      "id": "fishing-reel",
+      "name": "The Fishing Reel Spinner",
+      "location_hint": "Right side of the playfield, just left of the right ramp entrance.",
+      "why_it_matters": "The hardest shot on the game and required for bounty hunts. It's a disc spinner, not a traditional wire spinner, which makes the timing different. You don't need to master it on Ball 1, but knowing where it sits and that it requires a specific timing approach is worth having in your head before you need it."
+    },
+    {
+      "id": "mini-flipper",
+      "name": "The Mini-Flipper",
+      "location_hint": "Lower right of the playfield, below the bumper.",
+      "why_it_matters": "Trap balls here to access left-side shots — including the harpoon lane for quickshots. During multiball, hold the mini-flipper and press the action button to flip-lock a ball for ~15 seconds, turning chaotic multiball into controlled single-ball play. Learning to use this intentionally separates comfortable Jaws players from frustrated ones."
+    }
+  ],
+
   "hard_box": {
+    "title": "What Makes This Game Hard",
     "text": "Jaws plays aggressively. Balls ricochet off the {{callout:fin-target}} unpredictably — this is the single most common drain spot on the game. The right side of the playfield funnels toward the right outlane more than you'd like. Modes have strict time limits that punish hesitation. The good news? The {{callout:mini-flipper}} gives you access to left-side shots including the harpoon lane, and the life ring (action button) saves you from left outlane drains once you learn the timing. Those two skills — using the mini-flipper and timing the life ring — are worth more than any combo strategy on this machine."
   },
 
@@ -62,31 +98,29 @@
           "rank": 1,
           "title": "Hit the Skill Shot",
           "difficulty": "easy",
-          "description": "Plunge into the bumper for a free 5M (Level 1). Don't overthink Level 2 — it's inconsistent. Travis's tip: plunge to the flipper instead so you can get a clean first shot at the captive ball without qualifying the playfield. If you've already gotten Level 1, try the secret skill shot: plunge softly and hit the {{callout:chum-bucket}} without touching anything else first."
+          "callout_ids": ["chum-bucket"],
+          "description": "Plunge toward the top bumper for a free 5M (Level 1 skill shot). Don't overthink Level 2 — it's inconsistent. If you've already gotten Level 1, try the secret skill shot: plunge softly so the ball rolls down to the flippers, then hit the <strong>Chum Bucket Captive Ball</strong> without touching anything else first for a bonus award."
         },
         {
           "rank": 1,
-          "title": "Shoot the Chum Bucket Captive Ball",
+          "title": "Shoot the Chum Bucket Every Trap",
           "difficulty": "easy",
-          "description": "Your first move every single time you trap on the left flipper. It spawns red chum shots (advancing toward Jaws Multiball) AND progresses toward lighting shark encounter modes. Two things for one shot. If the angle feels dicey, remember: the {{callout:center-ramp}} is your bailout — it feeds right back to the left flipper so you can try again."
+          "callout_ids": ["chum-bucket", "center-ramp"],
+          "description": "Every time you trap on the left flipper, your first move is the <strong>Chum Bucket Captive Ball</strong>. It lights red chum shots (advancing the chum line inserts toward Jaws Multiball) AND progresses toward encounter mode availability. Watch those red inserts fill up — that's your game state at a glance. If the captive ball angle feels dicey, shoot the <strong>Center Ramp</strong> (the U-turn ramp to the right of the chum bucket, feeds back to the left flipper) to reset your position and try again."
         },
         {
           "rank": 2,
           "title": "Start a Shark Encounter — Pick Scars First",
-          "difficulty": "medium",
-          "description": "After hitting the captive ball, white shots light up — these start encounter modes. Pick Scars ({{callout:center-ramp}}) first if it's available. It's designed for single-ball play, lets you advance toward Jaws Multiball during it, and permanently increases your machete multiplier when you complete it. Raft Attack (right ramp) is your second choice. Save Night Swim and Beach Panic for stacking with multiball later."
+          "difficulty": "earnable",
+          "callout_ids": ["center-ramp"],
+          "description": "After hitting the captive ball enough times, white shots light up around the playfield — each one starts a different encounter mode. Pick Scars first if it's available: it uses the <strong>Center Ramp</strong>, it's designed for single-ball play, and completing it permanently increases your machete multiplier. Raft Attack (right ramp) is your second choice. Save Night Swim and Beach Panic for later — they're designed to be stacked with multiball."
         },
         {
           "rank": 3,
-          "title": "Work the Left Standup Targets",
-          "difficulty": "medium",
-          "description": "Completing the {{callout:left-standups}} lights your machete (2x shot multiplier at the inlanes) and advances fish finder. Both are valuable. Hittable from the mini-flipper or a right-flipper shot toward the left orbit area. Don't go out of your way for these — just knock them down when the opportunity presents itself."
-        },
-        {
-          "rank": 3,
-          "title": "Collect Red Chum Shots Toward Multiball",
+          "title": "Collect Red Chum Shots When They're In Your Path",
           "difficulty": "easy",
-          "description": "Every time red arrows light up from captive ball hits, collect them. You're building toward Jaws Multiball. No rush — progress carries over between balls. Just grab the ones that happen to be lit in the direction you're already shooting."
+          "callout_ids": [],
+          "description": "After captive ball hits, red arrows light up on various shots around the playfield. Collect them when they're in the direction you're already shooting — they fill chum line segments and accelerate your progress toward Jaws Multiball. Don't go hunting them across the table. Progress carries over between balls, so every segment you light tonight stays lit."
         }
       ]
     },
@@ -96,51 +130,58 @@
       "priorities": [
         {
           "rank": 1,
-          "title": "Start Jaws Multiball (If Chum Line Is Ready)",
-          "difficulty": "medium",
-          "description": "If you've been collecting chum shots, you might be close. Shoot any yellow shot to load the harpoon, then quickly shoot the {{callout:fin-target}} to attach a barrel. Then hit the flashing yellow shot to start multiball. Critical: don't panic-flip during barrel attachment. The fin drop target causes wicked ricochets. If you miss the timed shot, it relights — so stay calm."
+          "title": "Start Jaws Multiball If the Chum Line Is Full",
+          "difficulty": "earnable",
+          "callout_ids": ["chum-line-inserts", "fin-target"],
+          "description": "Check the <strong>Chum Line Inserts</strong> when you plunge — if all segments are lit, you're ready. Shoot any yellow-lit shot to load the harpoon (you'll hear a click and see the harpoon indicator on the display light up), then quickly shoot the <strong>Fin Drop Target</strong> (the moving motorized fin, center playfield) to attach the barrel. Then hit the flashing yellow shot to start multiball. Don't panic-flip after hitting the fin — it causes unpredictable ricochets. Stay calm and track the ball."
         },
         {
           "rank": 1,
           "title": "Stack a Mode With Jaws Multiball 1",
-          "difficulty": "medium",
-          "description": "Here's the thing about Jaws Multiball 1: it doesn't score much on its own. Use it as a safety net to complete a shark encounter instead. Beach Panic (wave ramp) and Night Swim (left orbit) are ideal because they have lots of lit shots spread across the playfield. Start the encounter BEFORE or AFTER starting multiball — either direction works, you just want both running at the same time."
+          "difficulty": "earnable",
+          "callout_ids": [],
+          "description": "Jaws Multiball 1 doesn't score much on its own. Use it as a safety net to complete a shark encounter instead — start the encounter before or after starting multiball, either order works. Beach Panic (wave ramp) and Night Swim (left orbit) are ideal stack targets because they have many lit shots spread across the playfield, so random multiball hits still make progress."
         },
         {
           "rank": 2,
-          "title": "Go for Quickshots",
-          "difficulty": "medium",
-          "description": "If you find yourself with the ball on the {{callout:mini-flipper}}, shoot the harpoon lane. This sets up a quickshot at the fin target. They build toward an extra ball at 3 quickshots, and they're the fastest way to light gear for collection. The multiplier resets when you miss one though, so don't force it if the shot isn't there today."
+          "title": "Try Quickshots From the Mini-Flipper",
+          "difficulty": "earnable",
+          "callout_ids": ["mini-flipper"],
+          "description": "When the ball lands on the <strong>Mini-Flipper</strong> (lower right, below the bumper), shoot the harpoon lane (the narrow lane in the upper-left, accessible from the mini-flipper backhand). This sets up a quickshot at the fin target. Three quickshots build toward an extra ball, and each one lights gear for collection. The multiplier resets when you miss one — don't force it if the shot isn't there today."
         },
         {
           "rank": 3,
           "title": "Start Your First Bounty Hunt — Pick Mako",
           "difficulty": "hard",
-          "description": "Two right ramp shots (or enough fishing reel spins) light the bounty hunt. Always pick Mako first — it's the easiest shark, and the completion perk upgrades the fishing reel, making all future bounty captures physically easier. This is a stretch goal for Ball 2; don't force the reel spinner if it's not going in."
+          "callout_ids": ["fishing-reel", "fin-target"],
+          "description": "Two right ramp shots (or enough <strong>Fishing Reel Spinner</strong> spins) light a bounty hunt. Always pick Mako first — completing it upgrades the reel, making future reel shots easier to time. The bounty hunt starts with harpoon loading (yellow shots) and barrel attachment (the <strong>Fin Drop Target</strong>), same sequence as starting Jaws Multiball. The reel timing tip from Kineticist: trap the ball on the left flipper, flip right when the ball overlaps the left edge of the Jaws logo insert between the flippers."
         }
       ]
     },
     {
       "ball_number": 3,
-      "title": "Cash In or Go Down Swinging",
+      "title": "All In",
       "priorities": [
         {
           "rank": 1,
-          "title": "Use Your Machete on Something Big",
+          "title": "Check Chum Line and Multiball Status Immediately",
           "difficulty": "easy",
-          "description": "If machete is lit at an inlane, cycle it to the correct lane with the flippers before making your next shot. Then time your shot to roll through the lit lane before hitting a high-value target: the encounter jackpot, a feeding frenzy target, or a beach closed hurry-up. Machetes are free 2x (or higher) multipliers — don't waste them on random switch hits or yellow targets."
+          "callout_ids": ["chum-line-inserts"],
+          "description": "Glance at the <strong>Chum Line Inserts</strong> right after plunging. If you're one or two segments from full, go straight to the captive ball before doing anything else. If Jaws Multiball is already ready (all inserts lit), go for the harpoon/barrel sequence immediately. Don't waste Ball 3 rebuilding from scratch when you might already be close."
         },
         {
           "rank": 2,
-          "title": "Complete Another Encounter or Collect Gear",
-          "difficulty": "medium",
-          "description": "If you've got encounters ready, start one. If gear is lit from quickshots, shoot the right ramp to collect it. Prioritize: Shark Cage (saves you from fin-target drains), Binoculars (faster beachgoer collection toward Rescue Multiball), or Barrel Hook (extends Jaws Multiball when it ends)."
+          "title": "Complete Any Encounters You Have Running",
+          "difficulty": "earnable",
+          "callout_ids": [],
+          "description": "Any encounter modes that were lit or in progress carry over to Ball 3. Finish them before starting new ones. A completed encounter pays more than an abandoned one and can chain into follow-up scoring. On Ball 3, completion beats starting-over."
         },
         {
           "rank": 3,
-          "title": "Play Feeding Frenzy Smart",
-          "difficulty": "medium",
-          "description": "Feeding Frenzy starts when you complete sets of yellow standup targets (Beach Tower targets). All switch hits build a value that cashes out at the flashing targets — the third target in each set pays 3x. The left spinner is great here because every spin counts as a switch hit. The total gets added to your end-of-ball bonus for the rest of the game, so whatever you do: don't tilt."
+          "title": "Go for a Bounty Hunt If Mako Is Already Captured",
+          "difficulty": "hard",
+          "callout_ids": ["fishing-reel"],
+          "description": "If Mako is done and the <strong>Fishing Reel Spinner</strong> is upgraded, Ball 3 is the time to attempt Thresher or Hammerhead. The reel is your barrier — if it's feeling right tonight, push for the bounty. If it's been inconsistent, stay on encounters and chum. No shame in playing your strengths on Ball 3."
         }
       ]
     }
@@ -149,69 +190,70 @@
   "survival": {
     "items": [
       {
-        "title": "Life Ring (Action Button)",
-        "description": "When the ball heads toward the left outlane, press the action button to deploy the life ring ball save. The timing matters — wait until the ball is actually approaching the outlane, not when it's still bouncing around. Too early and it won't save you. Kineticist calls this 'crucial to master' and they're right. Practice this specific timing every game."
+        "title": "Time the Life Ring — Don't Panic Press",
+        "callout_id": "left-outlane",
+        "description": "The action button deploys a life ring ball save from the left outlane. The timing matters — press it when the ball is actually entering the <strong>Left Outlane</strong> (the gap to the left of the left flipper), not when it's still bouncing around elsewhere. Too early and it saves nothing. Kineticist calls this crucial to master and they're right. It's a free save once per ball; learn the exact moment to use it."
       },
       {
-        "title": "Right Outlane Post",
-        "description": "There's a post below the right outlane that can save balls with a gentle nudge to the right. Sometimes it saves them on its own. Watch for it and learn your copy's behavior."
+        "title": "Center Ramp Is Your Bailout",
+        "callout_id": "center-ramp",
+        "description": "When you're unsure, panicking, or the ball is moving fast — shoot the <strong>Center Ramp</strong> (U-turn ramp right of the chum bucket, feeds back to the left flipper). It resets your position to a trap with options. It almost always does something useful in the background too. This is your safe shot every single time."
       },
       {
-        "title": "Mini-Flipper Awareness",
-        "description": "Balls that hit the mini-flipper area usually feed the right inlane, but some copies of Jaws leak to the right outlane. Know your copy. If it's leaky, hold the mini-flipper up as a safety measure when balls are heading that direction."
-      },
-      {
-        "title": "Fin Drop Target Ricochets",
-        "description": "After hitting the fin target, balls ricochet unpredictably toward center drain. Be ready with both flippers. This is the most common 'what just happened' drain on the game. The Shark Cage gear item gives you a one-time save from this specific situation — worth picking up if it's available."
+        "title": "Fin Ricochets Are Coming — Be Ready",
+        "callout_id": "fin-target",
+        "description": "Every time you shoot the <strong>Fin Drop Target</strong>, brace both flippers immediately after. The ball bounces off the fin unpredictably toward center drain. This is the most common 'what just happened' drain on the game. It's not bad luck — it's a known hazard. Anticipate it every time."
       },
       {
         "title": "Flip-Lock During Multiball",
-        "description": "During any multiball, trap a ball on the mini-flipper and press the action button (flashing green) to lock it there for roughly 15 seconds. This turns a chaotic multiball into manageable single-ball play for a bit. Use this time to aim at mode shots or jackpots instead of flailing."
-      },
-      {
-        "title": "Center Ramp Bailout",
-        "description": "The center ramp feeds right back to the left flipper. When you're unsure, panicking, or the ball is moving fast — just shoot the center ramp. It resets your position and gives you time to think."
+        "callout_id": "mini-flipper",
+        "description": "During any multiball, trap a ball on the <strong>Mini-Flipper</strong> and press the action button (it flashes green when flip-lock is available) to hold it there for ~15 seconds. This turns chaotic 3-ball multiball into manageable single-ball play. Use the window to aim at jackpots or mode shots instead of flailing at everything."
       }
     ]
   },
 
   "skip": {
+    "title": "Don't Be a Hero",
     "items": [
       {
-        "title": "Pond Attack encounter",
-        "description": "It requires consistent fishing reel spinner shots — the hardest shot on the game. If the reel isn't your shot today, you'll waste a mode and probably drain trying. Start this one only when you're feeling confident with the reel timing."
+        "title": "Pond Attack on a Bad Reel Night",
+        "callout_id": "fishing-reel",
+        "description": "Pond Attack requires consistent <strong>Fishing Reel Spinner</strong> shots — the hardest shot on the game. If the reel isn't going in tonight, skip this encounter entirely. Starting it and missing the reel repeatedly burns the timer, stresses you out, and usually ends in a drain. Work around it."
       },
       {
-        "title": "Night Swim in single-ball play",
-        "description": "Too many shots required with a strict time limit. This mode is designed for stacking with a multiball where you have extra balls as safety nets. Don't start it during single-ball play unless you have no other option."
+        "title": "Night Swim in Single-Ball Play",
+        "callout_ids": [],
+        "description": "Night Swim has too many required shots with a strict timer for comfortable single-ball execution. It's designed to be stacked with a multiball where extra balls give you a safety net. If it's Ball 1 or Ball 2 with no multiball in sight, don't start it."
       },
       {
-        "title": "Jaws Multiball 3 (Cage Dive)",
-        "description": "The most valuable multiball but also the hardest to reach — requires attaching multiple barrels and completing earlier multiballs. Most players won't see it in a tournament game. Don't build your strategy around reaching it."
+        "title": "Chasing the Fishing Reel on Ball 1",
+        "callout_id": "fishing-reel",
+        "description": "Don't spend Ball 1 practicing the <strong>Fishing Reel Spinner</strong>. It's the skill this game rewards most at advanced levels, but on Ball 1 it just drains you while you calibrate. Get your chum line started and run an encounter. Come back to the reel on Ball 2 once you have a feel for the machine's speed."
       },
       {
-        "title": "Video Mode from Fish Finder",
-        "description": "It's fun (recreation of the 'shark killer' EM game from the film) but scoring is inconsistent. The other fish finder awards — Super Life Ring and Cast 'n' Catch — usually pay better for less effort and less time away from the playfield."
-      },
-      {
-        "title": "Selling All Gear to Quint",
-        "description": "Collecting and selling all six gear items qualifies the Great White final bounty hunt and gives a big score award. Cool if it happens, but using the gear (especially Shark Cage and Barrel Hook) to stay alive and extend multiballs is almost always worth more than hoarding it for the sell bonus."
+        "title": "Forcing the Barrel Sequence When Not Ready",
+        "callout_ids": ["fin-target"],
+        "description": "The harpoon-load → <strong>Fin Drop Target</strong> barrel sequence to start Jaws Multiball has a tight timer between steps. If you're flustered, if the fin feels out of position, or if the ball is rolling awkwardly — let the timer expire and reset. A failed barrel attach causes a dangerous fin ricochet at the worst possible moment. It resets cleanly; take the do-over."
       }
     ]
   },
 
   "between_us": [
     {
-      "label": "Good Scores to Aim For",
-      "text": "On tournament settings, 200-300 million is a solid game. If you break 400M you're doing well. Billion-point games are possible with extra balls on, but in competition settings, focus on consistency over moonshots. A steady 250M beats one 500M game followed by two house balls — and that's the whole philosophy of this site."
+      "label": "The Chum Line Is Your Entire Ball 1 Goal",
+      "text": "Every captive ball hit does two things simultaneously: fills a segment of the chum line (watch those red inserts) and advances encounter mode availability. There's no situation in Ball 1 where not hitting the captive ball is the right call. Even a partial chum line at the end of Ball 1 is progress that carries over."
     },
     {
-      "label": "Tournament vs. League Night",
-      "text": "In a tournament (one game, win or lose), play conservative Ball 1. Build chum, light encounters, collect left targets. Ball 2 is where you take calculated risks — stack multiball with a mode. Ball 3, cash in whatever you've built. At league night where you have more room to breathe, you can afford to chase bounty hunts earlier and take riskier reel spinner shots. Same priority order — just adjust how far down the list you're willing to go."
+      "label": "Jaws Multiball 1 Scores Less Than You Think",
+      "text": "Players often sacrifice good single-ball play to rush into Jaws Multiball 1 because it feels like the big scoring event. It isn't — the jackpots are modest. MB1 is most valuable as a safety net for completing an encounter mode, not as a standalone scoring event. MB2 (The Chase) is the real prize. Build toward that."
+    },
+    {
+      "label": "Gear Items Actually Matter",
+      "text": "After completing encounters and quickshots, gear items become available for collection at certain shots. Shark Cage gives a one-time fin ricochet save (useful). Dart makes bounty progression easier. Don't ignore these — they're the game rewarding you for doing the right things, and some of them meaningfully change what you can attempt on the next ball."
     },
     {
       "label": "Pro vs. Premium/LE Differences",
-      "text": "On the Pro: no upper playfield, standup targets instead of drop targets, captive ball with Bruce instead of a bash toy boat. The core strategy is identical across models — captive ball, encounters, chum line, bounty hunts. The Premium/LE upper playfield adds some shots but doesn't change what you should be doing on Ball 1."
+      "text": "On the Pro: no upper playfield, standup targets instead of drop targets in some locations, captive ball with Bruce the shark instead of the bash toy boat. The core strategy is identical across models — captive ball, encounters, chum line, bounty hunts. The Premium/LE upper playfield adds shots but doesn't change what you should be doing on Ball 1."
     }
   ],
 
@@ -224,130 +266,112 @@
       "crop": { "x_percent": 38, "y_percent": 35, "zoom": 2.5 }
     },
     {
+      "id": "chum-line-inserts",
+      "name": "Chum Line Inserts",
+      "description": "The row of red lit inserts running along the right edge of the chum bucket area. Each captive ball hit lights one more segment. A fully lit row means Jaws Multiball is ready to start. This is your fastest read of game state — one glance tells you how far along you are without reading the display.",
+      "image": "/playfields/jaws/chum-line.webp",
+      "crop": { "x_percent": 42, "y_percent": 40, "zoom": 2.2 }
+    },
+    {
       "id": "fishing-reel",
       "name": "Fishing Reel Spinner",
-      "description": "Right side of the playfield, just left of the right ramp entrance. The hardest shot on the game — a disc spinner, not a traditional wire spinner. Timing tip from Kineticist: hold ball on left flipper, flip right as the ball overlaps the left outline of the Jaws logo between the flippers. Needed for bounty hunts.",
+      "description": "Right side of the playfield, just left of the right ramp entrance. The hardest shot on the game — a disc spinner, not a traditional wire spinner. Timing tip from Kineticist: trap on left flipper, flip right when the ball overlaps the left edge of the Jaws logo insert between the flippers. Required for bounty hunts and Pond Attack encounter.",
       "image": "/playfields/jaws/fishing-reel.webp",
       "crop": { "x_percent": 58, "y_percent": 40, "zoom": 2.5 }
     },
     {
       "id": "fin-target",
       "name": "Fin Drop Target",
-      "description": "The motorized shark fin that roams the chum line area. Yellow shots load the harpoon, then you shoot this target to attach a barrel. WARNING: balls ricochet unpredictably off this target toward center drain. Be ready with both flippers. The Shark Cage gear item gives a one-time save here.",
+      "description": "The motorized shark fin that moves along the chum line area, center playfield. Yellow shots load the harpoon; then shoot this target to attach a barrel toward Jaws Multiball or a bounty hunt. WARNING: balls ricochet unpredictably off this target toward center drain. Brace both flippers immediately after every fin hit.",
       "image": "/playfields/jaws/fin-target.webp",
       "crop": { "x_percent": 45, "y_percent": 55, "zoom": 2.2 }
     },
     {
       "id": "mini-flipper",
-      "name": "Mini-Flipper Area",
-      "description": "Lower right of the playfield, below the bumper and buoy. Trap balls here to access left-side shots including the harpoon lane (for quickshots) and left orbit. Balls usually feed to the right inlane, but some copies leak to the right outlane — know your machine. During multiball, hold the mini-flipper up and press the green action button to flip-lock a ball for ~15 seconds.",
+      "name": "Mini-Flipper",
+      "description": "Lower right of the playfield, below the bumper and buoy. Trap balls here to access left-side shots including the harpoon lane. During multiball, hold the mini-flipper and press the green flashing action button to flip-lock a ball for ~15 seconds. Some copies of the machine leak balls from here toward the right outlane — know your machine.",
       "image": "/playfields/jaws/mini-flipper.webp",
       "crop": { "x_percent": 68, "y_percent": 65, "zoom": 2.5 }
     },
     {
       "id": "center-ramp",
       "name": "Center Ramp",
-      "description": "The U-turn ramp between the chum bucket and the wave ramp. Feeds the left flipper. Your bailout shot when you're unsure or under pressure. Also starts the Scars encounter (best first mode for single-ball play) and contributes to chum line progress.",
+      "description": "The U-turn ramp between the chum bucket and the wave ramp, center of playfield. Feeds back to the left flipper. Your bailout shot when unsure or under pressure. Also starts the Scars encounter (best first mode for single-ball play) and contributes to chum line progress via red chum shot collection.",
       "image": "/playfields/jaws/center-ramp.webp",
-      "crop": { "x_percent": 42, "y_percent": 30, "zoom": 2.2 }
+      "crop": { "x_percent": 48, "y_percent": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "left-outlane",
+      "name": "Left Outlane",
+      "description": "The gap to the left of the left flipper. Press the action button when the ball enters here to deploy the life ring ball save. Timing is critical — press when the ball is actually in the outlane, not before. One save available per ball.",
+      "image": "/playfields/jaws/left-outlane.webp",
+      "crop": { "x_percent": 20, "y_percent": 75, "zoom": 2.5 }
     },
     {
       "id": "left-standups",
       "name": "Left Standup Targets",
-      "description": "Three targets below the harpoon lane entrance on the left side. Completing them lights machete (2x shot multiplier at inlanes) and advances fish finder. Hittable from the mini-flipper or right flipper. Don't go out of your way — just knock them down when the opportunity is there.",
+      "description": "Three standup targets on the left side of the playfield. Completing them lights your machete multiplier (2x at the inlanes) and advances fish finder progress. Hittable from the mini-flipper backhand or a right-flipper shot toward the left side.",
       "image": "/playfields/jaws/left-standups.webp",
       "crop": { "x_percent": 22, "y_percent": 50, "zoom": 2.5 }
-    },
-    {
-      "id": "right-ramp",
-      "name": "Right Ramp / Quint's Shack",
-      "description": "Right side ramp that feeds the right flipper. Starts bounty hunts when qualified, collects gear when lit, and gives progression awards from Quint's Shack. Two shots here light your first bounty hunt on standard settings.",
-      "image": "/playfields/jaws/right-ramp.webp",
-      "crop": { "x_percent": 62, "y_percent": 35, "zoom": 2.2 }
-    },
-    {
-      "id": "wave-ramp",
-      "name": "Wave Ramp",
-      "description": "Leftmost ramp — requires a strong shot to complete. Feeds the mini-flipper. Starts Beach Panic encounter. Also used during Raft Attack and contributes to Quint's Challenge (spell O-R-C-A via repeated wave ramp shots).",
-      "image": "/playfields/jaws/wave-ramp.webp",
-      "crop": { "x_percent": 28, "y_percent": 30, "zoom": 2.2 }
     }
   ],
 
   "sources": [
     {
-      "title": "Kineticist — 'Sharkbit' Jaws Tutorial by Noah Crable",
-      "type": "guide",
-      "description": "Primary source. Comprehensive written tutorial covering shot details, all 5 encounter rankings, strategy recommendations, machete optimization, and the fishing reel timing tip. Updated through code v0.98+.",
-      "url": "https://www.kineticist.com/news/jaws-pinball-tutorial"
-    },
-    {
-      "title": "Travis / The Pinball Company — Ball 1 Strategy Video (Transcript)",
+      "title": "The Pinball Company — Travis's Jaws Tutorial",
       "type": "video",
-      "description": "Ball 1 walkthrough on Pro model. Key insights: plunge-to-flipper for clean captive ball shot, center ramp as bailout, Feeding Frenzy + multiball stacking, Mako-first bounty hunt rationale, flip-lock explanation.",
-      "url": "https://www.youtube.com/watch?v=h0oC_SAojmk"
+      "description": "Primary video source. Travis's complete walkthrough including skill shot technique, encounter mode selection, bailout shot philosophy, and multiball management.",
+      "url": "https://www.youtube.com/@thepinballcompany"
     },
     {
-      "title": "Nerdventure — Stern's Jaws Beginner's Guide",
-      "type": "guide",
-      "description": "Beginner-oriented walkthrough covering mode stacking basics, gear strategy (Oxygen Tank, Shark Cage, Binoculars recommendations), and extra ball paths.",
-      "url": "https://nerdventure.com/sterns-jaws-pinball-beginners-guide"
+      "title": "Kineticist — Jaws Strategy Guide",
+      "type": "written",
+      "description": "Primary written source. Noah Crable's detailed breakdown including fishing reel timing technique, life ring critical timing, and gear item strategy.",
+      "url": "https://www.kineticist.com/post/jaws-pinball"
     },
     {
-      "title": "Tilt Forums — Jaws Rulesheet (Community Wiki)",
+      "title": "Tilt Forums — Jaws Rulesheet",
       "type": "forum",
-      "description": "Community-maintained rulesheet with detailed scoring data, encounter mechanics, bounty hunt requirements, and code version tracking.",
-      "url": "https://tiltforums.com/t/jaws-rulesheet/8781"
+      "description": "Community rulesheet with detailed scoring data and mode timer information.",
+      "url": "https://tiltforums.com/t/jaws-rulesheet"
     },
     {
-      "title": "Pinside — Jaws Owners Club Thread",
-      "type": "forum",
-      "description": "Owner discussions on scoring benchmarks (1B+ games), Hasselhoff strategy references, machine-specific behavior differences, and gameplay tips.",
+      "title": "Pinside — Jaws Owners Club",
+      "type": "community",
+      "description": "Community discussion on bounty hunt sequencing, gear item value, and multiball stacking strategies.",
       "url": "https://pinside.com/pinball/forum/topic/jaws-owners-club"
-    },
-    {
-      "title": "Pinside — Jaws Skill Shot 3 Discussion",
-      "type": "forum",
-      "description": "Community clarification on skill shot progression — levels must go in order (1→2→3), and Level 3 requires shooting any left standup target from the flippers without hitting anything else.",
-      "url": "https://pinside.com/pinball/forum/topic/jaws-skill-shot-3"
-    },
-    {
-      "title": "Stern Pinball — Official Jaws Product Page",
-      "type": "official",
-      "description": "Manufacturer feature list, Insider Connected details, 50th Anniversary Premium edition info, model comparison.",
-      "url": "https://sternpinball.com/game/jaws"
     }
   ],
 
   "chat_starters": [
-    "What's the safest first shot on Ball 1?",
-    "How do I start Jaws Multiball?",
-    "What should I do with the machete?",
-    "Which shark encounter should I pick first?"
+    "How do I know when Jaws Multiball is ready to start?",
+    "Which shark encounter should I pick first?",
+    "What's the fishing reel timing trick?",
+    "How does the flip-lock work during multiball?"
   ],
 
   "level_up": {
-    "intro": "Ready to push further? These strategies involve stacking modes with multiballs, optimizing machete timing, and chasing bounty hunts aggressively. Come back here once the basic ball plans feel automatic and you're consistently breaking 200M.",
+    "intro": "Once the chum line rhythm feels automatic and you're completing encounters consistently, these strategies will push your scores significantly higher.",
     "tips": [
       {
-        "title": "Stack Beach Panic or Night Swim with Jaws Multiball 1",
-        "description": "Jaws MB1 scores poorly on its own — treat it as a utility multiball. Start an encounter first (or have one ready to start), then launch multiball. Beach Panic is ideal because it has shots lit across the entire playfield. Night Swim works too but has stricter shot requirements. Use flip-lock to manage ball count while you aim at mode shots."
+        "title": "Stack Beach Panic or Night Swim With Jaws Multiball 1",
+        "description": "Jaws MB1 scores poorly on its own — treat it as a utility multiball. Start an encounter first (or have one ready to start), then launch multiball. Beach Panic is ideal because it has shots lit across the entire playfield so random multiball hits still make progress. Use flip-lock to manage ball count while aiming at mode shots."
       },
       {
         "title": "Feeding Frenzy During Multiball",
-        "description": "Travis's approach: use Jaws Multiball to spray yellow standup targets and trigger Feeding Frenzy in the background. The left spinner is key — every spin counts as a switch hit building the Feeding Frenzy value. The third target in each set pays 3x the built-up value. This gets added to end-of-ball bonus permanently, so it compounds."
+        "description": "During Jaws Multiball, spray yellow standup targets to trigger Feeding Frenzy in the background. The left spinner is key — every spin counts as a switch hit building the Feeding Frenzy value. The third target in each set pays 3x the built-up value. This adds to end-of-ball bonus permanently, so it compounds across balls."
       },
       {
         "title": "Machete Timing",
-        "description": "Machetes are 2x+ multipliers applied to your next shot after rolling through a lit inlane. Use the flippers to cycle which inlane is lit. Best times to cash in a machete: the final shot of the Scars encounter (left standup targets), during the encounter jackpot shot, on the last target of a lit Feeding Frenzy set, or on a beach closed hurry-up. Don't waste them on chum bucket shots or random yellow targets."
+        "description": "Machetes are 2x+ multipliers applied to your next shot after rolling through a lit inlane. Best moments to cash them: on the final Scars encounter shot, during an encounter jackpot, on the last target of a lit Feeding Frenzy set, or on a beach closed hurry-up. Don't waste them on casual captive ball hits or random chum shots."
       },
       {
         "title": "Jaws Multiball 2 (The Chase) Is the Real Prize",
-        "description": "MB2 is far more valuable than MB1 on average. It requires attaching a second barrel — complete the left standup targets when 'ready barrel' is lit, then repeat the chum/harpoon/barrel process. During The Chase, switch hits light all major shots for jackpots — the left spinner is an easy way to light them fast."
+        "description": "MB2 is far more valuable than MB1. Reach it by attaching a second barrel — complete the left standup targets when 'Ready Barrel' is lit, then repeat the harpoon/fin sequence. During The Chase, switch hits light all major shots for jackpots — the left spinner is the fastest way to light them. This is the scoring event the whole game builds toward."
       },
       {
-        "title": "Bounty Hunt Optimization",
-        "description": "After capturing Mako (always first — it upgrades the reel), collect the Dart gear item before starting your second bounty hunt. Dart makes bounty progression easier and increases the bounty value. Thresher or Hammerhead next depending on your shot confidence. Tiger Shark is the hardest but gives unlimited flip-lock — massive if you reach it."
+        "title": "Bounty Hunt Sequencing",
+        "description": "Always capture Mako first — it upgrades the fishing reel, making future reel timing easier. Collect the Dart gear item before starting your second bounty hunt; it increases the bounty value and makes progression easier. Thresher or Hammerhead next depending on your shot confidence. Tiger Shark is the hardest but awards unlimited flip-lock for the rest of the game — massive if you reach it."
       }
     ]
   }
