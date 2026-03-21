@@ -45,7 +45,7 @@
   "one_shot": {
     "name": "The Center Ramp",
     "callout_id": "center_ramp",
-    "difficulty": "earnable",
+    "difficulty": "medium",
     "description": "The center ramp is Han Solo's mission shot, the Falcon's advance shot, and the safest repeatable shot on the table. Feed it from either flipper — it's wide and forgiving. Every time the blue hyperdrive light under the Falcon model is lit, a center ramp shot advances the Falcon toward Lightspeed Escape Multiball. During Han missions it's your primary scoring shot. When you don't know what to do, shoot the center ramp. It almost always does something useful."
   },
 
@@ -96,7 +96,7 @@
         {
           "rank": 2,
           "title": "Start a Mission — Pick Han First",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["center_ramp", "sarlacc_pit"],
           "description": "When FORCE is complete, the character inserts glow by difficulty: yellow = easy, green = medium, blue = hard. Han Solo (the <strong>Center Ramp</strong>) is yellow — start there. Shoot the center ramp when Han's insert is lit to begin his mission. During the mission, the display shows which shots score — blue shots progress it, white shots build value. Chewie (<strong>Sarlacc Pit</strong>) is your backup if Han isn't available: knock down the drop target in front of the pit, then shoot the ramp."
         },
@@ -116,14 +116,14 @@
         {
           "rank": 1,
           "title": "Start Lightspeed or Battle of Hoth Multiball",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["center_ramp", "luke_vuk", "droids_target"],
           "description": "You have two paths. <strong>Lightspeed:</strong> if you advanced the Falcon on Ball 1, keep shooting the <strong>Center Ramp</strong> — when the Falcon bar fills, Lightspeed Escape Multiball starts automatically. <strong>Battle of Hoth:</strong> hit the <strong>Droids Target</strong> (the standup below the AT-AT, left side) to light a lock, then shoot the <strong>Luke VUK</strong> (left side dead-end shot, feeds back to your flipper) to lock a ball. Three locks starts Hoth. Either multiball is a major scoring opportunity — pick the one that's closer to ready."
         },
         {
           "rank": 2,
           "title": "In Multiball: Sarlacc Pit for Add-a-Ball First",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["sarlacc_pit"],
           "description": "The moment any multiball starts, your first shot is the <strong>Sarlacc Pit</strong> (right-center, behind the drop target — knock the target down first, then shoot the ramp). The ball spirals inside and accumulates spins. At 10 spins, the action button lights for an add-a-ball. Getting that extra ball in play early dramatically extends your multiball window and total scoring. Don't chase jackpots first — secure the add-a-ball, then hunt jackpots."
         },
@@ -143,21 +143,21 @@
         {
           "rank": 1,
           "title": "Start the Best Available Multiball Immediately",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["center_ramp", "luke_vuk"],
           "description": "Check where you are on Lightspeed and Hoth at the Ball 3 plunge. If either is close, go straight for it before doing anything else. <strong>Lightspeed:</strong> center ramp shots until the bar fills. <strong>Hoth:</strong> one or two more <strong>Luke VUK</strong> locks. Multiballs are your biggest scoring windows — getting into one early on Ball 3 gives you the most time to work it."
         },
         {
           "rank": 2,
           "title": "Run Whatever Missions Are Available",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["force_targets", "center_ramp"],
           "description": "Spell FORCE quickly (hunt the dark letters), then shoot whatever character mission is lit in yellow or green. Han's <strong>Center Ramp</strong> is always the priority. If you've already run Han's missions, Lando (Death Star Ramp) and Leia (right orbit) are the next easiest. Don't spend Ball 3 reading the display — just shoot the lit characters in easiest-to-hardest order."
         },
         {
           "rank": 3,
           "title": "If Jabba Is Available, Take It",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["sarlacc_pit"],
           "description": "Jabba's Palace events are triggered by hitting the <strong>Sarlacc Pit</strong> drop target twice — the ball then spirals into the pit and you select an event with the action button. On Ball 3 with nothing to lose, Rancor is the right pick: it's a combo mode with no timer where you hit orange shots in sequence. No clock pressure, solid point chunks, and the Sarlacc pit is a comfortable shot anyway."
         }

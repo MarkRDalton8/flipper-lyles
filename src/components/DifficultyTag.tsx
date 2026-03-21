@@ -18,7 +18,7 @@ const tagConfig = {
 };
 
 export default function DifficultyTag({ difficulty }: DifficultyTagProps) {
-  const config = tagConfig[difficulty];
+  const config = tagConfig[difficulty] || tagConfig.medium; // Fallback to medium
 
   return (
     <span

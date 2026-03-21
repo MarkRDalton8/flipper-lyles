@@ -46,7 +46,7 @@
   "one_shot": {
     "name": "The Helipad Ramp",
     "callout_id": "helipad_ramp",
-    "difficulty": "earnable",
+    "difficulty": "medium",
     "description": "The right ramp. It's Step 4 of the Paddock Loop — calling the helicopter before you can capture the dinosaur. You can't finish a paddock without it. Feed it from the right flipper, hold through the curve. Missing it stalls your entire loop and costs you the capture. Make it your most-practiced shot on this machine."
   },
 
@@ -96,14 +96,14 @@
         {
           "rank": 1,
           "title": "Open Your First Paddock",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p", "truck_target"],
           "description": "The three <strong>M-A-P Shots</strong> are the white-glowing shots scattered across the playfield. Watch the inserts — the letter inserts light white when a shot is active. Hit each one to spell M-A-P. The truck direction determines which paddock opens: bash the <strong>Truck Target</strong> to cycle between left and right paths on the map. You don't need to optimize your paddock choice on Ball 1 — just open something and get in."
         },
         {
           "rank": 2,
           "title": "Work the Paddock Loop",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["paddock_entrance", "set_trap_standups", "helipad_ramp"],
           "description": "Once the paddock is open, shoot the <strong>Paddock Entrance</strong> (the lit center shot — it's hard to miss when it's glowing) to rescue workers. The screen shows your worker count — you need 3 rescues before traps become available. When the <strong>Set Trap Standup Targets</strong> (the cluster of small yellow-lit targets just left of the truck ramp) light up yellow, hit one to arm the trap. Then shoot the <strong>Helipad Ramp</strong> (right ramp, earnable from the right flipper) to call the helicopter. When the chopper is called, shoot the paddock entrance one more time to capture the dinosaur and bank your score."
         },
@@ -123,7 +123,7 @@
         {
           "rank": 1,
           "title": "Pick Up Where Ball 1 Left Off",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p"],
           "description": "Progress carries over between balls. Check the display when you plunge — if you're mid-paddock, you don't need to re-spell M-A-P. If you are at the start of a new paddock, hit the white-glowing <strong>M-A-P Shots</strong> to open it. Ball 2 is about consistency — one complete Paddock Loop (rescue, trap, helipad, capture) is a great ball."
         },
@@ -137,7 +137,7 @@
         {
           "rank": 3,
           "title": "Start a Control Room Mode if You See It Lit",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["control_room_c_target"],
           "description": "The single <strong>C Target</strong> (top-center, just above the truck) starts Control Room modes when lit. If you notice it glowing, a shot or two there adds a mode on top of whatever you're already doing. Don't chase it — but if it's lit and you're at the top of a ball, it's worth the detour."
         }
@@ -150,14 +150,14 @@
         {
           "rank": 1,
           "title": "Complete as Many Paddock Loops as Possible",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["map_shot_m", "map_shot_a", "map_shot_p", "paddock_entrance", "set_trap_standups", "helipad_ramp"],
           "description": "Ball 3 is all-in. Captured dinosaurs are your score. Stay laser-focused on the five-step Paddock Loop: <strong>M-A-P Shots</strong> → <strong>Paddock Entrance</strong> (3 rescues) → <strong>Set Trap Standup Targets</strong> → <strong>Helipad Ramp</strong> → <strong>Paddock Entrance</strong> (capture). Each complete loop is worth significantly more than casual shot values. Two complete loops on Ball 3 is a strong finish."
         },
         {
           "rank": 2,
           "title": "If Chaos Multiball Is Close, Consider Going For It",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["truck_target"],
           "description": "Chaos Multiball requires spelling C-H-A-O-S by alternating between a shot and the <strong>Truck Target</strong>. Each letter alternates: shot → truck → shot → truck → shot. If you're at C-H-A-O and on Ball 3, consider finishing it. With multiple balls live, you'll accumulate points fast. But if Chaos is only at C or C-H, the Paddock Loop is still more reliable."
         },

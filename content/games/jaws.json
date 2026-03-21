@@ -111,7 +111,7 @@
         {
           "rank": 2,
           "title": "Start a Shark Encounter — Pick Scars First",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["center-ramp"],
           "description": "After hitting the captive ball enough times, white shots light up around the playfield — each one starts a different encounter mode. Pick Scars first if it's available: it uses the <strong>Center Ramp</strong>, it's designed for single-ball play, and completing it permanently increases your machete multiplier. Raft Attack (right ramp) is your second choice. Save Night Swim and Beach Panic for later — they're designed to be stacked with multiball."
         },
@@ -131,21 +131,21 @@
         {
           "rank": 1,
           "title": "Start Jaws Multiball If the Chum Line Is Full",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["chum-line-inserts", "fin-target"],
           "description": "Check the <strong>Chum Line Inserts</strong> when you plunge — if all segments are lit, you're ready. Shoot any yellow-lit shot to load the harpoon (you'll hear a click and see the harpoon indicator on the display light up), then quickly shoot the <strong>Fin Drop Target</strong> (the moving motorized fin, center playfield) to attach the barrel. Then hit the flashing yellow shot to start multiball. Don't panic-flip after hitting the fin — it causes unpredictable ricochets. Stay calm and track the ball."
         },
         {
           "rank": 1,
           "title": "Stack a Mode With Jaws Multiball 1",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": [],
           "description": "Jaws Multiball 1 doesn't score much on its own. Use it as a safety net to complete a shark encounter instead — start the encounter before or after starting multiball, either order works. Beach Panic (wave ramp) and Night Swim (left orbit) are ideal stack targets because they have many lit shots spread across the playfield, so random multiball hits still make progress."
         },
         {
           "rank": 2,
           "title": "Try Quickshots From the Mini-Flipper",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["mini-flipper"],
           "description": "When the ball lands on the <strong>Mini-Flipper</strong> (lower right, below the bumper), shoot the harpoon lane (the narrow lane in the upper-left, accessible from the mini-flipper backhand). This sets up a quickshot at the fin target. Three quickshots build toward an extra ball, and each one lights gear for collection. The multiplier resets when you miss one — don't force it if the shot isn't there today."
         },
@@ -172,7 +172,7 @@
         {
           "rank": 2,
           "title": "Complete Any Encounters You Have Running",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": [],
           "description": "Any encounter modes that were lit or in progress carry over to Ball 3. Finish them before starting new ones. A completed encounter pays more than an abandoned one and can chain into follow-up scoring. On Ball 3, completion beats starting-over."
         },

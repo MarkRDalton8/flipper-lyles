@@ -41,7 +41,7 @@
   "one_shot": {
     "name": "The Castle Main Entrance",
     "callout_id": "castle_entrance",
-    "difficulty": "earnable",
+    "difficulty": "medium",
     "description": "The center shot into the castle is the most important shot on the game and more forgiving than it looks. Shoot straight up the middle — the castle is angled slightly, which actually helps direct balls in. Every castle shot either lowers the drawbridge, raises the gate, destroys a castle, or collects a Castle Hurry-Up. It never wastes a hit. When in doubt about what to shoot: hit the castle. It's always doing something useful, it never drains you directly on a clean approach, and destroying a castle is one of the biggest point chunks in the game."
   },
 
@@ -85,7 +85,7 @@
         {
           "rank": 1,
           "title": "Destroy Your First Two Castles",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["castle_entrance"],
           "description": "Castle 1 is the easiest castle in the game — 1 drawbridge hit to lower it (the wooden bridge in front of the gate drops), then 2 gate hits to raise the portcullis (the metal grate rises), then shoot the open entrance to destroy it. You'll hear a cannon fire and see the castle walls collapse on the display — that's a castle down. Watch the <strong>Castle Progress</strong> on the backglass: a row of six castle icons shows which ones are destroyed (they crumble and go dark). Castle 2 needs 2 drawbridge hits, then 3 gate hits. Destroying 2 castles lights an extra ball at the Merlin Saucer — that alone makes Ball 1 a success."
         },
@@ -99,7 +99,7 @@
         {
           "rank": 3,
           "title": "Light Trolls and Work Toward Master of Trolls",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["troll_targets", "merlin_saucer"],
           "description": "Hit the two <strong>Troll Standup Targets</strong> flanking the castle entrance a total of 8 times (they're in front of the drawbridge, one on each side) — watch the troll-related inserts light up as you hit them. After 8 hits, shoot the <strong>Merlin Saucer</strong> to start Trolls! mode. During Trolls!, both troll pop-up targets rise and you have 30 seconds to hit each one 3 times. Every troll defeat in any mode (Trolls!, Multiball Madness, Royal Madness) counts toward your 10-troll Master of Trolls total."
         }
@@ -112,14 +112,14 @@
         {
           "rank": 1,
           "title": "Start Multiball Madness With as Many Boosts as Possible",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["merlin_saucer", "objective_inserts"],
           "description": "When multiple madness inserts are lit (Joust, Damsel, Peasant, Troll — the four orbit/ramp madnesses), shoot the <strong>Merlin Saucer</strong> to start Multiball Madness. More lit madnesses = more balls (1 madness = 2-ball, 2 madnesses = 3-ball, etc., max 4 balls) and bigger jackpots. Check the madness inserts above each shot to see which are lit before committing to the saucer — you want at least 2 lit for a real multiball. During Multiball Madness, the shots for each lit madness score super jackpots, and the <strong>Castle Lock</strong> (the hole to the left of the castle entrance, over the moat) scores a double super jackpot."
         },
         {
           "rank": 2,
           "title": "Destroy More Castles — Use Multiball as Cover",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["castle_entrance"],
           "description": "During Multiball Madness, you can still progress toward destroying castles by hitting the <strong>Castle Entrance</strong>. With multiple balls in play you have natural safety — if one ball drains mid-gate-sequence, you still have others live. Castle hits during multiball count toward your Castle Crusher progress. The later castles (4th, 5th, 6th) are much harder to destroy in single-ball play because they require so many gate hits. Using multiball as cover for castle destruction is smart play."
         },
@@ -139,14 +139,14 @@
         {
           "rank": 1,
           "title": "Check Your Blue Dots and Chase the Closest Objective",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["objective_inserts"],
           "description": "Look at the row of <strong>Blue Objective Inserts</strong> above the flippers the moment you plunge. Count the unlit ones. Whichever objective is closest to completion (most progress already built) is your Ball 3 focus. If you're one castle away from Castle Crusher, go straight to the castle. If Trolls is close, start Trolls! immediately. Don't try to complete multiple objectives from scratch on Ball 3 — pick the one and commit."
         },
         {
           "rank": 2,
           "title": "Start Multiball Madness One More Time",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["merlin_saucer"],
           "description": "Even if you started Multiball Madness on Ball 2, you can start it again. The madness inserts reset each ball but build back quickly since the ramps and orbits are your natural scoring shots anyway. Get 2+ madnesses lit, then shoot the <strong>Merlin Saucer</strong>. Multiball Madness is your biggest scoring event and worth running whenever you can qualify it."
         },

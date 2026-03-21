@@ -96,7 +96,7 @@
         {
           "rank": 1,
           "title": "Start a Room Mode — Pick Séance or Kitchen",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["center_hall", "turntable"],
           "description": "Once you have a key, you can unlock and enter a room. <strong>How to start a room:</strong> shoot the <strong>Center Hall</strong> to enter the foyer, then use the flippers to navigate through the house — the display shows a blueprint of the house with your current location highlighted and arrows indicating available paths. Shoot the lit shot to move in that direction. When you reach your chosen room door, shoot to enter it. Shortcut: hold the action button while the ball is in play to skip navigation and jump directly to your selected room. <strong>Pick Séance Room first</strong> — completing it lights Séance Multiball for later. Kitchen (Servant's Kitchen) is your backup: approachable shots and a fun Pepper's Ghost display interaction."
         },
@@ -110,7 +110,7 @@
         {
           "rank": 3,
           "title": "Observe the Turntable, Don't Fight It",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["turntable"],
           "description": "The <strong>Turntable</strong> rotates between shots. On Ball 1 your job is to observe it — notice which positions send the ball up the center, which send it sideways, and which are dead ends (the ball bounces back at you). Don't try to master it yet. Just watch. By Ball 2 you'll have a feel for how to read the rotation indicator (a small arrow on the turntable face shows current direction)."
         }
@@ -123,14 +123,14 @@
         {
           "rank": 1,
           "title": "Start Séance Multiball If It's Lit",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["seance_table", "key_drops"],
           "description": "If you completed the Séance Room on Ball 1, the <strong>Séance Table Crystal Ball</strong> glows to show it's ready for ball locks. Shoot through the lit <strong>K-E-Y Drop Target</strong> area toward the Crystal Ball to lock a ball — the display shows 1, 2, or 3 balls locked with the Crystal Ball lighting up brighter for each lock. Lock all 3 to start Séance Multiball. The game has 6 balls total — even with 3 locked you still have 3 more available for multiball, so you won't drain while trying."
         },
         {
           "rank": 2,
           "title": "Complete More Room Modes",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["key_drops", "center_hall"],
           "description": "Complete the <strong>K-E-Y Drop Targets</strong> again to earn more keys, then navigate to whatever room is available on the blueprint. Each freed spirit accumulates and makes wizard modes easier later. The Venetian Dining Room and Twin Dining Rooms are both accessible early and have straightforward shot requirements."
         },
@@ -150,14 +150,14 @@
         {
           "rank": 1,
           "title": "Complete Any Multiball That's Available",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["seance_table", "staircase"],
           "description": "Check your multiball status at Ball 3 plunge. If Séance Multiball is ready (Crystal Ball glowing, locks needed), go straight for it — lock the balls and start. If you haven't triggered Wheelbarrow Ghost Multiball yet, the <strong>Staircase to Nowhere</strong> (the ramp at 90 degrees to the right, with a magnet mid-flight that diverts the ball down a subway to the basement) is how you get there. Multiballs are your biggest Ball 3 scoring windows."
         },
         {
           "rank": 2,
           "title": "Complete As Many Room Modes as Possible",
-          "difficulty": "earnable",
+          "difficulty": "medium",
           "callout_ids": ["key_drops", "center_hall"],
           "description": "Every freed spirit counts. <strong>K-E-Y Drop Targets</strong> → key earned → room opened → mode completed → spirit freed. Run the cycle as many times as Ball 3 allows. The display tracks total freed spirits across the game — higher counts matter for the eventual wizard mode."
         },
