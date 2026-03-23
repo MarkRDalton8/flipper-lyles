@@ -1,0 +1,294 @@
+{
+  "slug": "james-bond-007",
+  "title": "James Bond 007",
+  "manufacturer": "Stern",
+  "designer": "George Gomez",
+  "year": 2022,
+  "description": "A mode-based game where the real scoring comes from stacking modes with multiballs and cashing in Bond Women for playfield multipliers up to 7x. The Italian bottom will eat you alive if you're not careful.",
+  "badge": {
+    "gradient_from": "#0a0a0a",
+    "gradient_to": "#1a1a3e",
+    "border_color": "#c9a84c",
+    "text_color": "#d4af37",
+    "abbreviation": "007"
+  },
+  "ratings": {
+    "drain_danger": 4,
+    "rule_complexity": 4,
+    "fun_factor": 4,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "JB007 is a <strong>mode-based game</strong> built around six Sean Connery Bond films. Start <strong>villain modes</strong> at the right ramp and <strong>henchmen modes</strong> at the side ramp, complete them to earn <strong>smart missiles</strong> (free shot collection via the action button). Meanwhile, build toward <strong>Bird 1 Multiball</strong> (drop targets → lock 3 balls) and <strong>Jetpack Multiball</strong> (left eject → left ramp). Collect <strong>Bond Women</strong> at the upper loop and activate them for a timed <strong>playfield multiplier up to 7x</strong> — this is where billion-point games come from. Play 1 villain, 1 henchman, and both multiballs to qualify the mini-wizard mode.",
+    "modes": [
+      { "name": "Villain Modes (×6)", "type": "md" },
+      { "name": "Henchmen Modes (×6)", "type": "md" },
+      { "name": "SPECTRE Weapons (×6)", "type": "ev" },
+      { "name": "Q Branch Gadgets", "type": "ev" },
+      { "name": "Bird 1 Multiball", "type": "mb" },
+      { "name": "Jetpack Multiball", "type": "mb" },
+      { "name": "Bond, James Bond", "type": "wiz" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Upper Loop (Bond Women Collection)",
+    "description": "The upper loop sits below the pop bumpers and is fed most reliably from the upper flipper — shoot the center loop from the left flipper to get to the upper flipper, then an early flip sends the ball through the upper loop. When it's flashing, it collects a Bond Woman. Once you've collected enough women, press the action button (when flashing pink) to activate a timed playfield multiplier — each woman adds 1x, up to 7x. That 7x multiplier applied during a multiball or mode is what separates 200M games from billion-point games. Every time you're on the upper flipper, check if the upper loop is flashing."
+  },
+  "hard_box": {
+    "text": "This game has an 'Italian bottom' — wide outlanes with a narrow gap between the slingshots and flippers. Balls that kiss the slingshot rubber will bounce sideways into the outlane before you can react. Hit the {{callout:dragon-tank}} target a few times to light the outlane ball save, but be careful — the dragon tank is in a dangerous spot near the center loop and ricochets off it can drain you. The other challenge is the sheer number of modes and features. There are 6 villain modes, 6 henchmen modes, 6 SPECTRE weapons, 6 Q Branch gadgets, Bond Women, two multiballs, and a wizard mode. You don't need to understand all of them. Focus on the loop: start a mode → play it during multiball → collect Bond Women → cash in the multiplier."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Start a Mode and Begin Multiball Progress",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Super Skill Shot — Side Ramp or Left Eject",
+          "difficulty": "earnable",
+          "description": "Hold the left flipper up during the plunge for super skill shot options (purple lit shots). The best two: the side ramp (instantly starts your first henchmen mode and awards a smart missile) or the left eject (lights Jetpack Multiball at the left ramp and awards a smart missile). Both give you a huge head start. Each unique super skill shot awards one smart missile, but only once per game — vary your picks across balls."
+        },
+        {
+          "order": 2,
+          "title": "Start a Villain Mode — Shoot the Right Ramp",
+          "difficulty": "you_got_this",
+          "description": "Two shots to the {{callout:right-ramp}} starts the currently lit villain mode. The Goldfinger target or bumpers change which mode is lit. For your first villain, any mode works — just get one started. Follow the lit arrows on the playfield to complete it. Completing a mode awards a smart missile."
+        },
+        {
+          "order": 3,
+          "title": "Work the Drop Targets",
+          "difficulty": "earnable",
+          "description": "The three {{callout:bird-1-drops}} in front of the Bird 1 rocket need to be completed to light ball locks at the center loop. You don't need to complete them all on Ball 1, but every drop you knock down is progress. Shots to the SPECTRE standup targets behind the rocket also increase Bird 1 jackpot values and light SPECTRE weapons."
+        },
+        {
+          "order": 4,
+          "title": "Collect a Bond Woman If Lit",
+          "difficulty": "earnable",
+          "description": "Bond Women light at the {{callout:upper-loop}} based on various playfield activities (bumper hits, spinner shots, completing features). If you see the upper loop flashing, get the ball to the upper flipper and shoot it. Don't activate the multiplier yet — bank women for a bigger multiplier on Ball 2 or 3 during multiball."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Start a Multiball, Stack It With a Mode",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Light and Start Bird 1 Multiball",
+          "difficulty": "earnable",
+          "description": "Complete the {{callout:bird-1-drops}} if you haven't already, then lock 3 balls at the center loop to start Bird 1 Multiball. When it starts, you get three shots from the upper flipper to extend the multiball — make as many as you can. When you drain to two balls, it auto-restarts with the remaining balls. Shoot lit jackpots, then the rocket for the super jackpot."
+        },
+        {
+          "order": 2,
+          "title": "Start a Mode During Multiball",
+          "difficulty": "earnable",
+          "description": "If you can start a villain or henchmen mode before or during multiball, the mode shots become much safer with multiple balls in play. Completing modes during multiball also banks smart missiles for later use. SPECTRE weapon hurry-ups cannot run during multiball, so focus on villain/henchmen modes instead."
+        },
+        {
+          "order": 3,
+          "title": "Use Smart Missiles Wisely",
+          "difficulty": "you_got_this",
+          "description": "The action button behavior toggles between smart missile (blue) and Bond Women multiplier (pink) — use the flippers to change it. When the action button is blue, pressing it collects whatever shot is currently lit. Save missiles for hard-to-reach mode completion shots or dangerous targets like the left eject. Don't waste them on shots you can make reliably."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Cash In the Multiplier, Push for the Wizard Mode",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Activate the Bond Women Multiplier During a Multiball",
+          "difficulty": "earnable",
+          "description": "This is the money shot of the whole game. Start Jetpack Multiball (shoot the {{callout:left-eject}} to light the left ramp, then shoot the left ramp), and as soon as multiball begins, press the action button (when flashing pink) to activate your Bond Women multiplier. Every jackpot you score during the timed multiplier window is multiplied. A 5x or 7x multiplier during Jetpack is where billion-point games happen."
+        },
+        {
+          "order": 2,
+          "title": "Qualify Bond, James Bond",
+          "difficulty": "good_luck",
+          "description": "If you've completed at least 1 villain mode, 1 henchmen mode, and started both multiballs, the right ramp and left eject light for the mini-wizard mode. It's a timed 2-ball multiball where you must complete every shot twice and then the side ramp for a super jackpot and extra ball. Tough but worth pursuing if it's available."
+        },
+        {
+          "order": 3,
+          "title": "SPECTRE Weapons — Pick the Left Three",
+          "difficulty": "earnable",
+          "description": "Complete SPECTRE targets to light hurry-ups at the {{callout:goldfinger-target}}. The weapon cycles — wait for one of the three left-side weapons before shooting, as they require multiple shots and award better perks. The best perks extend mode timers and ball save timers for the rest of the game. The right-side weapons are single-shot hurry-ups with weaker rewards."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Respect the Italian Bottom",
+        "description": "The gap between the slingshots and flippers is wider than on most modern Sterns. Balls that hit the slingshot rubber can deflect straight into the outlane. Don't nudge aggressively near the slingshots — a gentle save nudge is better than a hard one that feeds the outlane."
+      },
+      {
+        "title": "Light the Outlane Ball Save Early",
+        "description": "Hit the dragon tank target a few times to light the outlane ball save. But be careful — the dragon tank sits near the center loop in a dangerous spot. Only shoot it deliberately when you're confident, or wait for mode shots that naturally target it."
+      },
+      {
+        "title": "Center Loop → Upper Flipper Is Your Safety Valve",
+        "description": "The center loop from the left flipper feeds the upper flipper reliably. From the upper flipper you can access the upper loop (Bond Women), the side ramp (henchmen modes), or the bumper lane. When in doubt, shoot the center loop."
+      },
+      {
+        "title": "The DB5 Eject Can Surprise You",
+        "description": "The ball launches off the roof of the Aston Martin DB5 and can come back fast and unpredictably. Be ready with both flippers after any shot that feeds the DB5."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Q Branch Gadget Modes (Early Game)",
+        "description": "Q Branch modes light after various playfield completions (bumper counts, spinner hits, etc.). Some transition into 2-ball multiballs if completed, which is cool but hard to achieve. They're distracting on Ball 1 when you should be building toward Bird 1 or Jetpack Multiball. If one starts incidentally, play it out, but don't pursue them."
+      },
+      {
+        "title": "The Dragon Tank (Unless Mode-Required)",
+        "description": "It lights the outlane ball save, which is nice. But the target sits in a terrible spot where ricochets can send the ball straight down the middle. Unless a mode specifically needs it, leave it alone and get your ball saves from other means."
+      },
+      {
+        "title": "Completing Every Mode",
+        "description": "There are 24 modes across villains, henchmen, SPECTRE, and Q Branch. You will not complete them all in a league game. Focus on completing 1 villain and 1 henchman to qualify the wizard mode, and cherry-pick SPECTRE weapons for their perks. Breadth over depth is a trap."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Scoring runs lower than other Sterns of this era. A good tournament game breaks 200M. Great games push past 1 billion — but those require stacking the Bond Women multiplier with a multiball. For league, consistently hitting 200-400M keeps you competitive."
+    },
+    {
+      "label": "Pro vs Premium/LE",
+      "text": "The Pro model (sometimes called 'Dr. No' based on its backglass) has a simpler Jetpack Multiball: shoot the center loop to lock in the value, then hit lit shots for jackpots. The Premium/LE has a physical jetpack mechanism where the ball rides across the playfield — you wait for it to reach the dragon tank position before shooting for the super jackpot. Core strategy is identical across all three models."
+    },
+    {
+      "label": "The Action Button Is Two Tools in One",
+      "text": "The action button alternates between smart missile (blue, collects a lit shot for free) and Bond Women multiplier activation (pink, starts the timed playfield multiplier). The flippers toggle which mode is active. This is easy to forget in the heat of the moment — check the color before pressing. Using the wrong one at the wrong time can waste a multiplier window or a missile."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Villain Modes)",
+      "description": "Right side of the playfield. Two shots here starts the currently lit villain mode. The main way you begin story modes. Feeds to the right inlane.",
+      "image": null,
+      "crop": { "x": 75, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp (Henchmen Modes)",
+      "description": "Upper right area, only accessible from the upper flipper. Starts henchmen modes. To reach it reliably, shoot the center loop from the left flipper to feed the upper flipper, then shoot the side ramp as an early flip. Also the final shot for the Bond James Bond super jackpot.",
+      "image": null,
+      "crop": { "x": 70, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "upper-loop",
+      "name": "Upper Loop (Bond Women)",
+      "description": "Below the pop bumpers, accessible from the upper flipper. When flashing, collects a Bond Woman toward the playfield multiplier. Arguably the most important shot for high scoring — each woman adds 1x to the multiplier, up to 7x. Fed reliably from the center loop → upper flipper path.",
+      "image": null,
+      "crop": { "x": 65, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "left-eject",
+      "name": "Left Eject (Jetpack Qualifier)",
+      "description": "Hidden below the upper flipper on the left side. Shooting it lights the left ramp for Jetpack Multiball. The shot is tight — hold up the upper flipper, shoot under it from the lower left flipper, and release the upper flipper as the ball reaches its peak. Each successive Jetpack requires more left eject shots to qualify.",
+      "image": null,
+      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "center-loop",
+      "name": "Center Loop",
+      "description": "Center of the playfield between the drop targets and the left ramp. Easier from the left flipper than the right. Locks balls for Bird 1 Multiball. Also the primary feed to the upper flipper, making it your gateway to the side ramp, upper loop, and bumper lane.",
+      "image": null,
+      "crop": { "x": 40, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "bird-1-drops",
+      "name": "Bird 1 Drop Targets & Rocket",
+      "description": "Upper left quadrant. Three drop targets in front of the Bird 1 rocket. Complete the drops to light ball locks at the center loop. The 7 SPECTRE standup targets surrounding the rocket increase Bird 1 jackpot values. Direct shots to the rocket are risky when the drops are down — the ball can rattle through the open target area unpredictably.",
+      "image": null,
+      "crop": { "x": 25, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "dragon-tank",
+      "name": "Dragon Tank Target",
+      "description": "Near the center loop on the left side. Hit it a few times to light the outlane ball save. Also used during some villain modes. Dangerous shot — ricochets off this target frequently drain center. Only shoot it deliberately.",
+      "image": null,
+      "crop": { "x": 35, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "goldfinger-target",
+      "name": "Goldfinger Target",
+      "description": "Between the side ramp entrance and the right orbit. Changes which villain/henchmen mode is currently lit. When flashing after completing SPECTRE letters, starts a SPECTRE weapon hurry-up countdown. The weapon cycles — wait for the one you want before shooting.",
+      "image": null,
+      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "db5-eject",
+      "name": "DB5 Eject (Aston Martin)",
+      "description": "Right side of the playfield. The ball ejects off the roof of the sculpted Aston Martin DB5 through its ejector seat. Used as a mode completion shot for several villain and henchmen modes. The ball comes back fast — be ready.",
+      "image": null,
+      "crop": { "x": 75, "y": 35, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kineticist — James Bond 007 Tutorial by Noah Crable",
+      "type": "guide",
+      "url": "https://www.kineticist.com/news/james-bond-007-pinball-tutorial",
+      "description": "Comprehensive tutorial covering all villain and henchmen modes, both multiballs, SPECTRE weapons, Q Branch, Bond Women multiplier strategy, and Noah's advanced strategies including 7x multiplier timing. Updated through March 2026."
+    },
+    {
+      "title": "Tilt Forums — James Bond 007 Rulesheet",
+      "type": "rulesheet",
+      "url": "https://tiltforums.com/t/james-bond-007-rulesheet/7893",
+      "description": "Community-maintained wiki rulesheet with detailed rules for all modes, SPECTRE weapon perks, skill shot values, wizard mode qualifications, and code version tracking."
+    },
+    {
+      "title": "Stern Pinball — James Bond 007 Official Page",
+      "type": "reference",
+      "url": "https://sternpinball.com/game/james-bond-007/",
+      "description": "Official game page with model comparisons, feature lists, and Insider Connected details."
+    },
+    {
+      "title": "Pinside — James Bond 007 Owners Club",
+      "type": "forum",
+      "url": "https://pinside.com/pinball/forum/topic/james-bond-official-owners-club",
+      "description": "Owner discussions covering code updates, gameplay strategies, the Swipe-A-Ball rule addition, and machine-specific tips."
+    },
+    {
+      "title": "Kineticist — James Bond 007 Game Detail Page",
+      "type": "reference",
+      "url": "https://www.kineticist.com/pinball-machines/james-bond-007-2022",
+      "description": "Quick rules overview, game specifications, and designer credits."
+    }
+  ],
+  "chat_starters": [
+    "How do I get the ball to the upper flipper reliably?",
+    "When should I activate the Bond Women multiplier?",
+    "What's the best villain mode to start with?",
+    "How does the smart missile action button work?"
+  ],
+  "level_up": {
+    "intro": "Once the mode → multiball → multiplier loop feels natural, these techniques push you toward billion-point territory.",
+    "tips": [
+      {
+        "title": "Stack the 7x Multiplier with Bond James Bond",
+        "description": "If you've banked enough Bond Women for a 7x multiplier, save it for the Bond James Bond wizard mode rather than a regular multiball. Every shot during the 70-second wizard mode is worth significantly more at 7x, and the super jackpot at the end becomes enormous. Activate the multiplier immediately when the mode starts and focus on the upper loop for additional scoring while lit shots are scattered across the playfield."
+      },
+      {
+        "title": "Jetpack Super Jackpot + Multiplier Combo",
+        "description": "During Jetpack Multiball, shoot the center loop to lock in the jackpot value, then make five lit shots for jackpots. After enough jackpots, the left ramp lights for a 2x jackpot and a roving shot appears for the super jackpot and add-a-ball. If you time your Bond Women activation to coincide with this sequence, the 2x jackpot and super jackpot get multiplied by your playfield multiplier. This is the single highest-value play in the game."
+      },
+      {
+        "title": "SPECTRE Weapon Perk Stacking",
+        "description": "The three left-side SPECTRE weapons require multiple shots to complete but give game-changing perks: extended mode timers (+17 seconds), extended ball saves (+7 seconds), and upgraded mystery awards. Completing these early in the game means every subsequent mode and multiball benefits from the extensions. Prioritize Swimming With Sharks (adds +2 balls during multiballs) and Troublesome Tarantulas (extends all timers) when they cycle to the Goldfinger target."
+      },
+      {
+        "title": "MXV Super Skill Shot for Free Missiles",
+        "description": "The secret MXV super skill shot sequence (full plunge → right orbit → upper loop → side ramp) awards 2 smart missiles if completed. That's two free shot collections you can use to complete difficult modes later. It requires precise execution off the plunge but is worth practicing if you're comfortable with the upper flipper feed."
+      }
+    ]
+  }
+}

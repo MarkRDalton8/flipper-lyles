@@ -1,0 +1,282 @@
+{
+  "slug": "terminator-2",
+  "title": "Terminator 2: Judgment Day",
+  "manufacturer": "Williams",
+  "designer": "Steve Ritchie",
+  "year": 1991,
+  "description": "An early DMD classic where the biggest points come from super jackpots fired out of the cannon. Two viable strategies: multiball jackpots or Payback Time ramp combos. The cannon is the gimmick but also the skill gap.",
+  "badge": {
+    "gradient_from": "#1a1a2e",
+    "gradient_to": "#4a0e0e",
+    "border_color": "#c0392b",
+    "text_color": "#e74c3c",
+    "abbreviation": "T2"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 2,
+    "fun_factor": 4,
+    "league_frequency": 4
+  },
+  "summary": {
+    "text": "T2 is a <strong>two-path game</strong>. Path 1: load the {{callout:cannon}} by shooting the {{callout:skull-drop}} and saucer, fire at the lit target to start <strong>multiball</strong>, then lock balls and chain jackpots and super jackpots for the real points. Path 2: shoot the ramps to advance security levels and start <strong>Payback Time</strong> — 20 seconds where every ramp and orbit scores 5M. Most tournament games are won by chaining super jackpots during multiball, but Payback Time is your backup when the cannon isn't cooperating. Pick up <strong>escape route</strong> awards and <strong>chase loop</strong> millions along the way.",
+    "modes": [
+      { "name": "Multiball", "type": "mb" },
+      { "name": "Payback Time", "type": "ev" },
+      { "name": "Escape Route", "type": "ev" },
+      { "name": "Chase Loop", "type": "ev" },
+      { "name": "Video Mode", "type": "md" },
+      { "name": "Database Awards", "type": "ev" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Skull Drop Target + Saucer",
+    "description": "This is the shot that runs the game. Hit the drop target below the T-800 skull to knock it down, then shoot the saucer behind it to load the cannon. This one-two combo starts multiball, qualifies jackpots during multiball, and lights database awards. It also feeds the ball to the cannon safely — no flipper work required. If you can consistently hit the skull drop from the right flipper and follow up into the saucer, you control the pace of the entire game."
+  },
+  "hard_box": {
+    "text": "The cannon is what makes T2 special and what makes it frustrating. You don't aim it with the flippers — you fire the ball from a swinging cannon at a bank of five targets using the trigger on the gun-shaped plunger. For regular jackpots the target is stationary, and you'll learn the timing quickly (usually fire when the cannon is on the way up, as the second-from-bottom target lights). For the super jackpot, the target is MOVING while the cannon is also swinging — and your other balls are still live on the playfield. It's a 50M shot that separates good games from great ones. The other challenge: this is a 1991 game, so the rules are simpler than modern machines. There's no ball save on drain during multiball, the outlanes are wide, and every lost ball during multiball is a lost lock opportunity. Ball control matters more than shot variety."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Start Multiball, Get Your First Jackpot",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Skill Shot — Hit the Lit Target",
+          "difficulty": "earnable",
+          "description": "The ball auto-plunges from the gun trigger. Time it to hit the moving lit target on the left bank — it's usually the 3rd target from the bottom on most machines. Worth 1M and increases by 1M each time you nail it. The target speeds up after each successful skill shot, so the first ball is your best chance."
+        },
+        {
+          "order": 2,
+          "title": "Hit the Skull Drop → Load the Cannon → Start Multiball",
+          "difficulty": "earnable",
+          "description": "Trap on the right flipper. Shoot the {{callout:skull-drop}} to knock down the drop target. The saucer behind it lights — shoot it again to load the ball into the {{callout:cannon}}. Fire the trigger when the lit target is in the cannon's sights. Hit it and multiball starts with 2 balls auto-launched. For your first multiball, only one target needs to be hit. Later multiballs require more targets and the drop target resets on a timer."
+        },
+        {
+          "order": 3,
+          "title": "During Multiball — Lock Balls, Score the Jackpot",
+          "difficulty": "earnable",
+          "description": "During multiball, lock balls at the {{callout:database-saucer}} and the {{callout:left-orbit}} saucer. Then get one ball into the skull saucer behind the drop target to load the cannon. With 1 ball locked = 1x jackpot (up to 10M). With 2 balls locked = 2x (up to 20M). All 3 locked = 3x (up to 30M). Lock as many as you can before the cannon loads."
+        },
+        {
+          "order": 4,
+          "title": "Go for the Super Jackpot",
+          "difficulty": "good_luck",
+          "description": "After scoring a 2x or 3x jackpot, the super jackpot is available. Hit the skull drop target again while balls are still in play, get a ball into the saucer, and fire at the MOVING target. It's 50M. The timing tip that tournament players swear by: fire the trigger as the cannon swings upward, right when the second-from-bottom target lights up. This works on most properly set up machines."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Advance Ramps Toward Payback Time",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Shoot the Ramps — Build Toward Payback Time",
+          "difficulty": "earnable",
+          "description": "Each ramp (left and right) needs 5 shots to advance through 5 security levels (checkpoint → passcode → silent alarm → vault key → CPU lit). The first two ramps can be hit in any order, but then you must alternate left-right. Completing both lights Payback Time at the center — 20 seconds where every ramp and orbit scores 5M. A completed Payback Time is worth 50M+ easily."
+        },
+        {
+          "order": 2,
+          "title": "Collect Escape Route Awards",
+          "difficulty": "you_got_this",
+          "description": "Shoot the {{callout:left-orbit}} hard enough to reach the saucer at the top to collect the furthest lit escape route award. Relight awards by completing the center target bank. Early awards include hold bonus and extra ball — both extremely valuable. After the first full set of awards, the center targets must be completed on a timer to relight the next set."
+        },
+        {
+          "order": 3,
+          "title": "Chase Loop Millions",
+          "difficulty": "earnable",
+          "description": "The {{callout:right-orbit}} is a repeatable loop shot back to the left flipper. Each consecutive shot scores the current chase loop value (builds to 5M) PLUS million-plus bonuses that escalate: 1M, 2M, 3M, etc. After several consecutive loops you're scoring 8-10M per shot. The value resets at end of ball, so cash in while you can. Hold up the left flipper and rip it again."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Chain Super Jackpots or Cash In Payback Time",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Another Multiball — Chain Supers",
+          "difficulty": "earnable",
+          "description": "Second and later multiballs are harder to start — the drop target resets on a timer and more targets need to be hit from the cannon. But the super jackpot is always 50M. If you can chain even two super jackpots in a multiball, you've likely won the game. Focus on getting balls locked quickly so you have time for the cannon shot."
+        },
+        {
+          "order": 2,
+          "title": "Cash In Payback Time If Ready",
+          "difficulty": "earnable",
+          "description": "If you've been building ramp progress, this might be the ball where Payback Time lights. During the 20-second timer, every ramp and orbit shot scores 5M. Spam the ramps as fast as you can — the left ramp feeds back to the left flipper, and the right orbit feeds the left flipper too. Critical: do NOT start Payback Time during multiball — a known bug can cause the timer to expire while balls are stuck behind the drop target."
+        },
+        {
+          "order": 3,
+          "title": "Protect Your Bonus",
+          "difficulty": "you_got_this",
+          "description": "If 'Hold Bonus' is lit from an escape route award, your bonus and multiplier carry over to the next ball. Complete the top lanes to advance the bonus multiplier (up to 8x). Extra ball lights at the skull drop target when you reach 6x or 8x bonus. On your last ball, if Hold Bonus is active, bonus is scored TWICE. Whatever you do: don't tilt."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "The Kickback Is Your Lifeline",
+        "description": "The three orange standup targets below the plunger lane relight the left outlane kickback. If your kickback is off, work those targets before taking risky shots. On a game this old, outlane drains are frequent and unforgiving."
+      },
+      {
+        "title": "Dead Bounce to the Right Flipper",
+        "description": "The database saucer and left orbit saucer both feed the left flipper. If the ball is coming in hot, let it dead bounce to the right flipper rather than panic-flipping. The skull drop is a right-flipper shot anyway."
+      },
+      {
+        "title": "Don't Rush the Cannon",
+        "description": "If you don't fire the cannon in time, it auto-fires and almost always misses. But don't panic-fire either. Learn the timing — it's consistent on a well-maintained machine. Take that extra half-second."
+      },
+      {
+        "title": "Auto-Fire Ball Save Exists",
+        "description": "After multiball starts, there's a brief auto-fire ball save period. If you drain immediately, the ball comes back. Don't panic in the first few seconds of multiball."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Database Awards (After Early Game)",
+        "description": "Database is a random award from the left saucer (lit after hitting the skull drop target). Early in the game you might get useful awards like extra ball or multiball. But once your score is above ~80M, the game intentionally gives you garbage awards. Don't waste shots going for database when you could be working toward multiball or Payback Time."
+      },
+      {
+        "title": "Video Mode",
+        "description": "Lit at the left orbit saucer via the right inlane. It's a cute DMD shooting gallery — you move a crosshair with the flippers and shoot terminators. The points are modest and the extra ball from it is extremely rare. If it starts, play it out, but don't alter your strategy to trigger it."
+      },
+      {
+        "title": "Stacking Payback Time During Multiball",
+        "description": "In theory, Payback Time during multiball is amazing — 5M per shot with multiple balls. In practice, a known mechanical issue can cause balls to get stuck behind the drop target, wasting your Payback Time timer while the game figures out what happened. Keep them separate."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Average games land around 30M. A solid tournament game is 100M+. The best players push into 400-500M territory by chaining super jackpots and completing Payback Time. For league night, consistently hitting 100M puts you in good shape."
+    },
+    {
+      "label": "Machine Condition Matters More Than Usual",
+      "text": "T2 is over 30 years old. The cannon motor, drop target, and auto-plunger are all mechanical components that wear out and behave differently from machine to machine. The cannon timing that works on one T2 might not work on another. Always take a practice ball to calibrate your cannon timing before a tournament game. The pitch of the playfield also affects cannon accuracy significantly."
+    },
+    {
+      "label": "Two Strategies, One Decision",
+      "text": "Going for multiball and super jackpots is the higher-ceiling strategy but requires cannon accuracy. Payback Time via ramp combos is more consistent and less machine-dependent. Top players do both — they start multiball early, score jackpots, then build Payback Time between multiballs. For your first few games, pick one and commit."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "skull-drop",
+      "name": "Skull Drop Target + Saucer",
+      "description": "Center-left of the playfield. The T-800 skull with a drop target in front of it and a saucer behind. Hit the drop target to knock it down, then the saucer loads the cannon. This is the most important shot on the game — it starts multiball, qualifies jackpots, and lights database awards.",
+      "image": null,
+      "crop": { "x": 50, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "cannon",
+      "name": "Ball-Firing Cannon",
+      "description": "Far right side of the playfield. A motorized cannon that swings back and forth, aiming at the five-target bank on the left. Fire the ball using the gun trigger (auto-plunger). For skill shots and multiball start, you aim at a stationary lit target. For super jackpots, the target moves. Many players lean right and sight down the cannon to time the shot.",
+      "image": null,
+      "crop": { "x": 85, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit / Escape Route",
+      "description": "Left side of the playfield. Strong shots reach the saucer at the top right (above bumpers) and collect the furthest lit escape route award. Also serves as a ball lock during multiball. Feeds through bumpers and usually back to the left flipper area.",
+      "image": null,
+      "crop": { "x": 20, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit / Chase Loop",
+      "description": "Right side of the playfield. Sends the ball around to the left flipper for repeated loop shots. Each consecutive shot builds the chase loop value (up to 5M per shot) plus escalating million-plus bonuses. Also collects hurry-up awards when lit via the left inlane. Your safest high-value repeatable shot.",
+      "image": null,
+      "crop": { "x": 80, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "description": "Left-center of the playfield, next to the left orbit. Feeds the ball back to the left flipper. Advances security levels toward Payback Time. Five shots needed to fully advance. Combined with right ramp alternating shots to complete the Payback Time sequence.",
+      "image": null,
+      "crop": { "x": 30, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "description": "Right-center, steeper than the left ramp with a U-turn at the top. Also advances security levels toward Payback Time. Five shots needed. After the first two ramps are completed in any order, you must alternate left-right for the remaining shots.",
+      "image": null,
+      "crop": { "x": 70, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "database-saucer",
+      "name": "Database Saucer / Left Eject",
+      "description": "Far left of the playfield. Collects database awards when lit (after hitting the skull drop target). Also serves as a ball lock during multiball. Feeds the ball safely to the left flipper. A shot that would become a Steve Ritchie signature on later designs like No Fear and Led Zeppelin.",
+      "image": null,
+      "crop": { "x": 10, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "center-targets",
+      "name": "Center Target Bank",
+      "description": "Three targets in the center of the playfield. Completing the bank relights escape route awards at the left orbit. After the first set of escape routes, later sets require the targets to be completed on a timer. Also where the skill shot moving target is located.",
+      "image": null,
+      "crop": { "x": 50, "y": 50, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kineticist — T2 Pinball Tutorial by Noah Crable",
+      "type": "guide",
+      "url": "https://www.kineticist.com/news/terminator-2-pinball-tutorial",
+      "description": "Comprehensive tutorial covering all major features, cannon aiming strategies, Noah's preferred strategies, and scoring benchmarks. Updated through March 2026."
+    },
+    {
+      "title": "Tilt Forums — T2 Rulesheet",
+      "type": "rulesheet",
+      "url": "https://tiltforums.com/t/terminator-2-rulesheet/8781",
+      "description": "Community-maintained rulesheet (note: URL may not exist yet for T2; the Kineticist tutorial serves as the primary rules reference)."
+    },
+    {
+      "title": "Dean St.Antoine — Unofficial T2 Rule Sheet",
+      "type": "rulesheet",
+      "url": "https://www.pinball.org/rules/terminator2.html",
+      "description": "Classic community rulesheet covering multiball mechanics, jackpot/super jackpot details, database award list, Payback Time rules, and scoring benchmarks. Written by a player with a 508M high score."
+    },
+    {
+      "title": "Digital Pinball Fans — T2 Strategy Thread",
+      "type": "forum",
+      "url": "https://digitalpinballfans.com/threads/new-t2-tutorial-from-bowen-jan-1st-2014.7063/",
+      "description": "Discussion of super jackpot cannon timing, chase loop strategy, and advanced multiball techniques."
+    },
+    {
+      "title": "Wikipedia — T2 Pinball",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day_(pinball)",
+      "description": "Historical context on the first WPC DMD machine, cannon patent, auto-plunger innovation, and production details."
+    }
+  ],
+  "chat_starters": [
+    "How do I time the super jackpot cannon shot?",
+    "Should I go for multiball or Payback Time first?",
+    "What are the best database awards to hope for?",
+    "How do chase loop millions work?"
+  ],
+  "level_up": {
+    "intro": "Once the basic multiball and Payback Time loops feel comfortable, these advanced techniques can push you past 200M.",
+    "tips": [
+      {
+        "title": "Chain Super Jackpots Without Losing Balls",
+        "description": "After scoring a super jackpot, immediately shoot for the skull drop target again while balls are still in play. You have several seconds while the cannon motor resets to knock down the drop and feed the saucer. This lets you chain multiple 50M super jackpots in a single multiball. The key is ball control — keep the second ball trapped or in a safe orbit while you reload the cannon."
+      },
+      {
+        "title": "Combo Ramps for Fast Payback Time",
+        "description": "After the first two ramp completions, you must alternate left and right. The left ramp feeds the left flipper, making a quick backhand to the right ramp possible. The right ramp is steeper and feeds differently, so left→right combos are easier than right→left. Build a rhythm: left ramp, catch, right ramp, catch, repeat."
+      },
+      {
+        "title": "Escape Route Extra Ball Farming",
+        "description": "The escape route award sequence includes an extra ball. Hold bonus (another escape route award) lets you carry your bonus multiplier forward. If you can get hold bonus early and then farm escape route awards throughout the game, you can rack up extra balls while building your end-of-ball bonus into a significant scoring component."
+      }
+    ]
+  }
+}
