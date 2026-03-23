@@ -1,0 +1,251 @@
+{
+  "slug": "judge-dredd",
+  "title": "Judge Dredd",
+  "manufacturer": "Bally",
+  "designer": "John Trudeau",
+  "year": 1993,
+  "description": "A gizmo-packed DMD game with 9 crime scene modes, 6-ball multiball, the spinning Deadworld planet, four flippers, and the Ultimate Challenge wizard mode. Score big by accumulating crime scenes for bonus and chaining extra balls.",
+  "badge": {
+    "gradient_from": "#1a0a0a",
+    "gradient_to": "#2d1b1b",
+    "border_color": "#e74c3c",
+    "text_color": "#ff5252",
+    "abbreviation": "JD"
+  },
+  "ratings": {
+    "drain_danger": 4,
+    "rule_complexity": 3,
+    "fun_factor": 4,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "Judge Dredd is a <strong>mode-based game</strong> with 9 crime scene modes, 6-ball multiball, and four flippers (two standard, one upper left, one tiny upper right). Start crime scene modes at the five lit shots around the playfield. Complete all 9 to qualify the <strong>Ultimate Challenge</strong>. Build toward <strong>6-ball multiball</strong> by spelling J-U-D-G-E at the drop targets, then locking 3 balls in Deadworld via the left ramp. Crime scenes add 1M each to your end-of-ball bonus (up to 255M!) and award an <strong>extra ball every 6 completions</strong>. Use the red explosion buttons to change which crime scene mode starts next.",
+    "modes": [
+      { "name": "Pursuit", "type": "md" },
+      { "name": "Blackout", "type": "md" },
+      { "name": "Sniper", "type": "md" },
+      { "name": "Battle Tank", "type": "md" },
+      { "name": "Impersonator", "type": "md" },
+      { "name": "Meltdown", "type": "md" },
+      { "name": "Stakeout", "type": "md" },
+      { "name": "Safe Cracker", "type": "md" },
+      { "name": "Bad Guys", "type": "md" },
+      { "name": "Deadworld Multiball", "type": "mb" },
+      { "name": "Ultimate Challenge", "type": "wiz" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Crime Scene Shots (Inner Loop Is Key)",
+    "description": "The five crime scene shots are scattered around the playfield, each with colored inserts. Completing crime scenes is the core of the game — each one adds 1M to your end-of-ball bonus and every 6th completion awards an extra ball. The inner loop shot from the upper right flipper is the hardest to reach but resets after every set of 5, giving you a free follow-up shot. If you can consistently feed the ball to the upper right flipper and shoot the inner loop, you'll accumulate crime scenes faster than any other method."
+  },
+  "hard_box": {
+    "text": "The flipper gap on Judge Dredd is notoriously wide — even top tournament players struggle to break 250M on a tightly set machine. The game has a ton of toys and features packed onto the playfield, which makes it feel cluttered and leads to unpredictable ball behavior. The left ramp feeds Deadworld (the spinning planet) for ball locks, but the ramp diverter can send balls in unexpected directions. The upper right tiny flipper controls the inner loop and the right ramp — it's a crucial flipper that takes practice to use effectively. Machine setup matters enormously on this game: close up the outlanes and it plays fair; leave them wide open and it's brutal."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Start a Mode, Begin Spelling JUDGE",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Choose Your First Mode — Pick Blackout",
+          "difficulty": "you_got_this",
+          "description": "Use the red explosion buttons on the cabinet to cycle to Blackout before shooting a crime scene shot. Blackout starts a 2-ball multiball — and when you drain one ball, your game continues normally. It's the safest first mode because you get the multiball benefit without risking your ball. After Blackout, Pursuit is a good second choice (shoot the right ramp repeatedly)."
+        },
+        {
+          "order": 2,
+          "title": "Start Spelling JUDGE at the Drop Targets",
+          "difficulty": "earnable",
+          "description": "The {{callout:judge-drops}} in the center spell J-U-D-G-E. Complete them to light ball lock at the left ramp. After the first multiball, completing them again gets harder — more completions are needed. Start working on them early so you're ready for multiball by Ball 2."
+        },
+        {
+          "order": 3,
+          "title": "Accumulate Crime Scenes",
+          "difficulty": "earnable",
+          "description": "Shoot the five lit crime scene shots to complete scenes. Each completion adds 1M to your end-of-ball bonus (permanent for the game). Every 6th crime scene awards an extra ball (stackable up to 4). Crime scenes are the backbone of high scoring — both for the bonus and for qualifying Ultimate Challenge."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Start 6-Ball Multiball",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Lock 3 Balls → Start Multiball",
+          "difficulty": "earnable",
+          "description": "After completing JUDGE, shoot the {{callout:left-ramp}} to lock balls in {{callout:deadworld}} (the spinning planet). Lock 3 balls and Deadworld releases them all — plus 3 more auto-launch from the trough for 6-ball multiball. During multiball, shoot for jackpots at the lit shots. Collect 4 jackpots to qualify the Ultimate Challenge."
+        },
+        {
+          "order": 2,
+          "title": "Keep Completing Crime Scenes During Multiball",
+          "difficulty": "earnable",
+          "description": "Crime scene shots stay active during multiball. With 6 balls in play, you'll naturally complete scenes by hitting shots everywhere. Each scene still adds 1M to your permanent bonus. This is the safest time to accumulate scenes — especially the harder shots like the inner loop."
+        },
+        {
+          "order": 3,
+          "title": "Hit the Mystery Target During Modes",
+          "difficulty": "earnable",
+          "description": "The '?' bonus target is lit during each mode and helps you in mode-specific ways: Blackout gives 10M, Battle Tank extends the timer by 10 seconds, Meltdown secures all reactors. Hit it once per mode — it unlights after one hit. It's always worth the detour."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Cash In Crime Scene Bonus, Push for Ultimate Challenge",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Don't Tilt — Your Bonus Is Everything",
+          "difficulty": "you_got_this",
+          "description": "By Ball 3, your crime scene bonus can be 30M, 50M, or even 100M+. It's scored at end of ball and can be doubled once per game. This bonus is often the difference between winning and losing at league. Play controlled, don't tilt."
+        },
+        {
+          "order": 2,
+          "title": "Complete Remaining Modes If Close to Ultimate Challenge",
+          "difficulty": "good_luck",
+          "description": "If you've completed most of the 9 modes, push to finish the rest. Ultimate Challenge lights after all 9 are done (or after collecting 4 multiball jackpots). It launches all balls from the trough with all crime scenes lit for 10M each. With 4-6 balls in play, this can produce an enormous score."
+        },
+        {
+          "order": 3,
+          "title": "Extra Ball Farming via Crime Scenes",
+          "difficulty": "earnable",
+          "description": "If you've been completing crime scenes consistently, you should have extra balls stacked (up to 4). Each extra ball gives you another chance to accumulate bonus. The game effectively rewards you for the thing you should already be doing."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Use the Red Buttons to Choose Modes",
+        "description": "The red 'explosion' buttons on the cabinet cycle through which crime scene mode will start next. Always check and change before shooting a crime scene shot. Choosing the right mode order makes a huge difference — Blackout first (free multiball), Pursuit second (easy ramp shots)."
+      },
+      {
+        "title": "The Left Ramp Diverter Can Surprise You",
+        "description": "The left ramp has a diverter that sends balls to Deadworld when lock is lit, or back to the playfield when it's not. Balls exiting the ramp can come back at unexpected speeds. Be ready with both flippers after any left ramp shot."
+      },
+      {
+        "title": "Upper Right Flipper Takes Practice",
+        "description": "The tiny flipper in the upper right controls the inner loop (key crime scene shot) and the right ramp. Feed it by shooting the left loop (ball goes to the kickback lane, crosses the playfield) or by shooting early from the upper left flipper to graze the JUDGE standups."
+      },
+      {
+        "title": "Machine Setup Matters Enormously",
+        "description": "Judge Dredd plays very differently depending on outlane width and overall setup. A tightly set machine is fair and fun; a loose one is punishing. If you're at league and the outlanes are wide open, adjust your aggression accordingly."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Safe Cracker Mode (Early Game)",
+        "description": "Safe Cracker requires repeated center ramp shots on a timer. It's fun but risky — the center ramp isn't the easiest shot and the timer is tight. There are easier modes to start with. Come back to it later when you need it for Ultimate Challenge."
+      },
+      {
+        "title": "SuperGame (2-Credit Mode)",
+        "description": "Some machines have SuperGame enabled, which costs 2 credits and adds a host named 'Anita Mann' with special modes. It's a different experience but burns two credits. For league play, stick to the standard Regulation game unless your league specifies otherwise."
+      },
+      {
+        "title": "Deadworld Multiball Jackpot Chasing",
+        "description": "During 6-ball multiball, the temptation is to chase jackpots at specific shots. With 6 balls bouncing around, you're better off keeping balls alive and accumulating crime scenes. The jackpots are nice but the crime scene bonus often outscores them."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Scoring varies enormously by machine setup. On a tournament-tight machine, 250M is an excellent game. On a home setup with generous settings, billion-point games are possible. Crime scene bonus is where most of the points come from — a player with 50+ crime scenes and a bonus double will outscore a player who chased multiballs but ignored scenes."
+    },
+    {
+      "label": "The Same Design Team as Demolition Man",
+      "text": "Judge Dredd and Demolition Man share DNA — similar playfield concepts, the widebody platform, and gizmo-heavy design. Contemporary reviewers and players generally consider Demolition Man the more polished of the two. But Judge Dredd has a charm and weirdness all its own, especially the animations and dark humor."
+    },
+    {
+      "label": "The 100M Super Shot",
+      "text": "In SuperGame mode (2 credits), there's a 100M super shot that requires advancing the crime level from Warning to Class X Felony, then making a specific shot within 3 seconds. It's wild but extremely rare. Don't plan around it."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "judge-drops",
+      "name": "JUDGE Drop Targets",
+      "description": "Center of the playfield. Five drop targets spelling J-U-D-G-E. Complete them to light ball lock at the left ramp. After the first multiball, completion requirements increase. The most important targets on the game for multiball progression.",
+      "image": null,
+      "crop": { "x": 50, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Deadworld Lock)",
+      "description": "Left side of the playfield. When lock is lit (after completing JUDGE), sends the ball to Deadworld. Lock 3 balls to start 6-ball multiball. Has a diverter — balls can return to play unexpectedly.",
+      "image": null,
+      "crop": { "x": 25, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "deadworld",
+      "name": "Deadworld (Spinning Planet)",
+      "description": "Upper left of the playfield. The spinning Deadworld planet holds locked balls. When 3 are locked, it releases them all and 3 more auto-launch for 6-ball multiball. One of the coolest toys in pinball.",
+      "image": null,
+      "crop": { "x": 20, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "description": "Right side, accessible from the lower right flipper and the tiny upper right flipper. Used during Pursuit mode (repeated shots) and various crime scenes. Feeds back to the right inlane area.",
+      "image": null,
+      "crop": { "x": 70, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "inner-loop",
+      "name": "Inner Loop",
+      "description": "Shot from the tiny upper right flipper. One of the five crime scene shots and the hardest to reach intentionally. Resets after each set of 5 crime scene completions, giving a free follow-up. Mastering this shot accelerates crime scene accumulation dramatically.",
+      "image": null,
+      "crop": { "x": 60, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "mystery-target",
+      "name": "Mystery / Bonus Target (?)",
+      "description": "Lit during each crime scene mode. Hit it once per mode for a mode-specific bonus: 10M during Blackout, timer extension during Battle Tank, securing reactors during Meltdown. Always worth the shot.",
+      "image": null,
+      "crop": { "x": 40, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "sniper-tower",
+      "name": "Sniper Tower",
+      "description": "Upper area of the playfield. Used during Sniper mode and for various scoring features. The vertical shot up into the tower is satisfying but risky.",
+      "image": null,
+      "crop": { "x": 50, "y": 20, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pinball.org — Judge Dredd Rulesheet by Cameron Silver & Keith Johnson",
+      "type": "rulesheet",
+      "url": "https://pinball.org/rules/judgedredd.html",
+      "description": "Comprehensive rulesheet covering all 9 crime scene modes, multiball mechanics, Ultimate Challenge, SuperGame rules, spoiler animations, and the mystery target bonuses for each mode."
+    },
+    {
+      "title": "Digital Pinball Fans — Judge Dredd Tactics & Strategies",
+      "type": "forum",
+      "url": "https://digitalpinballfans.com/threads/judge-dredd-tactics-strategies.11070/",
+      "description": "Strategy discussion covering crime scene bonus accumulation as the primary scoring path, inner loop shooting technique, and extra ball farming every 6 scenes."
+    },
+    {
+      "title": "Pinside — Dredd Pinball Tips",
+      "type": "forum",
+      "url": "https://pinside.com/pinball/forum/topic/dredd-pinball-tips-and-question",
+      "description": "Player tips covering mode selection order (Blackout first, Pursuit second), red button mode cycling, machine setup impact on scoring, and advanced multiball techniques."
+    },
+    {
+      "title": "Wikipedia — Judge Dredd Pinball",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Judge_Dredd_(pinball)",
+      "description": "Production history, SuperGame rules, Deadworld mechanics, Ultimate Challenge details, and the original ball-lock prototype that was removed."
+    }
+  ],
+  "chat_starters": [
+    "What order should I play the crime scene modes?",
+    "How do I get the ball to the upper right flipper?",
+    "What are the JUDGE drop targets for?",
+    "How does the crime scene bonus work?"
+  ]
+}

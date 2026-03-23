@@ -1,0 +1,225 @@
+{
+  "slug": "cyclone",
+  "title": "Cyclone",
+  "manufacturer": "Williams",
+  "designer": "Mark Ritchie",
+  "year": 1988,
+  "description": "An amusement park-themed classic with no multiball. Score big by building the Cyclone ramp jackpot, chasing the Comet million shot, and spinning the mystery wheel. Simple rules, pure shot-making.",
+  "badge": {
+    "gradient_from": "#1a0a2e",
+    "gradient_to": "#2d1b69",
+    "border_color": "#e67e22",
+    "text_color": "#f39c12",
+    "abbreviation": "CYC"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 1,
+    "fun_factor": 4,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "Cyclone is a <strong>no-multiball single-ball game</strong> — second in the Williams amusement park trilogy (Comet → Cyclone → Hurricane). There are three main scoring features: the <strong>Cyclone ramp</strong> (shoot it when lit for the Gate Jackpot, which builds from top lane completions), the <strong>Comet ramp</strong> (consecutive shots build from 40K to the <strong>Million Shot</strong>), and the <strong>Ferris Wheel</strong> (collects bumper bonus). Complete the top lanes to start <strong>Double Scoring</strong> for 20 seconds — cumulative and stackable. The backbox <strong>Mystery Wheel</strong> spins for random awards but gets stingy once you're scoring well. Simple rules, pure shot-making, and the best sound package of 1988.",
+    "modes": [
+      { "name": "Double Scoring", "type": "ev" },
+      { "name": "Mystery Wheel", "type": "ev" },
+      { "name": "Comet Million Shot", "type": "ev" },
+      { "name": "Gate Jackpot", "type": "ev" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Cyclone Ramp",
+    "description": "The Cyclone ramp (right side) is the most important shot on the game. When lit, it scores the Gate Jackpot — which starts at a minimum and builds by 5K for every pass through the top rollover lanes. After collecting the jackpot, relight the Cyclone by hitting the three duck standup targets above the right outlane. The Cyclone ramp is easier to hit and more forgiving than the Comet ramp — weak shots still tend to make it up, while weak Comet shots dump you into the dangerous bumper area. Focus here first."
+  },
+  "hard_box": {
+    "text": "This game has no multiball, no modes, and no ball save. You drain, you're done. The rules are the simplest you'll find on any league game, which means there's nowhere to hide — it's pure shot-making and ball control. The center drain is punishing, and the flipper gap feels wider than on most games from this era. The Mystery Wheel in the backbox gets progressively stingier as your score goes up — once you break about 2 million, expect 'Zilch' and '5K' almost every spin. Don't build your strategy around it."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Skill Shot, Start Building the Jackpot",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Nail the Skill Shot",
+          "difficulty": "earnable",
+          "description": "The shuttle ramp over the plunger lane has five holes: 10K, 25K, 100K, 25K, and 5K. Aim for the center 100K hole with a medium-strength plunge. Undershooting rolls the ball back for another try. Each successive ball increases the skill shot multiplier up to 5x — so hitting it consistently across all balls adds up fast."
+        },
+        {
+          "order": 2,
+          "title": "Complete the Top Lanes → Double Scoring",
+          "difficulty": "you_got_this",
+          "description": "The three top rollover lanes are your park entrance gates. Complete all three to start 20 seconds of double scoring. Lane change is available via the flippers. The timer is cumulative — completing them again during double scoring adds another 20 seconds. Every lane pass also adds 5K to the Gate Jackpot. Feed the top lanes via the right orbit shot through the bumpers."
+        },
+        {
+          "order": 3,
+          "title": "Shoot the Cyclone Ramp When Lit",
+          "difficulty": "earnable",
+          "description": "The {{callout:cyclone-ramp}} is lit at the start of the game. Shoot it to collect the Gate Jackpot. After collecting, hit the three {{callout:duck-targets}} to relight it. The jackpot starts at 500K and resets after collection, but the top lanes keep building it. Time your Cyclone shots during double scoring for maximum value."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Build Toward the Comet Million",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Chasing the Comet Million Shot",
+          "difficulty": "earnable",
+          "description": "The {{callout:comet-ramp}} (center) is lit at the start of each game. Consecutive shots within 20 seconds build the value: 40K → 60K → 80K → 100K → 1,000,000. The fifth shot (the million) has a tighter 10-second window. If you miss the timing, the ramp stays lit but resets to 40K. The right flipper is the best angle for the Comet ramp. Strong shots exit to the right inlane; weak shots dump into the bumpers."
+        },
+        {
+          "order": 2,
+          "title": "Collect the Ferris Wheel Bonus",
+          "difficulty": "you_got_this",
+          "description": "The right inlane lights the {{callout:ferris-wheel}} for 15 seconds. Shoot the left orbit to ride it and collect the Ferris Wheel bonus — a minimum of 50K plus 3K per bumper hit. The bonus accumulates across balls if uncollected. After several bumper sessions this can build to 100K+. Especially valuable during double scoring."
+        },
+        {
+          "order": 3,
+          "title": "Spin the Mystery Wheel (Early Only)",
+          "difficulty": "you_got_this",
+          "description": "The {{callout:boomerang}} hole sends the ball to the backbox Mystery Wheel. Awards range from Zilch to 200K, Extra Ball, and Special. The wheel is generous early in the game but gets very stingy once your score is above ~2M. Spin it early if you get the chance, then stop pursuing it."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Double Scoring + Big Shots",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Stack Double Scoring with Everything",
+          "difficulty": "earnable",
+          "description": "Complete the top lanes to start double scoring, then immediately shoot for the Cyclone jackpot, the Comet ramp, or the Ferris Wheel. The Comet million shot during double scoring awards 2 million with unique sound effects. Even the standard Cyclone jackpot is doubled. Getting double scoring running and then hitting your big shots is the key to high scores."
+        },
+        {
+          "order": 2,
+          "title": "Keep Relighting the Cyclone",
+          "difficulty": "earnable",
+          "description": "After each Cyclone jackpot collection, immediately target the duck standup targets to relight it. There's no limit on how many jackpots you can collect per game. The jackpot resets to 500K after each collection, but if you've been completing top lanes, it builds back up quickly."
+        },
+        {
+          "order": 3,
+          "title": "Don't Tilt — Bonus Matters",
+          "difficulty": "you_got_this",
+          "description": "On a no-multiball game, end-of-ball bonus is a significant part of your score. Every top lane completion, bumper hit, and feature shot adds to your bonus. Tilting erases it all. Play smart and controlled on Ball 3 — especially if you've been building bonus all game."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Extra Ball Lights Toggle on Outlanes",
+        "description": "The 'Extra Ball' light toggles between left and right outlanes with flipper and slingshot hits. Pay attention to which outlane it's on. If the ball is heading for the lit outlane, you might get lucky."
+      },
+      {
+        "title": "There Are Posts Inside the Outlanes",
+        "description": "Unlike many games, Cyclone has posts on the inside of the outlanes that help prevent balls from rolling up the inlane and out the outlane. This makes Cyclone slightly more forgiving than it looks, but center drains are still the main killer."
+      },
+      {
+        "title": "The Comet Ramp Dumps Weak Shots Into Bumpers",
+        "description": "The Comet ramp has two exit holes — strong shots complete the ramp, weak shots fall into the bumper area. This isn't always bad (bumper hits build Ferris Wheel bonus), but you lose your Comet combo timing. If your shots aren't making it up the ramp consistently, switch to the Cyclone ramp."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "The Mystery Wheel (After 2M)",
+        "description": "The backbox Mystery Wheel sounds exciting, but the game adjusts awards based on your score. Once you're above ~2 million, the wheel overwhelmingly lands on Zilch and 5K. It's fun to spin early, but after that it's a waste of a shot and a risk."
+      },
+      {
+        "title": "The Spookhouse",
+        "description": "The Spookhouse shot exists on the playfield but its awards are modest compared to the Cyclone jackpot and Comet million. Don't detour to it when bigger scoring features are available."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "The alpha-numeric display maxes at 9,999,999. Average games for intermediate players are 1-3M. Good games break 5M. The best players can roll the display. For league, consistently hitting 3-5M is solid."
+    },
+    {
+      "label": "Part of a Trilogy",
+      "text": "Cyclone is the second game in Williams' amusement park trilogy: Comet (1985), Cyclone (1988), and Hurricane (1991). The Comet ramp shot in Cyclone is a direct reference to the original Comet game. If you enjoy Cyclone, seek out the other two — they share DNA but each plays very differently."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "cyclone-ramp",
+      "name": "Cyclone Ramp",
+      "description": "Right side of the playfield. The main scoring shot — collects the Gate Jackpot when lit. Relit by the three duck targets above the right outlane. Easier and more forgiving than the Comet ramp. Feeds the right inlane.",
+      "image": null,
+      "crop": { "x": 75, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "comet-ramp",
+      "name": "Comet Ramp",
+      "description": "Center of the playfield. Consecutive shots build from 40K to the million shot. Best shot from the right flipper. Strong shots exit to the right inlane; weak shots dump into the bumpers. Steeper than the Cyclone ramp.",
+      "image": null,
+      "crop": { "x": 50, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "ferris-wheel",
+      "name": "Ferris Wheel",
+      "description": "Upper left of the playfield. Accessed via the left orbit. The physical Ferris Wheel carries the ball and deposits it on a ramp to the left inlane. Lit for 15 seconds after passing through the right inlane. Collects a bonus built from bumper hits (50K minimum + 3K per hit). Uncollected bonus carries between balls.",
+      "image": null,
+      "crop": { "x": 20, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "duck-targets",
+      "name": "Duck Targets",
+      "description": "Three standup targets above the right outlane. Complete all three to relight the Cyclone ramp for another jackpot. Essential for repeated jackpot collection.",
+      "image": null,
+      "crop": { "x": 85, "y": 60, "zoom": 2.0 }
+    },
+    {
+      "id": "boomerang",
+      "name": "Boomerang Hole",
+      "description": "Sends the ball up to the backbox Mystery Wheel. Awards range from Zilch to 200K, Extra Ball, and Special. Generous early, stingy after ~2M score. The 'Advance X' light is relit by either return lane.",
+      "image": null,
+      "crop": { "x": 40, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "top-lanes",
+      "name": "Top Rollover Lanes (Park Entrance)",
+      "description": "Three lanes at the top of the playfield. Complete all three for 20 seconds of double scoring (cumulative). Lane change via flippers. Each pass adds 5K to the Gate Jackpot. Fed by the right orbit or plunge.",
+      "image": null,
+      "crop": { "x": 50, "y": 15, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jeff's Pinball Pages — Cyclone Rules & Strategies",
+      "type": "guide",
+      "url": "https://www.jeff-z.com/pinball/cyclone/rules/rules.html",
+      "description": "Detailed rules breakdown with photos covering the shuttle skill shot, all ride features, double scoring mechanics, Gate Jackpot building, and the Mystery Wheel. The most thorough Cyclone resource available."
+    },
+    {
+      "title": "Pinball.org — Cyclone Rulesheet",
+      "type": "rulesheet",
+      "url": "https://pinball.org/rules/cyclone.html",
+      "description": "Classic community rulesheet covering all playfield features, speech callouts, and scoring details."
+    },
+    {
+      "title": "Digital Pinball Fans — Cyclone Tactics & Strategies",
+      "type": "forum",
+      "url": "https://digitalpinballfans.com/threads/cyclone-tactics-and-strategies.10282/",
+      "description": "Strategy discussion covering Cyclone vs Comet ramp prioritization, Mystery Wheel stinginess after 2M, and scoring benchmarks."
+    },
+    {
+      "title": "Wikipedia — Cyclone Pinball",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Cyclone_(pinball)",
+      "description": "Historical context including the amusement park trilogy, production details, AMOA award, and the Reagan backglass."
+    }
+  ],
+  "chat_starters": [
+    "Should I focus on the Cyclone or the Comet ramp?",
+    "How does double scoring work exactly?",
+    "What's the best Mystery Wheel strategy?",
+    "How do I consistently hit the skill shot?"
+  ]
+}

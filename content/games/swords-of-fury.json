@@ -1,0 +1,222 @@
+{
+  "slug": "swords-of-fury",
+  "title": "Swords of Fury",
+  "manufacturer": "Williams",
+  "designer": "Brian Eddy",
+  "year": 1988,
+  "description": "A sword-and-sorcery System 11 classic with four flippers, two playfield levels, no bumpers, and one of the best soundtracks in pinball. Lock 3 balls, start multiball, and collect the Lionman jackpot for the big score.",
+  "badge": {
+    "gradient_from": "#0a1628",
+    "gradient_to": "#1a3a5c",
+    "border_color": "#3498db",
+    "text_color": "#5dade2",
+    "abbreviation": "SOF"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 2,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+  "summary": {
+    "text": "Swords of Fury is a <strong>multiball-focused game</strong> with a two-level playfield, four flippers (two standard, one upper full-size left, one mini right), and zero bumpers. Lock 3 balls by shooting through the left spinner into the {{callout:titan-tunnel}} saucers — lock is always lit. During <strong>3x scoring multiball</strong>, collect the <strong>Lionman jackpot</strong> at the center ramp for the game's biggest payout. Build the <strong>MAGIC value</strong> at the U-turn spinners, complete <strong>AVENGER</strong> standups for extra balls, and save Ogre's Alley at 500K for multiball's 3x multiplier. The game gets harder after 2 million — the difficulty visibly ramps up.",
+    "modes": [
+      { "name": "Multiball (3x Scoring)", "type": "mb" },
+      { "name": "Lionman Jackpot", "type": "ev" },
+      { "name": "AVENGER Extra Ball", "type": "ev" },
+      { "name": "Ogre's Alley", "type": "ev" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Titan Tunnel (Left Spinner → Lock)",
+    "description": "The left spinner leads to the Titan Tunnel saucers where balls are locked for multiball. Lock is always lit — no qualification needed. Three locks starts multiball with 3x scoring. Each lock also increases the left spinner value by 500 points (up to 2,000) for the rest of the ball. This is the most important shot on the game because multiball is where all the big scoring happens, and unlike most games, it never gets harder to start. Lock early, lock often."
+  },
+  "hard_box": {
+    "text": "The four-flipper layout takes getting used to. The upper left flipper (full-size, high on the playfield) is actually the easiest way to shoot the center ramp for the Lionman jackpot during multiball. The tiny mini-flipper on the upper right handles the upper playfield drop targets. The main challenge: once you hit 2 million, the game cranks up the difficulty — the AVENGER timer at the magic tunnel starts timing out much faster, and the game generally gets less forgiving. The good news: multiball difficulty never increases, so your core strategy stays the same regardless of score."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Lock Balls, Build MAGIC Value",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Lock a Ball at the Titan Tunnel",
+          "difficulty": "you_got_this",
+          "description": "Shoot through the left spinner into the {{callout:titan-tunnel}} saucers. Lock is always lit. Get at least one ball locked on Ball 1 to set up multiball for Ball 2. If you're feeling confident, go for two locks."
+        },
+        {
+          "order": 2,
+          "title": "Build MAGIC Value at the U-Turn",
+          "difficulty": "earnable",
+          "description": "The {{callout:u-turn}} has spinners on both entrances — each spin adds 200 to your bonus and advances the drop target value on the upper playfield. The star on the return lanes lights the spinners for 3x (600 per spin) temporarily. Keep the MAGIC value high by shooting the U-turn regularly — it counts down if you neglect it."
+        },
+        {
+          "order": 3,
+          "title": "Work Toward AVENGER",
+          "difficulty": "earnable",
+          "description": "The AVENGER standup targets around the playfield light letters. Complete AVENGER to qualify extra ball — awarded every 4th completion. The inlanes light the ramp for an AVENGER letter too, which is the safest way to collect them."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Start Multiball, Collect Lionman",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Complete Your Third Lock → Start Multiball",
+          "difficulty": "earnable",
+          "description": "Lock your third ball to start multiball with 3x scoring. Everything scores triple during multiball. Multiball never gets harder to start — even if you've already had one, it's the same three locks next time."
+        },
+        {
+          "order": 2,
+          "title": "Collect Ogre's Alley at 500K During Multiball",
+          "difficulty": "earnable",
+          "description": "{{callout:ogres-alley}} behind the upper ramp builds up to 500K. You can only collect the 500K once per game. Save it for the start of multiball — during 3x scoring, it's worth 1.5 million. Shoot the lit side of Ogre's Alley to advance, the other side to collect."
+        },
+        {
+          "order": 3,
+          "title": "Shoot the Center Ramp for Lionman Jackpot",
+          "difficulty": "earnable",
+          "description": "During multiball, the center ramp scores the Lionman jackpot — the game's biggest payout, multiplied by 3x. The center ramp can be shot from any of the three big flippers, but it's easiest from the upper left flipper. Build Lionman value throughout single-ball play, then cash it in during the 3x window."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Another Multiball or Cash In Bonus",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Another Multiball",
+          "difficulty": "earnable",
+          "description": "Since multiball never gets harder, go for another round. If your Lionman value has been building, a second multiball can be even more valuable than the first. Three locks, same as before."
+        },
+        {
+          "order": 2,
+          "title": "Upper Playfield Drop Targets for Jackpot",
+          "difficulty": "earnable",
+          "description": "The upper playfield has 5 unusual drop targets. Clearing them awards the jackpot (builds game-to-game, 500K to 4M). The mini-flipper handles these targets. When the drops lower, a path opens where the ball drops to the main playfield — use this to set up a center ramp shot from the upper flipper."
+        },
+        {
+          "order": 3,
+          "title": "Protect Your Bonus and Kickback",
+          "difficulty": "you_got_this",
+          "description": "The left kickback can only be relit during multiball — another reason to prioritize getting multiball started. If your kickback is off and multiball isn't coming, play extra carefully. Bonus is a significant scoring component on this game."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Kickback Relights Only During Multiball",
+        "description": "Unlike most games, you can't relight the left kickback during single-ball play. This makes multiball doubly important — both for scoring and for safety. Once your kickback fires, get to multiball as fast as you can."
+      },
+      {
+        "title": "Dead Bounce off the Mini-Playfield Feed",
+        "description": "When the ball exits the mini-playfield, you can often dead bounce it on the lower flippers. This gives you a controlled ball to shoot back into the Titan Tunnel for a lock. Practice this feed — it's a free controlled shot opportunity."
+      },
+      {
+        "title": "The Upper Left Flipper Is Your Friend",
+        "description": "The full-size upper left flipper can reach the center ramp more easily than the lower flippers. Anytime you have a ball on the upper flipper, consider the center ramp — especially during multiball for the Lionman jackpot."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "AVENGER Standups (Direct Shots)",
+        "description": "While completing AVENGER earns extra balls, directly shooting the standup targets is risky — they're in awkward positions. The inlanes light the ramp for AVENGER letters, which is much safer. Let AVENGER completions come naturally through inlane passes and mode play rather than targeting standups."
+      },
+      {
+        "title": "Ogre's Alley Above 500K",
+        "description": "Once you've collected Ogre's Alley at 500K (ideally during 3x multiball for 1.5M), it resets and can't reach 500K again that game. Don't waste shots on it after the big collection."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "The display rolls at 9,999,990. Average games are 1-3M. A strong tournament game is 5M+. Top players can roll the display by chaining multiballs and Lionman jackpots. For league, consistently getting to multiball and collecting Lionman puts you in a good spot."
+    },
+    {
+      "label": "The 2 Million Threshold",
+      "text": "At 2 million, the game makes visible difficulty changes: the AVENGER timer gets much faster, and general timing windows tighten. Your multiball strategy doesn't change, but single-ball play becomes more punishing. Don't be surprised if the game suddenly feels harder — it literally is."
+    },
+    {
+      "label": "That Soundtrack Though",
+      "text": "Brian Schmidt's soundtrack for Swords of Fury is widely considered one of the best in pinball history. The variations that play during different game states are remarkably sophisticated for 1988. The 'Lionman!' callout has become a pinball meme — referenced in Total Nuclear Annihilation and Rick & Morty pinball."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "titan-tunnel",
+      "name": "Titan Tunnel (Ball Lock)",
+      "description": "Left side, accessed via the left spinner. Lock 3 balls here to start multiball. Lock is always lit. Each lock also increases the spinner value. The most important shot on the game.",
+      "image": null,
+      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Lionman)",
+      "description": "Center of the playfield. Scores the Lionman jackpot during multiball (multiplied by 3x). Shootable from all three large flippers. Easiest from the upper left flipper.",
+      "image": null,
+      "crop": { "x": 50, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "u-turn",
+      "name": "U-Turn Spinners",
+      "description": "Lower left-center of the playfield. Two spinners, one at each entrance. Each spin adds 200 to bonus and advances the upper playfield drop target value. The star on return lanes lights spinners for 3x (600 per spin). Keeps the MAGIC value building.",
+      "image": null,
+      "crop": { "x": 35, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "ogres-alley",
+      "name": "Ogre's Alley",
+      "description": "Behind the upper ramp. One side advances the value, the other side collects. Builds to 500K (collectable once per game). Save it for multiball's 3x scoring for a 1.5M payout.",
+      "image": null,
+      "crop": { "x": 50, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "upper-playfield",
+      "name": "Upper Playfield / Drop Targets",
+      "description": "Upper left area. Small playfield with a mini-flipper and 5 unusual drop targets. Clearing them awards the jackpot (500K-4M, builds across games). When targets lower, a path opens for the ball to drop to the main playfield.",
+      "image": null,
+      "crop": { "x": 25, "y": 20, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pinball.org — Swords of Fury Rulesheet",
+      "type": "rulesheet",
+      "url": "http://pinball.org/rules/swordsoffury.html",
+      "description": "Classic community rulesheet covering the full playfield layout, four-flipper system, locking mechanics, MAGIC value, Ogre's Alley strategy, and jackpot mechanics."
+    },
+    {
+      "title": "Pinball FX Wiki — Swords of Fury",
+      "type": "guide",
+      "url": "https://pinballfx.fandom.com/wiki/Swords_of_Fury",
+      "description": "Overview of game mechanics, strategy priorities, multiball importance, and AVENGER extra ball details."
+    },
+    {
+      "title": "Digital Pinball Fans — Swords of Fury Strategy Guide",
+      "type": "forum",
+      "url": "https://digitalpinballfans.com/threads/swords-of-fury-strategy-guide.12579/",
+      "description": "Community strategy discussion covering Lionman multiball priority, Ogre's Alley 3x timing, the 2M difficulty increase, and two main strategic approaches."
+    },
+    {
+      "title": "GameFAQs — Swords of Fury Rulesheet by B. Elmore",
+      "type": "rulesheet",
+      "url": "https://gamefaqs.gamespot.com/pinball/915958-swords-of-fury/faqs/1481",
+      "description": "Detailed rules covering scoring rollover, jackpot building across games, gate system, Ogre's Alley values, and upper playfield mechanics."
+    }
+  ],
+  "chat_starters": [
+    "How does the Lionman jackpot build?",
+    "When should I collect Ogre's Alley?",
+    "What changes when I hit 2 million?",
+    "How do I use the four flippers effectively?"
+  ]
+}

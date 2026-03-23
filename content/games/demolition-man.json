@@ -1,0 +1,253 @@
+{
+  "slug": "demolition-man",
+  "title": "Demolition Man",
+  "manufacturer": "Williams",
+  "designer": "Dennis Nordman",
+  "year": 1994,
+  "description": "A widebody SuperPin with four multiballs, a magnet-powered Cryo-Claw, gun handle triggers, and combos that are the key to everything. Complete all four multiballs for the Demolition Jackpot, or complete all five Claw awards for Demolition Time.",
+  "badge": {
+    "gradient_from": "#0a1a2e",
+    "gradient_to": "#1a3a5c",
+    "border_color": "#00bcd4",
+    "text_color": "#4dd0e1",
+    "abbreviation": "DM"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 3,
+    "fun_factor": 5,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "Demolition Man is a <strong>5-ball widebody game</strong> built around <strong>combos</strong> and <strong>four multiballs</strong>. Combos are sequences of major shots — each lit shot leads to the next, scoring 5M+ per shot and escalating. Hit the yellow standup targets to light <strong>Quick Freeze</strong> at the left ramp, which locks balls for multiball. Complete four multiballs (Fortress, Museum, Wasteland, Cryoprison) to light the <strong>Demolition Jackpot</strong>. The <strong>Cryo-Claw</strong> (accessed via the right ramp after completing MTL lanes) offers five awards including Lock Freeze — complete all five for <strong>Demolition Time</strong> wizard mode. Secret scoring: the gun handle thumb buttons award a secret jackpot once per multiball.",
+    "modes": [
+      { "name": "Fortress Multiball", "type": "mb" },
+      { "name": "Museum Multiball", "type": "mb" },
+      { "name": "Wasteland Multiball", "type": "mb" },
+      { "name": "Cryoprison Multiball", "type": "mb" },
+      { "name": "Demolition Time", "type": "wiz" },
+      { "name": "AcMag Mode", "type": "md" },
+      { "name": "Car Chase", "type": "md" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Left Ramp (Quick Freeze Lock)",
+    "description": "The left ramp is lit for Quick Freeze after you hit enough yellow standup targets (turning off their insert lights). Shooting Quick Freeze locks a ball. Lock enough balls and multiball starts. This is the fastest path to multiball: hit yellow targets → shoot left ramp. On Ball 1, you can start multiball in as few as three shots: upper flipper to the underground scoop, right flipper to the left ramp, then the right ramp. Quick Freeze should be your default choice from the Cryo-Claw when available."
+  },
+  "hard_box": {
+    "text": "This is a widebody game — the playfield is wider than standard, which means balls have more room to take bad angles. The flipper gap feels particularly punishing for center drains. The game has gun handle triggers instead of standard flipper buttons (though they work the same), plus thumb buttons on top of the handles that score secret jackpots during specific moments — more on that in Level Up. The Cryo-Claw is the signature toy: a magnet arm that picks up the ball and swings it over five award lanes. You press both gun triggers simultaneously to drop the ball. The timing is tricky but fun. The biggest trap for new players: focusing on the Claw awards instead of just locking balls. Quick Freeze at the Claw is almost always the right choice."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Fast Multiball — Three Shots Is All It Takes",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Skill Shot — Side Ramp from Upper Flipper",
+          "difficulty": "earnable",
+          "description": "The plunge sends the ball around to the upper left flipper. Shoot the side ramp for the skill shot — worth 5M (it counts as the first combo). Each made skill shot increases subsequent combo values. Miss it and you still have a ball in play, so it's low-risk."
+        },
+        {
+          "order": 2,
+          "title": "Hit Yellow Targets → Quick Freeze → Lock",
+          "difficulty": "you_got_this",
+          "description": "Hit the yellow standup targets (turning off their insert lights) to light Quick Freeze on the {{callout:left-ramp}}. Shoot the left ramp to lock a ball. Repeat until multiball starts. The yellow targets are scattered around the playfield — you'll hit them naturally while making other shots. The fastest start: scoop shot → left ramp → right ramp."
+        },
+        {
+          "order": 3,
+          "title": "Start Making Combos",
+          "difficulty": "earnable",
+          "description": "Combos are sequences of major shots connected by flashing red arrows. Each shot lights the next logical shot — left inlane lights right ramp, right loop, and AcMag; right inlane lights left orbit and left ramp. Combos score 5M for the first, 6M, 7M, etc. with no cap. The arrows stay lit even if you make other shots in between. Chain as many as you can."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Multiballs and Claw Awards",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Another Multiball",
+          "difficulty": "earnable",
+          "description": "Each multiball has a different name (Fortress, Museum, Wasteland, Cryoprison) but they all start the same way: Quick Freeze locks. Complete all four for the {{callout:demolition-jackpot}} at the right ramp — worth the total of all jackpots scored across all four multiballs. This is the game's big payoff, so keep starting multiballs."
+        },
+        {
+          "order": 2,
+          "title": "Use the Cryo-Claw Wisely",
+          "difficulty": "earnable",
+          "description": "Complete the MTL rollover lanes to light the left inlane, which lights the {{callout:claw}} on the right ramp. The Claw grabs the ball magnetically and swings over five lanes. Press both gun triggers to drop the ball. Choose <strong>Lock Freeze</strong> for instant ball locks, or <strong>AcMag</strong> for a repeatable center ramp scoring mode. The other three awards (Prison Break, Super Jets, Capture Simon) are less valuable."
+        },
+        {
+          "order": 3,
+          "title": "Score Explode Hurry-Ups",
+          "difficulty": "earnable",
+          "description": "Four shots (left/right loop, left/right ramp) have 'Explode' inserts worth 10M each. They're lit by shooting the underground hole when it's NOT lit for a combo. The Retina Scan (eyeball shot on the left) also starts an Explode hurry-up. 10M shots add up fast during active play."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Push for Demolition Jackpot or Demolition Time",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Complete Remaining Multiballs",
+          "difficulty": "earnable",
+          "description": "If you haven't completed all four multiballs, keep going. The Demolition Jackpot at the right ramp is the sum of all jackpots you've scored. Even if you can't complete all four, each individual multiball is still the best scoring opportunity in the game."
+        },
+        {
+          "order": 2,
+          "title": "Work Toward Demolition Time",
+          "difficulty": "good_luck",
+          "description": "Complete all five Claw awards (Start AcMag, Lock Freeze, Prison Break, Super Jets, Capture Simon) to light Demolition Time at the underground shot. It's a 5-ball multiball where all jackpot shots are lit. Hard to reach but devastating when you get there."
+        },
+        {
+          "order": 3,
+          "title": "Combo Count Toward Computer and Extra Ball",
+          "difficulty": "earnable",
+          "description": "Every 10 combos lights the Computer at the underground shot for a random award. Extra ball lights at 12 combos. Keep chaining combos throughout the game — they're the foundation of everything. Even modest combo chains build your score steadily while working toward bigger features."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Widebody Center Drains Are Real",
+        "description": "The extra-wide playfield means balls take weird angles you're not used to. Center drains are the most common way to lose a ball. The anti-biff bars under the flippers make bang-backs nearly impossible. Focus on controlled play."
+      },
+      {
+        "title": "The Ball Saver Is Generous",
+        "description": "Small red inlay lights above each flipper indicate the ball saver. It's active at the start of each ball and during multiball. Use those first few seconds to make aggressive shots — you'll get the ball back if you drain."
+      },
+      {
+        "title": "Left Inlane Is Valuable",
+        "description": "The left inlane lights the Claw on the right ramp (if MTL lanes are complete) AND starts combo arrows. It's the most valuable lane pass on the game. Anytime you can feed the left inlane, you're setting up your next big play."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Super Jets from the Claw",
+        "description": "When the Claw is lit, Super Jets is the weakest of the five awards. The jet bumpers score modestly and the ball bounces unpredictably. Always prioritize Lock Freeze or AcMag from the Claw instead."
+      },
+      {
+        "title": "The Computer (Random Award)",
+        "description": "The Computer at the underground shot gives random awards when lit. Some are great (extra ball, multiball), but many are mediocre. Don't go out of your way for it — let it come naturally from combo milestones."
+      },
+      {
+        "title": "Starting Payback Time During Multiball (on real machines)",
+        "description": "There's a known issue where balls can get stuck behind the underground drop target during multiball, wasting your Demolition Time or mode timer. Be aware of ball paths near the underground area during multiball."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "This is a 5-ball game, so you get more chances than most. Average games are 100-200M. Good tournament games break 500M. The best players push into multi-billion territory with heavy combo chaining and multiball stacking. For league, consistently hitting 300M+ is solid."
+    },
+    {
+      "label": "The Gun Handles",
+      "text": "Demolition Man has gun-shaped handles instead of standard flipper buttons. The triggers on the handles work as flipper buttons. The thumb buttons on TOP of the handles are the secret — they score a secret jackpot once per multiball during certain moments (jackpot awards, Capture Simon, Retina Scan, and other specific events). Press both simultaneously when you see a big score flash on the display."
+    },
+    {
+      "label": "It's What Judge Dredd Should Have Been",
+      "text": "Demolition Man shares DNA with Judge Dredd (released the year before by the same design team) but fixes most of Dredd's design issues. The playfield flows better, the modes are more rewarding, and the combo system gives every shot purpose. If you enjoy one, try the other."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Quick Freeze)",
+      "description": "Left-center of the playfield. Lit for Quick Freeze after hitting yellow targets. Locks balls for multiball. Also lit for Car Chase mode. Feeds to the left inlane. The most important shot for starting multiballs.",
+      "image": null,
+      "crop": { "x": 30, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "claw",
+      "name": "Cryo-Claw / Right Ramp",
+      "description": "Right side of the playfield. The right ramp normally feeds the right inlane, but when the Claw is lit, the ball is grabbed by a magnet arm and swung over five award lanes. Press both gun triggers to release. Also where the Demolition Jackpot and Super Jackpots are scored.",
+      "image": null,
+      "crop": { "x": 70, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "underground",
+      "name": "Underground / Computer",
+      "description": "Left of the jets, below the center ramp. Easy from the upper left flipper. Awards the Computer random prize when lit (every 10 combos). Lights Explode inserts when shot unlit. Where Demolition Time starts when qualified.",
+      "image": null,
+      "crop": { "x": 40, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "acmag-ramp",
+      "name": "AcMag / Center Ramp",
+      "description": "Top of the playfield. A wide ramp triggered by a gate. During AcMag mode (from the Claw), repeated center ramp shots score escalating values (5M-12.5M+). Also a combo shot. Feeds to the right side.",
+      "image": null,
+      "crop": { "x": 50, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "retina-scan",
+      "name": "Retina Scan (Eyeball)",
+      "description": "Left side of the playfield. The eyeball shot. Starts Explode hurry-ups and other features. A satisfying shot that contributes to combo chains.",
+      "image": null,
+      "crop": { "x": 15, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "demolition-jackpot",
+      "name": "Demolition Jackpot",
+      "description": "Lit at the right ramp after completing all four multiballs. Worth the total of all jackpots scored in all four multiballs combined. Goes away if the ball drains or another multiball starts. Shoot it immediately when it lights.",
+      "image": null,
+      "crop": { "x": 70, "y": 35, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pinball.org — Demolition Man Rulesheet",
+      "type": "rulesheet",
+      "url": "https://pinball.org/rules/demolitionman.html",
+      "description": "Comprehensive rulesheet covering combo mechanics, all four multiballs, Claw awards, Explode hurry-ups, Computer awards, and Demolition Time qualification."
+    },
+    {
+      "title": "GameFAQs — Demolition Man Rules by Jonathan Deitch & Brian Dominy",
+      "type": "rulesheet",
+      "url": "https://gamefaqs.gamespot.com/pinball/916413-demolition-man/faqs/1350",
+      "description": "Detailed rules covering playfield layout, skill shot, combo system, Quick Freeze mechanics, Claw operation, and multiball details."
+    },
+    {
+      "title": "Colorado Pinball — DM Strategy Card",
+      "type": "guide",
+      "url": "https://www.colorado-pinball.com/wp-content/uploads/2018/08/Demolition-Man.pdf",
+      "description": "Tournament-oriented quick reference covering the 3-shot multiball start, combo strategy, Claw priorities, and secret jackpot button presses."
+    },
+    {
+      "title": "Wikipedia — Demolition Man Pinball",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Demolition_Man_(pinball)",
+      "description": "Production history, Cryo-Claw mechanics, SuperPin line context, and the Stallone/Snipes custom speech."
+    }
+  ],
+  "chat_starters": [
+    "What's the fastest way to start multiball?",
+    "Which Claw award should I pick?",
+    "How do combos work exactly?",
+    "What do the gun handle thumb buttons do?"
+  ],
+  "level_up": {
+    "intro": "Once the combo → Quick Freeze → multiball loop feels natural, these techniques push toward the Demolition Jackpot.",
+    "tips": [
+      {
+        "title": "Secret Jackpots via Gun Handle Buttons",
+        "description": "The thumb buttons on top of the gun handles award a secret jackpot once per multiball when pressed simultaneously during specific scoring moments. The known trigger points include: during jackpot award screens, during the 2nd Retina Scan, during Capture Simon from the Claw, and during the 'U-Look-GR8-2Day' display. Watch the DMD — when you see a big score flash, mash both thumb buttons."
+      },
+      {
+        "title": "AcMag Ramp Grinding",
+        "description": "When AcMag is awarded from the Claw, the center ramp scores escalating values with repeated shots (5M, 6M, 7.5M up to 12.5M per shot, then resets). If you can trap and consistently feed the center ramp, this is one of the most reliable single-ball scoring modes in the game. The animation of increasingly ridiculous explosions is worth it alone."
+      },
+      {
+        "title": "Combo Count Extra Ball",
+        "description": "Extra ball lights at 12 total combos. On a 5-ball game, this is very achievable if you're chaining combos consistently. The combo counter tracks across all balls, so even 2-3 combos per ball gets you there. The 12-combo threshold is operator adjustable, so check the machine."
+      }
+    ]
+  }
+}
