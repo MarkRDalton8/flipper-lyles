@@ -21,10 +21,22 @@
   "summary": {
     "text": "Swords of Fury is a <strong>multiball-focused game</strong> with a two-level playfield, four flippers (two standard, one upper full-size left, one mini right), and zero bumpers. Lock 3 balls by shooting through the left spinner into the {{callout:titan-tunnel}} saucers — lock is always lit. During <strong>3x scoring multiball</strong>, collect the <strong>Lionman jackpot</strong> at the center ramp for the game's biggest payout. Build the <strong>MAGIC value</strong> at the U-turn spinners, complete <strong>AVENGER</strong> standups for extra balls, and save Ogre's Alley at 500K for multiball's 3x multiplier. The game gets harder after 2 million — the difficulty visibly ramps up.",
     "modes": [
-      { "name": "Multiball (3x Scoring)", "type": "mb" },
-      { "name": "Lionman Jackpot", "type": "ev" },
-      { "name": "AVENGER Extra Ball", "type": "ev" },
-      { "name": "Ogre's Alley", "type": "ev" }
+      {
+        "name": "Multiball (3x Scoring)",
+        "type": "mb"
+      },
+      {
+        "name": "Lionman Jackpot",
+        "type": "ev"
+      },
+      {
+        "name": "AVENGER Extra Ball",
+        "type": "ev"
+      },
+      {
+        "name": "Ogre's Alley",
+        "type": "ev"
+      }
     ]
   },
   "one_shot": {
@@ -156,35 +168,55 @@
       "name": "Titan Tunnel (Ball Lock)",
       "description": "Left side, accessed via the left spinner. Lock 3 balls here to start multiball. Lock is always lit. Each lock also increases the spinner value. The most important shot on the game.",
       "image": null,
-      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+      "crop": {
+        "x": 20,
+        "y": 35,
+        "zoom": 2
+      }
     },
     {
       "id": "center-ramp",
       "name": "Center Ramp (Lionman)",
       "description": "Center of the playfield. Scores the Lionman jackpot during multiball (multiplied by 3x). Shootable from all three large flippers. Easiest from the upper left flipper.",
       "image": null,
-      "crop": { "x": 50, "y": 40, "zoom": 2.0 }
+      "crop": {
+        "x": 50,
+        "y": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "u-turn",
       "name": "U-Turn Spinners",
       "description": "Lower left-center of the playfield. Two spinners, one at each entrance. Each spin adds 200 to bonus and advances the upper playfield drop target value. The star on return lanes lights spinners for 3x (600 per spin). Keeps the MAGIC value building.",
       "image": null,
-      "crop": { "x": 35, "y": 55, "zoom": 2.0 }
+      "crop": {
+        "x": 35,
+        "y": 55,
+        "zoom": 2
+      }
     },
     {
       "id": "ogres-alley",
       "name": "Ogre's Alley",
       "description": "Behind the upper ramp. One side advances the value, the other side collects. Builds to 500K (collectable once per game). Save it for multiball's 3x scoring for a 1.5M payout.",
       "image": null,
-      "crop": { "x": 50, "y": 25, "zoom": 2.0 }
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 2
+      }
     },
     {
       "id": "upper-playfield",
       "name": "Upper Playfield / Drop Targets",
       "description": "Upper left area. Small playfield with a mini-flipper and 5 unusual drop targets. Clearing them awards the jackpot (500K-4M, builds across games). When targets lower, a path opens for the ball to drop to the main playfield.",
       "image": null,
-      "crop": { "x": 25, "y": 20, "zoom": 2.0 }
+      "crop": {
+        "x": 25,
+        "y": 20,
+        "zoom": 2
+      }
     }
   ],
   "sources": [
@@ -218,5 +250,11 @@
     "When should I collect Ogre's Alley?",
     "What changes when I hit 2 million?",
     "How do I use the four flippers effectively?"
-  ]
+  ],
+  "pinball_map": {
+    "machine_ids": [
+      750
+    ],
+    "search_name": "Swords of Fury"
+  }
 }

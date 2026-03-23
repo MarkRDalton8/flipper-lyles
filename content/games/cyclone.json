@@ -21,10 +21,22 @@
   "summary": {
     "text": "Cyclone is a <strong>no-multiball single-ball game</strong> — second in the Williams amusement park trilogy (Comet → Cyclone → Hurricane). There are three main scoring features: the <strong>Cyclone ramp</strong> (shoot it when lit for the Gate Jackpot, which builds from top lane completions), the <strong>Comet ramp</strong> (consecutive shots build from 40K to the <strong>Million Shot</strong>), and the <strong>Ferris Wheel</strong> (collects bumper bonus). Complete the top lanes to start <strong>Double Scoring</strong> for 20 seconds — cumulative and stackable. The backbox <strong>Mystery Wheel</strong> spins for random awards but gets stingy once you're scoring well. Simple rules, pure shot-making, and the best sound package of 1988.",
     "modes": [
-      { "name": "Double Scoring", "type": "ev" },
-      { "name": "Mystery Wheel", "type": "ev" },
-      { "name": "Comet Million Shot", "type": "ev" },
-      { "name": "Gate Jackpot", "type": "ev" }
+      {
+        "name": "Double Scoring",
+        "type": "ev"
+      },
+      {
+        "name": "Mystery Wheel",
+        "type": "ev"
+      },
+      {
+        "name": "Comet Million Shot",
+        "type": "ev"
+      },
+      {
+        "name": "Gate Jackpot",
+        "type": "ev"
+      }
     ]
   },
   "one_shot": {
@@ -152,42 +164,66 @@
       "name": "Cyclone Ramp",
       "description": "Right side of the playfield. The main scoring shot — collects the Gate Jackpot when lit. Relit by the three duck targets above the right outlane. Easier and more forgiving than the Comet ramp. Feeds the right inlane.",
       "image": null,
-      "crop": { "x": 75, "y": 40, "zoom": 2.0 }
+      "crop": {
+        "x": 75,
+        "y": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "comet-ramp",
       "name": "Comet Ramp",
       "description": "Center of the playfield. Consecutive shots build from 40K to the million shot. Best shot from the right flipper. Strong shots exit to the right inlane; weak shots dump into the bumpers. Steeper than the Cyclone ramp.",
       "image": null,
-      "crop": { "x": 50, "y": 40, "zoom": 2.0 }
+      "crop": {
+        "x": 50,
+        "y": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "ferris-wheel",
       "name": "Ferris Wheel",
       "description": "Upper left of the playfield. Accessed via the left orbit. The physical Ferris Wheel carries the ball and deposits it on a ramp to the left inlane. Lit for 15 seconds after passing through the right inlane. Collects a bonus built from bumper hits (50K minimum + 3K per hit). Uncollected bonus carries between balls.",
       "image": null,
-      "crop": { "x": 20, "y": 25, "zoom": 2.0 }
+      "crop": {
+        "x": 20,
+        "y": 25,
+        "zoom": 2
+      }
     },
     {
       "id": "duck-targets",
       "name": "Duck Targets",
       "description": "Three standup targets above the right outlane. Complete all three to relight the Cyclone ramp for another jackpot. Essential for repeated jackpot collection.",
       "image": null,
-      "crop": { "x": 85, "y": 60, "zoom": 2.0 }
+      "crop": {
+        "x": 85,
+        "y": 60,
+        "zoom": 2
+      }
     },
     {
       "id": "boomerang",
       "name": "Boomerang Hole",
       "description": "Sends the ball up to the backbox Mystery Wheel. Awards range from Zilch to 200K, Extra Ball, and Special. Generous early, stingy after ~2M score. The 'Advance X' light is relit by either return lane.",
       "image": null,
-      "crop": { "x": 40, "y": 50, "zoom": 2.0 }
+      "crop": {
+        "x": 40,
+        "y": 50,
+        "zoom": 2
+      }
     },
     {
       "id": "top-lanes",
       "name": "Top Rollover Lanes (Park Entrance)",
       "description": "Three lanes at the top of the playfield. Complete all three for 20 seconds of double scoring (cumulative). Lane change via flippers. Each pass adds 5K to the Gate Jackpot. Fed by the right orbit or plunge.",
       "image": null,
-      "crop": { "x": 50, "y": 15, "zoom": 2.0 }
+      "crop": {
+        "x": 50,
+        "y": 15,
+        "zoom": 2
+      }
     }
   ],
   "sources": [
@@ -221,5 +257,11 @@
     "How does double scoring work exactly?",
     "What's the best Mystery Wheel strategy?",
     "How do I consistently hit the skill shot?"
-  ]
+  ],
+  "pinball_map": {
+    "machine_ids": [
+      776
+    ],
+    "search_name": "Cyclone"
+  }
 }

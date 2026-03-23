@@ -7,7 +7,6 @@
   "code_by": "Raymond Davidson",
   "year": 2025,
   "description": "The third Stern Star Wars, built on a classic fan layout. Pick your Rebel characters, spell FORCE to light missions, and score in big chunks through multiballs and character modes.",
-
   "badge": {
     "gradient_from": "#1a1a2a",
     "gradient_to": "#0a0a15",
@@ -15,40 +14,75 @@
     "text_color": "#8888ff",
     "abbreviation": "SW:FE"
   },
-
   "ratings": {
     "drain_danger": 3,
     "rule_complexity": 3,
     "fun_factor": 5,
     "league_frequency": 4
   },
-
   "summary": {
     "text": "Star Wars: FotE runs on a simple engine: <strong>spell F-O-R-C-E</strong> by hitting the five standup targets spread across the playfield, and all eight <strong>Character Shot</strong> inserts light up for <strong>Rebel Missions</strong>. Pick a character (Han, Luke, Leia, Chewie, Lando, R2, C-3PO, or the Droids) and shoot their assigned shot to run the mission. Meanwhile, hitting the <strong>Center Ramp</strong> repeatedly advances the Millennium Falcon toward <strong>Lightspeed Escape Multiball</strong>, and locking three balls at the <strong>Luke VUK</strong> starts <strong>Battle of Hoth Multiball</strong>. Character modes and multiballs are your scoring. The game rewards players who pick a lane and stay in it — FORCE → missions → multiball → repeat.",
     "modes": [
-      { "name": "Rebel Mission: Han", "type": "md" },
-      { "name": "Rebel Mission: Luke", "type": "md" },
-      { "name": "Rebel Mission: Leia", "type": "md" },
-      { "name": "Rebel Mission: Chewie", "type": "md" },
-      { "name": "Rebel Mission: Lando", "type": "md" },
-      { "name": "Rebel Mission: R2-D2", "type": "md" },
-      { "name": "Rebel Mission: C-3PO", "type": "md" },
-      { "name": "Rebel Mission: Droids", "type": "md" },
-      { "name": "Jabba's Palace Event", "type": "ev" },
-      { "name": "Lightspeed Escape Multiball", "type": "mb" },
-      { "name": "Battle of Hoth Multiball", "type": "mb" },
-      { "name": "Death Star Multiball", "type": "mb" },
-      { "name": "Rescue the Rebels (wizard)", "type": "wiz" }
+      {
+        "name": "Rebel Mission: Han",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: Luke",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: Leia",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: Chewie",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: Lando",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: R2-D2",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: C-3PO",
+        "type": "md"
+      },
+      {
+        "name": "Rebel Mission: Droids",
+        "type": "md"
+      },
+      {
+        "name": "Jabba's Palace Event",
+        "type": "ev"
+      },
+      {
+        "name": "Lightspeed Escape Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Battle of Hoth Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Death Star Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Rescue the Rebels (wizard)",
+        "type": "wiz"
+      }
     ]
   },
-
   "one_shot": {
     "name": "The Center Ramp",
     "callout_id": "center_ramp",
     "difficulty": "medium",
     "description": "The center ramp is Han Solo's mission shot, the Falcon's advance shot, and the safest repeatable shot on the table. Feed it from either flipper — it's wide and forgiving. Every time the blue hyperdrive light under the Falcon model is lit, a center ramp shot advances the Falcon toward Lightspeed Escape Multiball. During Han missions it's your primary scoring shot. When you don't know what to do, shoot the center ramp. It almost always does something useful."
   },
-
   "key_areas": [
     {
       "id": "force_targets",
@@ -75,12 +109,10 @@
       "why_it_matters": "This is the Battle of Hoth multiball lock. Shoot it three times (after lighting locks via the Droids target below the AT-AT) and you're in a full multiball. It's also Luke's mission shot. The VUK return makes it safer than it looks — missed approaches don't drain as often as you'd expect."
     }
   ],
-
   "hard_box": {
     "title": "What Makes This Game Hard",
     "text": "FORCE targets are the most common trap. New players chase them too deliberately and end up shooting at small standups under pressure instead of making comfortable ramp shots. The FORCE letters accumulate naturally during normal play — by the time you've shot the center ramp three or four times and done a few orbit shots, you're usually most of the way there. The other trap is character paralysis: eight characters light up and players stall trying to pick the optimal one instead of just shooting the easiest available shot. Han's center ramp is almost always the right answer when you're unsure."
   },
-
   "ball_plans": [
     {
       "ball_number": 1,
@@ -90,21 +122,29 @@
           "rank": 1,
           "title": "Let FORCE Happen, Then Clean It Up",
           "difficulty": "easy",
-          "callout_ids": ["force_targets", "center_ramp"],
+          "callout_ids": [
+            "force_targets",
+            "center_ramp"
+          ],
           "description": "Don't open Ball 1 by hunting <strong>FORCE Standup Targets</strong> — shoot the <strong>Center Ramp</strong> and left orbit instead. FORCE letters accumulate as the ball bounces around. After three or four comfortable shots, check the display to see which letters are still dark. Then deliberately pick off the missing ones — each FORCE target is a small standup, earnable from the nearby flipper with a controlled shot. When F-O-R-C-E is complete, all eight character inserts light up."
         },
         {
           "rank": 2,
           "title": "Start a Mission — Pick Han First",
           "difficulty": "medium",
-          "callout_ids": ["center_ramp", "sarlacc_pit"],
+          "callout_ids": [
+            "center_ramp",
+            "sarlacc_pit"
+          ],
           "description": "When FORCE is complete, the character inserts glow by difficulty: yellow = easy, green = medium, blue = hard. Han Solo (the <strong>Center Ramp</strong>) is yellow — start there. Shoot the center ramp when Han's insert is lit to begin his mission. During the mission, the display shows which shots score — blue shots progress it, white shots build value. Chewie (<strong>Sarlacc Pit</strong>) is your backup if Han isn't available: knock down the drop target in front of the pit, then shoot the ramp."
         },
         {
           "rank": 3,
           "title": "Advance the Falcon Toward Lightspeed",
           "difficulty": "easy",
-          "callout_ids": ["center_ramp"],
+          "callout_ids": [
+            "center_ramp"
+          ],
           "description": "When the blue hyperdrive light under the Falcon model is lit, the <strong>Center Ramp</strong> advances the Falcon's progress bar toward Lightspeed Escape Multiball. Track your progress on the display — there's a Falcon graphic with a segmented bar that fills from left to right as you hit the ramp. You'll also see the bar build physically on the Falcon toy as lights advance along its hull. This happens naturally if you're already shooting the center ramp for Han missions — you're doing double duty without extra effort."
         }
       ]
@@ -117,21 +157,29 @@
           "rank": 1,
           "title": "Start Lightspeed or Battle of Hoth Multiball",
           "difficulty": "medium",
-          "callout_ids": ["center_ramp", "luke_vuk", "droids_target"],
+          "callout_ids": [
+            "center_ramp",
+            "luke_vuk",
+            "droids_target"
+          ],
           "description": "You have two paths. <strong>Lightspeed:</strong> if you advanced the Falcon on Ball 1, keep shooting the <strong>Center Ramp</strong> — when the Falcon bar fills, Lightspeed Escape Multiball starts automatically. <strong>Battle of Hoth:</strong> hit the <strong>Droids Target</strong> (the standup below the AT-AT, left side) to light a lock, then shoot the <strong>Luke VUK</strong> (left side dead-end shot, feeds back to your flipper) to lock a ball. Three locks starts Hoth. Either multiball is a major scoring opportunity — pick the one that's closer to ready."
         },
         {
           "rank": 2,
           "title": "In Multiball: Sarlacc Pit for Add-a-Ball First",
           "difficulty": "medium",
-          "callout_ids": ["sarlacc_pit"],
+          "callout_ids": [
+            "sarlacc_pit"
+          ],
           "description": "The moment any multiball starts, your first shot is the <strong>Sarlacc Pit</strong> (right-center, behind the drop target — knock the target down first, then shoot the ramp). The ball spirals inside and accumulates spins. At 10 spins, the action button lights for an add-a-ball. Getting that extra ball in play early dramatically extends your multiball window and total scoring. Don't chase jackpots first — secure the add-a-ball, then hunt jackpots."
         },
         {
           "rank": 3,
           "title": "Keep Spelling FORCE Between Multiballs",
           "difficulty": "easy",
-          "callout_ids": ["force_targets"],
+          "callout_ids": [
+            "force_targets"
+          ],
           "description": "FORCE resets at the start of each ball. Between multiball attempts, keep shooting comfortable shots and let the <strong>FORCE Standup Targets</strong> accumulate. The sooner FORCE is complete, the sooner you can layer a character mission on top of whatever multiball you're building toward."
         }
       ]
@@ -144,27 +192,34 @@
           "rank": 1,
           "title": "Start the Best Available Multiball Immediately",
           "difficulty": "medium",
-          "callout_ids": ["center_ramp", "luke_vuk"],
+          "callout_ids": [
+            "center_ramp",
+            "luke_vuk"
+          ],
           "description": "Check where you are on Lightspeed and Hoth at the Ball 3 plunge. If either is close, go straight for it before doing anything else. <strong>Lightspeed:</strong> center ramp shots until the bar fills. <strong>Hoth:</strong> one or two more <strong>Luke VUK</strong> locks. Multiballs are your biggest scoring windows — getting into one early on Ball 3 gives you the most time to work it."
         },
         {
           "rank": 2,
           "title": "Run Whatever Missions Are Available",
           "difficulty": "medium",
-          "callout_ids": ["force_targets", "center_ramp"],
+          "callout_ids": [
+            "force_targets",
+            "center_ramp"
+          ],
           "description": "Spell FORCE quickly (hunt the dark letters), then shoot whatever character mission is lit in yellow or green. Han's <strong>Center Ramp</strong> is always the priority. If you've already run Han's missions, Lando (Death Star Ramp) and Leia (right orbit) are the next easiest. Don't spend Ball 3 reading the display — just shoot the lit characters in easiest-to-hardest order."
         },
         {
           "rank": 3,
           "title": "If Jabba Is Available, Take It",
           "difficulty": "medium",
-          "callout_ids": ["sarlacc_pit"],
+          "callout_ids": [
+            "sarlacc_pit"
+          ],
           "description": "Jabba's Palace events are triggered by hitting the <strong>Sarlacc Pit</strong> drop target twice — the ball then spirals into the pit and you select an event with the action button. On Ball 3 with nothing to lose, Rancor is the right pick: it's a combo mode with no timer where you hit orange shots in sequence. No clock pressure, solid point chunks, and the Sarlacc pit is a comfortable shot anyway."
         }
       ]
     }
   ],
-
   "survival": {
     "items": [
       {
@@ -184,12 +239,14 @@
       },
       {
         "title": "Orbits Feed Back Safely",
-        "callout_ids": ["left_orbit", "right_orbit"],
+        "callout_ids": [
+          "left_orbit",
+          "right_orbit"
+        ],
         "description": "The <strong>Left Orbit</strong> and <strong>Right Orbit</strong> both feed back to the opposite flipper and advance FORCE letters in the upper lanes. When you're uncertain between shots, an orbit is a low-risk choice that makes progress. They also light the skill shot multiplier lanes, which is free value."
       }
     ]
   },
-
   "skip": {
     "title": "Don't Be a Hero",
     "items": [
@@ -200,7 +257,10 @@
       },
       {
         "title": "Don't Stack Multiballs Until the Loop Feels Automatic",
-        "callout_ids": ["center_ramp", "luke_vuk"],
+        "callout_ids": [
+          "center_ramp",
+          "luke_vuk"
+        ],
         "description": "Lightspeed and Hoth can technically be stacked — start Lightspeed before locking the third Hoth ball. It's a massive scoring window. It's also a lot to manage. For league play, run one multiball at a time until you can reliably hit jackpot shots under pressure. Stacking is in Level Up territory."
       },
       {
@@ -215,7 +275,6 @@
       }
     ]
   },
-
   "between_us": [
     {
       "label": "Pick a Lane and Stay In It",
@@ -234,7 +293,6 @@
       "text": "Completing both orbit shots (left and right) advances JEDI letters in the upper lanes. Spelling JEDI qualifies a shot multiplier that applies to your next major shot. Most players don't notice this happening — but if you see JEDI complete on the display while you're setting up a jackpot collect, that jackpot is about to score much bigger. The orbits are building this passively the whole game."
     }
   ],
-
   "playfield_callouts": [
     {
       "id": "force_targets",
@@ -277,7 +335,6 @@
       "description": "The right orbit shot, fed from the left flipper. Sends the ball around the top-right and feeds back to the left flipper. Advances FORCE letters and JEDI progress. R2-D2's mission shot. Slightly tighter than the left orbit but still earnable."
     }
   ],
-
   "sources": [
     {
       "title": "Kineticist — 'May the Force Be With You' Tutorial",
@@ -310,14 +367,12 @@
       "url": "https://pinside.com/pinball/forum/topic/star-wars-fote-strategy"
     }
   ],
-
   "chat_starters": [
     "Which character should I pick first when FORCE is complete?",
     "How do I start Battle of Hoth multiball?",
     "What does the Sarlacc Pit actually do for me?",
     "What's the action button for?"
   ],
-
   "level_up": {
     "intro": "Once the FORCE → mission → multiball loop feels automatic and you're consistently getting into Lightspeed or Hoth, these strategies will push your scores significantly higher.",
     "tips": [
@@ -338,5 +393,14 @@
         "description": "Han's Jabba's Palace mode (separate from the Sarlacc event) has unlimited scoring potential as long as you keep hitting the drop target to reset its timer. The scoring ceiling is theoretically unlimited — strong players have banked enormous scores here. To access it, complete Han's full mission set first, then qualify the Palace via the Sarlacc. This is deep into advanced territory but worth knowing exists."
       }
     ]
+  },
+  "pinball_map": {
+    "machine_ids": [
+      4547,
+      4549,
+      4548
+    ],
+    "machine_group_id": 128,
+    "search_name": "Star Wars: Fall of the Empire"
   }
 }

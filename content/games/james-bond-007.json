@@ -21,13 +21,34 @@
   "summary": {
     "text": "JB007 is a <strong>mode-based game</strong> built around six Sean Connery Bond films. Start <strong>villain modes</strong> at the right ramp and <strong>henchmen modes</strong> at the side ramp, complete them to earn <strong>smart missiles</strong> (free shot collection via the action button). Meanwhile, build toward <strong>Bird 1 Multiball</strong> (drop targets → lock 3 balls) and <strong>Jetpack Multiball</strong> (left eject → left ramp). Collect <strong>Bond Women</strong> at the upper loop and activate them for a timed <strong>playfield multiplier up to 7x</strong> — this is where billion-point games come from. Play 1 villain, 1 henchman, and both multiballs to qualify the mini-wizard mode.",
     "modes": [
-      { "name": "Villain Modes (×6)", "type": "md" },
-      { "name": "Henchmen Modes (×6)", "type": "md" },
-      { "name": "SPECTRE Weapons (×6)", "type": "ev" },
-      { "name": "Q Branch Gadgets", "type": "ev" },
-      { "name": "Bird 1 Multiball", "type": "mb" },
-      { "name": "Jetpack Multiball", "type": "mb" },
-      { "name": "Bond, James Bond", "type": "wiz" }
+      {
+        "name": "Villain Modes (×6)",
+        "type": "md"
+      },
+      {
+        "name": "Henchmen Modes (×6)",
+        "type": "md"
+      },
+      {
+        "name": "SPECTRE Weapons (×6)",
+        "type": "ev"
+      },
+      {
+        "name": "Q Branch Gadgets",
+        "type": "ev"
+      },
+      {
+        "name": "Bird 1 Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Jetpack Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Bond, James Bond",
+        "type": "wiz"
+      }
     ]
   },
   "one_shot": {
@@ -173,63 +194,99 @@
       "name": "Right Ramp (Villain Modes)",
       "description": "Right side of the playfield. Two shots here starts the currently lit villain mode. The main way you begin story modes. Feeds to the right inlane.",
       "image": null,
-      "crop": { "x": 75, "y": 45, "zoom": 2.0 }
+      "crop": {
+        "x": 75,
+        "y": 45,
+        "zoom": 2
+      }
     },
     {
       "id": "side-ramp",
       "name": "Side Ramp (Henchmen Modes)",
       "description": "Upper right area, only accessible from the upper flipper. Starts henchmen modes. To reach it reliably, shoot the center loop from the left flipper to feed the upper flipper, then shoot the side ramp as an early flip. Also the final shot for the Bond James Bond super jackpot.",
       "image": null,
-      "crop": { "x": 70, "y": 30, "zoom": 2.0 }
+      "crop": {
+        "x": 70,
+        "y": 30,
+        "zoom": 2
+      }
     },
     {
       "id": "upper-loop",
       "name": "Upper Loop (Bond Women)",
       "description": "Below the pop bumpers, accessible from the upper flipper. When flashing, collects a Bond Woman toward the playfield multiplier. Arguably the most important shot for high scoring — each woman adds 1x to the multiplier, up to 7x. Fed reliably from the center loop → upper flipper path.",
       "image": null,
-      "crop": { "x": 65, "y": 20, "zoom": 2.0 }
+      "crop": {
+        "x": 65,
+        "y": 20,
+        "zoom": 2
+      }
     },
     {
       "id": "left-eject",
       "name": "Left Eject (Jetpack Qualifier)",
       "description": "Hidden below the upper flipper on the left side. Shooting it lights the left ramp for Jetpack Multiball. The shot is tight — hold up the upper flipper, shoot under it from the lower left flipper, and release the upper flipper as the ball reaches its peak. Each successive Jetpack requires more left eject shots to qualify.",
       "image": null,
-      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+      "crop": {
+        "x": 20,
+        "y": 35,
+        "zoom": 2
+      }
     },
     {
       "id": "center-loop",
       "name": "Center Loop",
       "description": "Center of the playfield between the drop targets and the left ramp. Easier from the left flipper than the right. Locks balls for Bird 1 Multiball. Also the primary feed to the upper flipper, making it your gateway to the side ramp, upper loop, and bumper lane.",
       "image": null,
-      "crop": { "x": 40, "y": 40, "zoom": 2.0 }
+      "crop": {
+        "x": 40,
+        "y": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "bird-1-drops",
       "name": "Bird 1 Drop Targets & Rocket",
       "description": "Upper left quadrant. Three drop targets in front of the Bird 1 rocket. Complete the drops to light ball locks at the center loop. The 7 SPECTRE standup targets surrounding the rocket increase Bird 1 jackpot values. Direct shots to the rocket are risky when the drops are down — the ball can rattle through the open target area unpredictably.",
       "image": null,
-      "crop": { "x": 25, "y": 25, "zoom": 2.0 }
+      "crop": {
+        "x": 25,
+        "y": 25,
+        "zoom": 2
+      }
     },
     {
       "id": "dragon-tank",
       "name": "Dragon Tank Target",
       "description": "Near the center loop on the left side. Hit it a few times to light the outlane ball save. Also used during some villain modes. Dangerous shot — ricochets off this target frequently drain center. Only shoot it deliberately.",
       "image": null,
-      "crop": { "x": 35, "y": 45, "zoom": 2.0 }
+      "crop": {
+        "x": 35,
+        "y": 45,
+        "zoom": 2
+      }
     },
     {
       "id": "goldfinger-target",
       "name": "Goldfinger Target",
       "description": "Between the side ramp entrance and the right orbit. Changes which villain/henchmen mode is currently lit. When flashing after completing SPECTRE letters, starts a SPECTRE weapon hurry-up countdown. The weapon cycles — wait for the one you want before shooting.",
       "image": null,
-      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+      "crop": {
+        "x": 65,
+        "y": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "db5-eject",
       "name": "DB5 Eject (Aston Martin)",
       "description": "Right side of the playfield. The ball ejects off the roof of the sculpted Aston Martin DB5 through its ejector seat. Used as a mode completion shot for several villain and henchmen modes. The ball comes back fast — be ready.",
       "image": null,
-      "crop": { "x": 75, "y": 35, "zoom": 2.0 }
+      "crop": {
+        "x": 75,
+        "y": 35,
+        "zoom": 2
+      }
     }
   ],
   "sources": [
@@ -290,5 +347,15 @@
         "description": "The secret MXV super skill shot sequence (full plunge → right orbit → upper loop → side ramp) awards 2 smart missiles if completed. That's two free shot collections you can use to complete difficult modes later. It requires precise execution off the plunge but is worth practicing if you're comfortable with the upper flipper feed."
       }
     ]
+  },
+  "pinball_map": {
+    "machine_ids": [
+      3643,
+      3642,
+      3640,
+      3641
+    ],
+    "machine_group_id": 95,
+    "search_name": "James Bond 007"
   }
 }

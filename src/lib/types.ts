@@ -44,6 +44,12 @@ export interface GameGuide {
   playfield_callouts: PlayfieldCallout[];
   sources: Source[];
   level_up?: LevelUpSection;
+  pinball_map?: {
+    machine_ids: number[];
+    machine_group_id?: number;
+    opdb_id?: string;
+    search_name: string;
+  };
 }
 
 export interface ModePill {

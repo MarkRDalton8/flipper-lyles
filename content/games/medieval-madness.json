@@ -7,7 +7,6 @@
   "code_by": "Lyman Sheats",
   "year": 1997,
   "description": "One of the most beloved pinball machines ever made. Destroy 6 castles, rescue damsels, defeat trolls, and rally peasants to dethrone the King of Payne. Hilarious callouts, forgiving layout, and deep rules that reward every skill level.",
-
   "badge": {
     "gradient_from": "#2a1a0a",
     "gradient_to": "#150d05",
@@ -15,36 +14,59 @@
     "text_color": "#e8a030",
     "abbreviation": "MM"
   },
-
   "ratings": {
     "drain_danger": 2,
     "rule_complexity": 4,
     "fun_factor": 5,
     "league_frequency": 4
   },
-
   "summary": {
     "text": "Medieval Madness has six objectives shown as blue dot inserts in a row above the flippers — earn all six to qualify <strong>Battle for the Kingdom</strong>, the wizard mode. The six objectives are: <strong>Castle Crusher</strong> (destroy 6 castles), <strong>Master of Trolls</strong> (defeat 10 trolls), <strong>Joust Champion</strong> (3 joust victories via orbit shots), <strong>Defender of Damsels</strong> (rescue 3 damsels via right ramp), <strong>Patron of Peasants</strong> (spark 3 revolts via left ramp), and <strong>Catapult Ace</strong> (3 catapult launches via lower-left shot). Each objective also lights a madness boost that makes <strong>Multiball Madness</strong> better when you start it at the Merlin Saucer. The more boosts lit when you start Multiball Madness, the more balls you get and the bigger the jackpots. The game is friendly — few drain risks, ramps that catch failed shots, and ramp failures that feed back to the flippers instead of center-draining. The castle is your anchor shot; everything else radiates from it.",
     "modes": [
-      { "name": "Castle Multiball", "type": "mb" },
-      { "name": "Multiball Madness", "type": "mb" },
-      { "name": "Troll Madness Multiball", "type": "mb" },
-      { "name": "Trolls! Mode", "type": "md" },
-      { "name": "Royal Madness", "type": "md" },
-      { "name": "Video Mode (Save the Children)", "type": "ev" },
-      { "name": "Castle Hurry-Up", "type": "ev" },
-      { "name": "Merlin's Magic", "type": "ev" },
-      { "name": "Battle for the Kingdom", "type": "wiz" }
+      {
+        "name": "Castle Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Multiball Madness",
+        "type": "mb"
+      },
+      {
+        "name": "Troll Madness Multiball",
+        "type": "mb"
+      },
+      {
+        "name": "Trolls! Mode",
+        "type": "md"
+      },
+      {
+        "name": "Royal Madness",
+        "type": "md"
+      },
+      {
+        "name": "Video Mode (Save the Children)",
+        "type": "ev"
+      },
+      {
+        "name": "Castle Hurry-Up",
+        "type": "ev"
+      },
+      {
+        "name": "Merlin's Magic",
+        "type": "ev"
+      },
+      {
+        "name": "Battle for the Kingdom",
+        "type": "wiz"
+      }
     ]
   },
-
   "one_shot": {
     "name": "The Castle Main Entrance",
     "callout_id": "castle_entrance",
     "difficulty": "medium",
     "description": "The center shot into the castle is the most important shot on the game and more forgiving than it looks. Shoot straight up the middle — the castle is angled slightly, which actually helps direct balls in. Every castle shot either lowers the drawbridge, raises the gate, destroys a castle, or collects a Castle Hurry-Up. It never wastes a hit. When in doubt about what to shoot: hit the castle. It's always doing something useful, it never drains you directly on a clean approach, and destroying a castle is one of the biggest point chunks in the game."
   },
-
   "key_areas": [
     {
       "id": "castle_entrance",
@@ -71,12 +93,10 @@
       "why_it_matters": "Trolls pop up and block the castle entrance during Trolls! mode and Troll Madness. They can also block the Castle Lock shot on the left. Hit them during their active phases to rack up troll kills toward Master of Trolls. When they're not active (lying flat), shots pass through normally — you can't hit them when they're down."
     }
   ],
-
   "hard_box": {
     "title": "What Makes This Game Hard",
     "text": "Medieval Madness is one of the friendliest drainers in pinball — the designer specifically said it was built to appeal to novice players. The bigger challenge is patience. Destroying the 6th castle requires hitting the drawbridge 6 times, then the gate 7 times, then shooting inside — that's 14+ shots on one objective, and the gate hits send the ball back at you unpredictably. Master of Trolls requires 10 troll kills, which can only happen during specific active modes. Players who try to rush Battle for the Kingdom on Ball 1 usually burn themselves out. The game rewards steady, systematic play across all three balls far more than hero shots."
   },
-
   "ball_plans": [
     {
       "ball_number": 1,
@@ -86,21 +106,30 @@
           "rank": 1,
           "title": "Destroy Your First Two Castles",
           "difficulty": "medium",
-          "callout_ids": ["castle_entrance"],
+          "callout_ids": [
+            "castle_entrance"
+          ],
           "description": "Castle 1 is the easiest castle in the game — 1 drawbridge hit to lower it (the wooden bridge in front of the gate drops), then 2 gate hits to raise the portcullis (the metal grate rises), then shoot the open entrance to destroy it. You'll hear a cannon fire and see the castle walls collapse on the display — that's a castle down. Watch the <strong>Castle Progress</strong> on the backglass: a row of six castle icons shows which ones are destroyed (they crumble and go dark). Castle 2 needs 2 drawbridge hits, then 3 gate hits. Destroying 2 castles lights an extra ball at the Merlin Saucer — that alone makes Ball 1 a success."
         },
         {
           "rank": 2,
           "title": "Shoot the Ramps and Orbits to Build Madness Boosts",
           "difficulty": "easy",
-          "callout_ids": ["left_ramp", "right_ramp", "joust_orbits"],
+          "callout_ids": [
+            "left_ramp",
+            "right_ramp",
+            "joust_orbits"
+          ],
           "description": "Every 4 shots up the <strong>Left Ramp</strong> (Peasant Ramp, left side) lights Peasant Madness. Every 4 shots up the <strong>Right Ramp</strong> (Dragon/Damsel Ramp, right side) lights Damsel Madness. Every 3 <strong>Joust Orbit</strong> shots (either orbit — left or right, they both count) lights Joust Madness. Watch the lit inserts along each shot path — they show your current count toward each madness. These build naturally during play; you don't need to hunt them specifically. Each lit madness means more balls when you start Multiball Madness."
         },
         {
           "rank": 3,
           "title": "Light Trolls and Work Toward Master of Trolls",
           "difficulty": "medium",
-          "callout_ids": ["troll_targets", "merlin_saucer"],
+          "callout_ids": [
+            "troll_targets",
+            "merlin_saucer"
+          ],
           "description": "Hit the two <strong>Troll Standup Targets</strong> flanking the castle entrance a total of 8 times (they're in front of the drawbridge, one on each side) — watch the troll-related inserts light up as you hit them. After 8 hits, shoot the <strong>Merlin Saucer</strong> to start Trolls! mode. During Trolls!, both troll pop-up targets rise and you have 30 seconds to hit each one 3 times. Every troll defeat in any mode (Trolls!, Multiball Madness, Royal Madness) counts toward your 10-troll Master of Trolls total."
         }
       ]
@@ -113,21 +142,28 @@
           "rank": 1,
           "title": "Start Multiball Madness With as Many Boosts as Possible",
           "difficulty": "medium",
-          "callout_ids": ["merlin_saucer", "objective_inserts"],
+          "callout_ids": [
+            "merlin_saucer",
+            "objective_inserts"
+          ],
           "description": "When multiple madness inserts are lit (Joust, Damsel, Peasant, Troll — the four orbit/ramp madnesses), shoot the <strong>Merlin Saucer</strong> to start Multiball Madness. More lit madnesses = more balls (1 madness = 2-ball, 2 madnesses = 3-ball, etc., max 4 balls) and bigger jackpots. Check the madness inserts above each shot to see which are lit before committing to the saucer — you want at least 2 lit for a real multiball. During Multiball Madness, the shots for each lit madness score super jackpots, and the <strong>Castle Lock</strong> (the hole to the left of the castle entrance, over the moat) scores a double super jackpot."
         },
         {
           "rank": 2,
           "title": "Destroy More Castles — Use Multiball as Cover",
           "difficulty": "medium",
-          "callout_ids": ["castle_entrance"],
+          "callout_ids": [
+            "castle_entrance"
+          ],
           "description": "During Multiball Madness, you can still progress toward destroying castles by hitting the <strong>Castle Entrance</strong>. With multiple balls in play you have natural safety — if one ball drains mid-gate-sequence, you still have others live. Castle hits during multiball count toward your Castle Crusher progress. The later castles (4th, 5th, 6th) are much harder to destroy in single-ball play because they require so many gate hits. Using multiball as cover for castle destruction is smart play."
         },
         {
           "rank": 3,
           "title": "Collect Castle Hurry-Ups When They Light",
           "difficulty": "easy",
-          "callout_ids": ["castle_entrance"],
+          "callout_ids": [
+            "castle_entrance"
+          ],
           "description": "After Multiball Madness ends, you'll hear 'Shoot the Castle!' — a <strong>Castle Hurry-Up</strong> has started at 1 million points and is counting down. It's not counting down quickly. Collect it with one castle shot. Multiple hurry-ups can stack (from completing multiple madnesses) — the display shows the stacked value climbing quickly. Two stacked hurry-ups start at 3 million. Just shoot the castle before they time out."
         }
       ]
@@ -140,73 +176,92 @@
           "rank": 1,
           "title": "Check Your Blue Dots and Chase the Closest Objective",
           "difficulty": "medium",
-          "callout_ids": ["objective_inserts"],
+          "callout_ids": [
+            "objective_inserts"
+          ],
           "description": "Look at the row of <strong>Blue Objective Inserts</strong> above the flippers the moment you plunge. Count the unlit ones. Whichever objective is closest to completion (most progress already built) is your Ball 3 focus. If you're one castle away from Castle Crusher, go straight to the castle. If Trolls is close, start Trolls! immediately. Don't try to complete multiple objectives from scratch on Ball 3 — pick the one and commit."
         },
         {
           "rank": 2,
           "title": "Start Multiball Madness One More Time",
           "difficulty": "medium",
-          "callout_ids": ["merlin_saucer"],
+          "callout_ids": [
+            "merlin_saucer"
+          ],
           "description": "Even if you started Multiball Madness on Ball 2, you can start it again. The madness inserts reset each ball but build back quickly since the ramps and orbits are your natural scoring shots anyway. Get 2+ madnesses lit, then shoot the <strong>Merlin Saucer</strong>. Multiball Madness is your biggest scoring event and worth running whenever you can qualify it."
         },
         {
           "rank": 3,
           "title": "If You Have All 6 Dots — Shoot the Castle for Battle for the Kingdom",
           "difficulty": "hard",
-          "callout_ids": ["castle_entrance"],
+          "callout_ids": [
+            "castle_entrance"
+          ],
           "description": "If all six blue objective inserts are lit, Battle for the Kingdom is qualified — shoot the <strong>Castle Entrance</strong> to start it. This is a 4-ball wizard mode where you must shoot 6 Battle Jackpot shots (the orbit, ramps, catapult, etc.) then beat the King of Payne by hitting the castle gate 7 times. If you have Troll Bombs saved (awarded when balls ricochet off trolls into the castle or saucer), use them during Battle for the Kingdom — the trolls otherwise block the gate. Each Battle Jackpot is 2.5 million; the final castle entry is 50 million. This is a bucket list achievement in pinball."
         }
       ]
     }
   ],
-
   "survival": {
     "items": [
       {
         "title": "The Ramps Catch Failed Shots",
-        "callout_ids": ["left_ramp", "right_ramp"],
+        "callout_ids": [
+          "left_ramp",
+          "right_ramp"
+        ],
         "description": "Medieval Madness has a patented feature where weak ramp shots that don't make it all the way up feed back to the flippers instead of center-draining. So an underpowered <strong>Left Ramp</strong> or <strong>Right Ramp</strong> shot is not a disaster — the ball returns to you. Shoot the ramps with confidence. You can afford to try."
       },
       {
         "title": "Orbits Are Fast — Hold Your Flipper",
-        "callout_ids": ["joust_orbits"],
+        "callout_ids": [
+          "joust_orbits"
+        ],
         "description": "The <strong>Joust Orbits</strong> are extremely fast and open by default (no gates to slow the ball). When a ball comes flying back down the orbit from bumpers, hold your flipper up to loop pass it to the other flipper instead of firing it. Shooting a live orbit ball without controlling it first is a common drain. Stop it, trap, then plan."
       },
       {
         "title": "Gate Hits Bounce Back Unpredictably",
-        "callout_ids": ["castle_entrance"],
+        "callout_ids": [
+          "castle_entrance"
+        ],
         "description": "When the drawbridge is down and you're hitting the castle gate (the metal portcullis), the ball bounces back hard and at variable angles. After every gate hit, brace both flippers and watch the ball. You'll catch it most of the time, but gate bounces are the most dangerous moment in the castle destruction sequence. Don't panic-flip — watch and react."
       },
       {
         "title": "Save Your Troll Bombs",
-        "callout_ids": ["troll_targets"],
+        "callout_ids": [
+          "troll_targets"
+        ],
         "description": "Troll Bombs are earned when balls ricochet from <strong>Troll Targets</strong> into the castle or Merlin Saucer. They let you instantly defeat a troll (press the launch button) and count as a troll kill. Save them for Battle for the Kingdom if you get there — during BFTK the trolls block the gate and won't go down without bombs. Using them casually during normal play feels satisfying but costs you in the wizard mode."
       }
     ]
   },
-
   "skip": {
     "title": "Don't Be a Hero",
     "items": [
       {
         "title": "Don't Rush to Multiball Madness With Only One Boost",
-        "callout_ids": ["merlin_saucer"],
+        "callout_ids": [
+          "merlin_saucer"
+        ],
         "description": "Multiball Madness with only one madness lit is a 2-ball multiball with modest jackpots. It's not much better than normal play and wastes the saucer shot. Wait until you have at least two madness boosts lit before committing to the <strong>Merlin Saucer</strong>. The additional balls and jackpot sizes are worth the few extra ramp and orbit shots to get there."
       },
       {
         "title": "Don't Chase the Castle Lock on Ball 1",
-        "callout_ids": ["castle_lock"],
+        "callout_ids": [
+          "castle_lock"
+        ],
         "description": "The <strong>Castle Lock</strong> (the hole to the left of the castle entrance, over the moat) is a difficult shot that starts Castle Multiball. It requires 3 locks and is blocked when the Left Troll is raised. On Ball 1 before you have a feel for the machine, hunting this shot leads to awkward angles and drains. Stick to ramps, orbits, and the castle entrance until you're comfortable."
       },
       {
         "title": "Don't Attempt Battle for the Kingdom Without Troll Bombs",
-        "callout_ids": ["castle_entrance", "troll_targets"],
+        "callout_ids": [
+          "castle_entrance",
+          "troll_targets"
+        ],
         "description": "Battle for the Kingdom's second phase requires hitting the castle gate 7 times with both trolls blocking it — unless you have Troll Bombs. Without bombs, the trolls are nearly impossible to play around during the final phase. If you've been using your <strong>Troll Bombs</strong> casually during the game and you somehow qualify BFTK, you'll likely fail the final phase. Bank the bombs."
       }
     ]
   },
-
   "between_us": [
     {
       "label": "The Castles Get Significantly Harder",
@@ -221,80 +276,118 @@
       "text": "Medieval Madness was remade by Chicago Gaming Company (CGC) around 2016 — you might see either the original Williams (1997) or the CGC remake at league. They play essentially identically in terms of strategy. The CGC version has updated electronics and LEDs but the same rules, same layout, and same feel. Everything in this Bar Napkin applies to both."
     }
   ],
-
   "playfield_callouts": [
     {
       "id": "castle_entrance",
       "name": "Castle Main Entrance",
       "description": "The center shot into the castle — straight up the middle of the playfield. Three-stage destruction: (1) hit the Drawbridge target to lower the wooden bridge, (2) hit the Portcullis Gate to raise the metal grate, (3) shoot through the open entrance to destroy the castle. The castle is angled slightly right, which actually helps guide shots in. Gate hits bounce back unpredictably — brace after every one.",
       "image": "/playfields/mm/castle-entrance.webp",
-      "crop": { "x_percent": 50, "y_percent": 40, "zoom": 2.0 }
+      "crop": {
+        "x_percent": 50,
+        "y_percent": 40,
+        "zoom": 2
+      }
     },
     {
       "id": "castle_progress",
       "name": "Castle Progress (Backglass Icons)",
       "description": "Six castle icons displayed on the backglass, one per castle to destroy. Each destroyed castle goes dark (crumbled). Glance at the backglass to see how many of the six castles remain standing — this is your Castle Crusher objective progress. No need to remember the count; the backglass shows it.",
       "image": "/playfields/mm/backglass-castles.webp",
-      "crop": { "x_percent": 50, "y_percent": 10, "zoom": 1.5 }
+      "crop": {
+        "x_percent": 50,
+        "y_percent": 10,
+        "zoom": 1.5
+      }
     },
     {
       "id": "merlin_saucer",
       "name": "Merlin Saucer",
       "description": "A scoop saucer in the right-center of the playfield. Three star standup targets below it light Merlin's Magic (random award). When madness modes are lit, shooting the saucer starts Trolls!, Multiball Madness, or Royal Madness depending on what's ready. The ball is kicked out toward the right Joust Orbit after collection.",
       "image": "/playfields/mm/merlin-saucer.webp",
-      "crop": { "x_percent": 62, "y_percent": 52, "zoom": 2.5 }
+      "crop": {
+        "x_percent": 62,
+        "y_percent": 52,
+        "zoom": 2.5
+      }
     },
     {
       "id": "left_ramp",
       "name": "Left Ramp (Peasant Ramp)",
       "description": "The left side ramp. 4 shots builds Peasant Madness (lights the Patron of Peasants madness boost). 12 total left ramp shots earns the Patron of Peasants blue dot objective. Failed shots that don't make the full ramp feed back to the left flipper — no center drain risk.",
       "image": "/playfields/mm/left-ramp.webp",
-      "crop": { "x_percent": 25, "y_percent": 40, "zoom": 2.5 }
+      "crop": {
+        "x_percent": 25,
+        "y_percent": 40,
+        "zoom": 2.5
+      }
     },
     {
       "id": "right_ramp",
       "name": "Right Ramp (Dragon / Damsel Ramp)",
       "description": "The right side ramp with a dragon toy. 4 shots builds Damsel Madness. A diverter at the top normally sends the ball back to the right flipper; every 4th shot the diverter opens and the ball goes to the bumper area (feeds the damsel in the tower). 12 total right ramp shots earns the Defender of Damsels blue dot objective.",
       "image": "/playfields/mm/right-ramp.webp",
-      "crop": { "x_percent": 72, "y_percent": 38, "zoom": 2.5 }
+      "crop": {
+        "x_percent": 72,
+        "y_percent": 38,
+        "zoom": 2.5
+      }
     },
     {
       "id": "joust_orbits",
       "name": "Joust Orbits",
       "description": "Both the left and right orbits — either direction counts equally toward Joust objectives. 3 orbit shots (left, right, or any combination) completes a Joust tournament and builds Joust Madness. Extremely fast by default — the gates are open and the ball comes back fast. Hold flipper to loop pass; don't fire on the fly.",
       "image": "/playfields/mm/orbits.webp",
-      "crop": { "x_percent": 50, "y_percent": 20, "zoom": 1.8 }
+      "crop": {
+        "x_percent": 50,
+        "y_percent": 20,
+        "zoom": 1.8
+      }
     },
     {
       "id": "catapult",
       "name": "Catapult",
       "description": "Lower-left corner shot through a one-way gate. The ball launches up a habitrail and fires from a solenoid at the castle. 3 catapult launches builds Catapult Madness. 9 total catapult shots earns the Catapult Ace blue dot objective. Hard to aim precisely but fun when it works.",
       "image": "/playfields/mm/catapult.webp",
-      "crop": { "x_percent": 18, "y_percent": 68, "zoom": 2.5 }
+      "crop": {
+        "x_percent": 18,
+        "y_percent": 68,
+        "zoom": 2.5
+      }
     },
     {
       "id": "troll_targets",
       "name": "Troll Standup Targets",
       "description": "Two large standup targets flanking the castle entrance — normally flat/concealed, they pop up during Trolls! mode and Troll Madness. Hit each 3 times to defeat it during active modes. 10 total troll defeats across the game earns Master of Trolls. The Left Troll blocks the Castle Lock shot when raised.",
       "image": "/playfields/mm/trolls.webp",
-      "crop": { "x_percent": 45, "y_percent": 55, "zoom": 2.2 }
+      "crop": {
+        "x_percent": 45,
+        "y_percent": 55,
+        "zoom": 2.2
+      }
     },
     {
       "id": "castle_lock",
       "name": "Castle Lock",
       "description": "A shot hole to the left of the castle entrance, over the moat. Starts Castle Multiball with 3 locks. A difficult shot — weak hits fall into the moat and feed back to the left flipper. When the Left Troll is raised, it blocks this shot entirely. Not a priority until you're comfortable with the machine.",
       "image": "/playfields/mm/castle-lock.webp",
-      "crop": { "x_percent": 38, "y_percent": 42, "zoom": 2.5 }
+      "crop": {
+        "x_percent": 38,
+        "y_percent": 42,
+        "zoom": 2.5
+      }
     },
     {
       "id": "objective_inserts",
       "name": "Blue Objective Inserts",
       "description": "Six blue dot inserts in a row directly above the flippers. From left to right: Joust Champion, Defender of Damsels, Patron of Peasants, Catapult Ace, Master of Trolls, Castle Crusher. Lit = complete. All six lit = Battle for the Kingdom is qualified. One glance after any significant sequence tells you your full game progress.",
       "image": "/playfields/mm/objective-inserts.webp",
-      "crop": { "x_percent": 50, "y_percent": 88, "zoom": 1.8 }
+      "crop": {
+        "x_percent": 50,
+        "y_percent": 88,
+        "zoom": 1.8
+      }
     }
   ],
-
   "sources": [
     {
       "title": "Keith Elwin — Medieval Madness Strategy Guide (GameFAQs)",
@@ -327,14 +420,12 @@
       "url": "https://en.wikipedia.org/wiki/Medieval_Madness"
     }
   ],
-
   "chat_starters": [
     "How do I destroy a castle? Walk me through it.",
     "What order should I try to complete the six objectives?",
     "When should I shoot the Merlin Saucer to start Multiball Madness?",
     "What are Troll Bombs and when should I use them?"
   ],
-
   "level_up": {
     "intro": "Once you can consistently destroy 2-3 castles per game and start Multiball Madness with 2+ boosts, these strategies will push your scores toward the 200M+ competition range.",
     "tips": [
@@ -355,5 +446,12 @@
         "description": "After each Multiball Madness ends, a Castle Hurry-Up starts at 1 million. If you've completed multiple madnesses, multiple hurry-ups can stack simultaneously — two stacked start at 3 million, three at 5.5 million, with escalating values from there. They count down slowly enough that you have time to trap the ball and aim a clean castle shot. Two stacked Castle Hurry-Ups collected cleanly is often the highest-scoring single action of a normal game."
       }
     ]
+  },
+  "pinball_map": {
+    "machine_ids": [
+      642
+    ],
+    "machine_group_id": 18,
+    "search_name": "Medieval Madness"
   }
 }
