@@ -24,19 +24,20 @@ export default function RootLayout({
         />
 
         <Script
-          src="https://tag.aticdn.net/piano-analytics.js"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-
-        <Script
-          id="piano-analytics-config"
+          id="piano-analytics"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              pa.setConfigurations({
+              (function(_config) {
+                var script = document.createElement("script");
+                script.src = "https://tag.aticdn.net/piano-analytics.js";
+                script.async = true;
+                script.dataset.config = JSON.stringify(_config);
+                document.head.appendChild(script);
+              })({
                 site: 639124,
-                collectDomain: 'https://fjqqzhr.pa-cd.com'
+                collectDomain: "https://fjqqzhr.pa-cd.com",
+                instantTracking: true
               });
             `,
           }}
