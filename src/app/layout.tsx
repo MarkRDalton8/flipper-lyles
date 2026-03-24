@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Script
+          id="piano-composer"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=VJP03WZIpu");`,
+          }}
+        />
+
         <header className="px-8 py-8 pb-4 border-b border-border bg-gradient-to-b from-[#0f1218] to-bg">
           <div className="flex items-baseline gap-3 mb-1 flex-wrap">
             <h1 className="font-oswald font-bold text-[2.2rem] uppercase tracking-wider leading-none">
