@@ -23,6 +23,12 @@ export default function RootLayout({
           }}
         />
 
+        <Script
+          src="https://tag.aticdn.net/piano-analytics.js"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+
         <header className="px-8 py-8 pb-4 border-b border-border bg-gradient-to-b from-[#0f1218] to-bg">
           <div className="flex items-baseline gap-3 mb-1 flex-wrap">
             <h1 className="font-oswald font-bold text-[2.2rem] uppercase tracking-wider leading-none">
