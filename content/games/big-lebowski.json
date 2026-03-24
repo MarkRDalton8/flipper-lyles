@@ -1,0 +1,260 @@
+{
+  "slug": "big-lebowski",
+  "title": "The Big Lebowski",
+  "manufacturer": "Dutch Pinball",
+  "designer": "Barry Driessen",
+  "year": 2016,
+  "description": "A rare cult favorite with a Brunswick bowling alley, an actual rug bash toy, and rules that reward patient stacking. Get all five characters doubled with bowling balls and White Russians, then cash in during Character Multiball for enormous jackpots.",
+  "badge": {
+    "gradient_from": "#1a0f0a",
+    "gradient_to": "#3d2b1f",
+    "border_color": "#d4a574",
+    "text_color": "#e8c89e",
+    "abbreviation": "TBL"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 4,
+    "fun_factor": 5,
+    "league_frequency": 1
+  },
+  "summary": {
+    "text": "The Big Lebowski is a <strong>stacking game</strong> that rewards patience and setup. Spell five character names (THE DUDE, DONNY, WALTER, JESUS, MAUDE) to light <strong>Character Multiball</strong> — the game's biggest scoring feature. Before starting it, double each character's jackpot value by collecting their <strong>bowling ball</strong> at the Brunswick bowling alley, and stack <strong>White Russian multipliers</strong> from the right standup targets. The more characters you've prepped and doubled, the bigger the payday. Separately, hit the {{callout:rug}} to start <strong>Rug Modes</strong> (6 total), lock balls on the left ramp for <strong>regular multiball</strong>, complete the upper playfield for <strong>Car Modes</strong>, and spell Z-E-R-O for <strong>Mark It Zero</strong>. Complete everything for the wizard mode: <strong>The Dude Abides</strong>.",
+    "modes": [
+      { "name": "Rug Modes (×6)", "type": "md" },
+      { "name": "Car Modes (×3)", "type": "md" },
+      { "name": "Character Multiball", "type": "mb" },
+      { "name": "Regular Multiball", "type": "mb" },
+      { "name": "Nihilist Showdown", "type": "mb" },
+      { "name": "Mark It Zero", "type": "ev" },
+      { "name": "Let's Go Bowling", "type": "ev" },
+      { "name": "The Dude Abides", "type": "wiz" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Rug (Center Shot)",
+    "description": "The rug is the physical bash toy in the center of the playfield — hit it repeatedly to unroll it and reveal a hole that starts Rug Modes. Normally it takes three hits to light a mode, but the skill shot (hold left flipper on plunge, then shoot the rug) gives you all three for one. There are 6 Rug Modes total, each themed to a movie scene. Completing all 6 is one of the requirements for the wizard mode. But more importantly, the rug is your most reliable feature to start — it's always available and always progressing. When in doubt, shoot the rug."
+  },
+  "hard_box": {
+    "text": "This game feels like a mid-90s Williams design — the shot flow, the flipper layout, the stacking philosophy. The biggest challenge is resisting the temptation to start Character Multiball too early. If you start it with only one or two characters ready, the jackpots are small and you've wasted your best scoring opportunity. You want all five characters spelled, as many doubled via bowling balls as possible, and White Russian multipliers stacked on the key jackpot shots. That takes patience across multiple balls. The other challenge: the game is rare (~500 made by a small Dutch manufacturer), so you may only get a few games on one ever. The flippers feel slightly different from Williams/Stern — post transfers can be inconsistent, and the super bands affect ball behavior. Give yourself a few balls to calibrate."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Skill Shot the Rug, Start Spelling Characters",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Skill Shot — Hold Left Flipper, Shoot the Rug",
+          "difficulty": "earnable",
+          "description": "Hold the left flipper during plunge and shoot the {{callout:rug}} center shot. This counts as all three hits needed to light a Rug Mode — huge time saver. The second skill shot option (hold right flipper) sends you directly to bowling, which is also good if you're close to completing a character. The third is the traditional top lane skill shot."
+        },
+        {
+          "order": 2,
+          "title": "Start Spelling Characters",
+          "difficulty": "earnable",
+          "description": "Five character names are spread across the playfield shots: THE DUDE, DONNY, WALTER, JESUS, and MAUDE. Each shot you make toward a character advances those letters. Complete a character name to light them for Character Multiball. Every shot to a character also increases that character's jackpot base value — so even grinding one shot you're good at builds value for later."
+        },
+        {
+          "order": 3,
+          "title": "Work Toward Lock on the Left Ramp",
+          "difficulty": "earnable",
+          "description": "Hit the standup targets on either side of the {{callout:left-ramp}} to light lock. Once lit, shoot the left ramp immediately — you can only hold one lock at a time, so sitting on a lit lock means you're not progressing toward multiball. The mechanic is similar to Cirqus Voltaire's lock system."
+        },
+        {
+          "order": 4,
+          "title": "Collect White Russian Ingredients",
+          "difficulty": "you_got_this",
+          "description": "The four targets on the right side of the playfield complete a White Russian. Each completion lights shot multipliers at different playfield positions. These multipliers stack with bowling ball doubles and apply during multiballs. Collect as many as you can throughout the game — they compound your scoring ceiling."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Double Characters, Get Bowling Balls",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Go Bowling to Double Characters",
+          "difficulty": "earnable",
+          "description": "Complete the {{callout:bowling-loop}} (the loop around the back of the upper playfield) to light 'Let's Go Bowling' at the scoop and saucer. When you bowl, pick a completed character — their bowling ball is collected, which doubles their jackpot value in Character Multiball. You want every character's bowling ball before starting the multiball. Bowling during multiball is worth double."
+        },
+        {
+          "order": 2,
+          "title": "Keep Completing Characters — Don't Start Multiball Early",
+          "difficulty": "earnable",
+          "description": "The left saucer starts Character Multiball when lit. Do NOT shoot it unless you've prepared multiple characters. One character = tiny payout. All five characters with bowling balls and White Russian multipliers = enormous jackpots (3.6M+ per shot). If the saucer is lit for both Character Multiball and something else (like Mark It Zero), you can cancel out of the multiball start — but only if another award is also lit there."
+        },
+        {
+          "order": 3,
+          "title": "Play Rug Modes and Car Modes",
+          "difficulty": "earnable",
+          "description": "Keep hitting the rug to start Rug Modes — each is themed to a movie scene (Female Form involves bumper hits, etc.). On the upper playfield, complete the handicapped parking targets to light Car Mode at the upper scoop. Car Mode has you interacting with the car bash toy. Both contribute to wizard mode qualification."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Cash In Character Multiball",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Character Multiball with Maximum Prep",
+          "difficulty": "earnable",
+          "description": "If you've been building all game, this is the payoff. Shoot the left saucer to start Character Multiball. You get one ball per completed character (up to 5 balls). Every character shot is a jackpot — the value is based on how much you've built it up throughout the game, doubled by bowling balls, and multiplied by White Russians. During the multiball, shoot the characters you've doubled first — those are your biggest paydays."
+        },
+        {
+          "order": 2,
+          "title": "If You Can't Prep, Take the Regular Multiball",
+          "difficulty": "earnable",
+          "description": "If you don't have enough characters ready, the regular multiball from left ramp locks is your backup. All shots are lit for jackpots regardless of character preparation. White Russian multipliers still apply. Less explosive than a fully-stacked Character Multiball but more consistent."
+        },
+        {
+          "order": 3,
+          "title": "Spell Mark It Zero",
+          "difficulty": "earnable",
+          "description": "Complete Z-E-R-O on the outlanes (toggled by flippers like lane change). You need 6 Mark It Zeros for the wizard mode qualification. Each one is on a timer — you have to collect it at the saucer before it times out. The timer is visible on the display. Worth solid points on its own."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "Post Transfers May Not Work Like You Expect",
+        "description": "The flippers and super bands on TBL feel different from Williams/Stern machines. Post transfers and tap passes can be unreliable. If you're not confident in your transfers, shoot a safe shot (like the Walter shot or the rug) instead of attempting a transfer that might drain you."
+      },
+      {
+        "title": "The Left Ramp Kickout Is Punishing",
+        "description": "When the ball ejects from the left ramp lock area, it comes back hard and at an awkward angle. Be ready with both flippers. Many drains happen right after a lock attempt."
+      },
+      {
+        "title": "Collect Locks Immediately",
+        "description": "When lock is lit on the left ramp, shoot it right away. You can only hold one lock at a time. Sitting on a lit lock means you're not progressing toward multiball."
+      },
+      {
+        "title": "You Can Cancel Out of Character Multiball Start",
+        "description": "If you accidentally shoot the left saucer and Character Multiball is lit but you're not ready, you can cancel it — but only if another feature (like Mark It Zero or bowling) is also lit there. If Character Multiball is the only option at the saucer, shooting it starts the multiball whether you're ready or not."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Character Multiball with Only 1-2 Characters",
+        "description": "This is the biggest trap in the game. Starting Character Multiball with one character gives you a 2-ball multiball with one jackpot shot. Starting it with all five characters and bowling ball doubles gives you a 5-ball multiball with enormous jackpots everywhere. Be patient."
+      },
+      {
+        "title": "Nihilist Showdown (Unless It Starts)",
+        "description": "The Nihilist Showdown is the equivalent of Extra Ball Madness from Attack from Mars — it's a multiball where you're shooting standups instead of major shots. The scoring is modest (about 900K in the tutorial game). If it starts, play it out and focus on one standup you can hit consistently, but don't pursue it over character preparation."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Scoring feels like a mid-90s Williams game. A solid game is 15-20M. Good games push into 30M+. The big scores come from fully-stacked Character Multiballs with 3-5M per jackpot shot. For league, consistently hitting 15M+ is competitive — but if you get a fully stacked Character Multiball, 30M+ is very achievable."
+    },
+    {
+      "label": "It's Rare",
+      "text": "Dutch Pinball made roughly 500 of these. They trade for $10,000-12,000+. You'll almost never see one on location — if it's at your league, someone brought it from their personal collection. Treat it accordingly. The game includes a physical rug that goes under the machine, a Brunswick bowling alley with 10 real pins, and a car bash toy on the upper playfield. The theme integration is considered among the best in pinball."
+    },
+    {
+      "label": "The Stacking Philosophy",
+      "text": "TBL rewards you exponentially for stacking multiple systems together. A shot worth 500K with no preparation becomes 1M with a bowling ball double, 2M with a White Russian multiplier, and 4M with both. The game is deliberately designed so that patient players who build all their systems before cashing in outscore players who rush to multiball."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "rug",
+      "name": "The Rug (Center Shot / Bash Toy)",
+      "description": "Center of the playfield. A physical rug that unrolls when hit. Three hits light a Rug Mode (skill shot gives all three for one). 6 Rug Modes total, each themed to a movie scene. Your default 'safe' shot when unsure what to do.",
+      "image": null,
+      "crop": { "x": 50, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Ball Lock)",
+      "description": "Left side. Lock balls here for regular multiball. Lock is lit by hitting the standups on either side of the ramp. Only one lock can be held at a time — collect immediately when lit. The kickout after locking comes back hard.",
+      "image": null,
+      "crop": { "x": 25, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Saucer (Character Multiball / Mark It Zero)",
+      "description": "Left side of the playfield. Starts Character Multiball when lit, or collects Mark It Zero. Can also start bowling. If multiple features are lit, you can choose — but if only Character Multiball is ready, shooting here starts it whether you're prepared or not.",
+      "image": null,
+      "crop": { "x": 15, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "bowling-loop",
+      "name": "Bowling Loop / Upper Playfield",
+      "description": "Upper playfield with three shots: a loop, a scoop, and the car bash toy. Complete the loop to light 'Let's Go Bowling'. The scoop starts Car Modes when lit. The car is a bash toy for Car Mode. Spelling B-O-W-L-I-N-G via the loop also lights bowling at the scoop and saucer.",
+      "image": null,
+      "crop": { "x": 50, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "white-russian-targets",
+      "name": "White Russian Targets",
+      "description": "Four standup targets on the right side. Complete all four to mix a White Russian, which lights shot multipliers at various playfield positions. These multipliers stack with bowling ball doubles and persist through multiballs. The more White Russians you complete, the higher your scoring ceiling.",
+      "image": null,
+      "crop": { "x": 80, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner (Character Shot)",
+      "description": "One of the character jackpot shots. During Character Multiball, the spinner jackpot can be one of the most valuable shots when doubled and multiplied.",
+      "image": null,
+      "crop": { "x": 35, "y": 50, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "PAPA — Big Lebowski Tutorial Playthrough",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=TBL_PAPA_tutorial",
+      "description": "Expert playthrough at Alamo Drafthouse San Francisco covering character stacking strategy, bowling ball doubles, White Russian multipliers, skill shots, and the key insight that patience is everything on this game. Primary source for strategic priorities."
+    },
+    {
+      "title": "Dutch Pinball — TBL Operations Manual (Rules Section)",
+      "type": "rulesheet",
+      "url": "https://www.manualslib.com/manual/2304256/Dp-The-Big-Lebowski.html?page=69",
+      "description": "Official rules overview covering Rug Modes, Bowling, Mark It Zero, Character Multiball, Car Modes, White Russians, and The Dude Abides wizard mode qualification."
+    },
+    {
+      "title": "TV Tropes — The Big Lebowski Pinball",
+      "type": "reference",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Pinball/TheBigLebowski2016",
+      "description": "Feature overview including wizard mode requirements (all 6 goals), spelling bonuses for all characters, and the White Russian multiplier system."
+    },
+    {
+      "title": "Pinside — The Big Lebowski Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/big-lebowski",
+      "description": "Community ratings (#24 on Pinside Top 100), production details, and marketplace data. 8.636/10 average rating."
+    }
+  ],
+  "chat_starters": [
+    "When should I start Character Multiball?",
+    "How do bowling balls and White Russians stack?",
+    "What are the six Rug Modes?",
+    "How do I qualify The Dude Abides wizard mode?"
+  ],
+  "level_up": {
+    "intro": "Once the character stacking loop feels natural, these techniques push you toward The Dude Abides.",
+    "tips": [
+      {
+        "title": "Maximize a Single Character's Jackpot Value",
+        "description": "Every shot to a character — even after they're already spelled — increases that character's base jackpot value for Character Multiball. If you're particularly good at one shot (say the Jesus spinner), keep grinding it throughout the game. When you finally start Character Multiball, that shot will have an enormous base value, further multiplied by the bowling ball double and White Russian multipliers."
+      },
+      {
+        "title": "The 4x Stack: Bowling Ball + White Russian + Character Multiball",
+        "description": "A character jackpot shot starts at its base value. A bowling ball doubles it. A White Russian multiplier on that shot doubles it again. In Character Multiball with both active, you're getting 4x the base value per shot. The PAPA tutorial showed a 3.6M single-shot jackpot from this stack. Build toward it deliberately."
+      },
+      {
+        "title": "Wizard Mode Requirements",
+        "description": "The Dude Abides requires 6 goals: complete all 6 Mark It Zeros, collect all 5 bowling balls, complete all 5 character modes, complete all 6 Rug Modes, complete all 3 Car Modes, and score a Super Jackpot in regular Multiball. It's a long road but each component is independently fun to pursue. Track your progress on the display."
+      }
+    ]
+  }
+}

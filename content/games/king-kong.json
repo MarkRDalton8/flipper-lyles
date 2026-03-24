@@ -1,0 +1,293 @@
+{
+  "slug": "king-kong",
+  "title": "King Kong: Myth of Terror Island",
+  "manufacturer": "Stern",
+  "designer": "Keith Elwin",
+  "year": 2025,
+  "description": "A four-flipper Elwin adventure that plays like a love letter to 90s Williams. Hit the Gong to start Island Scenes, climb the building for NYC Events, lock balls in the train car for King Kong Multiball, and collect map segments for Treasure Hunts. The spider pit magnet will mess with your head.",
+  "badge": {
+    "gradient_from": "#0a1a0a",
+    "gradient_to": "#1a3a1a",
+    "border_color": "#8b6914",
+    "text_color": "#d4a017",
+    "abbreviation": "KK"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 5,
+    "fun_factor": 5,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "King Kong is a <strong>four-flipper adventure</strong> (two standard, one upper right, one mini) that channels the spirit of Indiana Jones and Congo. Shoot the {{callout:gong}} to start <strong>Island Scenes</strong> — 5 timed modes that award map segments when completed. Build <strong>climb</strong> progress by hitting yellow arrows to unlock <strong>Island Locks</strong> (turning scenes into 2-ball multiballs) and <strong>NYC Events</strong>. Complete the {{callout:drop-targets}} to light <strong>King Kong Multiball</strong> at the center ramp. Spell <strong>KING KONG</strong> for the <strong>T-Rex Battle</strong> 4-ball multiball. The {{callout:spider-pit}} has a magnet that grabs the ball for pit multiballs. Collect 6 <strong>map segments</strong> to start <strong>Treasure Hunts</strong> for permanent game perks. And the orange X targets light <strong>2x scoring</strong> whenever you need it.",
+    "modes": [
+      { "name": "Island Scenes (×5)", "type": "md" },
+      { "name": "NYC Events (×3)", "type": "ev" },
+      { "name": "Biplane Attack", "type": "md" },
+      { "name": "Deadeye", "type": "ev" },
+      { "name": "King Kong Multiball", "type": "mb" },
+      { "name": "T-Rex Battle", "type": "mb" },
+      { "name": "Spider Pit Multiballs (×3)", "type": "mb" },
+      { "name": "Treasure Hunts", "type": "ev" },
+      { "name": "Crash the Gate", "type": "wiz" }
+    ]
+  },
+  "one_shot": {
+    "name": "The Gong",
+    "description": "The Gong bash toy is right of the right orbit, flanked by two orange X targets. Hit it to start Island Scenes (the game's primary modes), light KING KONG letters, and activate various features throughout the game. On the Pro, you need to hit island arrows first to light the Gong for scene start — on Premium/LE the Gong always starts scenes directly. The Gong is easier to backhand from the left flipper than to shoot directly from the right. It's your gateway to nearly every major feature in the game."
+  },
+  "hard_box": {
+    "text": "This game has an unusual flipper layout with three left inlanes, an outlane between two of them, and a center post. The mini-flipper area in the upper left has four drop targets, a cliffs ramp, and a river lane — it's almost a mini-playfield unto itself. The spider pit on the far left has a magnet that grabs the ball during pit multiballs, which is cool but disorienting. The game's depth is comparable to Avengers: Infinity Quest — there are easily a dozen interconnected scoring systems. Don't try to understand all of them. Focus on the loop: hit the Gong → play a Scene → climb the building → start a multiball. Everything else layers on top naturally."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Skill Shots, Start an Island Scene",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Make Unique Skill Shots",
+          "difficulty": "earnable",
+          "description": "Three skill shot types: plunge into a left inlane, the spider pit targets, or the river lane (plus a hidden reflex flip up the cliffs ramp). Each unique skill shot lights a KING KONG letter at the Gong and adds ball save time. Memorize the plunger strength for each target — during the Deadeye mode later, you'll get unlimited skill shots for 30 seconds and this muscle memory pays off."
+        },
+        {
+          "order": 2,
+          "title": "Shoot the Gong → Start an Island Scene",
+          "difficulty": "earnable",
+          "description": "Hit the {{callout:gong}} to start one of 5 Island Scenes. Each scene is a 60-second timed mode with specific shot requirements. Completing a scene awards a map segment (6 total needed for Treasure Hunts). On the Pro, you may need to hit island arrows first to light the Gong. Pick scenes carefully — avoid Cross the Chasm early, as it doesn't play well stacked with multiballs."
+        },
+        {
+          "order": 3,
+          "title": "Hit Yellow Climb Arrows",
+          "difficulty": "you_got_this",
+          "description": "Yellow arrows around the playfield advance your climb up the building. Reaching 200 ft and 500 ft thresholds lights {{callout:island-lock}} (qualifying your next scene to become a 2-ball multiball) and NYC Events. Climb progress carries across balls, so even a few climb shots on Ball 1 compound later."
+        },
+        {
+          "order": 4,
+          "title": "Work the Drop Targets",
+          "difficulty": "earnable",
+          "description": "The {{callout:drop-targets}} in the mini-flipper area have multiple uses: completing them lights King Kong Multiball locks at the center ramp, advances the Lost Temple feature, and feeds the island treasure target behind them. Sweepable from multiple flippers — an Elwin signature."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Start King Kong Multiball, Play Scenes with Island Locks",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Complete Drops → Lock Balls → King Kong Multiball",
+          "difficulty": "earnable",
+          "description": "When 'Light Kong Lock' is lit, complete the {{callout:drop-targets}} to light the center ramp for ball locks. Lock 3 balls and Kong destroys the train car to start multiball. During multiball, complete the drops again to light jackpots at the punchback target and cliffs ramp. Shoot green shots for awards and relock at the center ramp for 20 seconds of 2x scoring on all jackpots."
+        },
+        {
+          "order": 2,
+          "title": "Play an Island Scene with Island Lock",
+          "difficulty": "earnable",
+          "description": "If you've reached the climb threshold, your next scene starts as a 2-ball multiball. During the scene, complete the required shots to start a Victory Challenge — shoot the {{callout:cliffs-ramp}} to light an Island Jackpot at the spider pit. Hit the pit within 5 seconds of the cliffs shot for a 2x Island Jackpot. This is the single biggest payout from scenes."
+        },
+        {
+          "order": 3,
+          "title": "Light 2x Scoring via Orange X Targets",
+          "difficulty": "you_got_this",
+          "description": "The two orange standup targets flanking the Gong start 2x scoring when completed. During 2x, a roving orange target extends the timer. Stack this with a scene or multiball for doubled payouts. Easy to activate, easy to forget about — check for it before starting any big feature."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Spell KING KONG, Push for Crash the Gate",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Spell KING → Deadeye, Spell KING KONG → T-Rex Battle",
+          "difficulty": "earnable",
+          "description": "KING KONG letters light at the Gong from unique skill shots, climbing enough, and switch hit thresholds. Spelling KING lights Deadeye at the right VUK — 30 seconds of unlimited skill shots, with a jackpot at the river lane every 3 skill shots. Spelling KING KONG lights the T-Rex Battle: a 4-ball multiball where you clear colored shots to light the spider pit for a button-mashing Pummel phase."
+        },
+        {
+          "order": 2,
+          "title": "Collect Map Segments → Start a Treasure Hunt",
+          "difficulty": "earnable",
+          "description": "Completing Island Scenes, NYC Events, and other objectives awards map segments. Once you have all 6, shoot the {{callout:kong-cave}} to start a Treasure Hunt. Make the randomly lit gold shots to find a treasure — a permanent perk for the rest of the game. These perks compound across multiple hunts."
+        },
+        {
+          "order": 3,
+          "title": "Crash the Gate (6th Scene)",
+          "difficulty": "good_luck",
+          "description": "After playing all 5 Island Scenes, the 6th scene — Crash the Gate — unlocks at the Gong. Any lit shot lights the Gong for a hurry-up based on your total mode scoring. Complete sets of shots to light a super jackpot at the side ramp that increases with each set. This is the culminating mode of the island progression."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "The Center Post Is Intentional",
+        "description": "King Kong is designed with a center post in mind — it can save weak center ramp shots. Don't ignore it. Some tournaments may remove it, but if it's there, it's part of the design."
+      },
+      {
+        "title": "Use the Action Button for the Log Bridge",
+        "description": "When the river lane is lit via drop targets, the right spinner sends the ball through the river to the left flipper. But if you press the action button, it activates the log diverter and sends the ball to the upper flipper instead. This is a safer feed and gives you access to different shots. Learn this toggle."
+      },
+      {
+        "title": "The Punchback Shot Kicks Back Hard",
+        "description": "The punchback orbit has a kicker that fires the ball back toward the upper flipper. It's aptly named — be ready. During certain modes the kicker turns off and the ball locks in a hidden sinkhole instead."
+      },
+      {
+        "title": "Three Left Inlanes, One Hidden Outlane",
+        "description": "The unusual left side has three inlanes with an outlane sandwiched between two of them. This means balls can drain from the left in ways you don't expect on other machines. The Cliffhanger feature at the left outlane is a last-chance save — watch for it."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Spider Pit Multiballs (As Primary Strategy)",
+        "description": "The spider pit requires 4 shots to start (increasing by 2 each time). The three pit multiballs rotate every 10 seconds — Giant Spider is the best. They're useful as utility multiballs to stack with scenes, but the scoring from pit multiballs alone is modest. Don't chase them as your main feature."
+      },
+      {
+        "title": "Cross the Chasm (Island Scene)",
+        "description": "Kineticist specifically warns against playing Cross the Chasm if you're planning to stack with an island lock or multiball. Save it for when you're playing scenes solo."
+      },
+      {
+        "title": "Rapids (Early Game)",
+        "description": "Rapids starts at 5 river shots — shoot the right spinner repeatedly to build a jackpot collected at the Kong Cave. It's a fun scoring loop but requires significant setup. Focus on scenes and multiball first; rapids is a Ball 3 bonus opportunity."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Average games score around 100M. Good tournament games break 300M. The game is still getting code updates as of early 2026, so scoring targets may shift. For league, consistently hitting 150M+ is competitive."
+    },
+    {
+      "label": "It Plays Like 90s Williams",
+      "text": "Elwin designed this to evoke the feel of Indiana Jones and Congo — the atmosphere, the exploration theme, the four-flipper layout. If you've played those classics, the flow language will feel familiar. The drop targets in particular echo Quicksilver's sweepable design, updated for modern play."
+    },
+    {
+      "label": "Code Is Still Evolving",
+      "text": "King Kong launched in mid-2025 and is still receiving meaningful code updates. Features like the T-Rex Battle, NYC Events, and various quality-of-life improvements have been added post-launch. Scoring values, difficulty settings, and even some mode mechanics may change. Check the display for the current code version."
+    },
+    {
+      "label": "NYC Events Have Three Play Styles",
+      "text": "When an NYC Event is available (from climbing thresholds), you choose how to play it: as a multiball with 1x scoring, as limited flips with 2x scoring, or as single-ball with 3x scoring. Weigh the risk/reward based on your confidence level. The 2x limited flips option is a good middle ground."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "gong",
+      "name": "Gong Bash Toy",
+      "description": "Right-center of the playfield, flanked by two orange X targets. The gateway to Island Scenes, KING KONG letters, and multiple features. Easier to backhand from the left flipper. On Pro, island arrows must be hit first to light it for scene starts. Custom sculpted temple housing on Premium/LE.",
+      "image": null,
+      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "drop-targets",
+      "name": "Lost Temple Drop Targets",
+      "description": "Four drop targets in the mini-flipper area (upper left). Sweepable from multiple flippers. Complete them to light King Kong Multiball locks at the center ramp. Also advance Lost Temple feature and reveal the island treasure standup target behind the upper two drops.",
+      "image": null,
+      "crop": { "x": 25, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "spider-pit",
+      "name": "Spider Pit",
+      "description": "Far left of the playfield. Three standup targets with a magnet that grabs the ball during pit multiballs. On Premium/LE, the custom sculpted Giant Spider attacks the held ball. Shoot it 4 times to start a pit multiball (increasing by 2 each time). Three different pit multiballs rotate every 10 seconds — Giant Spider (bottom insert) is the best.",
+      "image": null,
+      "crop": { "x": 10, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "cliffs-ramp",
+      "name": "Cliffs Ramp",
+      "description": "In the mini-flipper area. Feeds the upper right flipper. During Island Scenes with island locks, shooting this lights the Island Jackpot at the spider pit. A key shot for the Victory Challenge sequence.",
+      "image": null,
+      "crop": { "x": 30, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "center-ramp",
+      "name": "Center Ramp (Kong Lock)",
+      "description": "Center of the playfield, passes through the mini-flipper area. Easier from the right flipper. Locks balls for King Kong Multiball when lit via drop target completion. On Premium/LE, balls physically lock in the NYC train car; Kong destroys and flips it to start multiball.",
+      "image": null,
+      "crop": { "x": 45, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp (Biplane Attack)",
+      "description": "Upper right area, near the mini-flipper zone. Three shots (+1 per mode played) starts Biplane Attack. Also the main jackpot source during King Kong Multiball and where the Crash the Gate super jackpot is scored.",
+      "image": null,
+      "crop": { "x": 55, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "kong-cave",
+      "name": "Kong Cave VUK",
+      "description": "Far right of the playfield, similar position to the DB5 eject on James Bond 007. Where Treasure Hunts start (after collecting 6 map segments). Also collects Rapids jackpots. A hidden skill shot can also be scored here.",
+      "image": null,
+      "crop": { "x": 85, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "island-lock",
+      "name": "Punchback / Island Lock",
+      "description": "An orbit with a kicker that fires the ball back at the upper flipper. During certain modes, the kicker turns off and the ball locks in a hidden sinkhole for Island Locks. Earned by reaching climb thresholds (200 ft, 500 ft). Turns the next Island Scene into a 2-ball multiball.",
+      "image": null,
+      "crop": { "x": 75, "y": 30, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kineticist — King Kong Tutorial by Noah Crable",
+      "type": "guide",
+      "url": "https://www.kineticist.com/post/stern-king-kong-tutorial",
+      "description": "Comprehensive 20-minute tutorial covering all major features: Island Scenes, climbing, NYC Events, King Kong Multiball, Spider Pit, KING KONG letters, Deadeye, T-Rex Battle, Biplane Attack, map segments, Treasure Hunts, 2x scoring, Lost Temple, Rapids, and Noah's strategies. Updated through March 2026."
+    },
+    {
+      "title": "Tilt Forums — King Kong Rulesheet",
+      "type": "rulesheet",
+      "url": "https://tiltforums.com/t/king-kong-myth-of-terror-island-rulesheet/9514",
+      "description": "Community-maintained wiki rulesheet with detailed rules for all features, Island Scene specifics, jackpot calculations, and Victory Challenge mechanics."
+    },
+    {
+      "title": "Stern Pinball — King Kong Official Page",
+      "type": "reference",
+      "url": "https://sternpinball.com/game/king-kong/",
+      "description": "Official game page with Pro/Premium/LE feature matrix, model comparisons, and the animatronic Kong details."
+    },
+    {
+      "title": "Stern Pinball — King Kong Feature Matrix (PDF)",
+      "type": "reference",
+      "url": "https://sternpinball.com/wp-content/uploads/2025/04/King-Kong-Feature-Matrix-adfaefa.pdf",
+      "description": "Detailed comparison of Pro, Premium, and LE model features including physical toys, playfield differences, and exclusive features."
+    },
+    {
+      "title": "Pinside — King Kong Premium Changelog",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/king-kong-myth-of-terror-island-premium/details",
+      "description": "Code changelog through v0.91.0 showing ongoing feature additions, bug fixes, and adjustment changes. Useful for tracking current code state."
+    }
+  ],
+  "chat_starters": [
+    "What's the best Island Scene to start with?",
+    "How does climbing the building work?",
+    "When should I pick 1x/2x/3x for NYC Events?",
+    "How do I get Island Locks for 2-ball scenes?"
+  ],
+  "level_up": {
+    "intro": "Once the Gong → Scene → Climb → Multiball loop feels natural, these techniques push toward bigger payouts and Crash the Gate.",
+    "tips": [
+      {
+        "title": "Victory Challenge → 2x Island Jackpot",
+        "description": "During an Island Scene with an island lock, completing the required shots starts the Victory Challenge. Shoot the cliffs ramp to light the Island Jackpot at the spider pit, then knock the ball into the pit within 5 seconds for a 2x Island Jackpot. This is the highest single payout from any scene. Time the cliffs shot so you have a clean path to the pit."
+      },
+      {
+        "title": "Stack 2x Scoring with Everything",
+        "description": "The orange X targets are easy to complete and start 2x scoring with a roving target extension. Stack this with an Island Scene with island lock, or with King Kong Multiball, and every jackpot you score is doubled. Check if the X targets are close to completion before starting any big feature."
+      },
+      {
+        "title": "NYC Event Risk/Reward Calculation",
+        "description": "NYC Events offer three play styles: multiball (1x, safest), limited flips (2x, moderate risk), and single-ball (3x, high risk). The 3x single-ball option is devastating if you can make the shots — triple scoring on everything. But one drain and it's over. The 2x limited flips option is the sweet spot for tournament play: double scoring with some safety net from the limited flip mechanic."
+      },
+      {
+        "title": "Deadeye Skill Shot Grinding",
+        "description": "Spelling KING lights Deadeye: 30 seconds of unlimited skill shots. Every 3 skill shots (+1 per jackpot) lights a jackpot at the river lane. If you've memorized the plunger strength for each skill shot target, you can chain multiple jackpots. This is pure muscle memory — the better your plunger calibration, the more valuable this mode becomes."
+      }
+    ]
+  }
+}
