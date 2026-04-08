@@ -1,0 +1,311 @@
+{
+  "slug": "tron-legacy",
+  "title": "TRON: Legacy",
+  "manufacturer": "Stern",
+  "designer": "John Borg",
+  "year": 2011,
+  "description": "A fast, combo-heavy game with a Daft Punk soundtrack where End of Line jackpots are the real secret weapon hiding in plain sight.",
+
+  "badge": {
+    "gradient_from": "#0a1a3a",
+    "gradient_to": "#050d1f",
+    "border_color": "#1a4a8a",
+    "text_color": "#00ccff",
+    "abbreviation": "TRON"
+  },
+
+  "ratings": {
+    "drain_danger": 4,
+    "rule_complexity": 3,
+    "fun_factor": 5,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "TRON: Legacy is a <strong>feature-based combo game</strong> with a ladder of nine objectives trailing up the center of the playfield. Complete features to light inserts solid — get them all flashing for Sea of Simulation, all solid for the Portal wizard mode. But here's the secret: the most valuable scoring opportunity is the <strong>End of Line jackpot</strong>, a combo collected by shooting the {{callout:side-ramp}} then immediately shooting the {{callout:scoop}}. The game never tells you this is valuable, but it's almost always worth more than anything else on the table. Three multiballs are available — {{callout:light-cycle}}, {{callout:quorra}}, and {{callout:disc}} — and stacking them is where the big scores happen.",
+    "modes": [
+      { "name": "Light Cycle Multiball", "type": "mb" },
+      { "name": "Quorra Multiball", "type": "mb" },
+      { "name": "Disc Multiball", "type": "mb" },
+      { "name": "Zuse Frenzy", "type": "md" },
+      { "name": "Terminate Clu", "type": "md" },
+      { "name": "Follow Gem", "type": "md" },
+      { "name": "Sea of Simulation", "type": "ev" },
+      { "name": "Portal Multiball", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Side Ramp → Scoop (End of Line Combo)",
+    "description": "The side ramp (accessible from the upper left flipper) into the scoop is the single most important shot sequence in TRON. This combo collects an End of Line jackpot that starts at 500K and increases with every combo you make during the ball — and it never resets when collected. Kineticist's tip: the game gives you zero fanfare for this combo, no light show, no callout, nothing — but it's consistently worth more than any multiball jackpot. After every side ramp shot, forget everything else and shoot the scoop. If you're really good at this combo, there's merit in doing nothing but shooting End of Line all game."
+  },
+
+  "hard_box": {
+    "text": "TRON is fast. Really fast. The ball whips around ramps and orbits at high speed, and if you can't catch or cradle consistently, you'll drain a lot. The Recognizer bank (three standups in the center) is dangerous to shoot — missed shots go SDTM. The Gem shot (upper right inner loop) is the hardest shot on the table and is needed for bonus multiplier advancement and to complete the Follow Gem mode. The left flipper has almost no useful shots, which means ball control and transfers are critical. Scores can swing wildly — a stacked game can hit 9 digits while a dry game struggles past 10M."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Skill Shot, Build End of Line, Start Light Cycle",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Soft Plunge for the Scoop Skill Shot",
+          "difficulty": "earnable",
+          "description": "Soft plunge so the ball bounces off the shooter lane gate and falls into the {{callout:scoop}} for the skill shot. If you overshoot, hold the left flipper and use the {{callout:left-ramp}} as a backup — it feeds the upper left flipper and keeps you in control. The scoop skill shot is worth the most and also lights Find Flynn."
+        },
+        {
+          "order": 2,
+          "title": "Build End of Line Value with Combos",
+          "difficulty": "earnable",
+          "description": "Every combo you make increases the End of Line jackpot value. The {{callout:left-ramp}} loops indefinitely from the right flipper, and each loop counts as a combo. Rip a few left ramp loops, then when the ball feeds to the upper left flipper, shoot the {{callout:side-ramp}} followed by the {{callout:scoop}} to cash in End of Line. The value starts at 500K and climbs quickly past 1.5M with just a few combos."
+        },
+        {
+          "order": 3,
+          "title": "Clear Light Cycle Inserts",
+          "difficulty": "earnable",
+          "description": "Shoot the flashing Light Cycle inserts scattered around the playfield. Each shot turns one off. Once enough are cleared, {{callout:light-cycle}} lights at the scoop. Some inserts are on harder shots like Gem or the right orbit — start with the easy ones (ramps, left orbit). During the 2-ball multiball, shoot flashing shots for jackpots and aim for combos to score Super Jackpots."
+        },
+        {
+          "order": 4,
+          "title": "Start Progressing Quorra",
+          "difficulty": "you_got_this",
+          "description": "Shoot the {{callout:quorra}} spinner whenever you have a clean left-flipper-to-spinner shot. Each shot advances toward Quorra Multiball at the scoop. The spinner also feeds the upper left flipper, lining you up for an End of Line combo. Two birds, one shot."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Stack Multiballs, Collect End of Line",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Quorra Multiball",
+          "difficulty": "earnable",
+          "description": "Once you've hit the {{callout:quorra}} spinner enough times, Quorra Multiball lights at the scoop. During the 2-ball multiball, the Quorra shot is lit for unlimited jackpots. The Gem shot lights for a Super Jackpot worth the total of all jackpots since the last Super. But honestly? End of Line is still probably worth more. Just keep comboing. Kineticist's tip: Quorra has two add-a-balls at the Recognizer bank — try to earn one during initial ball save when it's less risky."
+        },
+        {
+          "order": 2,
+          "title": "Stack Light Cycle with Quorra",
+          "difficulty": "earnable",
+          "description": "You can make progress toward and start Light Cycle while Quorra is running (and vice versa). If you can light one multiball at the scoop while the other is active, you effectively get an add-a-ball. This is the most realistic stack on the game and can produce huge scoring windows."
+        },
+        {
+          "order": 3,
+          "title": "Let Minor Modes Happen Naturally",
+          "difficulty": "you_got_this",
+          "description": "The Z-U-S-E targets, C-L-U lanes, and T-R-O-N drops will all progress from random bounces during multiballs. Zuse starts a timed switch frenzy (10K per switch), TRON modes offer Double Scoring / Super Bumpers / Super Spinners, and Clu starts Terminate Clu at the scoop. Don't go after these deliberately — they'll just happen. But capitalize on Double Scoring if it activates during a multiball."
+        },
+        {
+          "order": 4,
+          "title": "Collect End of Line Relentlessly",
+          "difficulty": "earnable",
+          "description": "Anytime the ball is on the upper left flipper, shoot the {{callout:side-ramp}} → {{callout:scoop}} combo. During multiball, after multiball, between modes — End of Line is always the right play. The value carries across the entire ball and just keeps growing."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Reach Sea of Simulation, Protect Your Bonus",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Get All Nine Inserts Flashing for Sea of Simulation",
+          "difficulty": "earnable",
+          "description": "Check the ladder of inserts up the center of the playfield. Each insert corresponds to a feature — just starting a feature makes it flash, completing it makes it solid. You likely have several flashing from Balls 1-2. Identify what's missing and target those features. Getting all nine flashing lights Sea of Simulation at the {{callout:scoop}}, a single-ball untimed mode that gives you a second chance to complete anything you missed."
+        },
+        {
+          "order": 2,
+          "title": "Consider Disc Multiball",
+          "difficulty": "earnable",
+          "description": "If you need the Disc insert and haven't started it, hit the {{callout:recognizer}} standups in the center enough times to lower them, then shoot the spinning disc behind them. It takes many hits but Disc Multiball is the most lucrative multiball — all shots lit for jackpots, a super jackpot after 10 jackpots, and a free restart if you drain without collecting a super. Disc cannot be stacked with other multiballs, so play it on its own."
+        },
+        {
+          "order": 3,
+          "title": "Shoot Gem for Bonus Multiplier",
+          "difficulty": "good_luck",
+          "description": "Each shot to the {{callout:gem}} shot (upper right inner loop, above the side ramp) adds +1x to your end-of-ball bonus multiplier. Tron's bonus is based on your insert progress — flashing inserts are 50K, solid ones are 250K, reaching Sea of Simulation is 450K, Portal is 2.25M. With a few solid inserts and a 3-4x multiplier, bonus can easily exceed 5M. Gem is hard, but functionally each shot is worth your entire bonus."
+        },
+        {
+          "order": 4,
+          "title": "Don't Tilt",
+          "difficulty": "you_got_this",
+          "description": "If you've made decent insert progress, your end-of-ball bonus is substantial. Tron's bonus is more lucrative than most games from this era. A tilt wipes it all out. Play conservatively if your bonus is large and your ball is in danger."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "The Left Ramp Is Your Bailout",
+        "description": "The left ramp (Light Cycle ramp) can be looped indefinitely from the right flipper. When the ball is screaming at you and you're not sure what to do, shoot the left ramp. It's safe, it builds combos, and it feeds the upper left flipper."
+      },
+      {
+        "title": "Use the Quorra Spinner to Reset",
+        "description": "The left spinner sends the ball to the upper left flipper, slowing things down and giving you control. From there, you can shoot the side ramp for End of Line or the Gem shot. It's your other safe bail-out from the right flipper."
+      },
+      {
+        "title": "Avoid the Recognizer Early",
+        "description": "The three center standups are tempting because they lower for Disc Multiball and provide Quorra add-a-balls, but missed shots drain SDTM. Save Recognizer shots for multiballs when you have balls to spare."
+      },
+      {
+        "title": "Beware Extra Ball Plunges",
+        "description": "Plunging an extra ball can accidentally drop into the scoop, starting whatever multiball or mode is lit there. In tournaments, ask the TD to drain the ball for you. You don't want to accidentally start Sea of Simulation or a multiball you can't play."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Follow Gem Mode",
+        "description": "Started by hitting the Gem shot enough times, then requires repeated Gem shots during a timed mode. The Gem shot is the hardest on the table — the mode is lame and the shots are brutal. It'll happen naturally or it won't."
+      },
+      {
+        "title": "Deliberately Pursuing TRON Modes",
+        "description": "The T-R-O-N standups on the left light Double Scoring, Super Bumpers, or Super Spinners. These start from random bounces constantly. Don't aim for them — let them come to you. If Double Scoring activates during a multiball, great. If not, don't sweat it."
+      },
+      {
+        "title": "Portal Wizard Mode Completion",
+        "description": "Portal requires solidly completing all nine inserts, then shooting 21+ jackpots during a 4-ball multiball including four right orbit shots and three Gem shots. Just starting Portal is an achievement. Completing it is extraordinary. Don't build your strategy around it."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "On a not-super-evil TRON, 30M is a solid game. Reaching nine digits (100M+) is very possible with good stacking. On a brutal setup, 10M can be remarkable. Kineticist rates this as a game where scores shoot up quickly due to stacking potential, so don't be surprised if one ball accounts for 80% of your total."
+    },
+    {
+      "label": "LE vs. Standard",
+      "text": "There are actually four versions of TRON (standard 2011, LE, 2012 edition, 2013 edition). The LE has a moving Recognizer, drop targets instead of standups for TRON, fiber optic light tubes on ramps, and the exclusive End of Line Multiball (Daft Punk Multiball) — started by spelling DAFT PUNK on the left ramp. Standard versions are far more common at league. The strategy is the same either way."
+    },
+    {
+      "label": "End of Line Is the Whole Game",
+      "text": "This cannot be overstated: End of Line jackpots are dramatically underemphasized by the game itself. There's no fanfare, no light show, no special callout. But it's consistently the most valuable thing on the table. If you only remember one thing from this guide: side ramp → scoop, every single time."
+    },
+    {
+      "label": "The Soundtrack Is Incredible",
+      "text": "Three Daft Punk tracks from the movie are in the game — 'Tron Legacy (End Titles)' as main music, 'C.L.U.' in a mode, and 'Derezzed' during Quorra Multiball. The rest is composed by David Thiel. Pinball News gave the sound a 9.5/10. You will want to turn the volume up."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Light Cycle Ramp)",
+      "description": "Your primary right-flipper shot and safe bail-out. Can be looped indefinitely. Each loop counts as a combo, building End of Line value. Light Cycle inserts live here. On LE models, this ramp has a diecast light cycle (or car on 4th edition) and fiber optic lighting.",
+      "image": null,
+      "crop": { "x": 30, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "side-ramp",
+      "name": "Side Ramp (Upper Left Flipper)",
+      "description": "Shot from the upper left flipper. Feeds back toward the lower playfield and sets up the End of Line combo at the scoop. This is a slower, controlled shot that helps you regain composure when things are moving fast. One of the two shots from the upper flipper (the other is Gem).",
+      "image": null,
+      "crop": { "x": 20, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "scoop",
+      "name": "Flynn's Arcade Scoop",
+      "description": "Open on three sides, accessible from multiple angles. Collects End of Line jackpots (after a side ramp shot), starts multiballs when lit, starts Sea of Simulation and Portal, awards mystery when lit. The bail-out shot from the left flipper and the payoff shot from the upper left flipper.",
+      "image": null,
+      "crop": { "x": 60, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "quorra",
+      "name": "Quorra Spinner (Left Loop)",
+      "description": "Left spinner marked 'Advance Quorra.' Each shot progresses toward Quorra Multiball at the scoop. Also feeds the ball to the upper left flipper, setting up End of Line or Gem shots. Your other safe right-flipper bail-out.",
+      "image": null,
+      "crop": { "x": 25, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "recognizer",
+      "name": "Recognizer Bank",
+      "description": "Three center standups protecting a spinning disc. Hit them enough and they lower, exposing the disc for Disc Multiball progress. Also provides Quorra add-a-balls. Dangerous to shoot — misses drain SDTM. Easier to hit from the left flipper than the right.",
+      "image": null,
+      "crop": { "x": 50, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "gem",
+      "name": "Gem Shot (Upper Right Inner Loop)",
+      "description": "The hardest shot on the table, accessible from the upper left flipper. Adds +1x bonus multiplier per shot. Starts Follow Gem mode after enough hits. Critical for Sea of Simulation payouts — having Gem solid before reaching SoS is worth a mountain of points.",
+      "image": null,
+      "crop": { "x": 65, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "light-cycle",
+      "name": "Light Cycle Inserts",
+      "description": "Scattered across the playfield on various shots. Shoot flashing inserts to clear them and progress toward Light Cycle Multiball at the scoop. Later Light Cycles require harder shots or more inserts.",
+      "image": null,
+      "crop": { "x": 45, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "disc",
+      "name": "Spinning Disc",
+      "description": "Hidden behind the Recognizer bank. Once the standups are knocked down, shooting the disc progresses toward Disc Multiball. Also relights jackpots during Disc Multiball and provides a free multiball restart if you drain without a super jackpot.",
+      "image": null,
+      "crop": { "x": 50, "y": 35, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Combo-TRON: TRON Legacy Pinball Tutorial — Kineticist (James McFatter)",
+      "type": "guide",
+      "url": "https://www.kineticist.com/post/tron-legacy-pinball-tutorial",
+      "description": "Exhaustive tutorial covering every feature, multiball, and scoring opportunity. The definitive guide for TRON strategy. Covers End of Line, all three multiballs, and the ladder system in detail."
+    },
+    {
+      "title": "TRON: Legacy — Wikipedia",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Tron:_Legacy_(pinball)",
+      "description": "Production history, design details, version differences, and critical reception. Good overview of the four production versions."
+    },
+    {
+      "title": "Tron Rules Cheat Sheet — Pinside Forums",
+      "type": "rulesheet",
+      "url": "https://pinside.com/pinball/forum/topic/tron-rules-cheat-sheet",
+      "description": "A condensed PDF cheat sheet covering all modes, their requirements, and scoring values. Great quick reference."
+    },
+    {
+      "title": "TRON Legacy Pinball Tutorial — Bowen Kerins at PAPA (YouTube)",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=8u1bVbwYy0U",
+      "description": "Expert playthrough with commentary at PAPA HQ by tournament champion Bowen Kerins."
+    }
+  ],
+
+  "chat_starters": [
+    "What exactly is the End of Line combo and why is it so valuable?",
+    "Should I go after Disc Multiball or focus on Light Cycle and Quorra?",
+    "How do I reach Sea of Simulation and what should I do when I get there?",
+    "What's the difference between the LE and standard versions?"
+  ],
+
+  "level_up": {
+    "intro": "These techniques are for players ready to push past Sea of Simulation and into truly massive scores.",
+    "tips": [
+      {
+        "title": "Deliberate Drain for End of Line During Ball Save",
+        "description": "During the initial ball save of a multiball, you can deliberately drain every ball. They'll all be kicked back to the upper left flipper, lining you up for consecutive End of Line combos (side ramp → scoop). If your End of Line value is already high from combos, this can be worth more than any multiball jackpots. Only do this if you're very comfortable with the combo."
+      },
+      {
+        "title": "Double Scoring + Disc Multiball Supers",
+        "description": "If Double Scoring from the T-R-O-N targets is running during Disc Multiball, every jackpot you collect is doubled AND that doubled value gets added to the super jackpot total. So a 500K doubled jackpot adds 500K (not 250K) to the super. Then if you collect the super with Double Scoring still active, the super itself is doubled again. This stacks multiplicatively and can produce enormous supers."
+      },
+      {
+        "title": "Sea of Simulation Optimization",
+        "description": "The lower a mode is on the ladder, the more valuable it is to have solid entering Sea of Simulation. Having everything solid except Light Cycle (high on the ladder) pays out 21M immediately. Having everything except Gem (low on the ladder) only guarantees 1M. Prioritize completing Gem and the lower ladder features before SoS if possible — the payoff difference is massive."
+      },
+      {
+        "title": "Skip Sea of Simulation Entirely",
+        "description": "If you manage to get all nine inserts solid without playing Sea of Simulation, starting it at the scoop instantly pays 50M (or 100M with Double Scoring) before Portal even begins. This is extremely rare but worth knowing — if you're one feature away from all-solid, completing it yourself is worth way more than using SoS."
+      }
+    ]
+  }
+}

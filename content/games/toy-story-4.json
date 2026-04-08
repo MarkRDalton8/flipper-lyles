@@ -1,0 +1,294 @@
+{
+  "slug": "toy-story-4",
+  "title": "Toy Story 4",
+  "manufacturer": "Jersey Jack",
+  "designer": "Pat Lawlor",
+  "year": 2022,
+  "description": "Pat Lawlor builds a carnival-themed adventure with a hilarious number of things to do — and the jump ramp is the star of the show.",
+
+  "badge": {
+    "gradient_from": "#2a1a4a",
+    "gradient_to": "#150d25",
+    "border_color": "#5a3a9a",
+    "text_color": "#ffcc44",
+    "abbreviation": "TS4"
+  },
+
+  "ratings": {
+    "drain_danger": 2,
+    "rule_complexity": 5,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "Toy Story 4 is a <strong>scene completion game</strong> designed by Pat Lawlor (Addams Family, Twilight Zone) with a staggering amount of rules. Complete seven scenes to unlock the Meet Me at the Carousel wizard mode. Lock balls behind the {{callout:drop-target}} for Road Trip Multiball, shoot the {{callout:buzz-saucer}} for Buzz Quick Multiball, complete FORKY targets to start Rescue Forky at the {{callout:left-ramp}}, and win carnival games to start Carnival Multiball at the {{callout:scoop}}. The {{callout:jump-ramp}} is your constant companion — Duke Caboom jumps earn their own scene. Meanwhile, the Take A Chance Wheel provides powerful one-time awards including Unlimited Kickback and 2x Playfield scoring.",
+    "modes": [
+      { "name": "Road Trip Multiball", "type": "mb" },
+      { "name": "Buzz Quick Multiball", "type": "mb" },
+      { "name": "Rescue Forky", "type": "md" },
+      { "name": "Carnival Games (12)", "type": "md" },
+      { "name": "Carnival Multiball", "type": "mb" },
+      { "name": "Super Spinners", "type": "ev" },
+      { "name": "Duke Caboom Jump", "type": "ev" },
+      { "name": "Bo Peep Loops", "type": "ev" },
+      { "name": "Take A Chance Multiball", "type": "mb" },
+      { "name": "Meet Me at the Carousel", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Duke Caboom Jump Ramp",
+    "description": "The jump ramp in the upper right is the mechanical star of the game. It launches the ball off a ramp into a mini stunt deck, and it's endlessly satisfying. Shoot the upper loop to enable the left inlanes to lower the jump ramp, then pass through the correct inlane to pop it up. Ten jump ramp shots qualify the Caboom scene, and three consecutive jumps score the Caboom Jackpot. During Carnival Multiball, the jump ramp is your Super Jackpot target. It's also the key to the Fireworks finale of the wizard mode. This shot makes the game."
+  },
+
+  "hard_box": {
+    "text": "The sheer volume of rules is the biggest challenge. There are seven scenes, twelve carnival games, eight wheel awards, and multiple multiballs — it's easy to lose track of what you're supposed to be doing. The Buzz saucer is not a direct shot; you have to shoot into the pop bumpers and hope the ball bounces in. The Bo Peep Loops scene requires you to first earn Super Loops from the Take A Chance Wheel, which adds RNG to a required objective. Rescue Forky gets progressively harder with multi-shot combos. Despite the cute theme, this game can absolutely bury you in complexity."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Lock Balls, Start Carnival Games",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Nail the Skill Shot",
+          "difficulty": "you_got_this",
+          "description": "Plunge the ball into the Woody saucer for 50 tickets, 50K points, and a +5x bonus multiplier. That bonus multiplier boost is enormous early on. After a successful skill shot, you get a chance to shoot the upper loop repeatedly for Super Skill Shot awards. Three skill shots in a game lights an extra ball."
+        },
+        {
+          "order": 2,
+          "title": "Start Road Trip Multiball",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:drop-target}} to light the three physical locks behind it, then lock three balls to start Road Trip Multiball. During the multiball, shoot lit shots for 1x-3x Jackpots. When enough shots are hit, the Super Jackpot lights at the drop target. After the Super, the lock shot lights for a Mega Jackpot hurry-up. Shoot the {{callout:left-ramp}} during Road Trip to light a Shot Multiplier at the {{callout:captive-ball}} for up to 4x on your next jackpot."
+        },
+        {
+          "order": 3,
+          "title": "Earn Tickets and Start a Carnival Game",
+          "difficulty": "you_got_this",
+          "description": "Shoot either ramp to earn tickets. After enough tickets, the {{callout:left-ramp}} lights to start a carnival game (the first game is free — no tickets needed). Use the left flipper to cycle through the available games. Flipball and Squirrel Derby are the easiest to complete. Winning a carnival game collects a character perk for the upcoming Carnival Multiball."
+        },
+        {
+          "order": 4,
+          "title": "Complete FORKY for Kickback",
+          "difficulty": "you_got_this",
+          "description": "Hit the roving FORKY standup targets to spell F-O-R-K-Y. Completing it enables the kickback (left outlane save) and lights Rescue Forky at the left ramp. The kickback alone makes this worth doing every ball. Rescue Forky requires a Duke Caboom ramp → scoop combo for 250K."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Play Carnival Multiball, Work the Wheel",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Lock Balls for Carnival Multiball",
+          "difficulty": "earnable",
+          "description": "After playing any carnival game, Carnival Lock lights at the {{callout:scoop}}. Lock three balls to start Carnival Multiball. This is a staged multiball with escalating Super Jackpots at the {{callout:jump-ramp}}. Keep an eye on the popcorn meter — when it fills, the {{callout:captive-ball}} lights for a Popcorn Jackpot hurry-up that also completes the scene."
+        },
+        {
+          "order": 2,
+          "title": "Spin the Take A Chance Wheel",
+          "difficulty": "earnable",
+          "description": "Spell ALIEN by shooting the {{callout:captive-ball}} (4 letters lit by default) to qualify the wheel. The wheel has 8 awards including Unlimited Kickback, Super X (2x-4x playfield), Caboom (free jump ramp loops), and Super Loops (required for Bo Peep scene). Change the wheel award with the captive ball or upper loop. Prioritize Unlimited Kickback early — it lasts the rest of the ball with no exceptions."
+        },
+        {
+          "order": 3,
+          "title": "Build Spinners for Super Spinners",
+          "difficulty": "earnable",
+          "description": "Rip both the {{callout:woody-spinner}} and Bo Peep spinner to bring Woody and Bo Peep closer together on the display. When they meet, Super Spinners activates and qualifies the scene. During Super Spinners, rip the spinners to build value, then collect at the captive ball twice — once for Woody, once for Bo Peep."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Complete Scenes, Reach the Wizard Mode",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Finish Duke Caboom (10 Jumps)",
+          "difficulty": "earnable",
+          "description": "You need 10 jump ramp shots during normal play to qualify the Caboom scene. Shoot the upper loop to enable the inlanes, pass through the flashing inlane to lower the {{callout:jump-ramp}}, and launch. Once qualified, three consecutive jump ramp shots score the Caboom Jackpot and complete the scene. The Caboom wheel award makes this much easier by letting you continuously loop the jump ramp."
+        },
+        {
+          "order": 2,
+          "title": "Qualify Bo Peep Loops",
+          "difficulty": "earnable",
+          "description": "This scene requires Super Loops from the Take A Chance Wheel to have been started at least once, plus 15 total upper loop shots across the game (or a 3-shot upper loop combo). If you got Super Loops on Ball 2, just keep ripping the upper loop. The 3-shot combo instantly completes the scene if Super Loops has been played."
+        },
+        {
+          "order": 3,
+          "title": "Get Buzz Quick Multiball",
+          "difficulty": "earnable",
+          "description": "Shoot into the pop bumpers and hope the ball lands in the {{callout:buzz-saucer}}. This isn't a direct shot — it's a bumper-fed saucer. Multiple saucer hits light Buzz Quick Multiball. During the multiball, shoot ramps and captive ball for jackpots, then collect the Super at the saucer. It's the least controllable scene, so don't stress if it takes a while."
+        },
+        {
+          "order": 4,
+          "title": "Shoot the Scoop for Meet Me at the Carousel",
+          "difficulty": "good_luck",
+          "description": "Once all seven scenes are qualified (or completed), shoot the {{callout:scoop}} to start the 4-stage wizard mode. Each completed scene (not just qualified) adds a +1x multiplier to the wizard mode scoring, up to 7x. Shoot the ramps before starting to choose between Woody's Path and Buzz's Path. You need to complete both paths across the game to fully finish."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "FORKY = Kickback = Life",
+        "description": "Spell F-O-R-K-Y every ball to relight the left outlane kickback. It's the single most important defensive feature on the game. The roving targets make it achievable even by accident."
+      },
+      {
+        "title": "Unlimited Kickback from the Wheel",
+        "description": "If the Take A Chance Wheel lands on Unlimited Kickback, drop everything and collect it at the left outlane. It lasts the entire ball with no exceptions. This can completely change a game."
+      },
+      {
+        "title": "The Skill Shot Bonus Multiplier Is Huge",
+        "description": "Each successful skill shot adds +5x to your end-of-ball bonus multiplier. Three skill shots = +15x bonus multiplier. The plunge is gentle — just aim for the Woody saucer. Don't blow past it."
+      },
+      {
+        "title": "Use Mystery to Spot Progress",
+        "description": "Mystery awards from the scoop can spot spinner progress, carnival locks, and add time to active modes. If a mystery is lit and you're struggling with a scene, the scoop might bail you out."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Hard Carnival Games",
+        "description": "Some carnival games (Dragon Zone, Zoetrope, Star Adventurer) are complex multi-shot affairs. Cycle with the left flipper to find easier games like Flipball or Squirrel Derby. Winning matters because it earns better Carnival Multiball perks."
+      },
+      {
+        "title": "Completing Both Wizard Mode Paths",
+        "description": "Reaching Meet Me at the Carousel once is excellent. The game asks you to qualify all seven scenes TWICE and complete both Woody and Buzz paths. In league play, completing one path is a triumph. Don't worry about the second."
+      },
+      {
+        "title": "Tiki Party Pinball",
+        "description": "This wheel award locks the ball and makes you play a retro mini-pinball game on the screen. It's charming but the scoring is minimal compared to what you could be doing on the real playfield. Collect it if it comes up, but don't seek it out."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Toy Story 4 uses a compressed scoring scale — points are in the thousands and low millions, not hundreds of millions. A solid league game is around 5-10M. Eric Stone (IFPA World Champion) posted a 98M on video, so that gives you context for the ceiling. If you're above 3M, you're having a decent game. Don't compare scores to other Stern/Williams games."
+    },
+    {
+      "label": "The Pat Lawlor Experience",
+      "text": "This is a Pat Lawlor game through and through — compare it to Addams Family or Twilight Zone in terms of 'there are a million things happening.' The Take A Chance Wheel is essentially the mini-playfield mechanic from Road Show updated for 2022. If you've played other Lawlor games, the 'scene completion with a wheel mechanic' flow will feel familiar."
+    },
+    {
+      "label": "LE vs. Standard vs. Collector's Edition",
+      "text": "The LE features exclusive playfield art, upgraded audio, a lit jump ramp toy, and some additional physical features. The gameplay and rules are identical across all models. The LE is rarer at league but the strategy doesn't change."
+    },
+    {
+      "label": "Bo Peep Loops Is the Annoying Scene",
+      "text": "Bo Peep Loops requires you to first earn Super Loops from the Take A Chance Wheel — which means you need RNG to cooperate. If the wheel isn't landing on Super Loops, use the captive ball or upper loop to cycle it. This is the scene most likely to block your wizard mode attempt."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "description": "Starts carnival games when lit, earns tickets, and starts Rescue Forky after spelling FORKY. Also collects character perks after winning carnival games. This is your primary left-flipper shot.",
+      "image": null,
+      "crop": { "x": 30, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "drop-target",
+      "name": "Drop Target / Lock-Up",
+      "description": "Shoot the drop target to qualify the physical ball locks behind it. Lock three balls to start Road Trip Multiball. The lane behind the drop target is called the 'lock-up.' Each subsequent multiball needs more drop target hits to qualify locks.",
+      "image": null,
+      "crop": { "x": 20, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "scoop",
+      "name": "Second Chance Scoop",
+      "description": "Locks balls for Carnival Multiball, awards mystery, starts the wizard mode, and collects Light Extra Ball from the wheel. It's also where you score receipts for a random small value when nothing else is lit.",
+      "image": null,
+      "crop": { "x": 65, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "jump-ramp",
+      "name": "Duke Caboom Jump Ramp",
+      "description": "The game's signature shot. Launches the ball off a ramp into the stunt deck. Enabled by rolling through the correct left inlane after an upper loop shot. Ten shots qualify the Caboom scene. Super Jackpot target during Carnival Multiball.",
+      "image": null,
+      "crop": { "x": 70, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "captive-ball",
+      "name": "Captive Ball",
+      "description": "Spells ALIEN to qualify the Take A Chance Wheel. Nudges the wheel to change awards. Collects Super Spinner jackpots and Popcorn Jackpots during Carnival Multiball. Also lights Shot Multiplier during Road Trip Multiball.",
+      "image": null,
+      "crop": { "x": 75, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "buzz-saucer",
+      "name": "Buzz Inner Voice Saucer",
+      "description": "Located in the pop bumper area — not a direct shot. The ball has to bounce into it off the bumpers. Multiple saucer hits light Buzz Quick Multiball. Shoot up the middle toward the pops and hope for the best. Easier during multiballs with more balls in the bumper area.",
+      "image": null,
+      "crop": { "x": 50, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "woody-spinner",
+      "name": "Woody Spinner",
+      "description": "Located on the left side. Spin count builds toward Super Spinners scene along with the Bo Peep spinner on the right. A clean rip of this spinner advances you toward one of the easier scenes to qualify.",
+      "image": null,
+      "crop": { "x": 25, "y": 50, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Toy Story 4 Rulesheet — Tilt Forums",
+      "type": "rulesheet",
+      "url": "https://tiltforums.com/t/toy-story-4-rulesheet/7707",
+      "description": "Exhaustive community-maintained rulesheet covering all scenes, carnival games, wheel awards, and wizard mode stages."
+    },
+    {
+      "title": "Toy Story 4 (LE) — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/jjp-toy-story-4-le",
+      "description": "Community ratings, reviews, photos, and high scores for the LE model."
+    },
+    {
+      "title": "Toy Story 4 — 98 Million Points — Eric Stone (YouTube)",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=UB43FEfluoM",
+      "description": "IFPA World Champion Eric Stone plays a 98M game, showcasing high-level strategy and multiball stacking."
+    }
+  ],
+
+  "chat_starters": [
+    "What's the easiest order to complete the seven scenes?",
+    "How do I reliably hit the Buzz saucer?",
+    "Which carnival games should I pick and which should I skip?",
+    "How does the Take A Chance Wheel work and which award should I prioritize?"
+  ],
+
+  "level_up": {
+    "intro": "These techniques assume you're comfortable with scene progression and are looking to push into wizard mode territory.",
+    "tips": [
+      {
+        "title": "Stack Super X with Carnival Multiball",
+        "description": "If you can earn Super X from the Take A Chance Wheel and start it right before Carnival Multiball, you'll get 2x-4x playfield scoring during one of the game's highest-scoring modes. Roll through both left inlanes and hit the jump ramp to push the multiplier higher during the multiball."
+      },
+      {
+        "title": "Ducky & Bunny Double Trouble",
+        "description": "During Carnival Multiball, when the jump ramp is lit for a Super Jackpot, shooting two balls up the ramp in quick succession scores a Double Trouble Jackpot worth 2x the Super Jackpot value. This requires two balls feeding the upper flipper in quick succession — chaos helps."
+      },
+      {
+        "title": "Wizard Mode Multiplier Optimization",
+        "description": "Each scene you COMPLETE (not just qualify) adds +1x to the wizard mode scoring, up to 7x. Completing Forky, Road Trip, and Carnival are the most realistic completions. Even getting 3-4 completions makes the wizard mode dramatically more rewarding than qualifying everything without completing."
+      },
+      {
+        "title": "Hold Bonus X on Ball 3",
+        "description": "If Hold Bonus X comes up on the Take A Chance Wheel and you collect it on your last ball, your total end-of-ball bonus is doubled. Combined with the massive bonus multiplier from skill shots (+5x each), this can be worth a surprising amount."
+      }
+    ]
+  }
+}

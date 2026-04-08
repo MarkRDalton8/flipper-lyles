@@ -1,0 +1,299 @@
+{
+  "slug": "stranger-things",
+  "title": "Stranger Things",
+  "manufacturer": "Stern",
+  "designer": "Brian Eddy",
+  "year": 2019,
+  "description": "Brian Eddy's return to pinball — a deep, chapter-based game with Attack from Mars DNA and a terrifying Demogorgon guarding the center.",
+
+  "badge": {
+    "gradient_from": "#2a0a0a",
+    "gradient_to": "#150505",
+    "border_color": "#7a2a2a",
+    "text_color": "#ff4a4a",
+    "abbreviation": "ST"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 4,
+    "fun_factor": 4,
+    "league_frequency": 3
+  },
+
+  "summary": {
+    "text": "Stranger Things is a <strong>chapter-based mode game</strong> with a massive ruleset designed by Brian Eddy (Attack from Mars, Medieval Madness). Complete three shots to any orbit or ramp to start one of 12 chapter modes — six from Season 1 on the left, six from Season 2 on the right. Between chapters, spell DEMODOG on the standup targets to fight Demodogs, and knock down the {{callout:drop-targets}} to battle the Demogorgon. Lock balls at the {{callout:left-ramp}} for {{callout:telekinesis-mb}} by first completing the green standup targets. <strong>All six main objectives must be solidly lit</strong> to reach the Final Showdown wizard mode.",
+    "modes": [
+      { "name": "Chapter Modes (12)", "type": "md" },
+      { "name": "Demodog Attack (3)", "type": "md" },
+      { "name": "Demogorgon Modes (5)", "type": "md" },
+      { "name": "Telekinesis Multiball", "type": "mb" },
+      { "name": "Total Isolation", "type": "mb" },
+      { "name": "Send it Back", "type": "wiz" },
+      { "name": "Light the Fire", "type": "wiz" },
+      { "name": "Final Showdown", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Left Ramp",
+    "description": "The left ramp is the most important shot on Stranger Things. It locks balls for Telekinesis Multiball, starts the Total Isolation mini-wizard modes, and starts both the Send it Back and Light the Fire wizard modes. On the Premium/LE, it also feeds up to the magnet for magnetic ball lock. Getting comfortable with this ramp from the left flipper is essential — it's the gateway to every major payoff in the game."
+  },
+
+  "hard_box": {
+    "text": "The Demogorgon mouth shot is borderline impossible to hit intentionally — you really need luck to nail it. The center drop targets guard the Demogorgon and require repeated completions, which means a lot of time spent shooting at the center of the playfield where drains happen. The Upside Down mode activates randomly and turns off all your inserts, leaving you shooting blind. On Premium/LE, the transforming ramp that opens for Demogorgon battles can interfere with other shots. There are six separate objectives to complete for the final wizard mode, and most league games won't get past two or three."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Start Chapters, Build Toward Telekinesis",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Score the Skill Shot",
+          "difficulty": "you_got_this",
+          "description": "Plunge for the flashing drop target to score 5M. If you're feeling bold, soft plunge toward the flippers and shoot the kicker behind the {{callout:drop-targets}} for a 10M Super Skill Shot. The dream is the MXV Super Skill Shot — ricochet off the flashing drop target into the kicker for 25M and a drawing. But don't sweat it; just hitting the flashing target is fine."
+        },
+        {
+          "order": 2,
+          "title": "Start Your First Chapter Mode",
+          "difficulty": "earnable",
+          "description": "Shoot any combination of the {{callout:left-orbit}}, {{callout:left-ramp}}, {{callout:right-ramp}}, or {{callout:right-orbit}} three times to light the inserts underneath that shot. The fourth shot to the same ramp or orbit starts a chapter mode. Left-side shots start Season 1 chapters, right-side shots start Season 2 chapters. Pop bumpers cycle which chapter is selected. Play through the chapter — you don't need to finish it to make progress, but completing it earns drawings worth 10M each at wizard modes."
+        },
+        {
+          "order": 3,
+          "title": "Progress Telekinesis Multiball Locks",
+          "difficulty": "earnable",
+          "description": "Hit the green standup targets on each side of the {{callout:left-ramp}} to light ball locks. For the first multiball, completing both targets once lights all three locks. Shoot the left ramp to lock each ball. Three locks starts Telekinesis Multiball — shoot five lit jackpots, then collect the Super Jackpot at the left saucer. On Premium/LE, you can lock a ball on the magnet before the Super for a 2x or 3x multiplier."
+        },
+        {
+          "order": 4,
+          "title": "Work the 5-Way Combo",
+          "difficulty": "earnable",
+          "description": "Shoot five shots within a few seconds of each other using the {{callout:left-orbit}}, {{callout:left-ramp}}, {{callout:burn-it-back}}, or {{callout:right-ramp}} in any combination. This solidly lights one of the six objective inserts AND permanently adds 10M to your end-of-ball bonus. Do this early when the ball is fresh and you're in rhythm."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Stack Chapters with Multiball",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Stack a Chapter onto Telekinesis Multiball",
+          "difficulty": "earnable",
+          "description": "This is the money play. Start a chapter mode first, THEN start Telekinesis Multiball with the same or next shot. Chapters can be started before multiball but not during it. Having a mode running during multiball means every shot earns both mode points and jackpot points. Kineticist's tip: an even better stack is Chapter → Demodog Attack → Telekinesis MB, but that requires the left standup to be lit for Demodog."
+        },
+        {
+          "order": 2,
+          "title": "Start Demodog Attack Modes",
+          "difficulty": "earnable",
+          "description": "Spell DEMODOG by hitting the standup targets scattered around the playfield, then shoot the left standup lane to start a Demodog Attack. There are three Demodog modes — Break Out (hit 15 DEMODOG targets), Junk Yard (paired shots in three phases), and It's a Trap (eight shots across the playfield). All three must be played to solidly light the Demodog objective."
+        },
+        {
+          "order": 3,
+          "title": "Work the Burn it Back Loop",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:burn-it-back}} loop whenever you have a clean shot. After just 3 loops, you earn Spell of Protection (a left outlane ball save). At 7 loops, you earn 2x Scoring at the kicker. Well-timed 2x Scoring during a multiball stack is massive. Don't sleep on this shot."
+        },
+        {
+          "order": 4,
+          "title": "Build Bonus Multiplier",
+          "difficulty": "you_got_this",
+          "description": "Complete the return lanes (they cycle with the flippers) to advance Bonus X. Even-numbered completions add +1x to your multiplier, maxing at 5x. Bonus can be enormous if you've started multiple objectives — Tilt Forums notes bonuses of 300-400M are possible with max multiplier and decent progress."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Push for Wizard Modes",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start Demogorgon Modes",
+          "difficulty": "earnable",
+          "description": "Complete the {{callout:drop-targets}} to spell words and light the purple arrow behind them. Each subsequent Demogorgon mode requires one more completion of the drop bank. Shoot up the middle to start the Demogorgon battle. For the first mode (Bust Out), just shoot the ball into the Demogorgon's mouth for 15M — don't waste your one-per-game Demogorgon Bomb here."
+        },
+        {
+          "order": 2,
+          "title": "Reach Total Isolation or a Wizard Mode",
+          "difficulty": "good_luck",
+          "description": "After playing 4 chapters, the {{callout:left-ramp}} lights for Total Isolation 1, a multiball similar to Total Annihilation from Attack from Mars where all shots are lit for jackpots. After 8 chapters, Total Isolation 2 lights. Complete all Season 1 or Season 2 chapters to light Send it Back or Light the Fire — each starts with a jackpot of 10M per drawing collected."
+        },
+        {
+          "order": 3,
+          "title": "Max Out Bonus",
+          "difficulty": "earnable",
+          "description": "If you've made good progress on objectives, your end-of-ball bonus is already substantial. Spam ramp shots to complete return lanes and max your bonus multiplier at 5x. With a 5-Way Combo, several Demogorgon modes started, and chapter progress, a 5x bonus can easily break 100M."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "Earn Spell of Protection Early",
+        "description": "Just 3 shots to the Burn it Back loop earns a left outlane ball save. That's basically a free extra ball. Prioritize this on every ball."
+      },
+      {
+        "title": "Use the Action Button Wisely",
+        "description": "On Premium/LE, the action button can Swipe-a-Ball during Telekinesis Multiball (pulls a locked ball into active play) or instantly kill a Demogorgon (one use per game). Save the Demogorgon Bomb for the harder modes like What's That or Run Will."
+      },
+      {
+        "title": "The Left Orbit to Left Orbit Return Is Gold",
+        "description": "The inner right orbit feeds beautifully back to the left flipper. Use this as your safe bail-out shot — it also counts toward chapters and combos."
+      },
+      {
+        "title": "Respect the Upside Down",
+        "description": "The Upside Down activates randomly and turns off all your inserts. Don't panic. Shoot the center drop targets to escape the first Upside Down. The second one requires major shots. Just focus on controlled shots and don't drain."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Completing Every Chapter for Extra Drawings",
+        "description": "Each chapter has a specific challenge for +2 drawings (like finding Barb on the first shot, or completing a mode with only specific shots). These are fun but unreliable in a league setting. Just finishing the chapter for +1 drawing is plenty."
+      },
+      {
+        "title": "The Final Showdown",
+        "description": "Requires ALL six objectives solidly lit. In a league game, this is extremely unlikely. Focus on Total Isolation and the Season wizard modes as your realistic endgame targets."
+      },
+      {
+        "title": "Demogorgon Mode 5: Can't Stop This",
+        "description": "By the time you've played 5 Demogorgon modes, you've had an exceptional game. The 5th mode is a 5-ball multiball with 60 seconds of unlimited ball save — just enjoy the chaos, don't build your strategy around reaching it."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "On a typical league setup, 200M is a respectable game. 500M means you stacked well or reached a wizard mode. 900M+ is an outstanding game — one Reddit player cited that as a personal best. End-of-ball bonus can carry a surprising amount of weight here, so avoid tilting if you've made good progress."
+    },
+    {
+      "label": "Pro vs. Premium vs. LE",
+      "text": "The Premium and LE add a projector (displays animations on the ramps), a moving Demogorgon sculpt, and Eleven's magnetic ball lock for Telekinesis Multiball. The magnetic lock lets you get 2x or 3x Super Jackpots instead of just 2x on the Pro. The LE also adds mirrored backglass, upgraded speakers, and a shaker motor. For strategy purposes, the Premium/LE magnetic lock makes Telekinesis significantly more rewarding."
+    },
+    {
+      "label": "The Brian Eddy Factor",
+      "text": "This is Brian Eddy's first pinball design since the legendary Attack from Mars and Medieval Madness in the late 90s. You'll feel the AFM DNA throughout — Total Isolation is basically Total Annihilation, the extra ball animation is an AFM homage, and the 5-Way Combo is a spiritual successor to the 5-Way Combo. If you know those games, you'll feel right at home."
+    },
+    {
+      "label": "The Demogorgon Mouth Is Terrible",
+      "text": "The mouth shot on the Demogorgon is borderline impossible to hit intentionally. Most successful mouth shots are lucky bounces. The community consensus is to just bash the sides and accept the lower reward. Save your one Demogorgon Bomb per game for a harder mode like What's That (mode 3) where a mouth shot would be worth 30M."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp",
+      "description": "The most important shot on the game. Locks balls for Telekinesis Multiball, starts Total Isolation, and starts both Season wizard modes. Left side shots start Season 1 chapters. Premium/LE has a magnet above the ramp for enhanced ball lock.",
+      "image": null,
+      "crop": { "x": 30, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "left-orbit",
+      "name": "Left Orbit",
+      "description": "Feeds around to the right side of the playfield. Counts toward starting Season 1 chapters. Part of the 5-Way Combo route. The inner return from right orbit feeds back to the left flipper beautifully.",
+      "image": null,
+      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "description": "Counts toward starting Season 2 chapters. A solid right-flipper shot that's part of the 5-Way Combo. Feeds back toward the inlanes.",
+      "image": null,
+      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "right-orbit",
+      "name": "Right Orbit",
+      "description": "Feeds around through the spinner and into the pop bumpers. Counts toward starting Season 2 chapters. Pop bumpers cycle which chapter mode is selected.",
+      "image": null,
+      "crop": { "x": 75, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "drop-targets",
+      "name": "Center Drop Targets",
+      "description": "Four-bank of drop targets guarding the Demogorgon. Complete them to spell words and light Demogorgon battles. Also used to escape the Upside Down. On Premium/LE, the transforming ramp behind them opens for Demogorgon mouth shots.",
+      "image": null,
+      "crop": { "x": 50, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "burn-it-back",
+      "name": "Burn it Back Loop",
+      "description": "Right inner loop. Awards build toward Spell of Protection (left outlane save) and 2x Scoring. Three loops = outlane save, seven loops = 2x Scoring. This shot is part of the 5-Way Combo chain.",
+      "image": null,
+      "crop": { "x": 60, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "telekinesis-mb",
+      "name": "Telekinesis Multiball Lock",
+      "description": "Green standup targets on each side of the left ramp light locks. Shoot the left ramp to lock balls. Three locks start the multiball. On Premium/LE, the magnet above the ramp physically holds the ball for dramatic effect.",
+      "image": null,
+      "crop": { "x": 30, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "left-saucer",
+      "name": "Left Saucer (Kicker)",
+      "description": "Collects Super Jackpot during Telekinesis Multiball. Also collects 2x Scoring when lit. The saucer kicks the ball up the playfield — on Premium/LE it sometimes clips the far right drop target on the way out.",
+      "image": null,
+      "crop": { "x": 15, "y": 50, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Stranger Things Deep Dive — Kineticist (Jeff Patterson)",
+      "type": "guide",
+      "url": "https://www.kineticist.com/post/stranger-things-deep-dive",
+      "description": "Comprehensive overview of all features, modes, and multiballs with Premium/LE distinctions. Great starting point for understanding the game structure."
+    },
+    {
+      "title": "Stranger Things Rulesheet — Tilt Forums",
+      "type": "rulesheet",
+      "url": "https://tiltforums.com/t/stranger-things-rulesheet/6093",
+      "description": "Community-maintained wiki rulesheet with detailed scoring breakdowns for every chapter, Demogorgon mode, and wizard mode. Includes strategy section."
+    },
+    {
+      "title": "Stranger Things — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/stern-stranger-things-pro",
+      "description": "Community ratings, high scores, and machine details for Pro/Premium/LE models."
+    }
+  ],
+
+  "chat_starters": [
+    "What's the best chapter mode to stack with Telekinesis Multiball?",
+    "Should I save my Demogorgon Bomb for a specific mode?",
+    "How do I escape the Upside Down quickly?",
+    "What's the difference between Total Isolation 1 and Total Isolation 2?"
+  ],
+
+  "level_up": {
+    "intro": "These techniques go beyond the Bar Napkin and assume you're comfortable with the basic chapter and multiball flow.",
+    "tips": [
+      {
+        "title": "The Triple Stack",
+        "description": "The ultimate scoring play is to stack Chapter Mode → Demodog Attack → Telekinesis Multiball. The sequence matters: start the Chapter first, then start Demodog at the left standup, then start Telekinesis MB. All three run simultaneously and every shot is earning triple progress. This requires planning your Demodog timing carefully."
+      },
+      {
+        "title": "2x Scoring Timing",
+        "description": "Save your 2x Scoring (lit at the kicker after 7 Burn it Back loops) for a big moment — ideally during a multiball stack or a high-value chapter mode. 2x Scoring lasts 60 seconds and doubles literally everything, including jackpots. Starting it during a Telekinesis/Chapter stack is devastating."
+      },
+      {
+        "title": "Premium: Swipe-a-Ball as Add-a-Ball",
+        "description": "On Premium/LE, if you have balls locked for Telekinesis Multiball and start a different multiball, pressing the action button 'swipes' a locked ball into play as an add-a-ball. This is essentially a free extra ball during any multiball. The cost is needing an extra lock shot after multiball ends."
+      },
+      {
+        "title": "Bonus X Farming",
+        "description": "If you've had a productive game with many objectives started, your end-of-ball bonus could be 60-100M before multipliers. Spam the left orbit to cycle return lanes and max your bonus multiplier at 5x. A 5x multiplier on a 100M base bonus is 500M — that's game-winning."
+      }
+    ]
+  }
+}

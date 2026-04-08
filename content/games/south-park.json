@@ -1,0 +1,249 @@
+{
+  "slug": "south-park",
+  "title": "South Park",
+  "manufacturer": "Sega",
+  "designer": "Keith P. Johnson",
+  "year": 1999,
+  "description": "A crude, chaotic 90s gem where you complete five character modes and pray for Volcano — basically Monster Bash with toilet humor.",
+
+  "badge": {
+    "gradient_from": "#1a3d1a",
+    "gradient_to": "#0d1f0d",
+    "border_color": "#2a7a2a",
+    "text_color": "#4aff4a",
+    "abbreviation": "SP"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 2,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "South Park is a <strong>mode completion game</strong> in the spirit of Monster Bash — start and complete all five character modes, then reach the wizard mode. Each character has a shot associated with them: Stan lives through the {{callout:left-lane}}, Chef hangs out at the {{callout:chef-lane}}, Kenny is the {{callout:kenny-target}}, Kyle owns the {{callout:ramp}}, and Cartman guards the {{callout:cartman-hole}}. Hit each shot enough times to start their mode, complete the mode to light the character solid, and do all five to unlock <strong>Volcano</strong>. There's also a separate {{callout:mr-hankey}} multiball for big points along the way.",
+    "modes": [
+      { "name": "Stan Mode", "type": "md" },
+      { "name": "Chef Mode", "type": "md" },
+      { "name": "Kenny Mode", "type": "md" },
+      { "name": "Kyle Mode", "type": "md" },
+      { "name": "Cartman Mode", "type": "md" },
+      { "name": "Mr. Hankey Multiball", "type": "mb" },
+      { "name": "Spooky Vision", "type": "wiz" },
+      { "name": "Volcano", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "The Ramp (Kyle)",
+    "description": "The center ramp is the most versatile shot on the game. It starts Kyle's mode, starts Mr. Hankey Multiball, and collects the Super Jackpot during multiball. It feeds relatively safely back to the flippers via three possible exits. If you're ever unsure what to shoot, the ramp is almost always a productive choice. Getting comfortable ripping this shot consistently is the single biggest thing you can do for your South Park game."
+  },
+
+  "hard_box": {
+    "text": "The left lane shot through the bumpers (Stan's shot) is a nightmare — it's an uncontrolled feed through the pop bumpers that often spits out in unpredictable directions. The Cartman sinkhole is a center-playfield shot that loves to reject SDTM. There's no center post on most setups, so center drains are frequent. The modes themselves are short and punishing on time, so you'll often start a mode and fail to complete it, which means you get Spooky Vision instead of Volcano. Five-ball multiballs sound generous until you realize balls drain fast on this layout."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Start Two Modes, Chase Multiball",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Nail the Skill Shot",
+          "difficulty": "earnable",
+          "description": "Plunge with medium strength and aim for the lit target below {{callout:mr-hankey}}. It's worth 5M and increases by 5M each time you nail it. The skill shot also counts as a hit on Mr. Hankey's targets, so you're building toward multiball for free."
+        },
+        {
+          "order": 2,
+          "title": "Start and Complete Kyle's Mode",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:ramp}} four times to start Kyle's mode. Once it starts, you have about 20 seconds to shoot the ramp four more times to revive Mr. Hankey. The shots are worth 5M, 10M, 15M, and 20M. This is the most achievable mode to complete because you're shooting the same safe ramp shot over and over."
+        },
+        {
+          "order": 3,
+          "title": "Start Kenny's Mode",
+          "difficulty": "earnable",
+          "description": "Hit the {{callout:kenny-target}} four times to light a hurry-up. Kenny is a big rubber target in front of a hole — you can hit either the rubber or the hole behind it. Once the hurry-up starts at 10M, hit Kenny one more time to collect and kill him. Quick and high-value if you're accurate."
+        },
+        {
+          "order": 4,
+          "title": "Build Toward Mr. Hankey Multiball",
+          "difficulty": "you_got_this",
+          "description": "Any time you're between modes or can't reach a character shot, bang the three {{callout:mr-hankey}} targets. Five hits lights multiball at the ramp. Every extra hit after that adds 100K to the base jackpot. When you're ready, shoot the ramp to start the 5-ball multiball."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Complete More Modes, Play Multiball",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Start and Complete Chef's Mode",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:chef-lane}} four times to start Chef's mode. You then have 30 seconds to shoot all five character shots — each one is worth 5M+1M per shot and adds 5 seconds to the timer. The last shot is worth 10M. Work left to right across the playfield to stay in rhythm."
+        },
+        {
+          "order": 2,
+          "title": "Play Mr. Hankey Multiball",
+          "difficulty": "earnable",
+          "description": "If multiball is lit from Ball 1, shoot the {{callout:ramp}} to start the 5-ball madness. During multiball, shoot the {{callout:mr-hankey}} targets for jackpots — each one lights a character for a double jackpot. After 5 jackpots the ramp lights for a Super Jackpot starting at 5M. Pro tip: you can trick the game into awarding a left lane shot during multiball by shooting the Chef lane instead."
+        },
+        {
+          "order": 3,
+          "title": "Start Cartman's Mode",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:cartman-hole}} four times to start Cartman's mode. You have 20 seconds to shoot the hole three more times for 5M each, plus a bonus for each hit on the three targets above the hole. The sinkhole is a center-playfield shot that can reject dangerously, so take a breath before each shot."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Finish Modes, Reach the Wizard Mode",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Complete Stan's Mode (The Hard One)",
+          "difficulty": "good_luck",
+          "description": "Shoot the {{callout:left-lane}} four times through the bumpers to start Stan's 4-ball multiball. Your goal is to kiss Stan's girlfriend three times — each kiss is spotted by bumper hits or a lane shot. The lane shot scores a bonus starting at 5M. This is the hardest character mode to start because the left lane feeds unpredictably through the pops. Use multiball chaos to your advantage."
+        },
+        {
+          "order": 2,
+          "title": "Light Volcano or Spooky Vision",
+          "difficulty": "good_luck",
+          "description": "Once all five character modes have been started, shoot the {{callout:chef-lane}} to begin a wizard mode. If you completed all five modes, you get Volcano — a 5-ball multiball where you shoot 15 character shots for 10M each (total: 210M with completion bonus). If any mode was incomplete, you get Spooky Vision instead, which is still a valuable 5-ball multiball. Either way, this is the endgame."
+        },
+        {
+          "order": 3,
+          "title": "Second Multiball",
+          "difficulty": "earnable",
+          "description": "If you haven't drained your way out of options, keep building {{callout:mr-hankey}} hits for another multiball. The super jackpot value doubles each round (5M, 10M, 15M...) so a second multiball can be enormous. Stack it with a character mode if you can for maximum chaos."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "The Ramp Is Your Safe Harbor",
+        "description": "When in doubt, shoot the ramp. It feeds back to the flippers relatively safely and always progresses something — Kyle, multiball, or super jackpot."
+      },
+      {
+        "title": "Respect the Cartman Sinkhole",
+        "description": "The center sinkhole rejects hard. Don't rapid-fire it. Trap up, aim carefully, and shoot with conviction. A half-hearted shot here ends balls."
+      },
+      {
+        "title": "Light Both Inlanes Early",
+        "description": "Completing both inlanes starts Super Fart Bumpers, which makes the bumpers more valuable. More importantly, it means the ball went through an inlane instead of an outlane."
+      },
+      {
+        "title": "Watch for Mystery at Chef Lane",
+        "description": "Hitting the three targets above Cartman lights the Chef lane for Mystery. The charity extra ball kicks in if you're below 10M on ball 3, so don't be ashamed to collect it."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Outlane Specials",
+        "description": "Outlanes can be lit for special, but deliberately draining to collect a special is never a winning league strategy. Pretend they don't exist."
+      },
+      {
+        "title": "Grinding Stan's Shot in Single Ball",
+        "description": "Don't spend single-ball play trying to grind the left lane through the bumpers. It's dangerous and unpredictable. Save Stan for multiball when you have balls to spare."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "On a standard league setup, 200M is a solid game. 400M+ means you probably completed a wizard mode or had multiple great multiballs. The all-time known score territory starts around 600M+. If you're under 100M, focus on completing more character modes — that's where the big points live."
+    },
+    {
+      "label": "It's a Sega",
+      "text": "South Park was one of the last Sega pinball machines before the brand became Stern. The build quality is typical late-90s Sega — not bad, but expect some quirks. The left lane feed through the bumpers varies dramatically machine to machine based on pop bumper strength."
+    },
+    {
+      "label": "Spooky Vision vs. Volcano",
+      "text": "Don't stress about getting Volcano over Spooky Vision. Both are 5-ball multiballs worth big points. Volcano requires completing ALL five modes, which is genuinely hard. Spooky Vision is the consolation prize and it's still very good. Getting to either wizard mode is the real goal."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "ramp",
+      "name": "The Ramp (Kyle)",
+      "description": "Center ramp that feeds back toward the flippers. Starts Kyle's mode after 4 shots, starts Mr. Hankey Multiball when lit, and collects the Super Jackpot during multiball. Your most important and safest shot.",
+      "image": null,
+      "crop": { "x": 45, "y": 50, "zoom": 2.0 }
+    },
+    {
+      "id": "chef-lane",
+      "name": "Chef Lane",
+      "description": "Center lane feeding to a VUK (vertical up-kicker). Spots shots toward Chef, and can be lit for Extra Ball, Mystery, and the wizard modes (Spooky Vision or Volcano). Balls from the left lane also end up here.",
+      "image": null,
+      "crop": { "x": 55, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "left-lane",
+      "name": "Left Lane (Stan)",
+      "description": "A shot through the bumpers to spot Stan hits. Unpredictable feeds make this the most dangerous character shot. Save it for multiball when possible. Balls exiting the bumpers to the left feed into the left inlane.",
+      "image": null,
+      "crop": { "x": 25, "y": 30, "zoom": 2.0 }
+    },
+    {
+      "id": "kenny-target",
+      "name": "Kenny Target",
+      "description": "A large rubber Kenny figure in front of a hole. Hit either the rubber or the hole to spot Kenny hits. Four hits starts a hurry-up worth 10M. Quick to start and satisfying to collect.",
+      "image": null,
+      "crop": { "x": 60, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "cartman-hole",
+      "name": "Cartman Hole",
+      "description": "Center sinkhole similar to Star Wars Trilogy. Four hits starts Cartman's mode. The shot rejects dangerously toward the center drain, so aim carefully and shoot with authority. The three targets above it add value during Cartman's mode and light Mystery at the Chef lane.",
+      "image": null,
+      "crop": { "x": 65, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "mr-hankey",
+      "name": "Mr. Hankey Targets",
+      "description": "Three targets in front of a toilet. Five hits lights multiball at the ramp. Also the jackpot shot during multiball — five jackpots light the ramp for a super jackpot. The skill shot target is nearby.",
+      "image": null,
+      "crop": { "x": 40, "y": 30, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "South Park Rulesheet — Robert Macauley (Pinball.org)",
+      "type": "rulesheet",
+      "url": "http://www.pinball.org/rules/southpark.html",
+      "description": "The original community rulesheet from 1999. Covers all modes, wizard modes, multiball, and mystery awards in detail."
+    },
+    {
+      "title": "South Park Tutorial & Gameplay with Spooky Vision — YouTube",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=4LZqsTBkW9Y",
+      "description": "Gameplay video featuring a full run to Spooky Vision wizard mode with commentary on strategy."
+    },
+    {
+      "title": "South Park — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/south-park",
+      "description": "Community ratings, reviews, high scores, and production details for the Sega South Park."
+    }
+  ],
+
+  "chat_starters": [
+    "What's the difference between Spooky Vision and Volcano?",
+    "How do I complete Stan's mode without draining?",
+    "What's the best order to go after the five character modes?",
+    "How does Mr. Hankey Multiball scoring work?"
+  ]
+}
