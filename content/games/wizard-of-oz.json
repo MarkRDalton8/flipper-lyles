@@ -1,0 +1,293 @@
+{
+  "slug": "wizard-of-oz",
+  "title": "Wizard of Oz",
+  "manufacturer": "Jersey Jack",
+  "designer": "Joe Balcer",
+  "year": 2013,
+  "description": "Jersey Jack's debut machine — a massive widebody with five flippers, three playfields, and eight jewels standing between you and Oz.",
+
+  "badge": {
+    "gradient_from": "#0a3a1a",
+    "gradient_to": "#051f0d",
+    "border_color": "#1a8a3a",
+    "text_color": "#44ff88",
+    "abbreviation": "WOZ"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 5,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "Wizard of Oz is a <strong>jewel collection game</strong> with a staggering amount of content. Collect all eight jewels to light the Somewhere Over the Rainbow wizard mode at the {{callout:right-ramp}}. The jewels come from everywhere: advance the {{callout:yellow-brick-road}} 50 times, collect three gifts in Emerald City Multiball, play all four Munchkin modes via the spinning house, complete Fireball Frenzy against the {{callout:wicked-witch}}, play all Crystal Ball modes, play all Haunted Forest modes, and score a Mega Jackpot in Rescue Multiball at the {{callout:castle-playfield}}. The game features <strong>three playfields</strong> (main, Munchkinland upper, and castle mini-playfield), five flippers, and a crystal ball that displays holographic video.",
+    "modes": [
+      { "name": "Munchkin Modes (4)", "type": "md" },
+      { "name": "Crystal Ball Modes (5)", "type": "md" },
+      { "name": "Haunted Forest Modes", "type": "md" },
+      { "name": "Fireball Frenzy", "type": "md" },
+      { "name": "Emerald City Multiball", "type": "mb" },
+      { "name": "Rescue Multiball", "type": "mb" },
+      { "name": "Haunted Forest Multiball", "type": "mb" },
+      { "name": "Munchkin Multiball", "type": "mb" },
+      { "name": "Somewhere Over the Rainbow", "type": "wiz" }
+    ]
+  },
+
+  "one_shot": {
+    "name": "Right Ramp",
+    "description": "The right ramp is the gateway to nearly everything on this game. It locks balls for Emerald City Multiball, starts the spinning house sequence for Munchkin modes, advances the Yellow Brick Road when lit, and is where you start the Somewhere Over the Rainbow wizard mode once all eight jewels are collected. It feeds back to the left flipper reliably. If you develop one shot on WOZ, make it this one."
+  },
+
+  "hard_box": {
+    "text": "WOZ has more going on than almost any other pinball machine ever made. Eight separate jewel objectives, three playfields, five flippers, and dozens of interconnected modes create a ruleset that can take dozens of games just to understand. The castle mini-playfield requires you to navigate through a drop target and scoop to even get there, and the Rescue Multiball Mega Jackpot is widely considered the hardest jewel to complete. The Wicked Witch has magnets that grab the ball and fling it unpredictably. Crystal Ball modes apply curses like weakened flippers or reversed flippers. TV Tropes notes the scoring is intentionally lower than modern Stern games, so don't expect big numbers."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Advance the Yellow Brick Road, Start Munchkin Modes",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Advance the Yellow Brick Road",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:right-ramp}} from the right flipper when the yellow insert beneath it is lit — it feeds back to the left flipper, so you can loop it. Also shoot either orbit from the corresponding flipper when those yellow inserts are lit. You need 50 total advances for this jewel, so start early. At 10 advances you light an extra ball at the Throne Room saucer, and at 20 and 40 you earn Big Points bonuses."
+        },
+        {
+          "order": 2,
+          "title": "Soft Plunge for the Skill Shot",
+          "difficulty": "you_got_this",
+          "description": "Soft plunge to hit one of four skill shot targets. The highest-value target is the lit B-A-L-L target for 10,000 points, followed by the Haunted Forest skull target for 7,500. A lit O-Z inlane awards 5,000 and hitting the Witch awards 5,000. The skill shot values are modest — don't overthink the plunge."
+        },
+        {
+          "order": 3,
+          "title": "Start a Munchkin Mode",
+          "difficulty": "earnable",
+          "description": "Spell R-A-I-N-B-O-W by hitting the spot targets scattered around the playfield, then shoot the {{callout:right-ramp}} to start the spinning house on the upper playfield. Make 10 mini loops on the upper playfield to start one of four Munchkin modes. Playing all four Munchkin modes earns the Munchkin Multiball jewel. The R-A-I-N-B-O-W targets will complete naturally from general play, but you can speed it up by aiming for unlit letters."
+        },
+        {
+          "order": 4,
+          "title": "Start Working on Fireball Frenzy",
+          "difficulty": "earnable",
+          "description": "Shoot the {{callout:wicked-witch}} target once to start a hurry-up, then hit it again to collect. Do this three times to qualify Fireball Frenzy. During Frenzy, shoot the blue (water) lit targets and avoid the red (fire) targets. Collecting 10 jackpots during Fireball Frenzy earns the jewel. The witch is a center-left target — shoot it with conviction because the magnets in front of her can grab the ball."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Lock Balls for Emerald City, Play Crystal Ball Modes",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Lock Balls for Emerald City Multiball",
+          "difficulty": "earnable",
+          "description": "Complete the rollovers at the Lion (4 completions), Tin Man (6), and Scarecrow (9) to light locks. These are the return lane rollovers near the flippers — cycle which lanes are lit using the flipper buttons, then let the ball roll through a lit lane. Shoot the {{callout:right-ramp}} from the right flipper to lock each ball — the third lock starts Emerald City Multiball. During the multiball, collect three gifts from the Wizard to earn the jewel."
+        },
+        {
+          "order": 2,
+          "title": "Start Crystal Ball Modes",
+          "difficulty": "earnable",
+          "description": "Spell B-A-L-L by hitting the four standup targets, then shoot the {{callout:spinner}} to start a Crystal Ball mode. There are five modes, each identified by the color of the B-A-L-L inserts: Lights Out (blue), Lights On (yellow), Weak Flippers (green), No-Hold Flippers (red), and Flipper Frenzy (light blue). Playing all five earns the Flipper Frenzy jewel. Warning: these modes apply curses to your flippers, so keep your composure when the controls feel wrong."
+        },
+        {
+          "order": 3,
+          "title": "Spell W-I-Z-A-R-D for Mystery",
+          "difficulty": "you_got_this",
+          "description": "Hit the Throne Room saucer to collect letters in W-I-Z-A-R-D. Completing the word lights a mystery award that can include an extra ball, bonus advances, or other helpful awards. The saucer is in the upper right area — balls often find their way there off bumper kicks."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Push for Remaining Jewels",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Work the Haunted Forest",
+          "difficulty": "earnable",
+          "description": "Hit the Haunted Forest skull target on the left side of the playfield — it's a standup target you can reach from the left flipper or from a rebound off the left slingshot. Play all the haunted modes to earn the jewel and light Haunted Forest Multiball. During Haunted Forest Multiball, the jackpot is collected by dropping the ball into the crystal ball VUK from the pop bumpers — nudge to coax the ball in."
+        },
+        {
+          "order": 2,
+          "title": "Attempt Rescue Multiball",
+          "difficulty": "good_luck",
+          "description": "Hit the two targets above the pop bumpers to light Capture Dorothy. Shoot the orbit so the winged monkey magnet captures the ball. Then hit the Winkie Guard drop target and shoot the scoop behind it to enter the {{callout:castle-playfield}}. Spell R-E-S-C-U-E on the castle mini-playfield targets, then hit the door three times to open it and lock a ball to start the multiball. Scoring a Mega Jackpot during Rescue Multiball earns the jewel — this is widely considered the hardest jewel to complete."
+        },
+        {
+          "order": 3,
+          "title": "Keep Advancing Yellow Brick Road",
+          "difficulty": "earnable",
+          "description": "If you haven't hit 50 Yellow Brick Road advances yet, keep shooting the {{callout:right-ramp}} and orbits when lit yellow. This is a grind jewel — it just requires volume. Every lit ramp or orbit shot counts, so stay disciplined. At 50 advances, the jewel is earned automatically."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "Watch for Witch Magnets",
+        "description": "The Wicked Witch has magnets that grab the ball and fling it unpredictably. Expect the ball to go somewhere weird after a witch shot. Keep your flippers ready and don't commit to a shot until you see where the ball is going."
+      },
+      {
+        "title": "Five Flippers Means Five Drains",
+        "description": "With five flippers across three playfields, there are more drain paths than usual. The upper playfields have their own danger zones. Stay alert when the ball is on any sub-playfield and don't forget about the upper flippers."
+      },
+      {
+        "title": "Crystal Ball Curses Are Temporary",
+        "description": "Crystal Ball modes mess with your flippers — weak flippers, reversed flippers, no flipper hold. Don't panic. The curses are timed and will end. If Glinda appears, she briefly removes the curse. Just survive until it passes."
+      },
+      {
+        "title": "Extra Ball at 10 Yellow Brick Road Advances",
+        "description": "Getting to 10 on the Yellow Brick Road lights an extra ball at the Throne Room saucer. This is very achievable on Ball 1 if you focus on ramp shots. Collect it before you forget."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Somewhere Over the Rainbow",
+        "description": "The true wizard mode requires all eight jewels. In a league game, this is nearly impossible. One Pinside user noted the Rescue Multiball Mega Jackpot alone is a jewel most players will never complete. Focus on collecting as many individual jewels as possible for their scoring value rather than targeting the wizard mode."
+      },
+      {
+        "title": "Completing Rescue Multiball Mega Jackpot",
+        "description": "This is the hardest jewel by community consensus. The multi-step process (capture Dorothy, enter castle, spell RESCUE, open door, lock ball, then score a Mega Jackpot) is brutally long. If it happens, great. Don't build your game around it."
+      },
+      {
+        "title": "Flipper Frenzy Crystal Ball Mode",
+        "description": "The most chaotic Crystal Ball mode, with fast flippers and reversed controls. It'll happen when it happens. Don't seek it out — just survive it when it arrives."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "WOZ uses intentionally low scoring compared to modern Stern games — TV Tropes notes it even has one-point targets. A solid league game is around 500K-1M. Breaking 2M means you had an excellent game with multiple jewels and likely a productive multiball. Don't compare WOZ scores to anything from Stern or Williams — the scales are completely different. (Estimated — limited public scoring data available for this title.)"
+    },
+    {
+      "label": "Emerald City LE vs. Standard",
+      "text": "The Emerald City Limited Edition features exclusive emerald-green cabinet art, upgraded audio, and exclusive toppers. The gameplay and rules are identical across all WOZ models. The LE is rarer at league but the strategy is the same."
+    },
+    {
+      "label": "The JJP Pioneer",
+      "text": "WOZ was Jersey Jack Pinball's very first machine, designed by Joe Balcer (The Simpsons Pinball Party, Lord of the Rings). It was groundbreaking — the first US pinball with a color LCD screen, the first widebody since 1994, and the first new US machine not from Stern since 2001. The hardware was ahead of its time but the code went through many revisions. Make sure the machine you're playing has reasonably current code."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp",
+      "description": "The most important shot on the game. Locks balls for Emerald City Multiball, starts spinning house for Munchkin modes, advances Yellow Brick Road when lit yellow, and starts the wizard mode. Right-flipper shot that feeds back to the left flipper.",
+      "image": null,
+      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "wicked-witch",
+      "name": "Wicked Witch Target",
+      "description": "Center-left target with two magnets in front of it. Hit her to start hurry-ups leading to Fireball Frenzy. The magnets can grab the ball and fling it unpredictably. Shoot with conviction and be ready for anything.",
+      "image": null,
+      "crop": { "x": 35, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "yellow-brick-road",
+      "name": "Yellow Brick Road Inserts",
+      "description": "Advance by shooting the ramp or orbits when the yellow insert is lit. 50 advances earns a jewel. Extra ball at 10 advances, Big Points at 20 and 40. This is a volume objective — keep shooting lit shots throughout the game.",
+      "image": null,
+      "crop": { "x": 50, "y": 60, "zoom": 1.5 }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "description": "Located on the left side. Rip it after spelling B-A-L-L to start Crystal Ball modes. Also used during Rescue Multiball for the R in RESCUE. A clean rip advances you toward some of the game's most important objectives.",
+      "image": null,
+      "crop": { "x": 25, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "castle-playfield",
+      "name": "Castle Mini-Playfield",
+      "description": "The second upper playfield, accessed through the Winkie Guard drop target and scoop. Spell R-E-S-C-U-E here on spot targets, then hit the door to lock balls for Rescue Multiball. The most difficult area to reach and complete.",
+      "image": null,
+      "crop": { "x": 70, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "crystal-ball",
+      "name": "Crystal Ball VUK",
+      "description": "Located in the pop bumper area. Displays holographic video during gameplay. The jackpot target during Haunted Forest Multiball. Balls reach it from bumper bounces — not a direct shot. Nudging helps.",
+      "image": null,
+      "crop": { "x": 55, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "throne-room",
+      "name": "Throne Room Saucer",
+      "description": "Upper right area. Collects letters in W-I-Z-A-R-D for mystery awards. Extra ball is collected here when lit (at 10 Yellow Brick Road advances). Balls often reach it from bumper kicks.",
+      "image": null,
+      "crop": { "x": 70, "y": 30, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "WOZ Quick Rules — Rocky Mountain Pinball Company",
+      "type": "guide",
+      "url": "https://rmpinball.com/pinball-machines/wizard-of-oz",
+      "description": "Clickable quick rules covering all major modes, multiballs, and skill shots. Great visual overview of the game's structure."
+    },
+    {
+      "title": "Wizard of Oz Rulesheet — Pinside Forums",
+      "type": "rulesheet",
+      "url": "https://pinside.com/pinball/forum/topic/wizard-of-oz-rulesheet-2",
+      "description": "Community-maintained rulesheet with detailed scoring breakdowns for all modes, multiballs, and jewel objectives."
+    },
+    {
+      "title": "The Wizard of Oz (pinball) — Wikipedia",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(pinball)",
+      "description": "Production history, hardware details, and mechanical specifications. Good overview of the machine's groundbreaking features."
+    },
+    {
+      "title": "WOZ - Explanation of Basic Rules/Goals — Pinside Forums",
+      "type": "forum",
+      "url": "https://pinside.com/pinball/forum/topic/woz-explanation-of-basic-rules-goals",
+      "description": "Community discussion of the eight jewel objectives with the PAPA rulesheet requirements for each."
+    }
+  ],
+
+  "chat_starters": [
+    "What's the easiest jewel to collect first?",
+    "How do I deal with Crystal Ball curse modes?",
+    "What's the best strategy for Emerald City Multiball?",
+    "How does the castle mini-playfield work?"
+  ],
+
+  "level_up": {
+    "intro": "These techniques assume you understand all eight jewels and are pushing toward wizard mode territory.",
+    "tips": [
+      {
+        "title": "Stack Emerald City Multiball with Fireball Frenzy",
+        "description": "If you can qualify Fireball Frenzy and have Emerald City Multiball close to starting, get the Frenzy going first, then lock balls for the multiball. Having multiple balls in play during Fireball Frenzy makes it dramatically easier to collect the 10 jackpots needed for the jewel."
+      },
+      {
+        "title": "Prioritize the Easy Jewels First",
+        "description": "Yellow Brick Road (just volume), Munchkin modes (play all four), and Fireball Frenzy (10 jackpots) are the most accessible jewels. Crystal Ball and Haunted Forest modes just require playing them all — you don't need to beat them. Emerald City requires three gifts. Rescue Multiball Mega Jackpot is the hardest by far. Work easy to hard."
+      },
+      {
+        "title": "Glinda Awards During Crystal Ball Modes",
+        "description": "The first time Glinda appears during a Crystal Ball mode, she briefly removes the curse (restores normal flippers, lights, etc.). Use this window to make your important shots. Don't waste the Glinda window on safe bail-out shots — capitalize on the temporary relief to complete objectives."
+      }
+    ]
+  },
+
+  "pinball_map": {
+    "machine_ids": [
+      1457,
+      3149
+    ],
+    "search_name": "Wizard of Oz"
+  }
+}

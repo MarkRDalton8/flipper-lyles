@@ -1,0 +1,249 @@
+{
+  "slug": "paragon",
+  "title": "Paragon",
+  "manufacturer": "Bally",
+  "designer": "Greg Kmiec",
+  "year": 1979,
+  "description": "A brutal widebody classic where bonus IS the game, the Beast's Lair eats balls alive, and the scissor flipper waits to break your heart.",
+
+  "badge": {
+    "gradient_from": "#2a1a0a",
+    "gradient_to": "#150d05",
+    "border_color": "#6a4a2a",
+    "text_color": "#ffaa44",
+    "abbreviation": "PAR"
+  },
+
+  "ratings": {
+    "drain_danger": 5,
+    "rule_complexity": 1,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "Paragon is a <strong>super bonus game</strong> on one of the most punishing playfields ever designed. Your entire strategy revolves around advancing your end-of-ball bonus to 20K, 30K, and 40K to lock in super bonus thresholds that persist for the rest of the game. The {{callout:valley-of-demons}} inline drop targets on the far left are the safest and best way to advance bonus and earn multipliers up to 5X. The game has four flippers including a scissor flipper configuration on the right (with a drain gap between the upper and lower right flippers) and a tiny upper left flipper above the deadly {{callout:beasts-lair}}. Kineticist calls it 'one of the greatest pinball machines ever made, as well as one of the most difficult.'",
+    "modes": []
+  },
+
+  "one_shot": {
+    "name": "Valley of Demons (Inline Drop Targets)",
+    "description": "The Valley of Demons is four inline drop targets on the far left side, with a saucer behind them. Each target usually awards a bonus advance. Knocking down the third target earns a 2X bonus multiplier, the fourth earns 3X, and hitting the saucer in the back earns 5X. The saucer also lights an extra ball on the second visit and resets the drops. Kineticist's James McFatter emphasizes this is 'unequivocally the most important shot at the entire table' and 'the safest shot at the table' with a relatively consistent return to the flippers. Shoot it from either right flipper."
+  },
+
+  "hard_box": {
+    "text": "Paragon is a superwide machine — significantly wider than standard widebodies — which means horizontal ball movement is deadly. The right outlane entrance is much higher than normal. The left outlane doesn't exist; instead, there's the Beast's Lair, which Kineticist calls 'notoriously unforgiving.' The scissor flipper layout on the right means you can drain between the two right flippers if they're held up. The center standup target looks tempting for bonus advances but Kineticist's tutorial repeats five separate times: 'DO NOT AIM AT THE CENTER STANDUP FOR BONUS ADVANCES' — missed shots go SDTM. Ball control is hard to attain and easy to lose."
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Reach 20K Super Bonus",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Shoot the Valley of Demons from the Right Flipper",
+          "difficulty": "earnable",
+          "description": "Trap on the lower right flipper (or catch on the upper right) and shoot the {{callout:valley-of-demons}} inline drop targets on the far left. Each target awards a bonus advance (1,000 points to your end-of-ball bonus). When the ball returns from the Valley, hold up the upper left flipper to divert the ball away from the Beast's Lair and back toward the right flippers. Kineticist's tip: don't flip with the upper left flipper — just hold it up as a diverter. Catch with a drop catch on the right if possible, then shoot the Valley again."
+        },
+        {
+          "order": 2,
+          "title": "Reach 20K Bonus for Super Bonus Lock-In",
+          "difficulty": "earnable",
+          "description": "Your first super bonus threshold is at 20K. Once you reach it, that 20K carries over for the rest of the game. Kineticist's James McFatter explains why this matters: 'the advance to 19k is worth 1k, and the advance to 20k is effectively worth 41k' because you'll collect that 20K on every remaining ball. This is the single most important milestone in the game. Get there on Ball 1 if at all possible."
+        },
+        {
+          "order": 3,
+          "title": "Earn the 5X Bonus Multiplier",
+          "difficulty": "earnable",
+          "description": "After clearing all four Valley of Demons drop targets, the saucer in the back lights for 5X bonus. The saucer is notoriously tricky — Kineticist notes there's a plastic piece that rejects firm shots. You have to lob it or shoot gently. The first saucer hit awards 5X, the second lights extra ball. Even without the saucer, clearing three drops gives 2X and four drops gives 3X."
+        },
+        {
+          "order": 4,
+          "title": "Build Golden Cliffs Value",
+          "difficulty": "you_got_this",
+          "description": "The {{callout:golden-cliffs}} saucer at the upper left starts at 2,000 points and increases by 2,000 each visit, up to a maximum of 20,000. The value carries over between balls. While bonus advances are your top priority, nudge the ball toward Golden Cliffs when it's near the top of the playfield — each visit builds toward a very valuable late-game shot."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Reach 30K-40K Super Bonus, Build Multiplier",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Push Bonus to 30K and 40K Super Thresholds",
+          "difficulty": "earnable",
+          "description": "With 20K super bonus locked in from Ball 1, you start this ball at 20K. You only need 10 more advances to reach 30K and 20 more for 40K. Keep shooting the {{callout:valley-of-demons}} for the safest advances. The spinner is also worth advances but feeds unpredictable bumpers. Each super threshold locks in permanently."
+        },
+        {
+          "order": 2,
+          "title": "Use the Spinner for Bonus Advances",
+          "difficulty": "earnable",
+          "description": "The {{callout:spinner}} is on the right side, best shot from the right flipper. A good rip generates 3-4 bonus advances. The ball feeds into the pop bumpers afterward, which are unpredictable. On the bright side, bumpers often send the ball into the upper saucers. Kineticist acknowledges the spinner as 'a great way to advance bonus' but warns the bumpers 'can send the ball completely out of control.'"
+        },
+        {
+          "order": 3,
+          "title": "Collect Golden Cliffs",
+          "difficulty": "you_got_this",
+          "description": "If you've visited {{callout:golden-cliffs}} several times, it's now worth 10K-20K per visit. At 20K, it also awards a bonus advance. Nudge the ball into the left saucer when it's near the top — it's in its own funnel and very susceptible to gentle nudges. Kineticist calls Golden Cliffs 'one of the most valuable scoring opportunities at the table' once it's built up."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Maximize Bonus, Don't Tilt",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Keep Advancing Bonus Toward Maximum",
+          "difficulty": "earnable",
+          "description": "Maximum bonus is 49,000 points. With 5X multiplier, that's 245,000 points — likely worth more than everything else in your game combined. Keep shooting the {{callout:valley-of-demons}} and the spinner. Every single advance matters. Kineticist confirms that 'being able to score a quarter million is pretty significant' and 'also unbelievably hard to pull off.'"
+        },
+        {
+          "order": 2,
+          "title": "Absolutely Do Not Tilt",
+          "difficulty": "you_got_this",
+          "description": "Your bonus is everything. A tilt wipes it out. Nudge gently for saves — Kineticist notes Paragon 'is very susceptible to gentle nudges' because it's a large, heavy, sturdy machine. Use tiny bumps, not shakes. A good Ball 3 bonus collect can be worth more than your entire game score up to that point."
+        },
+        {
+          "order": 3,
+          "title": "Quick Flips Over Flipper Holds",
+          "difficulty": "earnable",
+          "description": "The Bally flippers are thick with wide tips that provide surprising ball control. Kineticist advises: 'These flippers provide much more value when in motion than when they're stationary, so it's better to use quick taps instead of long holds.' Quick taps also prevent scissor drains between the two right flippers. The upper right flipper has a rubber post at its base that causes unexpected bounces — stay fast."
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "DO NOT Shoot the Center Standup",
+        "description": "Kineticist's tutorial says it five separate times. The center standup advances bonus but missed shots drain straight down the middle. 'Aiming for this target isn't dangerous; it's suicide.' Find your bonus advances at the Valley of Demons instead."
+      },
+      {
+        "title": "Survive the Beast's Lair",
+        "description": "The left outlane area is the Beast's Lair — a wide, unforgiving drain zone. Use the upper left flipper as a diverter (hold it up, don't flip) and nudge rightward and upward to try to escape through the passage leading to the left flipper. The rubber post in the Lair can help — bump the ball off it toward the escape passage."
+      },
+      {
+        "title": "Avoid Scissor Drains",
+        "description": "The right side has a scissor flipper configuration with no guard rail between the upper and lower right flippers. If both flippers are held up, the ball can drain between them. Use quick taps, not holds. Don't trap on the lower right if you can avoid it."
+      },
+      {
+        "title": "Nudge at the Top",
+        "description": "Both upper saucers are in their own funnels and respond well to gentle nudges. Coax the ball into Golden Cliffs when you can. Nudging is your most valuable skill on this game."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "The 3-Bank Drop Targets (Right Side)",
+        "description": "The three-bank of drop targets on the right increases in value per completion. But Kineticist warns: 'they put the ball out of control and often arc them toward the Beast's Lair, which is extremely dangerous.' Let them complete from random bounces."
+      },
+      {
+        "title": "The Waterfall",
+        "description": "The waterfall (chicane lane) awards one bonus advance and a small value, but its exit is wildly unpredictable. Kineticist notes it 'can send the ball into various places... even straight down the middle.' Don't aim for it. Deal with it when it happens."
+      },
+      {
+        "title": "Spelling P-A-R-A-G-O-N",
+        "description": "Spelling PARAGON awards 50K and a special, but if the letters are set to 'scan' mode (strobing lights), the letter you get is random. Only pursue this if you're already close and the letters aren't scanning."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Kineticist states that 150,000 points is a 'pretty commendable score on Paragon.' If the game is playing nasty, breaking 50,000 might be difficult. The absolute maximum bonus collect is 245,000 (49K × 5X), which can be game-winning by itself. Most Paragon games score in the five-digit range — this is a low-scoring, every-point-matters game."
+    },
+    {
+      "label": "Every Machine Plays Differently",
+      "text": "Paragon's playfield behavior varies dramatically machine to machine. Kineticist's McFatter notes: 'I've played Paragons where the ball comes to a dead stop [from the Valley of Demons], and I've played Paragons where the ball comes screaming back at you.' The waterfall exit angle, pop bumper strength, and rubber conditions all create unique challenges on every machine you encounter."
+    },
+    {
+      "label": "Bally Target Bricking",
+      "text": "Kineticist warns that 'Bally targets are notorious for bricking (i.e., not going down) on hard, dead-center shots.' The Valley of Demons targets usually drop to gentle touches or off-angle shots. Don't smash them dead-center — a softer, angled shot is more likely to knock them down."
+    },
+    {
+      "label": "The Art Is Legendary",
+      "text": "Paragon features artwork by Paul Faris, widely considered among the greatest pinball art ever created. The backglass in particular is iconic. A Reddit user calls it 'one of my GOATS for sure.' You're playing a piece of art history."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "valley-of-demons",
+      "name": "Valley of Demons (Inline Drops)",
+      "description": "Four inline drop targets on the far left with a saucer behind them. Each target awards a bonus advance. Third target = 2X bonus, fourth = 3X, saucer = 5X. Second saucer hit = extra ball. The safest shot on the table with the most consistent flipper return. Shoot from either right flipper.",
+      "image": null,
+      "crop": { "x": 15, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "golden-cliffs",
+      "name": "Golden Cliffs Saucer",
+      "description": "Upper left saucer. Starts at 2,000 points, increases by 2,000 per visit up to 20,000. Value carries over between balls. At 20K, also awards a bonus advance. Very susceptible to nudging. Build this up early for a high-value late-game shot.",
+      "image": null,
+      "crop": { "x": 25, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "description": "Right side of the playfield. A good rip generates 3-4 bonus advances. Feeds into the pop bumpers, which are unpredictable. Great for bonus advances but puts the ball out of control. Best shot from the right flipper.",
+      "image": null,
+      "crop": { "x": 65, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "beasts-lair",
+      "name": "Beast's Lair",
+      "description": "Replaces the standard left outlane. A wide, unforgiving drain zone with a pop bumper that can kick the ball straight down. Use the upper left flipper as a diverter and nudge rightward to escape through the passage to the left flipper. Avoid sending balls here at all costs.",
+      "image": null,
+      "crop": { "x": 10, "y": 55, "zoom": 2.0 }
+    },
+    {
+      "id": "paragon-saucer",
+      "name": "Paragon Saucer",
+      "description": "Upper right saucer. Awards one bonus advance plus a letter in P-A-R-A-G-O-N. Completing PARAGON lights this saucer for a special + 25K. Less valuable than Golden Cliffs but still worth a nudge when the ball is near the top.",
+      "image": null,
+      "crop": { "x": 65, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "center-standup",
+      "name": "Center Standup (DO NOT SHOOT)",
+      "description": "A bonus advance target below the lower pop bumper. Kineticist repeats five times: do not aim at this target. Missed shots drain SDTM. Let bonus advances come from the Valley of Demons, the spinner, or the upper saucers instead.",
+      "image": null,
+      "crop": { "x": 50, "y": 55, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Taming the Beast: Paragon Pinball Tutorial — Kineticist (James McFatter)",
+      "type": "guide",
+      "url": "https://www.kineticist.com/post/paragon-pinball-tutorial",
+      "description": "The definitive Paragon strategy guide. Covers bonus strategy, Valley of Demons technique, Beast's Lair survival, Golden Cliffs optimization, flipper tips, and playfield nuance in extraordinary detail."
+    },
+    {
+      "title": "Paragon — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/paragon",
+      "description": "Community ratings, reviews, and production details."
+    }
+  ],
+
+  "chat_starters": [
+    "How do I survive the Beast's Lair?",
+    "Why shouldn't I shoot the center standup target?",
+    "How does super bonus work on Paragon?",
+    "What's the best way to hit the Valley of Demons saucer?"
+  ],
+
+  "pinball_map": {
+    "machine_ids": [
+      897
+    ],
+    "search_name": "Paragon"
+  }
+}

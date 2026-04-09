@@ -1,0 +1,230 @@
+{
+  "slug": "meteor",
+  "title": "Meteor",
+  "manufacturer": "Stern Electronics",
+  "designer": "uncredited",
+  "year": 1979,
+  "description": "One of the great early solid-state spinners — knock down the right letter targets, then rip the spinner until your wrist gives out.",
+
+  "badge": {
+    "gradient_from": "#3a1a0a",
+    "gradient_to": "#1f0d05",
+    "border_color": "#8a4a1a",
+    "text_color": "#ff8844",
+    "abbreviation": "MTR"
+  },
+
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 1,
+    "fun_factor": 4,
+    "league_frequency": 2
+  },
+
+  "summary": {
+    "text": "Meteor is a <strong>spinner game</strong> with one dominant strategy: knock down most of the M-E-T-E-O-R letter drop targets to boost the spinner value, then shoot the {{callout:spinner}} from the left flipper until you can't feel your hand. Each letter target down adds 200 to the spinner value (600 for the M and R), so with five letters down the spinner is worth 2,000 per spin instead of 200. Completing all six letters resets the targets and drops the spinner back to minimum, so the advanced play is to leave one letter standing and just rip the spinner. Each M-E-T-E-O-R completion also advances your {{callout:bonus-x}} by one, up to 7X.",
+    "modes": []
+  },
+
+  "one_shot": {
+    "name": "Spinner (Left Flipper)",
+    "description": "The spinner is the entire game. It's located on the left side and is best shot from the left flipper. At base value it's worth 200 per spin — boring. But with five of the six M-E-T-E-O-R targets down, it's worth 2,000 per spin, and a strong rip can generate 10+ spins. That's 20,000 points from a single shot. Bob's guide on Silverball Mania puts it perfectly: 'knock down the M, R and all but one of the E-T-E-O Meteor letter targets, then shoot the spinner all day.'"
+  },
+
+  "hard_box": {
+    "text": "Meteor is a 1979 solid-state game, so there are no modes, no multiballs, and no video displays to guide you. The rules are entirely communicated through the playfield art and insert lights. The spinner feeds into the pop bumpers at the top of the playfield, which are unpredictable and can spit the ball out in any direction — including directly toward the outlanes. The center post (if it exists on your machine) is the only center drain protection. Ball transfers from the right flipper to the left are essential but risky. The Silverball Mania guide warns: 'don't shatz too hard, you can get an up-the-inlane, down-the-outlane drain.'"
+  },
+
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Knock Down Letters, Rip the Spinner",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Knock Down the M-E-T-E-O-R Letter Targets",
+          "difficulty": "earnable",
+          "description": "From the left flipper, shoot toward the {{callout:meteor-targets}} drop target bank at the top of the playfield. Aim to knock down the M and R first (each worth 6,000 points and adds 600 to the spinner value). Then knock down three of the four E-T-E-O targets, leaving one standing. The Silverball Mania guide recommends this exact approach: 'knock down the M, R and all but one of the E-T-E-O Meteor letter targets.' Don't worry if you accidentally complete the set — it resets the targets but also advances your bonus multiplier."
+        },
+        {
+          "order": 2,
+          "title": "Rip the Spinner from the Left Flipper",
+          "difficulty": "earnable",
+          "description": "With five letters down, the {{callout:spinner}} is worth 2,000 per spin. Trap the ball on the left flipper and shoot the spinner with a strong, clean rip. The ball will fly through the spinner and into the pop bumper area at the top. Each full rip generates 10+ spins for 20,000+ points. This is the entire game — get the ball back to the left flipper and do it again."
+        },
+        {
+          "order": 3,
+          "title": "Transfer from Right to Left Flipper",
+          "difficulty": "earnable",
+          "description": "The left flipper is your go-to flipper. When the ball is on the right, you need to transfer it left. You can shatz (let the ball roll down the right flipper, then quickly flip to pass it across), tap pass, or post pass off the center post (if the rubber is intact). The Silverball Mania guide notes: 'Meteor is a great game for practicing ball transfer techniques, since it's so important to get the ball on the left flipper.' Be gentle — too hard and you'll drain up-the-inlane, down-the-outlane."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Rebuild Letters If Needed, Keep Spinning",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Rebuild Letter Targets After Reset",
+          "difficulty": "earnable",
+          "description": "If you completed M-E-T-E-O-R on Ball 1, the targets have reset and the spinner is back to minimum value. Knock them down again — it's pretty easy since the lit return lanes also spot a letter. The Silverball Mania guide notes: 'it's pretty easy to knock them down again to get your spinner back up close to its maximum.' Each set completion is worth 20K in target values alone, plus the bonus multiplier advance."
+        },
+        {
+          "order": 2,
+          "title": "Build Bonus via Numbered Target Banks",
+          "difficulty": "you_got_this",
+          "description": "The numbered target banks (1, 2, and 3) build your end-of-ball bonus — 1,000 for each target, up to 7 per bank. The {{callout:number-2-bank}} at upper left is the safest to shoot from the right flipper when you can't transfer to the left. Completing a numbered bank also awards the current value of that bank as immediate points. The 1 and 3 banks advance naturally from slingshot bounces."
+        },
+        {
+          "order": 3,
+          "title": "Manage Your Bonus Multiplier",
+          "difficulty": "you_got_this",
+          "description": "Your {{callout:bonus-x}} advances by one for each M-E-T-E-O-R completion, up to 7X. At 6X or 7X, the multiplier resets to 1X for the next ball. At 1X-5X, the multiplier holds. Maximum end-of-ball bonus is 147K (1,000 × 7 × 3 × 7). If you're at 5X, consider whether completing METEOR again is worth the risk of a 6X reset."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Maximize Spinner, Protect Bonus",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Get Letters Down and Spin",
+          "difficulty": "earnable",
+          "description": "Same strategy as always — knock down five of six {{callout:meteor-targets}}, then rip the {{callout:spinner}} from the left flipper. The game doesn't change on Ball 3. Your bonus multiplier is hopefully at 5X from previous completions. Every spinner rip is now worth enormous points between the spinner value and the bonus being built."
+        },
+        {
+          "order": 2,
+          "title": "Don't Tilt",
+          "difficulty": "you_got_this",
+          "description": "Your accumulated bonus at 5X with full numbered banks is worth up to 105K. That's potentially your highest-scoring single event of the game. Nudge gently for saves but don't risk the tilt. A tilted Ball 3 wipes out everything."
+        },
+        {
+          "order": 3,
+          "title": "Strategic Shatzing for Letters",
+          "difficulty": "earnable",
+          "description": "If you have 3-4 letters lit and the ball is cradled on the right flipper, a controlled shatz to the left flipper can trip the return lane switch and spot another letter, increasing your spinner value while also setting up a spinner shot. The Silverball Mania guide specifically recommends this: 'if you have 3 or 4 letters and the ball cradled on the right flipper, you can try shatzing the ball to the left flipper.'"
+        }
+      ]
+    }
+  ],
+
+  "survival": {
+    "items": [
+      {
+        "title": "Check for the Center Post",
+        "description": "Some Meteors have a center post between the flippers and some don't. If the rubber is intact, you can bounce the ball across flippers using the post. If there's no post or no rubber, center drains are much more common."
+      },
+      {
+        "title": "Watch for Around-the-World Spinner Drains",
+        "description": "The Silverball Mania guide warns about 'around-the-world spinner drains in either direction' — the ball can come screaming off the spinner and around the playfield directly into an outlane. Be ready."
+      },
+      {
+        "title": "Don't Shoot the Upper Flipper Blindly",
+        "description": "There's an upper flipper on the left. Shooting for the Meteor targets from the right flipper by threading between the bumper and upper flipper is risky — a miss can rebound downward. The gap to the left of the bumper is wider, so favor that route."
+      }
+    ]
+  },
+
+  "skip": {
+    "items": [
+      {
+        "title": "Deliberately Shooting the 1 and 3 Target Banks",
+        "description": "The 1 and 3 numbered target banks build bonus but the shots are risky with rebound potential. The Silverball Mania guide says to 'ignore them, since you'll collect some by accident making saves or via slingshot bounces.' Let them fill naturally."
+      },
+      {
+        "title": "Chasing 6X or 7X Bonus Multiplier",
+        "description": "At 6X or 7X, the multiplier resets to 1X next ball. If you're at 5X on Ball 2, completing METEOR again gives you 6X for this ball but resets you for Ball 3. It's only worth it on Ball 3 where there's no next ball to lose the multiplier."
+      }
+    ]
+  },
+
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "Meteor uses 1979-era scoring with an alphanumeric display. A solid league game is around 200K-400K. Breaking 500K means you had excellent spinner sessions and a good bonus collect. The maximum possible end-of-ball bonus is 147K, so a single well-multiplied bonus collect can be game-defining. (Estimated — based on Silverball Mania rules analysis and game-era scoring norms.)"
+    },
+    {
+      "label": "It's All About the Left Flipper",
+      "text": "The Silverball Mania guide explicitly names the left flipper as the go-to flipper. The spinner is the only high-value repeatable shot and it's a left-flipper shot. Everything else — ball transfers, return lane shatzes, target bank shots from the right — exists to get the ball back to the left flipper for another spinner rip."
+    },
+    {
+      "label": "Simple Rules, Deep Execution",
+      "text": "Meteor has almost no rules by modern standards — no modes, no multiballs, no video display. But the execution depth is real. Managing which letter targets to leave standing, when to complete METEOR for the multiplier advance, and how to transfer the ball to the left flipper cleanly — these are the skills that separate good Meteor players from great ones."
+    }
+  ],
+
+  "playfield_callouts": [
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "description": "Left side of the playfield. Worth 200 per spin at base, plus 200 per E-T-E-O letter target down and 600 per M/R target down. Maximum value with five letters down is 2,000 per spin. Best shot from the left flipper. Feeds into the pop bumper area.",
+      "image": null,
+      "crop": { "x": 30, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "meteor-targets",
+      "name": "M-E-T-E-O-R Drop Targets",
+      "description": "Six drop targets at the top of the playfield. Each target down adds to the spinner value. The M and R targets are worth 6,000 each and add 600 to spinner value; the E-T-E-O targets are worth 2,000 each and add 200. Completing all six resets the bank and advances bonus multiplier by 1X.",
+      "image": null,
+      "crop": { "x": 50, "y": 20, "zoom": 2.0 }
+    },
+    {
+      "id": "bonus-x",
+      "name": "Bonus Multiplier",
+      "description": "Advances by 1X per M-E-T-E-O-R completion, up to 7X. At 1X-5X, the multiplier holds to the next ball. At 6X-7X, it resets to 1X. This makes 5X the safe maximum for Balls 1 and 2.",
+      "image": null,
+      "crop": { "x": 50, "y": 65, "zoom": 1.5 }
+    },
+    {
+      "id": "number-2-bank",
+      "name": "#2 Drop Target Bank",
+      "description": "Upper left area. The safest numbered target bank to shoot from the right flipper. Builds bonus and can deflect the ball toward the Meteor letter targets. Up to 7 targets worth 1,000 bonus each.",
+      "image": null,
+      "crop": { "x": 25, "y": 25, "zoom": 2.0 }
+    },
+    {
+      "id": "return-lanes",
+      "name": "Return Lanes",
+      "description": "The lit return lane spots a M-E-T-E-O-R letter. Useful for building spinner value without shooting the targets directly. Shatzing from the right flipper to the left can trip the return lane switch.",
+      "image": null,
+      "crop": { "x": 40, "y": 75, "zoom": 2.0 }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Meteor Pinball Rules — Silverball Mania (Bob's Guide)",
+      "type": "guide",
+      "url": "https://rules.silverballmania.com/rules/G5b38-MDqkx",
+      "description": "Comprehensive strategy guide covering spinner optimization, letter target management, bonus multiplier strategy, and ball transfer techniques. The primary source for this guide."
+    },
+    {
+      "title": "Meteor — Kineticist Game Page",
+      "type": "reference",
+      "url": "https://www.kineticist.com/pinball-machines/meteor-1979",
+      "description": "Game database entry with community strategy notes confirming the UTAD (Up The Alley Day) spinner strategy."
+    },
+    {
+      "title": "Meteor — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/meteor",
+      "description": "Community ratings, reviews, high scores, and production details."
+    }
+  ],
+
+  "chat_starters": [
+    "Should I leave one METEOR letter standing or complete the set?",
+    "How do I transfer the ball from the right flipper to the left?",
+    "What's the maximum possible bonus on Meteor?",
+    "Is the upper flipper worth using?"
+  ],
+
+  "pinball_map": {
+    "machine_ids": [
+      851
+    ],
+    "search_name": "Meteor"
+  }
+}
