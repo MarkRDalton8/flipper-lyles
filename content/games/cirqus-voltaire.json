@@ -1,0 +1,290 @@
+{
+  "slug": "cirqus-voltaire",
+  "title": "Cirqus Voltaire",
+  "manufacturer": "Bally",
+  "designer": "John Popadiuk",
+  "year": 1997,
+  "description": "Eight multiballs, a five-level wizard mode, and a Ringmaster who catches your ball and flings it into oblivion — the circus has never been this chaotic.",
+  "badge": {
+    "gradient_from": "#3a1a4a",
+    "gradient_to": "#1f0d25",
+    "border_color": "#7a3a9a",
+    "text_color": "#ff66cc",
+    "abbreviation": "CV"
+  },
+  "ratings": {
+    "drain_danger": 3,
+    "rule_complexity": 4,
+    "fun_factor": 5,
+    "league_frequency": 3
+  },
+  "summary": {
+    "text": "Cirqus Voltaire is a <strong>marvel completion game</strong> with an absurd number of multiballs (eight, plus wizard mode multiballs). Complete all nine marvels — Juggler, Acrobats, Ringmaster Frenzy, Defeat All Ringmasters, Spin, Boom!, Menagerie, Highwire Multiball, and Side Show — to start the five-level Join the Cirqus wizard mode. The {{callout:ringmaster}} is the star of the show: spell W-O-W to raise him up, bash him five times to defeat him, then survive as he catches your ball with a magnet and flings it across the playfield. Stack your multiballs using the {{callout:left-ramp}} for Highwire and Strike-an-Arc, the {{callout:left-loop}} for Juggler, and Ringmaster defeats for Ringmaster multiballs.",
+    "modes": [
+      { "name": "Juggler Multiball", "type": "mb" },
+      { "name": "Highwire Multiball", "type": "mb" },
+      { "name": "Ringmaster Frenzy", "type": "mb" },
+      { "name": "Ringmaster Razz", "type": "mb" },
+      { "name": "Ringmaster Special", "type": "mb" },
+      { "name": "Ringmaster Battle", "type": "mb" },
+      { "name": "Strike-an-Arc", "type": "mb" },
+      { "name": "Neon Multiball", "type": "mb" },
+      { "name": "Side Show", "type": "ev" },
+      { "name": "Join the Cirqus", "type": "wiz" }
+    ]
+  },
+  "one_shot": {
+    "name": "Left Ramp (Lock Ramp)",
+    "description": "The left ramp does everything. It locks balls for Highwire Multiball, starts Strike-an-Arc Multiball after enough loops, spots marvels when the right inlane is hit first, and awards Voltaire's Multiple Jackpots during stacked multiballs. It feeds back via the neon habitrail to the right flipper, giving you relatively safe ball returns. Even weak shots that don't make it all the way up can count as 'sneaky locks' if the ball dribbles into the lock queue. This is your home base shot."
+  },
+  "hard_box": {
+    "text": "The Ringmaster's magnet catches your ball after spelling W-O-W and flings it randomly — sometimes SDTM, sometimes into a lucky lock. There's a ball saver after each fling, but it's terrifying. The inlane/outlane area on both sides is a giant open space instead of a separated lane, making saves dependent on nudging. Matt Magnasco's rulesheet calls it 'ideal for learning how to nudge.' The Ringmaster loop (right loop) can drain SDTM on weak counterclockwise shots. And on v1.3 ROMs, Ringmaster Battle is dramatically harder — the Ringmaster takes away hits at warp speed."
+  },
+  "ball_plans": [
+    {
+      "ball_number": 1,
+      "title": "Defeat Ringmaster #1, Build Toward Highwire",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Spell W-O-W and Defeat Ringmaster #1",
+          "difficulty": "earnable",
+          "description": "Hit any of the three W-O-W targets behind the {{callout:ringmaster}} to raise him up — the first Ringmaster only needs one hit on any target. Once he's up, bash him five times to defeat him. The two yellow Ballyhoo standups on either side also spot Ringmaster hits. The magnet in his head will grab your ball, taunt you, and fling it — there's a ball saver after each fling, so don't panic. Defeating the first Ringmaster awards 1M and the Ringmaster Frenzy marvel."
+        },
+        {
+          "order": 2,
+          "title": "Hit the Skill Shot Target",
+          "difficulty": "earnable",
+          "description": "The skill shot target is a sideways-facing standup in the upper right area. It's worth 200K per successful skill shot (200K, 400K, 600K, up to a max of 1M). The plunge is manual, so control the strength to feed the ball toward the target. After 1M, the game calls you 'Show-off.' Not the highest-value play but it compounds nicely."
+        },
+        {
+          "order": 3,
+          "title": "Start Locking Balls for Highwire Multiball",
+          "difficulty": "earnable",
+          "description": "Hit the LIGHT and LOCK standups on each side of the {{callout:left-ramp}} to light locks. For the first Highwire, locks can be stacked — meaning you can light multiple locks before shooting the ramp. Lock three balls on the left ramp queue to start Highwire Multiball. Jackpots are 1M at the Juggler, Acrobats, and Ringmaster loop shots. Locked balls from weak ramp shots count as 'sneaky locks,' so don't worry about power."
+        },
+        {
+          "order": 4,
+          "title": "Light the Side Show",
+          "difficulty": "you_got_this",
+          "description": "Hit the yellow Ballyhoo standup targets on either side of the {{callout:ringmaster}} 5-6 times to light the Side Show at the scoop past the Juggler. The Side Show awards random prizes including Neon Multiball, Popcorn Mania, Cannonball Run, Video Mode, Big Points, Light Lock, and even Extra Ball. It's lit at the start of the game, so shoot the {{callout:left-loop}} past the Juggler magnet early."
+        }
+      ]
+    },
+    {
+      "ball_number": 2,
+      "title": "Stack Multiballs, Collect Marvels",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Stack Highwire with a Ringmaster Multiball",
+          "difficulty": "earnable",
+          "description": "The money play in CV is stacking multiballs. Start Highwire Multiball first (lock three balls via the {{callout:left-ramp}}), then spell W-O-W and defeat the Ringmaster during Highwire to add a Ringmaster multiball on top. This gives you a 4-ball multiball with fresh ball saver. During stacked multiballs, shooting the lock ramp awards Voltaire's Multiple Jackpots — one jackpot from each active multiball. A Reddit user notes this is the best strategy: 'stack a regular multiball with a ringmaster MB.'"
+        },
+        {
+          "order": 2,
+          "title": "Complete the Acrobats Marvel",
+          "difficulty": "you_got_this",
+          "description": "Shoot the {{callout:right-ramp}} four times to complete Acrobats. The switch is mounted at the beginning of the ramp, so even incomplete shots that make it just a few inches up will count. Completing Acrobats lights Super Spinner on both spinners (10K per spin), which is great during multiballs and during Strike-an-Arc."
+        },
+        {
+          "order": 3,
+          "title": "Work on the Spin Marvel",
+          "difficulty": "earnable",
+          "description": "Shoot the inner loop (the {{callout:ringmaster-loop}} surrounding the Ringmaster) four times to spell S-P-I-N. The key: you need four consecutive passes through the loop within about two seconds of each other. The two rollover switches in the loop count the letters, so incomplete shots may still award letters. Build up speed with the first shot and combo through for the remaining letters."
+        },
+        {
+          "order": 4,
+          "title": "Build Toward Strike-an-Arc",
+          "difficulty": "you_got_this",
+          "description": "The {{callout:left-ramp}} tracks your total shots. After 5 ramp loops (including lock shots), Strike-an-Arc Multiball starts — a 2-ball frenzy where switch hits charge an arc toward jackpots. Rip the spinners to charge faster. Each subsequent Strike-an-Arc requires 5 more ramp shots. This multiball builds naturally from your normal ramp play."
+        }
+      ]
+    },
+    {
+      "ball_number": 3,
+      "title": "Reach Join the Cirqus",
+      "priorities": [
+        {
+          "order": 1,
+          "title": "Complete Remaining Marvels",
+          "difficulty": "earnable",
+          "description": "Check which marvels you're missing and target them specifically. Boom! requires spelling V-O-L-T on the four red rollovers above the flippers (cycle them with flipper buttons like standard lane-change) to raise the Boom! balloon bumper, then hit it. Menagerie requires hitting the {{callout:menagerie}} captive ball cage on the far left — it's a short, firm shot from the left flipper, or hit the white standup target just above it. Juggler Multiball requires shooting the {{callout:left-loop}} three times from the right flipper past the Juggler magnet to light locks, then three more to lock balls and start the multiball."
+        },
+        {
+          "order": 2,
+          "title": "Spot Marvel via the Right Inlane",
+          "difficulty": "earnable",
+          "description": "Rolling through the right inlane briefly lights the {{callout:left-ramp}} for Spot Marvel (one per ball). Shoot the ramp within 2-3 seconds of the inlane rollover to automatically complete whatever marvel the game chooses. This is huge for hard-to-complete marvels like Menagerie. The timing is tight, so be ready to fire the ramp the instant you roll through the right inlane."
+        },
+        {
+          "order": 3,
+          "title": "Start Join the Cirqus",
+          "difficulty": "good_luck",
+          "description": "Once all nine marvels are complete, shoot either the left loop (Juggler) or right loop (Acrobat) to start the wizard mode. It's a five-level extravaganza: Level 1 spells C-I-R-Q-U-S by shooting six specific shots, Level 2 alternates between Ringmaster and lock ramp shots, Level 3 requires six jackpots, Level 4 is a 4-ball party multiball, and Level 5... well, there is no grand finale animation, but you've earned the bragging rights. Matt Magnasco's rulesheet notes the wizard mode is one of the most accessible in pinball."
+        }
+      ]
+    }
+  ],
+  "survival": {
+    "items": [
+      {
+        "title": "The Outlane Area Is Wide Open",
+        "description": "There's no wireform dividing the inlane from the outlane — it's one big open space with a post and lots of rubber. Nudging is essential here. Matt Magnasco's rulesheet calls this game 'ideal for learning how to nudge.'"
+      },
+      {
+        "title": "Ball Saver After Every Ringmaster Fling",
+        "description": "After the Ringmaster grabs your ball and flings it, there's a ball saver active. Don't panic when he throws it. Just be ready with your flippers and trust the save if it goes SDTM."
+      },
+      {
+        "title": "Weak Ringmaster Loop Shots Drain SDTM",
+        "description": "The right loop around the Ringmaster is a dangerous shot if you don't commit fully. A weak counterclockwise shot will dribble back and drain straight down the middle. Shoot it with authority or don't shoot it at all."
+      },
+      {
+        "title": "Load Cannon on Outlane Drains",
+        "description": "The alternating Load Cannon light on the outlanes awards a random amount of points (1K to 4M!) and a cannonball when your ball drains through an outlane. It's small consolation, but it's not nothing."
+      }
+    ]
+  },
+  "skip": {
+    "items": [
+      {
+        "title": "Video Mode (The Amazing Roonie)",
+        "description": "The Side Show can award a kangaroo-jumping video mode worth a maximum of 2.9M. The rulesheet calls it 'extremely boring, and not worth much.' Just survive it and move on."
+      },
+      {
+        "title": "Deliberate Center Standup Shots",
+        "description": "There's no center standup on CV like on some games, but the Ringmaster area can attract dangerous center shots. Don't shoot at the W-O-W targets unless you're ready to commit to a full Ringmaster sequence. Random target bounces will spell W-O-W naturally."
+      },
+      {
+        "title": "Grinding for Menagerie Extra Ball",
+        "description": "The Menagerie extra ball requires roughly 50 hits to the captive ball area. That's an enormous number of shots for a modest reward. Let the Menagerie advance naturally and use Spot Marvel to complete it if needed."
+      }
+    ]
+  },
+  "between_us": [
+    {
+      "label": "Scoring Benchmarks",
+      "text": "On a standard league setup, 100M is a solid game and 200M+ usually means you stacked multiballs effectively or reached Ringmaster Battle (estimated from community consensus — limited published tournament data for this title). The rulesheet author reports scoring 50-60M just in Ringmaster Battle alone by parking a ball and going one-on-one. A completed Join the Cirqus wizard mode can add 40M+. If you're under 50M, focus on getting to your first stacked multiball."
+    },
+    {
+      "label": "ROM Versions Matter",
+      "text": "CV has had multiple ROM revisions that significantly affect gameplay. On v1.3 ROMs, Ringmaster Battle is dramatically harder — the Ringmaster takes away hits at 'Warp Factor 9.' Earlier ROMs had bugs including scores disappearing in multiplayer games and infinite ball plunges on tilt during Battle. Ask the operator what ROM version is installed if the game feels unusually brutal."
+    },
+    {
+      "label": "The Popadiuk Factor",
+      "text": "Cirqus Voltaire was designed by John Popadiuk, who also created Theatre of Magic, World Cup Soccer, and Tales of the Arabian Nights. CV shares DNA with all of them — the multi-level wizard mode structure comes from TOTAN, the center toy mechanic echoes AFM's saucers, and the overall energy is pure Popadiuk chaos. If you've played those games, you'll feel at home."
+    }
+  ],
+  "playfield_callouts": [
+    {
+      "id": "left-ramp",
+      "name": "Left Ramp (Lock Ramp)",
+      "description": "Locks balls for Highwire Multiball, starts Strike-an-Arc after enough loops, spots marvels when Spot Marvel is lit, and awards Voltaire's Multiple Jackpots during stacked multiballs. Feeds via neon habitrail to the right flipper. Weak shots may 'sneaky lock' into the queue.",
+      "image": null,
+      "crop": { "x": 30, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "left-loop",
+      "name": "Left Loop (Juggler)",
+      "description": "Feeds the Juggler locks and Side Show. Three shots light the Juggler, three more lock balls for Juggler Multiball. Also the extra ball shot. The magnet above the loop catches balls for Juggler locks. Backhanding this shot can accidentally feed the Side Show scoop.",
+      "image": null,
+      "crop": { "x": 20, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "ringmaster",
+      "name": "Ringmaster",
+      "description": "The main toy. Spell W-O-W on the three targets behind him to raise him up. Bash him five times to defeat him (Ballyhoo standups on each side also count). His magnet head catches balls and flings them randomly. Defeating Ringmasters 2-4 starts progressively harder multiballs.",
+      "image": null,
+      "crop": { "x": 55, "y": 40, "zoom": 2.0 }
+    },
+    {
+      "id": "ringmaster-loop",
+      "name": "Ringmaster Loop (Inner Loop)",
+      "description": "The loop surrounding the Ringmaster. Four passes spell S-P-I-N for the Spin marvel. Also a Highwire Multiball jackpot shot (left entrance only). Weak counterclockwise shots drain SDTM — commit fully or don't shoot it.",
+      "image": null,
+      "crop": { "x": 60, "y": 35, "zoom": 2.0 }
+    },
+    {
+      "id": "right-ramp",
+      "name": "Right Ramp (Acrobats)",
+      "description": "Four shots complete the Acrobats marvel and light Super Spinners. The entry switch is near the base, so even weak shots count. Also a Highwire Multiball jackpot. Strong shots feed the left flipper; weak shots dribble toward the flippers.",
+      "image": null,
+      "crop": { "x": 65, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "menagerie",
+      "name": "Menagerie (Captive Ball)",
+      "description": "A cage with a racquetball ball inside. Hit the switch next to the cage or the white standup above it to advance Menagerie. Awards progress from the Menagerie marvel through Spot Marvel, Light EB, and more. Also advances Bonus X via RING letters.",
+      "image": null,
+      "crop": { "x": 15, "y": 45, "zoom": 2.0 }
+    },
+    {
+      "id": "sideshow",
+      "name": "Side Show Scoop",
+      "description": "Hidden scoop past the Juggler magnet. Awards random prizes when lit (Neon Multiball, Popcorn Mania, Big Points, Light Lock, Extra Ball, etc.). Lit at game start and re-lit after 5-6 Ballyhoo target hits. Also where wizard mode begins.",
+      "image": null,
+      "crop": { "x": 25, "y": 30, "zoom": 2.0 }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cirqus Voltaire Rulesheet — Matt Magnasco (Pinball.org)",
+      "type": "rulesheet",
+      "url": "https://pinball.org/rules/cirqusvoltaire.txt",
+      "description": "The definitive community rulesheet, version 1.42. Exhaustively covers all marvels, eight multiballs, five-level wizard mode, bugs, strategy, and scoring details."
+    },
+    {
+      "title": "Cirqus Voltaire — Wikipedia",
+      "type": "reference",
+      "url": "https://en.wikipedia.org/wiki/Cirqus_Voltaire",
+      "description": "Overview of modes, wizard mode requirements, and production details."
+    },
+    {
+      "title": "CV Tactics and Strategies — Digital Pinball Fans",
+      "type": "forum",
+      "url": "https://digitalpinballfans.com/threads/cv-tactics-and-strategies.1538/",
+      "description": "Community strategy discussion including wizard mode stacking tactics and multiball approaches."
+    },
+    {
+      "title": "Cirqus Voltaire — Pinside Game Archive",
+      "type": "reference",
+      "url": "https://pinside.com/pinball/machine/cirqus-voltaire",
+      "description": "Community ratings, reviews, high scores, and production details."
+    }
+  ],
+  "chat_starters": [
+    "What's the best order to stack multiballs in CV?",
+    "How do I defeat the Ringmaster without draining?",
+    "How does the Spot Marvel mechanic work?",
+    "Is Join the Cirqus wizard mode realistic in a league game?"
+  ],
+  "level_up": {
+    "intro": "These techniques assume you're comfortable with the basic marvel progression and are pushing toward wizard mode.",
+    "tips": [
+      {
+        "title": "Triple Stack: Highwire + Strike-an-Arc + Ringmaster",
+        "description": "The ultimate CV stack. If your 3rd Highwire lock shot would also start Strike-an-Arc (i.e., you've looped the ramp enough times), both multiballs start simultaneously. Then spell W-O-W and defeat the Ringmaster during the stack to add a third multiball. This creates a 4-ball multiball with fresh ball saver and all jackpots lit from all active modes. Shoot the lock ramp for Voltaire's Multiple Jackpots."
+      },
+      {
+        "title": "Ringmaster Battle Scoring Exploit",
+        "description": "During Ringmaster Battle, if you can get one ball trapped (behind the Ringmaster, in the Side Show, etc.), you can bash the Ringmaster one-on-one indefinitely. Each hit scores 1M. The rulesheet author reports scoring 50-60M this way. The Ringmaster takes away hits if you're slow, but after about 15-20 minutes, he gives up and stops taking them away. On v1.3 ROMs, this is dramatically harder."
+      },
+      {
+        "title": "Boom! Value During Party Multiball",
+        "description": "The three jet bumpers score the current Boom! value during Party Multiball (Level 4 of wizard mode). Get the Boom! value high before reaching wizard mode. One player reports jet bumpers scoring 605K each during Party Multiball — nearly as much as a 1M jackpot shot."
+      },
+      {
+        "title": "Wizard Mode Single-Ball Survival",
+        "description": "On production ROMs (v1.0+), wizard mode levels don't end when you're down to one ball. You continue in single-ball play. For Level 2 (Unmask Voltaire), single-ball play is actually preferable — you can methodically alternate Ringmaster and ramp shots without worrying about errant balls."
+      }
+    ]
+  },
+
+  "pinball_map": {
+    "machine_ids": [
+      736
+    ],
+    "search_name": "Cirqus Voltaire"
+  }
+}
