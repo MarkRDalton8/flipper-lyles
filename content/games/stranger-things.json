@@ -295,5 +295,14 @@
         "description": "If you've had a productive game with many objectives started, your end-of-ball bonus could be 60-100M before multipliers. Spam the left orbit to cycle return lanes and max your bonus multiplier at 5x. A 5x multiplier on a 100M base bonus is 500M — that's game-winning."
       }
     ]
+  },
+
+  "pinball_map": {
+    "machine_ids": [
+      3226,
+      3227,
+      3228
+    ],
+    "search_name": "Stranger Things"
   }
 }

@@ -245,5 +245,12 @@
     "How do I complete Stan's mode without draining?",
     "What's the best order to go after the five character modes?",
     "How does Mr. Hankey Multiball scoring work?"
-  ]
+  ],
+
+  "pinball_map": {
+    "machine_ids": [
+      683
+    ],
+    "search_name": "South Park"
+  }
 }

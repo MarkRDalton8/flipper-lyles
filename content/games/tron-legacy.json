@@ -307,5 +307,13 @@
         "description": "If you manage to get all nine inserts solid without playing Sea of Simulation, starting it at the scoop instantly pays 50M (or 100M with Double Scoring) before Portal even begins. This is extremely rare but worth knowing — if you're one feature away from all-solid, completing it yourself is worth way more than using SoS."
       }
     ]
+  },
+
+  "pinball_map": {
+    "machine_ids": [
+      1118,
+      1129
+    ],
+    "search_name": "TRON: Legacy"
   }
 }

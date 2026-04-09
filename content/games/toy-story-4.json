@@ -290,5 +290,13 @@
         "description": "If Hold Bonus X comes up on the Take A Chance Wheel and you collect it on your last ball, your total end-of-ball bonus is doubled. Combined with the massive bonus multiplier from skill shots (+5x each), this can be worth a surprising amount."
       }
     ]
+  },
+
+  "pinball_map": {
+    "machine_ids": [
+      3518,
+      3519
+    ],
+    "search_name": "Toy Story 4"
   }
 }
