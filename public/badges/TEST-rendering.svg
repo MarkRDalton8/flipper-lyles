@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;family=Rock+Salt&amp;family=Shadows+Into+Light+Two&amp;family=Creepster&amp;display=swap');
+  </style>
+  <defs>
+    <linearGradient id="test-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b1a"/>
+      <stop offset="100%" style="stop-color:#8b1a00"/>
+    </linearGradient>
+    <filter id="test-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="test-shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="500" fill="#1a0a0a"/>
+
+  <!-- ROW 1: Plain text, solid color, with Google Font -->
+  <text x="20" y="30" font-family="monospace" font-size="12" fill="#666">1. Google Font + solid color:</text>
+  <text x="200" y="70" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="#ff6b1a">METEOR</text>
+
+  <!-- ROW 2: Google Font + gradient fill -->
+  <text x="20" y="110" font-family="monospace" font-size="12" fill="#666">2. Google Font + gradient fill:</text>
+  <text x="200" y="150" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="url(#test-grad)">METEOR</text>
+
+  <!-- ROW 3: Glow filter -->
+  <text x="20" y="190" font-family="monospace" font-size="12" fill="#666">3. Google Font + glow filter:</text>
+  <text x="200" y="230" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="#ff6b1a" filter="url(#test-glow)">METEOR</text>
+
+  <!-- ROW 4: Drop shadow filter -->
+  <text x="20" y="270" font-family="monospace" font-size="12" fill="#666">4. Google Font + drop shadow:</text>
+  <text x="200" y="310" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="#ff6b1a" filter="url(#test-shadow)">METEOR</text>
+
+  <!-- ROW 5: Manual shadow (duplicate text offset) -->
+  <text x="20" y="350" font-family="monospace" font-size="12" fill="#666">5. Google Font + manual shadow (dup text):</text>
+  <text x="202" y="392" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="#4a0a00" opacity="0.6">METEOR</text>
+  <text x="200" y="390" text-anchor="middle" font-family="'Permanent Marker', cursive" font-size="36" fill="#ff6b1a">METEOR</text>
+
+  <!-- ROW 6: Different font test -->
+  <text x="20" y="430" font-family="monospace" font-size="12" fill="#666">6. Creepster font test:</text>
+  <text x="200" y="470" text-anchor="middle" font-family="'Creepster', cursive" font-size="40" fill="#4a90d9">JAWS</text>
+</svg>

@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
         oswald: ['Oswald', 'sans-serif'],
         serif: ['Source Serif 4', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],

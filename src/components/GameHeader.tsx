@@ -11,21 +11,13 @@ export default function GameHeader({ game }: GameHeaderProps) {
       {/* Badge + Meta */}
       <div className="flex flex-wrap gap-6 items-start mb-6">
         {/* Game Badge */}
-        <div
-          className="flex flex-col items-center justify-center px-4 py-3 rounded border-2 min-w-[100px]"
-          style={{
-            background: `linear-gradient(135deg, ${game.badge.gradient_from}, ${game.badge.gradient_to})`,
-            borderColor: game.badge.border_color,
-            color: game.badge.text_color,
-          }}
-        >
-          <span className="font-mono text-xs uppercase tracking-widest opacity-80">
-            {game.manufacturer_short}
-          </span>
-          <span className="font-oswald text-2xl font-bold tracking-wider">
-            {game.badge.abbreviation}
-          </span>
-        </div>
+        <img
+          src={`/badges/${game.slug}.svg`}
+          alt={`${game.title} badge`}
+          width={100}
+          height={100}
+          className="rounded flex-shrink-0"
+        />
 
         {/* Game Info */}
         <div className="flex-1 min-w-[300px]">

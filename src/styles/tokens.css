@@ -1,23 +1,23 @@
 /* Flipper Lyle's Design Tokens */
 
 :root {
-  /* Colors — Dark Arcade Bar Palette */
-  --bg: #0a0c10;
-  --card: #12151c;
-  --card2: #181c26;
-  --gold: #f0c040;
-  --orange: #e07020;
-  --red: #cc3333;
-  --teal: #2ec4b6;
-  --blue: #3a86ff;
-  --purple: #b060d0;
-  --txt: #e8e4df;
-  --txt2: #9a9590;
-  --mute: #5a5550;
-  --border: #2a2520;
-  --danger: #3a1515;
-  --safe: #152a1a;
-  --caution: #2a2510;
+  /* Colors — Liquor Lyle's Warm Dark Palette */
+  --bg: #0d0806;        /* warm dark brown-black — like the bar interior at night */
+  --card: #160d0b;      /* warm card bg */
+  --card2: #1d1210;     /* slightly lighter card */
+  --gold: #f0c040;      /* secondary accent — bar lighting warmth */
+  --orange: #e07020;    /* warnings, between-us boxes */
+  --red: #c42020;       /* PRIMARY accent — Liquor Lyle's booth red */
+  --teal: #2ec4b6;      /* safe zones, stay alive */
+  --blue: #3a86ff;      /* shot tips, playfield callouts */
+  --purple: #b060d0;    /* events */
+  --txt: #f0ebe4;       /* warm off-white */
+  --txt2: #9a9590;      /* secondary text */
+  --mute: #5a5550;      /* muted text */
+  --border: #2e1e18;    /* warm brown border */
+  --danger: #3a1008;    /* warm red-tinted dark bg */
+  --safe: #0e2a18;      /* safe zone bg */
+  --caution: #2a2008;   /* caution zone bg */
 }
 
 /* Global Resets */
