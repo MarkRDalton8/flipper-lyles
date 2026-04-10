@@ -71,6 +71,18 @@ Build these components to be purely data-driven — they take props from the JSO
 
 ## Critical Rules
 
+0. **Before committing any new or modified game JSON file, verify it has a `pinball_map` block.** If it's missing, look up the machine IDs via the Pinball Map location API before committing:
+   - `GET https://pinballmap.com/api/v1/locations/closest_by_lat_lon.json?lat=41.8781&lon=-87.6298&send_all_within_distance=1&max_distance=5`
+   - Search the response for the game name. Include all editions (Pro, Premium, LE, CE) as separate IDs.
+   - Add the block and validate the JSON before staging. If the machine genuinely isn't on Pinball Map, note it in the commit message and skip the block.
+
+   ```json
+   "pinball_map": {
+     "machine_ids": [1234, 1235],
+     "search_name": "Game Title"
+   }
+   ```
+
 1. **DO NOT use generic AI aesthetics.** No Inter font, no purple-on-white gradients, no rounded-everything SaaS look. Read DESIGN_SYSTEM.md carefully. This should look like it was designed by someone who hangs out in pinball bars.
 
 2. **Components are dumb, content is smart.** Components should NEVER contain game-specific text, strategy advice, or jokes. They render whatever the JSON gives them. All personality lives in the content files.
