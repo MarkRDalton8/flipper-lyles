@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     const { game_slug, author_name, comment, parent_id, created_at } = record;
     const isReply = !!parent_id;
-    const gameUrl = `https://flipper-lyles.vercel.app/napkins/${game_slug}`;
+    const gameUrl = `https://flipperlyles.com/napkins/${game_slug}`;
     const label = isReply ? 'New Reply' : 'New Tip';
     const formattedDate = new Date(created_at).toLocaleString('en-US', {
       month: 'short', day: 'numeric', year: 'numeric',
