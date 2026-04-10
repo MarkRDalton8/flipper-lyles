@@ -8,6 +8,7 @@ import BallPlan from "@/components/BallPlan";
 import StayAlive from "@/components/StayAlive";
 import DontBeAHero from "@/components/DontBeAHero";
 import FindThisGame from "@/components/FindThisGame";
+import Comments from "@/components/Comments";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -101,6 +102,9 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
 
       {/* Find This Game Near You */}
       <FindThisGame game={game} />
+
+      {/* Comments / Strategy Tips */}
+      <Comments slug={game.slug} gameTitle={game.title} />
     </div>
   );
 }
