@@ -15,15 +15,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Script
+        {/* <Script
           id="piano-composer"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=VJP03WZIpu");`,
           }}
-        />
+        /> */}
 
-        <Script
+        {/* <Script
           id="piano-analytics"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -41,7 +41,7 @@ export default function RootLayout({
               });
             `,
           }}
-        />
+        /> */}
 
         {/* Header — styled after the Liquor Lyle's exterior sign */}
         <header className="px-8 pt-8 pb-0 bg-gradient-to-b from-[#120806] to-bg">
