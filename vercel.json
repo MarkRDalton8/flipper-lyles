@@ -6,8 +6,12 @@
   "outputDirectory": ".next",
   "rewrites": [
     {
-      "source": "/journal/:path*",
-      "destination": "https://flipper-lyles-journal.vercel.app/journal/:path*"
+      "source": "/journal",
+      "destination": "https://flipper-lyles-journal.vercel.app/journal"
+    },
+    {
+      "source": "/journal/:path(.*)",
+      "destination": "https://flipper-lyles-journal.vercel.app/journal/:path"
     }
   ]
 }
