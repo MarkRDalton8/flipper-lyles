@@ -3,15 +3,5 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "rewrites": [
-    {
-      "source": "/journal",
-      "destination": "https://flipper-lyles-journal.vercel.app/journal"
-    },
-    {
-      "source": "/journal/:path(.*)",
-      "destination": "https://flipper-lyles-journal.vercel.app/journal/:path"
-    }
-  ]
+  "outputDirectory": ".next"
 }
