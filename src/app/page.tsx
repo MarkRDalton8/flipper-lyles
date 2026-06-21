@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
       <div className="text-center py-8">
-        <a href="/napkins" className="inline-block bg-red text-white px-8 py-4 font-oswald text-lg uppercase tracking-wider rounded hover:bg-[#a81818] transition-colors">
+        <a href="/napkins/napkins" className="inline-block bg-red text-white px-8 py-4 font-oswald text-lg uppercase tracking-wider rounded hover:bg-[#a81818] transition-colors">
           Check Out the Bar Napkins
         </a>
       </div>

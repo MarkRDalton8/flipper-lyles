@@ -83,13 +83,13 @@ export default function RootLayout({
         </header>
 
         <nav className="flex gap-0 px-8 border-b border-border bg-card overflow-x-auto">
-          <a href="/" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
+          <a href="/napkins" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
             The Bar
           </a>
-          <a href="/napkins" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
+          <a href="/napkins/napkins" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
             Bar Napkins
           </a>
-          <a href="/sources" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
+          <a href="/napkins/sources" className="px-6 py-4 font-oswald uppercase text-sm tracking-wider border-b-2 border-transparent hover:border-red hover:text-red transition-colors">
             Sources
           </a>
         </nav>
