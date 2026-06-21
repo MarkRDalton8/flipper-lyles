@@ -61,7 +61,7 @@ export default async function NapkinsPage() {
             <div className="px-6 py-4 border-b border-border bg-card2 flex items-center gap-4">
               {/* Badge */}
               <img
-                src={`/badges/${game.slug}.svg`}
+                src={`/napkins/badges/${game.slug}.svg`}
                 alt={`${game.title} badge`}
                 width={70}
                 height={70}

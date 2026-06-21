@@ -12,7 +12,7 @@ export default function GameHeader({ game }: GameHeaderProps) {
       <div className="flex flex-wrap gap-6 items-start mb-6">
         {/* Game Badge */}
         <img
-          src={`/badges/${game.slug}.svg`}
+          src={`/napkins/badges/${game.slug}.svg`}
           alt={`${game.title} badge`}
           width={100}
           height={100}
